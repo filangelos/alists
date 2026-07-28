@@ -545,19 +545,26 @@
 
   // -------------------------------------------------------------- wiring
 
+  /* Show a query and honour what it asks for. Typed, arrived at on load, or
+     arrived at by a hash change are the same event as far as `/near` goes: the
+     permission belongs to whoever is looking at the page, not to whoever sent
+     the link, so every route in has to be able to ask.
+
+     Asked before rendering, so the first paint already says it is waiting.
+     `geo.state` leaves `idle` immediately, so editing the rest of the query
+     cannot re-prompt and a denial is not asked about again. */
+  function applyQuery(raw) {
+    if (parseQuery(raw).command === 'near' && geo.state === 'idle') {
+      requestLocation(() => render($('gl-input').value));
+    }
+    render(raw);
+  }
+
   function onInput() {
     const raw = $('gl-input').value;
     acIndex = 0;
     refreshAutocomplete();
-
-    // Ask the first time `/near` appears, and only then. `geo.state` leaves
-    // `idle` immediately, so editing the rest of the query cannot re-prompt,
-    // and a denial is not asked about again.
-    if (parseQuery(raw).command === 'near' && geo.state === 'idle') {
-      requestLocation(() => render($('gl-input').value));
-    }
-
-    render(raw);
+    applyQuery(raw);
     syncUrl(raw);
   }
 
@@ -639,7 +646,7 @@
         // a `/all-lists` link would otherwise land with the menu sitting over
         // the very results it was sent to show.
         closeAutocomplete();
-        render(next);
+        applyQuery(next);
       }
     });
 
@@ -696,16 +703,11 @@
       wire();
       const initial = queryFromUrl();
       $('gl-input').value = initial;
-      render(initial);
       // No `refreshAutocomplete()` here on purpose: arriving on a shared link
       // is not typing, and the menu would open over the results the link was
-      // sent to show.
-      //
-      // A shared `/near` link still has to ask -- the permission belongs to
-      // whoever opened it, not to whoever sent it.
-      if (parseQuery(initial).command === 'near') {
-        requestLocation(() => render($('gl-input').value));
-      }
+      // sent to show. `applyQuery` still asks for a location if the link is a
+      // `/near` one -- see there.
+      applyQuery(initial);
     })
     .catch((err) => {
       $('gl-subtitle').textContent = 'could not load places';
