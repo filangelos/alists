@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28T15:59:27Z",
+ "generated": "2026-07-28T17:30:04Z",
  "lists": [
   {
    "count": 66,
@@ -497,7 +497,7 @@
     "4eLLhFow8Fk-sTk7zmdVtPNYsZRJNQ"
    ],
    "lng": 24.4310036,
-   "mid": null,
+   "mid": "/g/11c1mk4rfk",
    "name": "ΧΑΡΤΙΝΟ ΚΑΡΑΒΙ",
    "note": ""
   },
@@ -1756,7 +1756,7 @@
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
    "lng": -0.09104169999999999,
-   "mid": null,
+   "mid": "/g/11gpndzx_8",
    "name": "Diogenes The Dog",
    "note": ""
   },
@@ -2810,7 +2810,7 @@
    "note": ""
   },
   {
-   "address": "",
+   "address": "21 Warren St, London W1T 5LT, United Kingdom",
    "cid": "2478854311363355793",
    "lat": 51.523978,
    "lists": [
@@ -2818,7 +2818,7 @@
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
    "lng": -0.1399175,
-   "mid": null,
+   "mid": "/g/11mvg3wmwv",
    "name": "Qima Cafe",
    "note": ""
   },
@@ -2835,7 +2835,7 @@
    "note": ""
   },
   {
-   "address": "",
+   "address": "35 Colonnade, London WC1N 1JD, United Kingdom",
    "cid": "4671419946386772792",
    "lat": 51.5228281,
    "lists": [
@@ -2843,7 +2843,7 @@
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
    "lng": -0.12421,
-   "mid": null,
+   "mid": "/g/11ggb9k2ff",
    "name": "Fortitude Bakehouse",
    "note": ""
   },
@@ -3058,7 +3058,7 @@
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
    "lng": -74.0024921,
-   "mid": null,
+   "mid": "/g/11vd61jkbm",
    "name": "Sip&Guzzle",
    "note": ""
   },
@@ -4588,7 +4588,7 @@
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
    "lng": -74.0008421,
-   "mid": null,
+   "mid": "/g/11x1rgnrfs",
    "name": "Manjul Coffee & Clothing",
    "note": ""
   },
@@ -7037,7 +7037,7 @@
    "note": ""
   },
   {
-   "address": "",
+   "address": "12-16 St Michael's St, Oxford OX1 2DU, United Kingdom",
    "cid": "-6813168315009468092",
    "lat": 51.7534937,
    "lists": [
@@ -7045,7 +7045,7 @@
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
    "lng": -1.2593455,
-   "mid": null,
+   "mid": "/g/11cm3px8rw",
    "name": "Society Café",
    "note": ""
   },
@@ -7063,7 +7063,7 @@
    "note": ""
   },
   {
-   "address": "",
+   "address": "75 Banbury Rd, Park Town, Oxford OX2 6PE, United Kingdom",
    "cid": "4114378101192194408",
    "lat": 51.7647791,
    "lists": [
@@ -7071,7 +7071,7 @@
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
    "lng": -1.2609541,
-   "mid": null,
+   "mid": "/g/1ptzfdgq3",
    "name": "Brew",
    "note": ""
   },
@@ -7089,7 +7089,7 @@
    "note": ""
   },
   {
-   "address": "",
+   "address": "105 High St, Oxford OX1 4BW, United Kingdom",
    "cid": "-869536792818688695",
    "lat": 51.7523501,
    "lists": [
@@ -7097,12 +7097,12 @@
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
    "lng": -1.2542670999999999,
-   "mid": null,
+   "mid": "/g/11b7q8qxsy",
    "name": "Jericho Coffee Traders",
    "note": ""
   },
   {
-   "address": "",
+   "address": "14 Turl St, Oxford OX1 3DQ, United Kingdom",
    "cid": "-8547767502645335854",
    "lat": 51.7530863,
    "lists": [
@@ -7110,7 +7110,7 @@
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
    "lng": -1.2562031,
-   "mid": null,
+   "mid": "/g/1tvw4ff7",
    "name": "Missing Bean Turl St",
    "note": ""
   },
