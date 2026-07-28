@@ -36,11 +36,18 @@
       </div>
       <div class="bt-header-divider"></div>
 
-      <!-- The results are a listbox the input owns, not a focusable region of
-           their own: the caret never leaves the prompt, so a keystroke is
-           always a filter and never lands somewhere it does nothing. -->
+      <!-- The tree is a listbox the input owns, not a focusable region of its
+           own: the caret never leaves the prompt, so a keystroke is always a
+           filter and never lands somewhere it does nothing.
+
+           Deliberately not `role="tree"`. That pattern claims every printable
+           character for type-ahead, which is exactly the collision this page
+           cannot afford -- any letter typed anywhere belongs to the filter.
+           Rows carry an authored `aria-label` naming what they are instead,
+           and since what is open is a pure function of the query there is no
+           expansion state left to announce. -->
       <div class="bt-scroll" id="gl-scroll">
-        <div id="gl-rows" role="listbox" aria-label="Places"></div>
+        <div id="gl-rows" role="listbox" aria-label="Places by city"></div>
       </div>
 
       <div class="bt-prompt-row">
@@ -50,7 +57,7 @@
           id="gl-input"
           class="bt-input"
           type="text"
-          placeholder="Type to filter, / for lists and commands"
+          placeholder="Type to filter, / for cities"
           spellcheck="false"
           autocomplete="off"
           autocapitalize="off"
@@ -61,7 +68,7 @@
       </div>
       <div class="bt-footer-bar">
         <!-- Doubles as the location-state line, so it has to announce. -->
-        <span id="gl-hint" aria-live="polite">/all-lists · /near · / to scope</span>
+        <span id="gl-hint" aria-live="polite">/ to jump to a city · /near for distance</span>
         <span id="gl-status" aria-live="polite"></span>
       </div>
     </div>

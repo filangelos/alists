@@ -1,29 +1,37 @@
-/* alists -- one filterable stream of every saved place.
+/* alists -- every saved place as a tree of city then category.
  *
- * The lists are how the places are organised in Google Maps, not how they are
- * browsed here: a place is shown once, tagged with every list that claims it,
- * and the lists themselves are a facet you can narrow to rather than a level
- * you have to navigate through. There is one input and it always filters.
+ * The lists are how the places are organised in Google Maps, which is not how
+ * anyone else would look for them: half the names are private jokes and the
+ * biggest place in the collection, London, has no list at all. So the fetcher
+ * works out a city and a category for every place (scripts/derive.py) and this
+ * browses that instead -- two levels, both of which read as themselves.
+ *
+ * There is still one input and it still always filters. What changed is that
+ * the slash grammar now names a path rather than a command: `/london/coffee` is
+ * where you are standing, and any words after it narrow what is beneath you.
+ * Typing prunes the tree; nothing is a command you had to know existed.
  */
 
 (() => {
   'use strict';
 
   const $ = (id) => document.getElementById(id);
-  // A ceiling on DOM nodes, kept well clear of the actual count so the
-  // unfiltered view is always complete -- truncating it would hide places with
-  // no affordance to reach them. Rows cost roughly 50µs each to build, so this
-  // is a backstop against a runaway, not a paging scheme; raise it rather than
-  // let it start biting.
+
+  /* A backstop, not a paging scheme. The tree can only ever render the 1649
+     places plus their headers, so this is unreachable in practice -- it exists
+     so a bug in the expansion rule degrades to a slow page rather than a hung
+     one. */
   const MAX_ROWS = 6000;
 
-  let DATA = { lists: [], places: [] };
-  let listById = new Map();
-  let listSlugs = new Set(); // every list slug, for exact-beats-prefix scoping
+  let DATA = { lists: [], places: [], cities: [], categories: [] };
+  let TREE = []; // cities, each holding categories, each holding places
+  let cityByKey = new Map();
+  let catByKey = new Map();
+  let pathTokens = new Set(); // every token that can name a city or a category
+
   let view = []; // rows currently rendered, in order
-  let viewKind = 'places'; // what `view` holds, so Enter knows what to open
   let active = -1; // index into `view`, or -1 for nothing selected
-  let acItems = []; // open autocomplete entries
+  let acItems = [];
   let acIndex = 0;
 
   // ------------------------------------------------------------------ text
@@ -32,11 +40,13 @@
      Greek and Latin both decompose to a base letter plus combining marks under
      NFD, so one strip covers both alphabets. It does not transliterate and is
      not meant to: `anoixi` will not find `Άνοιξη`, and typing the Greek is the
-     only way to reach a Greek name.
+     only way to reach a Greek name. Slugs are the exception and are
+     transliterated in the fetcher -- addressing and matching are different
+     jobs, and a slug is something a person retypes out of an address bar.
 
      Final sigma folds onto the medial one: it is the same letter spelled by
-     position, and `toLowerCase` applies that rule too, so `\u039f\u0394\u039f\u03a3` lowercases to
-     `\u03bf\u03b4\u03bf\u03c2` while `\u039f\u03b4\u03cc\u03c2` is already `\u03bf\u03b4\u03cc\u03c2`. Without this the two spellings of
+     position, and `toLowerCase` applies that rule too, so `ΟΔΟΣ` lowercases to
+     `οδοσ` while `Οδός` is already `οδός`. Without this the two spellings of
      one street fold apart and only one of them answers a search for it. */
   const fold = (s) =>
     (s || '')
@@ -48,17 +58,15 @@
   const escapeHtml = (s) =>
     s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+  const tokens = (s) => fold(s).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+
   /* Fold `text` while keeping the way back to it: `starts[i]` and `ends[i]` are
      the bounds, in the original, of the character that produced folded position
      `i`. Latin and Greek fold one-for-one, but the rest of the world does not --
      NFD expands a Hangul syllable into three jamo and a voiced kana into a base
      plus U+3099, none of which are the combining marks `fold` strips. Slicing
      the original at an offset found in the folded string would then mark the
-     wrong characters, so every offset is translated back through these.
-
-     Folding character by character has to agree with folding the whole string,
-     or a match found by `score` would fail to highlight here; final sigma was
-     the one rule that read its neighbours, and `fold` now settles it. */
+     wrong characters, so every offset is translated back through these. */
   function foldIndexed(text) {
     let hay = '';
     const starts = [];
@@ -80,18 +88,18 @@
      slicing the original, so the accented spelling survives into the page. A
      span always covers whole characters of the original -- half of a decomposed
      syllable is not something that can be marked. */
-  function highlight(text, tokens) {
+  function highlight(text, words) {
     if (!text) return '';
-    if (!tokens.length) return escapeHtml(text);
+    if (!words.length) return escapeHtml(text);
     const { hay, starts, ends } = foldIndexed(text);
     const spans = [];
-    for (const token of tokens) {
+    for (const word of words) {
       let from = 0;
       for (;;) {
-        const at = hay.indexOf(token, from);
+        const at = hay.indexOf(word, from);
         if (at === -1) break;
-        spans.push([starts[at], ends[at + token.length - 1]]);
-        from = at + token.length;
+        spans.push([starts[at], ends[at + word.length - 1]]);
+        from = at + word.length;
       }
     }
     if (!spans.length) return escapeHtml(text);
@@ -114,61 +122,64 @@
 
   // ----------------------------------------------------------------- query
 
-  /* Commands share the `/` namespace with the list slugs, so a command name
-     must never also be a plausible list name. `all-lists` carries a hyphen,
-     which `slugOf` strips from every list slug -- so no list can ever collide
-     with it, whatever it gets renamed to. */
-  const COMMANDS = [
-    { slug: 'all-lists', desc: 'every list, opens in Google Maps' },
-    { slug: 'near', desc: 'sort by distance — asks for your location' },
-  ];
+  /* `near` is the only surviving command. The tree is its own index, so
+     `/all-lists` has nothing left to do that clearing the prompt does not --
+     it is kept only so the links already shared with it in them still land
+     somewhere sensible, and it resolves to the root. */
+  const COMMANDS = ['near', 'all-lists'];
 
-  /* A query is an optional command, a set of list scopes and a set of words.
-     `/nyc bagel` means the NYC list AND the word bagel; the leading slash is
-     only ever a command or a scope, so a place called "24/7" is still
-     reachable as a bare word.
+  /* A query is an optional path, an optional command, and words.
+     `/london/coffee flat white` is the coffee places in London matching
+     `flat` and `white`. A leading slash is only ever a path or a command, so a
+     place called "24/7" is still reachable as a bare word.
 
-     A command is matched in full, while a scope prefix-matches: `/a` has to go
-     on meaning the Aθens list rather than becoming ambiguous with `/all-lists`
-     the moment a command starting with the same letter exists.
-
-     A word that folds away to nothing is dropped rather than kept as an empty
-     token: it matches everywhere, which makes it no filter at all, and the scan
-     in `highlight` would never advance past a zero-length match. Typing cannot
-     produce one, but pasting a bare combining mark can. */
+     Path segments are matched against city and category tokens, which include
+     every slug the lists used to have -- so `/nyc`, `/baker` and `/aθens` all
+     still resolve, and every link shared before this change still works. A
+     segment that names nothing is treated as a word rather than silently
+     dropped, so a typo narrows to nothing visibly instead of being ignored. */
   function parseQuery(raw) {
-    const scopes = [];
+    const path = [];
     const words = [];
     let command = null;
+
     for (const part of raw.trim().split(/\s+/)) {
       if (!part) continue;
       if (part.startsWith('/')) {
-        const slug = fold(part.slice(1));
-        if (!slug) continue;
-        if (COMMANDS.some((c) => c.slug === slug)) command = slug;
-        else scopes.push(slug);
+        for (const seg of part.split('/')) {
+          if (!seg) continue;
+          const key = fold(seg);
+          if (COMMANDS.includes(key)) command = key;
+          else if (pathTokens.has(key)) path.push(key);
+          else words.push(key);
+        }
       } else {
         const word = fold(part);
         if (word) words.push(word);
       }
     }
-    return { command, scopes, words };
+    return { path, command, words };
   }
 
-  /* Keep any letter, not just a-z: stripping to ASCII turns `Aθens` into
-     `aens`, a slug that names nothing and cannot be guessed. Non-Latin slugs
-     are still reachable -- the menu completes them, and `/a` prefix-matches. */
-  const slugOf = (list) => fold(list.name).replace(/[^\p{L}\p{N}]+/gu, '');
-
-  /* Built once -- constructing a collator per comparison is the expensive part.
-     `base` sensitivity so case and accents do not decide the order (`Aθens`
-     sorts as `athens`), `numeric` so a `Top 10` would land after `Top 9`. */
-  const collator = new Intl.Collator(undefined, { sensitivity: 'base', numeric: true });
+  /* Resolve a path into the city and category it names. Either may be absent,
+     and a category may be given without a city (`/coffee` is every coffee
+     place everywhere), because the two levels are named from disjoint token
+     sets and so the order they are typed in cannot be ambiguous. */
+  function resolvePath(path) {
+    let city = null;
+    let cat = null;
+    for (const token of path) {
+      if (!city && cityByKey.has(token)) city = cityByKey.get(token);
+      else if (!cat && catByKey.has(token)) cat = catByKey.get(token);
+    }
+    return { city, cat };
+  }
 
   /* Score a place against the words. Returns -1 for no match. Every word has to
-     land somewhere, but where it lands decides the rank: a name match beats an
-     address match, so searching `london` surfaces places *called* London before
-     the two hundred that merely sit in it. */
+     land somewhere, but where it lands decides the rank inside its own folder:
+     a name match beats an address match.
+
+     `_rest` deliberately no longer contains the city name -- see `prepare`. */
   function score(place, words) {
     if (!words.length) return 0;
     let total = 0;
@@ -182,82 +193,22 @@
     return total;
   }
 
-  function search(raw) {
-    const { command, scopes, words } = parseQuery(raw);
-
-    if (command === 'all-lists') {
-      // Words still narrow, so `/all-lists ny` is a way to find a list by name
-      // rather than only ever an index of all of them.
-      const matched = words.length
-        ? DATA.lists.filter((list) => words.every((w) => list._haystack.includes(w)))
-        : DATA.lists;
-      // Alphabetical, on a copy: this is an index to look a name up in, and
-      // fetch order is the order they happen to sit in lists.txt, which is
-      // meaningless to anyone reading the page. `DATA.lists` itself keeps that
-      // order -- the place view groups by it.
-      const rows = matched.slice().sort((a, b) => collator.compare(a.name, b.name));
-      return { kind: 'lists', rows, ranked: false, command, scopes, words };
-    }
-
-    /* Exact beats prefix. `bar` is a prefix of `barca`, so a plain prefix rule
-       would quietly answer `/bar` with 31 Barcelona places alongside the
-       cocktail bars -- and the more lists there are, the more often one name
-       shadows another. A scope that names a list exactly means only that list;
-       prefix matching stays for the partial typing it exists for (`/b`). */
-    const scoped = scopes.length
-      ? DATA.places.filter((p) =>
-          scopes.every((s) =>
-            listSlugs.has(s) ? p._slugs.includes(s) : p._slugs.some((x) => x.startsWith(s))
-          )
-        )
-      : DATA.places;
-
-    let rows = scoped;
-    let ranked = false;
-
-    if (words.length) {
-      const hits = [];
-      for (const place of scoped) {
-        const value = score(place, words);
-        if (value >= 0) hits.push({ place, value });
-      }
-      // Stable by construction: ties keep the curated order they were fetched in.
-      hits.sort((a, b) => b.value - a.value);
-      rows = hits.map((h) => h.place);
-      ranked = true;
-    }
-
-    /* Distance overrides relevance rather than blending with it: `/near bagel`
-       asks for the closest bagel, so the words decide *what* is in the running
-       and the distance decides the order. A place with no coordinates sorts
-       last instead of disappearing -- it is still a place you saved. */
-    if (command === 'near' && geo.origin) {
-      for (const place of rows) {
-        place._km = place.lat != null ? haversine(geo.origin, place) : Infinity;
-      }
-      rows = rows.slice().sort((a, b) => a._km - b._km);
-      ranked = true;
-    }
-
-    return { kind: 'places', rows, ranked, command, scopes, words };
-  }
-
   // -------------------------------------------------------------- location
 
-  /* Location is requested only when `/near` is typed, never on load. Asking an
-     unprompted visitor where they are is the browser-permission equivalent of a
-     cold call: Chrome demotes origins that do it, Safari users reflexively deny,
-     and a denial is sticky -- so the one chance to ask is worth spending on a
-     moment when the person has just said what they want it for.
-     `geo.state` is what the UI reports; nothing here throws. */
-  const geo = { state: 'idle', origin: null, error: '' };
+  /* The origin distance is measured from. Today `/near` always means "me", but
+     everything downstream reads this object rather than the browser's position
+     directly, so pointing it at somewhere else -- a city the person names, a
+     hotel they are staying in -- is a new branch in `resolveOrigin` and nothing
+     more. Every city already carries its centre in data/lists.json for exactly
+     that. */
+  const origin = { state: 'idle', at: null, label: '', error: '' };
 
   const EARTH_KM = 6371;
   const rad = (deg) => (deg * Math.PI) / 180;
 
-  /* Great-circle distance. Not road distance -- the point is to rank a list of
-     places by roughly how far they are, and "as the crow flies" orders a
-     neighbourhood correctly while needing no network call per place. */
+  /* Great-circle distance. Not road distance -- the point is to rank places by
+     roughly how far they are, and "as the crow flies" orders a neighbourhood
+     correctly while needing no network call per place. */
   function haversine(a, b) {
     const dLat = rad(b.lat - a.lat);
     const dLng = rad(b.lng - a.lng);
@@ -270,32 +221,132 @@
   const formatKm = (km) =>
     km < 1 ? `${Math.round(km * 1000)} m` : km < 10 ? `${km.toFixed(1)} km` : `${Math.round(km)} km`;
 
-  function requestLocation(onSettled) {
-    if (!navigator.geolocation) {
-      geo.state = 'unavailable';
-      geo.error = 'this browser has no location support';
-      onSettled();
+  /* Ask for whatever `spec` names, and call `done` once it has settled.
+     Location is requested only when `/near` is typed, never on load. Asking an
+     unprompted visitor where they are is the browser-permission equivalent of a
+     cold call: Chrome demotes origins that do it, Safari users reflexively deny,
+     and a denial is sticky -- so the one chance to ask is worth spending on a
+     moment when the person has just said what they want it for. Nothing here
+     throws; `origin.state` is what the UI reports. */
+  function resolveOrigin(spec, done) {
+    if (spec.kind === 'city') {
+      const city = cityByKey.get(spec.key);
+      if (city && city.lat != null) {
+        origin.state = 'ready';
+        origin.at = { lat: city.lat, lng: city.lng };
+        origin.label = city.name;
+      } else {
+        origin.state = 'unavailable';
+        origin.error = 'that place has no location';
+      }
+      done();
       return;
     }
-    geo.state = 'asking';
+
+    if (!navigator.geolocation) {
+      origin.state = 'unavailable';
+      origin.error = 'this browser has no location support';
+      done();
+      return;
+    }
+    origin.state = 'asking';
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        geo.state = 'ready';
-        geo.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-        onSettled();
+        origin.state = 'ready';
+        origin.at = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        origin.label = 'you';
+        done();
       },
       (err) => {
         // PERMISSION_DENIED is a decision, not a fault -- say so plainly and
         // leave the results usable rather than nagging.
-        geo.state = err.code === err.PERMISSION_DENIED ? 'denied' : 'unavailable';
-        geo.error =
+        origin.state = err.code === err.PERMISSION_DENIED ? 'denied' : 'unavailable';
+        origin.error =
           err.code === err.PERMISSION_DENIED
             ? 'location permission denied'
             : 'could not get your location';
-        onSettled();
+        done();
       },
       { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
     );
+  }
+
+  const distanceTo = (place) =>
+    origin.at && place.lat != null ? haversine(origin.at, place) : Infinity;
+
+  // ------------------------------------------------------------------ search
+
+  /* Walk the tree keeping only what matches, and count what survives.
+     Counts are matches-beneath rather than totals: a header that contradicts
+     the rows under it is worse than no header at all.
+
+     `near` sorts rather than filters. It reorders cities by how close their
+     nearest surviving place is and reorders places within their category, so
+     the structure holds and the nearest thing floats to the top of it. A place
+     with no coordinates sorts last instead of disappearing -- it is still a
+     place you saved. */
+  function search(raw) {
+    const { path, command, words } = parseQuery(raw);
+    const { city: onCity, cat: onCat } = resolvePath(path);
+    const sorting = command === 'near' && origin.state === 'ready';
+
+    const cities = [];
+    let matches = 0;
+
+    for (const city of TREE) {
+      if (onCity && city !== onCity) continue;
+      const cats = [];
+      let cityCount = 0;
+
+      for (const cat of city.cats) {
+        if (onCat && cat.key !== onCat.key) continue;
+        let places = cat.places;
+        if (words.length) {
+          const hits = [];
+          for (const place of places) {
+            const value = score(place, words);
+            if (value >= 0) hits.push({ place, value });
+          }
+          // Stable by construction: ties keep the curated order they arrived in.
+          hits.sort((a, b) => b.value - a.value);
+          places = hits.map((h) => h.place);
+        }
+        if (!places.length) continue;
+        if (sorting) {
+          places = places.slice().sort((a, b) => distanceTo(a) - distanceTo(b));
+        }
+        cats.push({ ...cat, places, count: places.length });
+        cityCount += places.length;
+      }
+
+      if (!cityCount) continue;
+      matches += cityCount;
+      const near = sorting
+        ? Math.min(...cats.map((c) => distanceTo(c.places[0])))
+        : 0;
+      cities.push({ ...city, cats, count: cityCount, near });
+    }
+
+    if (sorting) cities.sort((a, b) => a.near - b.near);
+
+    return { cities, matches, words, command, onCity, onCat, filtering: path.length > 0 || words.length > 0 };
+  }
+
+  /* What is open is a pure function of the query -- nothing is remembered.
+     The hash *is* the prompt, so any state a click could create but typing
+     could not would be lost the moment the URL was shared, and "the address bar
+     is the share button" would quietly stop being true.
+
+     Three ways in. A node on the path is open because that is what standing
+     there means. A node that was pruned is open because its count is now a
+     selection and hiding a selection behind a chevron makes the number a claim
+     you have to click to check. And a node holding most of what survived is
+     open because otherwise typing a city's name answers with the city's name --
+     one row, no places, which is not an answer. */
+  function isOpen(node, onPath, total) {
+    if (onPath) return true;
+    if (node.count < node.total) return true;
+    return total > 0 && node.count * 2 > total;
   }
 
   // ---------------------------------------------------------------- render
@@ -307,7 +358,7 @@
           place.lat != null ? `${place.lat},${place.lng}` : place.name
         )}`;
 
-  const HINT = '/all-lists · /near · / to scope';
+  const HINT = '/ to jump to a city · /near for distance';
 
   /* Location state belongs in the footer, next to the prompt that caused it.
      A success banner over the results would restate what `/near` in the input
@@ -321,7 +372,7 @@
       hint.classList.remove('is-warn');
       return;
     }
-    switch (geo.state) {
+    switch (origin.state) {
       case 'asking':
         hint.textContent = 'waiting for your location…';
         hint.classList.remove('is-warn');
@@ -331,7 +382,7 @@
         // Deliberately no retry button: re-prompting is blocked by the browser
         // once denied, so the only real fix is in site settings, and a button
         // that silently does nothing is worse than a sentence that is true.
-        hint.textContent = `${geo.error} — usual order; re-allow in site settings`;
+        hint.textContent = `${origin.error} — usual order; re-allow in site settings`;
         hint.classList.add('is-warn');
         break;
       default:
@@ -342,16 +393,25 @@
 
   /* The id is what `aria-activedescendant` on the input points at. Focus never
      leaves the prompt, so without it the selection moves silently: a screen
-     reader would announce nothing on ArrowDown and Enter would open a place it
+     reader would announce nothing on ArrowDown and Enter would open a row it
      had never named. */
   const rowId = (i) => `gl-row-${i}`;
 
-  const rowShell = (i, inner) =>
-    `<div class="gl-row${i === active ? ' is-active' : ''}" role="option" id="${rowId(i)}" data-i="${i}"` +
-    `${i === active ? ' aria-selected="true"' : ''}>` +
-    '<span class="gl-bullet" aria-hidden="true">●</span>' +
-    inner +
-    '</div>';
+  /* The guides are the depth cue, in place of an indent you would have to
+     measure. `└` closes a run so the eye can see where a city ends without
+     counting rows back to the last header. */
+  const GUIDE = { mid: '├─', end: '└─', pipe: '│ ', blank: '  ' };
+
+  function rowHtml(i, kind, indent, inner, label) {
+    return (
+      `<div class="gl-row gl-${kind}${i === active ? ' is-active' : ''}" role="option" ` +
+      `id="${rowId(i)}" data-i="${i}" aria-label="${escapeHtml(label)}"` +
+      `${i === active ? ' aria-selected="true"' : ''}>` +
+      `<span class="gl-guide" aria-hidden="true">${indent}</span>` +
+      inner +
+      '</div>'
+    );
+  }
 
   function syncActiveDescendant() {
     const input = $('gl-input');
@@ -359,130 +419,115 @@
     else input.setAttribute('aria-activedescendant', rowId(active));
   }
 
-  function placeRow(place, i, words, showDistance) {
-    const distance =
-      showDistance && Number.isFinite(place._km)
-        ? `<span class="gl-km">${formatKm(place._km)}</span>`
-        : '';
-    const tags = place.lists
-      .map((id) => listById.get(id))
-      .filter(Boolean)
-      .map(
-        (list) =>
-          `<button class="gl-tag" data-scope="${escapeHtml(slugOf(list))}" ` +
-          `title="${escapeHtml(list.name)}" aria-label="Only ${escapeHtml(list.name)}">` +
-          `${escapeHtml(list.emoji || '#')}</button>`
-      )
-      .join('');
-
-    return rowShell(
-      i,
-      '<span class="gl-body">' +
-        `<span class="gl-name">${highlight(place.name, words)}</span>` +
-        (place.address ? `<div class="gl-meta">${highlight(place.address, words)}</div>` : '') +
-        (place.note ? `<div class="gl-note">${highlight(place.note, words)}</div>` : '') +
-        '</span>' +
-        distance +
-        `<span class="gl-tags">${tags}</span>`
-    );
-  }
-
-  /* A list row opens the list in Google Maps, where a place row opens the
-     place -- so the chip stays the way to *narrow* to a list and this stays the
-     way to hand someone the whole thing. The count sits where a place's list
-     chips do, so the two row shapes line up down the right edge. */
-  function listRow(list, i, words) {
-    return rowShell(
-      i,
-      '<span class="gl-body">' +
-        `<span class="gl-name">${escapeHtml(list.emoji || '')} ${highlight(list.name, words)}</span>` +
-        (list.description ? `<div class="gl-meta">${highlight(list.description, words)}</div>` : '') +
-        '</span>' +
-        `<span class="gl-count">${list.count}</span>`
-    );
-  }
-
   function render(raw) {
-    const { kind, rows, ranked, words, scopes, command } = search(raw);
-    // A command is not a filter. `/all-lists` changes *what* is counted and
-    // `/near` changes the order, so neither should turn "431 places" into the
-    // "431 matches" of a query that narrowed nothing.
-    const filtering = scopes.length > 0 || words.length > 0;
-    const scroll = $('gl-scroll');
+    const result = search(raw);
+    const { cities, matches, words, command, onCity, onCat, filtering } = result;
     const host = $('gl-rows');
+    const scroll = $('gl-scroll');
 
-    view = rows.slice(0, MAX_ROWS);
-    viewKind = kind;
-    active = view.length ? 0 : -1;
-
-    // Never blocks the results: while the permission prompt is up, and after a
-    // denial, the unsorted list is still the thing the person came for.
     locationHint(command);
 
-    if (!rows.length) {
+    if (!cities.length) {
       // `presentation`, because the listbox may only contain options: the count
       // is announced from the footer, which is live where this is not.
       host.innerHTML =
-        '<div class="gl-empty" role="presentation">nothing matches. <code>Esc</code> to clear, <code>/</code> to pick a list.</div>';
+        '<div class="gl-empty" role="presentation">nothing saved here matches. ' +
+        '<code>Esc</code> goes back up, <code>/</code> lists the cities.</div>';
+      view = [];
+      active = -1;
       syncActiveDescendant();
-      status(rows.length, filtering, kind);
+      status(0, filtering, raw);
       return;
     }
 
     const html = [];
-    if (kind === 'lists') {
-      view.forEach((list, i) => html.push(listRow(list, i, words)));
-    } else {
-      const showDistance = command === 'near' && geo.state === 'ready';
-      let group = null;
-      view.forEach((place, i) => {
-        // Group headers only make sense in the curated order; once results are
-        // ranked by relevance the runs are gone and a header would be a lie.
-        if (!ranked && place.lists[0] !== group) {
-          group = place.lists[0];
-          const list = listById.get(group);
-          if (list) {
-            html.push(
-              `<div class="gl-group" role="presentation"><span aria-hidden="true">${escapeHtml(list.emoji || '·')}</span>` +
-                `<span class="gl-group-name">${escapeHtml(list.name)}</span>` +
-                `<span class="gl-group-rule"></span><span>${runLength(i)}</span></div>`
-            );
-          }
+    view = [];
+    const showDistance = command === 'near' && origin.state === 'ready';
+
+    for (const city of cities) {
+      if (view.length >= MAX_ROWS) break;
+      const open = isOpen(city, !!onCity, matches);
+      view.push({ kind: 'city', node: city });
+      html.push(
+        rowHtml(
+          view.length - 1,
+          'city',
+          open ? '▾ ' : '▸ ',
+          `<span class="gl-name">${highlight(city.name, words)}</span>` +
+            `<span class="gl-count">${city.count}</span>`,
+          `${city.name}, ${city.count} place${city.count === 1 ? '' : 's'}`
+        )
+      );
+      if (!open) continue;
+
+      city.cats.forEach((cat, ci) => {
+        if (view.length >= MAX_ROWS) return;
+        const lastCat = ci === city.cats.length - 1;
+        const catOpen = isOpen(cat, !!onCat, city.count);
+        view.push({ kind: 'cat', node: cat, city });
+        html.push(
+          rowHtml(
+            view.length - 1,
+            'cat',
+            `${lastCat ? GUIDE.end : GUIDE.mid} ${catOpen ? '▾' : '▸'} `,
+            `<span class="gl-emoji" aria-hidden="true">${escapeHtml(cat.emoji)}</span>` +
+              `<span class="gl-name">${highlight(cat.name, words)}</span>` +
+              `<span class="gl-count">${cat.count}</span>`,
+            `${cat.name} in ${city.name}, ${cat.count} place${cat.count === 1 ? '' : 's'}`
+          )
+        );
+        if (!catOpen) return;
+
+        const stem = lastCat ? GUIDE.blank : GUIDE.pipe;
+        for (const place of cat.places) {
+          if (view.length >= MAX_ROWS) break;
+          view.push({ kind: 'place', node: place });
+          const km = showDistance && Number.isFinite(distanceTo(place))
+            ? `<span class="gl-km">${formatKm(distanceTo(place))}</span>`
+            : '';
+          html.push(
+            rowHtml(
+              view.length - 1,
+              'place',
+              `${stem}    `,
+              `<span class="gl-bullet" aria-hidden="true">●</span>` +
+                '<span class="gl-body">' +
+                `<span class="gl-name">${highlight(place.name, words)}</span>` +
+                (place.far ? '<span class="gl-far" title="placed by its nearest city">~</span>' : '') +
+                (place.address
+                  ? `<div class="gl-meta">${highlight(place.address, words)}</div>`
+                  : '') +
+                (place.note ? `<div class="gl-note">${highlight(place.note, words)}</div>` : '') +
+                '</span>' +
+                km,
+              `${place.name}${place.address ? ', ' + place.address : ''}`
+            )
+          );
         }
-        html.push(placeRow(place, i, words, showDistance));
       });
     }
 
     host.innerHTML = html.join('');
+    active = view.length ? 0 : -1;
+    if (active >= 0) {
+      host.querySelector('.gl-row').classList.add('is-active');
+      host.querySelector('.gl-row').setAttribute('aria-selected', 'true');
+    }
     syncActiveDescendant();
     scroll.scrollTop = 0;
-    status(rows.length, filtering, kind);
-  }
-
-  /* How many rows the header at `from` is about to sit above. Not `list.count`:
-     a place saved to two lists is printed under the first that claimed it, so a
-     run is already shorter than the list it names wherever the lists overlap,
-     and a scope or a word narrows it further. The header has to count the rows
-     beneath it or it contradicts them. */
-  function runLength(from) {
-    const id = view[from].lists[0];
-    let n = 1;
-    while (from + n < view.length && view[from + n].lists[0] === id) n++;
-    return n;
+    status(matches, filtering, raw);
   }
 
   // `filtering` comes from the parsed query, not the raw string: a lone `/`
-  // with the list menu open narrows nothing yet, and reporting it as "431
-  // matches" would claim a filter that is not applied.
-  function status(total, filtering, kind) {
-    const noun = kind === 'lists' ? 'list' : 'place';
+  // with the menu open narrows nothing yet, and reporting it as "1649 matches"
+  // would claim a filter that is not applied.
+  function status(total, filtering, raw) {
+    const el = $('gl-status');
     if (!filtering) {
-      $('gl-status').textContent = `${total} ${noun}s`;
+      el.textContent = `${DATA.places.length} places · ${TREE.length} cities`;
       return;
     }
-    const shown = Math.min(total, MAX_ROWS);
-    const suffix = total > MAX_ROWS ? ` of ${total}` : '';
-    $('gl-status').textContent = `${shown}${suffix} match${shown === 1 ? '' : 'es'}`;
+    el.textContent = `${total} match${total === 1 ? '' : 'es'}`;
   }
 
   function setActive(next) {
@@ -498,25 +543,71 @@
     syncActiveDescendant();
   }
 
-  function open(item) {
-    if (!item) return;
-    // A list carries the share URL the fetcher built; a place is resolved from
-    // its CID. Dispatching on `viewKind` rather than sniffing for a `url` field
-    // keeps the two row types from quietly diverging if the schema grows one.
-    const href = viewKind === 'lists' ? item.url : mapsUrl(item);
-    if (href) window.open(href, '_blank', 'noopener');
+  /* Drilling writes the path into the prompt rather than toggling a hidden
+     flag, because a query is the only state this page has. Opening a city is
+     therefore the same event as typing its name, and produces the same URL. */
+  function drill(row) {
+    if (!row) return false;
+    const input = $('gl-input');
+    const { command, words } = parseQuery(input.value);
+    let path;
+    if (row.kind === 'city') path = `/${row.node.key}`;
+    else if (row.kind === 'cat') path = `/${row.city.key}/${row.node.key}`;
+    else return false;
+    input.value =
+      [path, command ? `/${command}` : '', ...words].filter(Boolean).join(' ') + ' ';
+    onInput();
+    return true;
+  }
+
+  function open(row) {
+    if (!row) return;
+    if (row.kind !== 'place') {
+      drill(row);
+      return;
+    }
+    window.open(mapsUrl(row.node), '_blank', 'noopener');
+  }
+
+  /* Esc widens by one step rather than clearing outright: from
+     `/london/coffee flat white` it drops the words, then the category, then the
+     city. Clearing in one press is still there at the end of it, and widening
+     is what someone who has drilled too far actually wants. */
+  function widen() {
+    const input = $('gl-input');
+    const { path, command, words } = parseQuery(input.value);
+    let next;
+    if (words.length) next = path;
+    else if (path.length) next = path.slice(0, -1);
+    else if (command) next = [];
+    else {
+      input.value = '';
+      onInput();
+      return;
+    }
+    const keep = words.length ? command : next.length ? command : null;
+    input.value =
+      [next.length ? '/' + next.join('/') : '', keep ? `/${keep}` : '']
+        .filter(Boolean)
+        .join(' ') + (next.length || keep ? ' ' : '');
+    onInput();
   }
 
   // --------------------------------------------------------- autocomplete
 
-  /* The `/` menu is the command and list index. It opens on the token being
-     typed, so it is reachable mid-query (`bagel /ny`), not just at the start of
-     the line. Commands sort first: there are one or two of them against seven
-     lists, and they are the entries nobody can guess the existence of. */
+  /* The `/` menu is the index of everywhere you can stand. It opens on the
+     token being typed, so it is reachable mid-query (`bagel /ny`), not just at
+     the start of the line. Cities come first: there are thirty-eight of them
+     against nine categories, and a city is what someone arriving is usually
+     looking for. */
   function currentSlashToken(input) {
     const upto = input.value.slice(0, input.selectionStart ?? input.value.length);
     const match = /(?:^|\s)\/([^\s]*)$/.exec(upto);
-    return match ? match[1] : null;
+    if (!match) return null;
+    // Only the segment being typed completes, so `/london/cof` offers
+    // categories rather than re-offering cities.
+    const parts = match[1].split('/');
+    return { typed: parts[parts.length - 1], prefix: parts.slice(0, -1) };
   }
 
   function closeAutocomplete() {
@@ -534,16 +625,30 @@
       return;
     }
 
-    const needle = fold(token);
-    const commands = COMMANDS.map((c) => ({ slug: c.slug, desc: c.desc }));
-    const lists = DATA.lists.map((list) => ({
-      slug: slugOf(list),
-      desc:
-        `${list.emoji || ''} ${list.name} · ${list.count} places` +
-        (list.description ? ` · ${list.description}` : ''),
-    }));
+    const needle = fold(token.typed);
+    const deep = token.prefix.some((p) => cityByKey.has(fold(p)));
+    const entries = [];
 
-    acItems = [...commands, ...lists].filter(
+    const plural = (n) => `${n} place${n === 1 ? '' : 's'}`;
+
+    if (!deep) {
+      for (const city of TREE) {
+        entries.push({ slug: city.key, desc: `${city.name} · ${plural(city.total)}` });
+      }
+    }
+    for (const cat of DATA.categories) {
+      const where = deep ? cityByKey.get(fold(token.prefix.find((p) => cityByKey.has(fold(p))))) : null;
+      const n = where
+        ? (where.cats.find((c) => c.key === cat.key)?.total ?? 0)
+        : DATA.places.filter((p) => p.type === cat.key).length;
+      if (deep && !n) continue;
+      entries.push({ slug: cat.key, desc: `${cat.emoji} ${cat.name} · ${plural(n)}` });
+    }
+    if (!deep) {
+      entries.push({ slug: 'near', desc: 'sort by distance — asks for your location' });
+    }
+
+    acItems = entries.filter(
       (entry) => entry.slug.startsWith(needle) || fold(entry.desc).includes(needle)
     );
 
@@ -569,12 +674,10 @@
     const input = $('gl-input');
     if (!entry) return false;
     const caret = input.selectionStart ?? input.value.length;
-    const before = input.value.slice(0, caret).replace(/(?:^|\s)\/[^\s]*$/, (m) =>
-      m.startsWith(' ') ? ' ' : ''
-    );
+    const before = input.value.slice(0, caret).replace(/\/[^\s/]*$/, '');
     const after = input.value.slice(caret);
-    input.value = `${before}/${entry.slug} ${after.replace(/^\s+/, '')}`;
-    const at = before.length + entry.slug.length + 2;
+    input.value = `${before}${entry.slug} ${after.replace(/^\s+/, '')}`;
+    const at = before.length + entry.slug.length + 1;
     input.setSelectionRange(at, at);
     onInput();
     return true;
@@ -608,11 +711,11 @@
      the link, so every route in has to be able to ask.
 
      Asked before rendering, so the first paint already says it is waiting.
-     `geo.state` leaves `idle` immediately, so editing the rest of the query
+     `origin.state` leaves `idle` immediately, so editing the rest of the query
      cannot re-prompt and a denial is not asked about again. */
   function applyQuery(raw) {
-    if (parseQuery(raw).command === 'near' && geo.state === 'idle') {
-      requestLocation(() => render($('gl-input').value));
+    if (parseQuery(raw).command === 'near' && origin.state === 'idle') {
+      resolveOrigin({ kind: 'me' }, () => render($('gl-input').value));
     }
     render(raw);
   }
@@ -628,6 +731,7 @@
   function onKeydown(event) {
     const box = $('gl-autocomplete');
     const acOpen = box.classList.contains('is-open');
+    const input = $('gl-input');
 
     switch (event.key) {
       case 'ArrowDown':
@@ -642,6 +746,22 @@
         }
         return;
       }
+      case 'ArrowRight':
+        /* Only at the very end of the line, and never with a selection --
+           anywhere else this is the caret moving through text someone is
+           editing, and stealing it would make the prompt feel broken.
+           ArrowLeft is deliberately never bound, for the same reason. */
+        if (
+          !acOpen &&
+          input.selectionStart === input.value.length &&
+          input.selectionStart === input.selectionEnd &&
+          view[active] &&
+          view[active].kind !== 'place'
+        ) {
+          event.preventDefault();
+          drill(view[active]);
+        }
+        return;
       case 'Tab':
         if (acOpen) {
           event.preventDefault();
@@ -655,12 +775,8 @@
         return;
       case 'Escape':
         event.preventDefault();
-        if (acOpen) {
-          closeAutocomplete();
-        } else {
-          $('gl-input').value = '';
-          onInput();
-        }
+        if (acOpen) closeAutocomplete();
+        else widen();
         return;
       default:
     }
@@ -673,18 +789,10 @@
     input.addEventListener('click', refreshAutocomplete);
 
     $('gl-rows').addEventListener('click', (event) => {
-      const tag = event.target.closest('.gl-tag');
-      if (tag) {
-        input.value = `/${tag.dataset.scope} `;
-        input.focus();
-        onInput();
-        return;
-      }
       const row = event.target.closest('.gl-row');
-      if (row) {
-        setActive(Number(row.dataset.i));
-        open(view[active]);
-      }
+      if (!row) return;
+      setActive(Number(row.dataset.i));
+      open(view[active]);
     });
 
     $('gl-autocomplete').addEventListener('mousedown', (event) => {
@@ -700,8 +808,8 @@
         input.value = next;
         acIndex = 0;
         // Close rather than refresh: arriving at a query is not typing one, so
-        // a `/all-lists` link would otherwise land with the menu sitting over
-        // the very results it was sent to show.
+        // a link would otherwise land with the menu sitting over the very
+        // results it was sent to show.
         closeAutocomplete();
         applyQuery(next);
       }
@@ -709,7 +817,7 @@
 
     /* Any stray keystroke belongs to the filter. Guarded on modifiers so
        browser shortcuts still work, and on touch so the on-screen keyboard is
-       never summoned by a tap on a result. */
+       never summoned by a tap on a row. */
     document.addEventListener('keydown', (event) => {
       if (event.target === input || event.metaKey || event.ctrlKey || event.altKey) return;
       if (event.key.length === 1 || event.key === 'Backspace') input.focus();
@@ -722,28 +830,101 @@
 
   function prepare(data) {
     DATA = data;
-    listById = new Map(data.lists.map((list) => [list.id, list]));
-    listSlugs = new Set(data.lists.map(slugOf));
-    for (const list of data.lists) {
-      list._haystack = fold(`${list.name} ${list.description} ${slugOf(list)}`);
-    }
+    const catMeta = new Map(data.categories.map((c) => [c.key, c]));
+    const byCity = new Map();
+
     for (const place of data.places) {
-      const slugs = place.lists.map((id) => {
-        const list = listById.get(id);
-        return list ? slugOf(list) : '';
-      });
       // Precomputed once at load: `score` runs over every place on every
       // keystroke, and folding a few thousand strings per character is the
       // difference between instant and visibly laggy on a phone.
       place._name = fold(place.name);
       place._nameWords = new Set(place._name.split(/[^\p{L}\p{N}]+/u).filter(Boolean));
-      place._slugs = slugs;
-      place._rest = fold(
-        [place.address, place.note, ...place.lists.map((id) => listById.get(id)?.name || '')].join(' ')
-      );
+      if (!byCity.has(place.city)) byCity.set(place.city, new Map());
+      const cats = byCity.get(place.city);
+      if (!cats.has(place.type)) cats.set(place.type, []);
+      cats.get(place.type).push(place);
     }
 
-    const counts = `${data.places.length} places · ${data.lists.length} lists`;
+    TREE = data.cities
+      .filter((meta) => byCity.has(meta.name))
+      .map((meta) => {
+        const cats = byCity.get(meta.name);
+        const city = {
+          key: meta.key,
+          name: meta.name,
+          lat: meta.lat,
+          lng: meta.lng,
+          total: meta.count,
+          count: meta.count,
+          cats: data.categories
+            .filter((c) => cats.has(c.key))
+            .map((c) => ({
+              key: c.key,
+              name: c.name,
+              emoji: c.emoji,
+              places: cats.get(c.key),
+              total: cats.get(c.key).length,
+              count: cats.get(c.key).length,
+            })),
+        };
+
+        /* The city's own name comes out of its places' searchable text. Every
+           London address contains the word "London", so before this `london`
+           matched 317 places; now it matches the fifteen actually *called*
+           London and the folder holds the rest. It is the README's promise
+           about names outranking addresses, kept structurally rather than by a
+           scoring tier that had to out-shout the address.
+
+           Removed token by token, never as a substring: `uk` inside `Duke St`
+           and `lon` inside `Colonnade` are real words in real addresses. */
+        const strip = new Set([...tokens(meta.name), ...tokens(meta.key)]);
+        for (const cat of city.cats) {
+          for (const place of cat.places) {
+            const rest = [
+              place.address,
+              place.note,
+              ...place.lists.map((id) => data.lists.find((l) => l.id === id)?.name || ''),
+            ].join(' ');
+            place._rest = tokens(rest)
+              .filter((t) => !strip.has(t))
+              .join(' ');
+          }
+        }
+        return city;
+      });
+
+    cityByKey = new Map(TREE.map((c) => [c.key, c]));
+    catByKey = new Map(data.categories.map((c) => [c.key, c]));
+
+    /* Everything a path segment may name. Every slug the lists used to answer
+       to is folded in as an alias, so links shared before the tree existed
+       still resolve: `/nyc` is New York, `/baker` is the bakeries, `/lonfood`
+       widens to London. A list is a category if the taxonomy claims it and a
+       city otherwise -- the same rule the fetcher used, read back out of the
+       blob rather than restated here. */
+    pathTokens = new Set([...cityByKey.keys(), ...catByKey.keys()]);
+    const listToCat = new Map();
+    for (const cat of data.categories) {
+      for (const name of cat.lists || []) listToCat.set(name, cat.key);
+    }
+    for (const list of data.lists) {
+      const alias = fold(list.name).replace(/[^\p{L}\p{N}]+/gu, '');
+      if (!alias || pathTokens.has(alias)) continue;
+      if (listToCat.has(list.name)) {
+        catByKey.set(alias, catByKey.get(listToCat.get(list.name)));
+        pathTokens.add(alias);
+        continue;
+      }
+      const sample = data.places.find((p) => p.lists.includes(list.id));
+      if (!sample) continue;
+      const target = TREE.find((c) => c.name === sample.city);
+      if (target) {
+        cityByKey.set(alias, target);
+        pathTokens.add(alias);
+      }
+    }
+
+    const counts = `${data.places.length} places · ${TREE.length} cities`;
     $('gl-subtitle').textContent = data.owner ? `${data.owner} · ${counts}` : counts;
     if (data.generated) {
       $('gl-stamp').textContent = `updated ${data.generated.slice(0, 10)}`;

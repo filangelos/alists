@@ -178,30 +178,13 @@ body {
    something went wrong without turning into an alert box. */
 #gl-hint.is-warn { color: var(--ink); }
 
-/* ------------------------------------------------------------------ results */
-
-/* A list header, printed when the run of places under one list begins. Places
-   are deduplicated across lists, so a place saved twice is printed under the
-   first list that claimed it and carries the other as a chip -- a search must
-   not return the same restaurant twice. */
-.gl-group {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  padding: 14px 20px 4px;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.gl-group:first-child { padding-top: 4px; }
-.gl-group-name { color: var(--ink); font-weight: 700; }
-.gl-group-rule { flex: 1; height: 1px; background: var(--hairline); }
+/* --------------------------------------------------------------------- tree */
 
 .gl-row {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  padding: 5px 20px;
+  gap: 6px;
+  padding: 3px 20px;
   cursor: pointer;
   scroll-margin: 48px;
 }
@@ -212,8 +195,19 @@ body {
   .gl-row:hover { background: var(--accent-soft); }
 }
 
-.gl-bullet { flex: none; color: var(--accent); line-height: 1.5; }
-.gl-row.is-active .gl-bullet { font-weight: 700; }
+/* The guides are the depth cue, in place of an indent you would have to
+   measure, and they are the one thing here borrowed from `tree` rather than
+   from the window chrome. `white-space: pre` because the shape is made of
+   spaces and collapsing them would flatten the tree back into a list. */
+.gl-guide {
+  flex: none;
+  white-space: pre;
+  color: var(--faint);
+  font-size: 13px;
+  line-height: 1.6;
+  -webkit-user-select: none;
+  user-select: none;
+}
 
 .gl-body { flex: 1; min-width: 0; }
 
@@ -224,13 +218,26 @@ body {
   word-break: break-word;
 }
 
-.gl-row.is-active .gl-name { color: var(--ink-strong); font-weight: 700; }
-
 .gl-name mark {
   background: transparent;
   color: var(--accent);
   font-weight: 700;
 }
+
+/* A city is the heaviest thing on screen; a category sits under it in the same
+   weight as a place so the eye reads the emoji and the count rather than a
+   third type size. */
+.gl-city > .gl-name { font-weight: 700; font-size: 14px; }
+.gl-cat > .gl-name { color: var(--ink); }
+.gl-row.is-active > .gl-name { color: var(--ink-strong); font-weight: 700; }
+
+.gl-city, .gl-cat { align-items: baseline; }
+.gl-city > .gl-count, .gl-cat > .gl-count { margin-left: auto; }
+
+.gl-emoji { flex: none; font-size: 13px; line-height: 1.5; }
+
+.gl-bullet { flex: none; color: var(--accent); line-height: 1.5; }
+.gl-row.is-active .gl-bullet { font-weight: 700; }
 
 .gl-meta {
   color: var(--muted);
@@ -250,24 +257,14 @@ body {
   margin-top: 2px;
 }
 
-/* The chips are the only place the list structure survives in the flat view.
-   They are buttons, not decoration: tapping one scopes the filter to that list,
-   which is the whole facet mechanism on a touch screen where there is no `/`. */
-.gl-tags { flex: none; display: flex; gap: 4px; padding-top: 1px; }
-
-.gl-tag {
-  border: none;
-  background: transparent;
-  padding: 0 1px;
-  font: inherit;
-  font-size: 13px;
-  line-height: 1.5;
-  cursor: pointer;
-  opacity: 0.75;
-  border-radius: 3px;
+/* A place with no list of its own, filed by whichever city centre it is
+   nearest. Marked rather than hidden: the guess is usually right and always
+   better than being unreachable, but it is still a guess. */
+.gl-far {
+  color: var(--faint);
+  font-size: 12px;
+  padding-left: 4px;
 }
-
-.gl-tag:hover, .gl-tag:focus-visible { opacity: 1; outline: none; background: var(--accent-soft); }
 
 /* Right-aligned in a fixed column so the numbers form a readable edge instead
    of ragging with the length of each name. */
@@ -281,14 +278,12 @@ body {
   padding-top: 1px;
 }
 
-/* Sits where a place row's list chips sit, so the two row shapes share a right
-   edge and switching between them does not reflow the eye. */
 .gl-count {
   flex: none;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.6;
-  padding-top: 1px;
+  padding-left: 12px;
 }
 
 .gl-empty {
@@ -367,13 +362,21 @@ body {
   .bt-titlebar { display: none; }
   .bt-logo-header { padding: 12px 16px 0; }
   .bt-header-divider { margin: 10px 16px 0; }
-  .gl-row, .gl-group, .gl-empty, .bt-footer-bar, .bt-prompt-row { padding-left: 16px; padding-right: 16px; }
+  .gl-row, .gl-empty, .bt-footer-bar, .bt-prompt-row { padding-left: 16px; padding-right: 16px; }
   .bt-autocomplete-item { padding-left: 16px; padding-right: 16px; }
   /* 16px exactly: at anything smaller iOS Safari zooms the viewport when the
      input takes focus, and never zooms back out. */
   .bt-input { font-size: 16px; }
   .bt-footer-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
-  .gl-tags { gap: 2px; }
+}
+
+/* A city or a category is the thing a thumb aims at, and the whole row is the
+   target -- there is no separate disclosure triangle, because opening a folder
+   and going to it are the same action here. Places keep their natural height:
+   they carry an address line already, and 1649 of them at 44px would be a
+   scroll nobody finishes. */
+@media (hover: none) {
+  .gl-city, .gl-cat { min-height: 44px; align-items: center; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
