@@ -1,0 +1,381 @@
+/* The window chrome is lifted from the science-as-code terminal so this reads as
+   the same surface; the palette is lifted into custom properties because that
+   page only ever ran on a white slide and this one has to survive a phone at
+   night. Light values are the originals, unchanged. */
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --titlebar: #fafafa;
+  --hairline: rgba(0, 0, 0, 0.07);
+  --hairline-strong: rgba(0, 0, 0, 0.1);
+  --ink: #4b4a45;
+  --ink-strong: #2f2e2a;
+  --muted: #96907e;
+  --faint: #c9c2ac;
+  --accent: #3d7fd6;
+  --accent-soft: rgba(61, 127, 214, 0.09);
+  --code-bg: #f4f3ef;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14151a;
+    --surface: #1b1d23;
+    --titlebar: #21232a;
+    --hairline: rgba(255, 255, 255, 0.08);
+    --hairline-strong: rgba(255, 255, 255, 0.12);
+    --ink: #d6d3cb;
+    --ink-strong: #f2efe8;
+    --muted: #8b8677;
+    --faint: #5d5a52;
+    --accent: #6ea8f0;
+    --accent-soft: rgba(110, 168, 240, 0.14);
+    --code-bg: #262931;
+    --shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+}
+
+body {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  -webkit-text-size-adjust: 100%;
+}
+
+.bt-page {
+  width: 100%;
+  /* dvh, not vh: on iOS the address bar would otherwise take a bite out of the
+     prompt row -- the one control the page cannot afford to have off-screen. */
+  height: 100dvh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.bt-window {
+  width: min(920px, 100%);
+  height: min(640px, 100%);
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bt-titlebar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--titlebar);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.bt-dots { display: flex; gap: 8px; }
+.bt-dot { width: 10px; height: 10px; border-radius: 50%; }
+.bt-dot-red { background: #ff5f56; }
+.bt-dot-yellow { background: #ffbd2e; }
+.bt-dot-green { background: #27ca40; }
+
+.bt-logo-header {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px 0;
+}
+
+.bt-logo { flex: none; width: 46px; height: 32px; }
+
+.bt-logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  min-width: 0;
+}
+
+.bt-logo-title { color: var(--ink); font-weight: 700; }
+.bt-logo-subtitle { color: var(--muted); }
+
+.bt-header-divider {
+  flex: none;
+  height: 1px;
+  background: var(--hairline-strong);
+  margin: 13px 20px 0;
+}
+
+.bt-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 8px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.bt-prompt-row {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-top: 1px solid var(--hairline-strong);
+  border-bottom: 1px solid var(--hairline-strong);
+  font-size: 13px;
+}
+
+.bt-prompt-symbol { color: var(--muted); flex: none; }
+
+.bt-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  caret-color: var(--accent);
+  padding: 0;
+  min-width: 0;
+}
+
+.bt-input::placeholder { color: var(--faint); }
+
+.bt-footer-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 20px 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#gl-hint, #gl-status { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* The footer is where location state is reported, so it has to be able to say
+   something went wrong without turning into an alert box. */
+#gl-hint.is-warn { color: var(--ink); }
+
+/* ------------------------------------------------------------------ results */
+
+/* A list header, printed when the run of places under one list begins. Places
+   are deduplicated across lists, so a place saved twice is printed under the
+   first list that claimed it and carries the other as a chip -- a search must
+   not return the same restaurant twice. */
+.gl-group {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 14px 20px 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.gl-group:first-child { padding-top: 4px; }
+.gl-group-name { color: var(--ink); font-weight: 700; }
+.gl-group-rule { flex: 1; height: 1px; background: var(--hairline); }
+
+.gl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 5px 20px;
+  cursor: pointer;
+  scroll-margin: 48px;
+}
+
+.gl-row.is-active { background: var(--accent-soft); }
+
+@media (hover: hover) {
+  .gl-row:hover { background: var(--accent-soft); }
+}
+
+.gl-bullet { flex: none; color: var(--accent); line-height: 1.5; }
+.gl-row.is-active .gl-bullet { font-weight: 700; }
+
+.gl-body { flex: 1; min-width: 0; }
+
+.gl-name {
+  color: var(--ink);
+  font-size: 13.5px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.gl-row.is-active .gl-name { color: var(--ink-strong); font-weight: 700; }
+
+.gl-name mark {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.gl-meta {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.gl-meta mark { background: transparent; color: var(--ink); }
+
+.gl-note {
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.45;
+  padding-left: 8px;
+  border-left: 2px solid var(--accent-soft);
+  margin-top: 2px;
+}
+
+/* The chips are the only place the list structure survives in the flat view.
+   They are buttons, not decoration: tapping one scopes the filter to that list,
+   which is the whole facet mechanism on a touch screen where there is no `/`. */
+.gl-tags { flex: none; display: flex; gap: 4px; padding-top: 1px; }
+
+.gl-tag {
+  border: none;
+  background: transparent;
+  padding: 0 1px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
+  opacity: 0.75;
+  border-radius: 3px;
+}
+
+.gl-tag:hover, .gl-tag:focus-visible { opacity: 1; outline: none; background: var(--accent-soft); }
+
+/* Right-aligned in a fixed column so the numbers form a readable edge instead
+   of ragging with the length of each name. */
+.gl-km {
+  flex: none;
+  width: 62px;
+  text-align: right;
+  color: var(--accent);
+  font-size: 12px;
+  line-height: 1.6;
+  padding-top: 1px;
+}
+
+/* Sits where a place row's list chips sit, so the two row shapes share a right
+   edge and switching between them does not reflow the eye. */
+.gl-count {
+  flex: none;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  padding-top: 1px;
+}
+
+.gl-empty {
+  padding: 24px 20px;
+  color: var(--muted);
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+
+.gl-empty code {
+  background: var(--code-bg);
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------ autocomplete */
+
+.bt-autocomplete {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  max-height: 42vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-top: 1px solid var(--hairline-strong);
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 20px;
+  z-index: 10;
+}
+
+.bt-autocomplete.is-open { display: block; }
+
+.bt-autocomplete-item {
+  display: flex;
+  gap: 16px;
+  padding: 2px 20px;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.bt-autocomplete-item.is-selected { background: var(--accent-soft); }
+
+.bt-autocomplete-cmd {
+  flex: none;
+  min-width: 150px;
+  color: var(--ink);
+}
+
+.bt-autocomplete-item.is-selected .bt-autocomplete-cmd { color: var(--accent); }
+
+.bt-autocomplete-desc {
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------- phone */
+
+@media (max-width: 720px) {
+  .bt-page { padding: 0; }
+
+  /* Full bleed: a 10px radius and a drop shadow describe a window floating on a
+     desktop. On a phone the window *is* the screen, and the chrome would just be
+     a border drawn around the edge of the display. */
+  .bt-window {
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .bt-titlebar { display: none; }
+  .bt-logo-header { padding: 12px 16px 0; }
+  .bt-header-divider { margin: 10px 16px 0; }
+  .gl-row, .gl-group, .gl-empty, .bt-footer-bar, .bt-prompt-row { padding-left: 16px; padding-right: 16px; }
+  .bt-autocomplete-item { padding-left: 16px; padding-right: 16px; }
+  /* 16px exactly: at anything smaller iOS Safari zooms the viewport when the
+     input takes focus, and never zooms back out. */
+  .bt-input { font-size: 16px; }
+  .bt-footer-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+  .gl-tags { gap: 2px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bt-scroll { scroll-behavior: smooth; }
+}

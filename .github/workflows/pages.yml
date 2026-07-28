@@ -1,0 +1,49 @@
+name: pages
+
+# Deploys the repository root as-is. There is no build step: index.html, app.js,
+# style.css and data/lists.json are the site, so what is served is exactly what
+# is in the tree and a broken deploy can be reproduced by opening the file.
+#
+# `workflow_call` exists because `refresh` has to invoke this directly. A push
+# made with GITHUB_TOKEN does not trigger workflows, so the refresh commit would
+# never fire the `push` trigger below and the site would sit on stale data
+# forever while both workflows reported success.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let an in-flight deploy finish rather than cancelling it: a half-applied
+# Pages deployment is worse than a slightly stale one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fail if data is missing
+        run: |
+          test -s data/lists.json
+          python3 -c "import json;d=json.load(open('data/lists.json'));assert d['places'],'no places'"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

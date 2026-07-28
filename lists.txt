@@ -1,0 +1,60 @@
+# One Google Maps shared-list link per line.
+#
+# Paste the link straight from the Maps share sheet -- short (maps.app.goo.gl),
+# long (google.com/maps/...!2s<id>!...), or the bare list id all work; the
+# fetcher normalises them. Blank lines and `#` comments are ignored.
+#
+# After editing, either run `python3 scripts/fetch.py` and commit data/lists.json,
+# or just push -- the refresh workflow does it for you.
+
+https://maps.app.goo.gl/e7TMY8Ya4JMeBnq3A
+https://maps.app.goo.gl/RTvmqTEzrApgBpJw8
+https://maps.app.goo.gl/hu5UYHXaMp4vemjdA
+https://maps.app.goo.gl/ULEo3PPKDiS5fqGr8
+https://maps.app.goo.gl/se32HeBMXSpkS1JX9
+https://maps.app.goo.gl/wQHG5cT6sGs4xuwJA
+https://maps.app.goo.gl/Xeits2idVGwSqv2y6
+https://maps.app.goo.gl/VrX8jWb5uR7vEDEb6
+https://maps.app.goo.gl/3bPVVYFWmfBr1rDt5
+https://maps.app.goo.gl/gS7v1SLUZDkBUecb9
+https://maps.app.goo.gl/trTgkrz53xPQqVjLA
+https://maps.app.goo.gl/bNdMzFgQtu5UtECS9
+https://maps.app.goo.gl/iH3Sqg8msiWELstZA
+https://maps.app.goo.gl/JheGcjZxMVhY6xKBA
+https://maps.app.goo.gl/BFYdmmvyEdUFmCoG9
+https://maps.app.goo.gl/SESF2tn8PwHG3tmH7
+https://maps.app.goo.gl/dVehn965UStjtG85A
+https://maps.app.goo.gl/DaDM26YU3pfaEJHXA
+https://maps.app.goo.gl/AJC7cywrxkYouYVi6
+https://maps.app.goo.gl/DAQghiRVMMyoHzj76
+https://maps.app.goo.gl/MENX13QeY9Q4EeNp7
+https://maps.app.goo.gl/dCg58dW98CfewGzA8
+https://maps.app.goo.gl/osE3uptviJE1PVvq8
+https://maps.app.goo.gl/BbHTjKNbQfPTRatE6
+https://maps.app.goo.gl/HxK9f1HotmhLxP1fA
+https://maps.app.goo.gl/PfXD7LMr6VHn9pvm6
+https://maps.app.goo.gl/RouAbYoUt9kqn6MV6
+https://maps.app.goo.gl/Yoaih9ixhWf3J8RJ6
+https://maps.app.goo.gl/HUiCFKLyBFujEB3x8
+https://maps.app.goo.gl/EUpD6hDK8g4URnsx5
+https://maps.app.goo.gl/onUbs4eZnKbdD41b6
+https://maps.app.goo.gl/zX4RxXKPmz5twcwp8
+https://maps.app.goo.gl/d6wdQfB42JwDT2KN8
+https://maps.app.goo.gl/VeVmJQsY9ccXTs6P8
+https://maps.app.goo.gl/XpvVCUZX4g3PKJjJA
+https://maps.app.goo.gl/ierXm97FHmNDttSr6
+https://maps.app.goo.gl/URDoxufAfBhLkrnBA
+https://maps.app.goo.gl/3NoCLfHAi2VF4uSw7
+https://maps.app.goo.gl/iE1ZRxnQH5oSsogY7
+https://maps.app.goo.gl/LmbL6Qi27kmkHVif8
+https://maps.app.goo.gl/6qpcEfsrJmM6E2zS9
+https://maps.app.goo.gl/U2Mn7mEtYYfexuHN8
+https://maps.app.goo.gl/vHbFwkeUgf1VARVK8
+https://maps.app.goo.gl/m1Y42avQp5ZDUkVz8
+https://maps.app.goo.gl/YjtRbt3BeSoxjEYJ6
+https://maps.app.goo.gl/aDRGiCP4BGuh3xRj8
+https://maps.app.goo.gl/FdhfZXVL3rZGP2xD7
+https://maps.app.goo.gl/anRgP4D9169NZuBNA
+https://maps.app.goo.gl/W6Wa3ccCSNRGgG1b7
+https://maps.app.goo.gl/qMyf6sFdzZVr7A9s7
+https://maps.app.goo.gl/G9VXwJQiRVT9nvRa8

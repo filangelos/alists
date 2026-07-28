@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 32" width="46" height="32" role="img" aria-label="glists">
+  <!-- Drawn on a 46x32 grid in whole units so it stays crisp at the header's
+       exact size and survives `image-rendering: pixelated` on the same terms
+       as a bitmap mark would. -->
+  <g fill="none" stroke="#96907e" stroke-width="1" opacity="0.55">
+    <path d="M2 24 L14 18 L30 25 L44 18" />
+    <path d="M14 18 L14 6 M30 25 L30 13" />
+  </g>
+  <path d="M23 3c-4 0-7 3-7 7 0 5.2 7 12 7 12s7-6.8 7-12c0-4-3-7-7-7z" fill="#3d7fd6"/>
+  <circle cx="23" cy="10" r="2.6" fill="#ffffff"/>
+</svg>
