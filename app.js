@@ -1,4 +1,4 @@
-/* glists -- one filterable stream of every saved place.
+/* alists -- one filterable stream of every saved place.
  *
  * The lists are how the places are organised in Google Maps, not how they are
  * browsed here: a place is shown once, tagged with every list that claims it,

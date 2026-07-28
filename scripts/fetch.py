@@ -6,8 +6,8 @@ Google Maps serves a shared list's contents from an undocumented endpoint,
 consent -- so the whole pipeline is one HTTP GET per list and the page it
 feeds can stay a static file. The response is a positionally-indexed array
 rather than an object, so every field access here is a magic number; the
-`_FIELD` constants below are the only place they appear, and `probe.py`
-re-derives them from a live response when Google moves one.
+`_FIELD` constants below are the only place they appear, so re-deriving them
+against a live response is the whole repair when Google moves one.
 
 Stdlib only, deliberately: the refresh workflow then needs no install step
 and cannot break on a transitive dependency while nobody is watching.
@@ -33,7 +33,7 @@ UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 )
-BOT_UA = "glists-fetch (+https://github.com/filangelos/glists)"
+BOT_UA = "alists-fetch (+https://github.com/filangelos/alists)"
 ENDPOINT = "https://www.google.com/maps/preview/entitylist/getlist"
 
 # Ask for far more places than any hand-curated list holds, so one request is

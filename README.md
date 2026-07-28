@@ -1,4 +1,4 @@
-# glists
+# alists
 
 One filterable stream of every place saved to my Google Maps lists.
 
