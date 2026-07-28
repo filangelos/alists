@@ -32,31 +32,65 @@
      Greek and Latin both decompose to a base letter plus combining marks under
      NFD, so one strip covers both alphabets. It does not transliterate and is
      not meant to: `anoixi` will not find `Άνοιξη`, and typing the Greek is the
-     only way to reach a Greek name. */
+     only way to reach a Greek name.
+
+     Final sigma folds onto the medial one: it is the same letter spelled by
+     position, and `toLowerCase` applies that rule too, so `\u039f\u0394\u039f\u03a3` lowercases to
+     `\u03bf\u03b4\u03bf\u03c2` while `\u039f\u03b4\u03cc\u03c2` is already `\u03bf\u03b4\u03cc\u03c2`. Without this the two spellings of
+     one street fold apart and only one of them answers a search for it. */
   const fold = (s) =>
     (s || '')
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase();
+      .toLowerCase()
+      .replace(/\u03c2/g, '\u03c3');
 
   const escapeHtml = (s) =>
     s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-  /* Mark every query token inside `text`, working on the folded string but
-     slicing the original -- folding is length-preserving for the marks we
-     strip, so an index found in one is valid in the other, and the accented
-     spelling survives into the page. */
+  /* Fold `text` while keeping the way back to it: `starts[i]` and `ends[i]` are
+     the bounds, in the original, of the character that produced folded position
+     `i`. Latin and Greek fold one-for-one, but the rest of the world does not --
+     NFD expands a Hangul syllable into three jamo and a voiced kana into a base
+     plus U+3099, none of which are the combining marks `fold` strips. Slicing
+     the original at an offset found in the folded string would then mark the
+     wrong characters, so every offset is translated back through these.
+
+     Folding character by character has to agree with folding the whole string,
+     or a match found by `score` would fail to highlight here; final sigma was
+     the one rule that read its neighbours, and `fold` now settles it. */
+  function foldIndexed(text) {
+    let hay = '';
+    const starts = [];
+    const ends = [];
+    let at = 0;
+    for (const char of text) {
+      const folded = fold(char);
+      for (let i = 0; i < folded.length; i++) {
+        starts.push(at);
+        ends.push(at + char.length);
+      }
+      hay += folded;
+      at += char.length;
+    }
+    return { hay, starts, ends };
+  }
+
+  /* Mark every query token inside `text`, matching on the folded string and
+     slicing the original, so the accented spelling survives into the page. A
+     span always covers whole characters of the original -- half of a decomposed
+     syllable is not something that can be marked. */
   function highlight(text, tokens) {
     if (!text) return '';
     if (!tokens.length) return escapeHtml(text);
-    const hay = fold(text);
+    const { hay, starts, ends } = foldIndexed(text);
     const spans = [];
     for (const token of tokens) {
       let from = 0;
       for (;;) {
         const at = hay.indexOf(token, from);
         if (at === -1) break;
-        spans.push([at, at + token.length]);
+        spans.push([starts[at], ends[at + token.length - 1]]);
         from = at + token.length;
       }
     }
@@ -96,7 +130,12 @@
 
      A command is matched in full, while a scope prefix-matches: `/a` has to go
      on meaning the Aθens list rather than becoming ambiguous with `/all-lists`
-     the moment a command starting with the same letter exists. */
+     the moment a command starting with the same letter exists.
+
+     A word that folds away to nothing is dropped rather than kept as an empty
+     token: it matches everywhere, which makes it no filter at all, and the scan
+     in `highlight` would never advance past a zero-length match. Typing cannot
+     produce one, but pasting a bare combining mark can. */
   function parseQuery(raw) {
     const scopes = [];
     const words = [];
@@ -109,7 +148,8 @@
         if (COMMANDS.some((c) => c.slug === slug)) command = slug;
         else scopes.push(slug);
       } else {
-        words.push(fold(part));
+        const word = fold(part);
+        if (word) words.push(word);
       }
     }
     return { command, scopes, words };
