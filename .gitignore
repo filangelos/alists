@@ -1,6 +1,3 @@
 __pycache__/
 *.pyc
 .DS_Store
-
-# Local preview config for the editor; not part of the site.
-.claude/
