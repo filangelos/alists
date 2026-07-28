@@ -222,6 +222,38 @@ def place_key(place: dict) -> str:
     return f"nm:{place['name'].casefold()}@{place['lat']},{place['lng']}"
 
 
+# Between two notes on one place. Chosen to read as a break rather than as
+# punctuation either note might have ended with.
+NOTE_SEP = " · "
+
+
+def absorb(kept: dict, other: dict, lid: str) -> None:
+    """Fold a second sighting of the same place into the one already kept.
+
+    Keeping the first copy wholesale and discarding the rest loses whatever the
+    later lists knew: a note is written against a place *in a list*, so the same
+    restaurant can carry a different one in each, and which of them survived
+    would come down to the order of lists.txt. The gaps are worth filling for
+    the same reason -- a payload that omitted the address or the coordinates
+    should not win over one that has them.
+    """
+    if lid not in kept["lists"]:
+        kept["lists"].append(lid)
+
+    if other["note"]:
+        notes = [n for n in kept["note"].split(NOTE_SEP) if n]
+        if other["note"] not in notes:
+            notes.append(other["note"])
+        kept["note"] = NOTE_SEP.join(notes)
+
+    if not kept["address"]:
+        kept["address"] = other["address"]
+    if kept["lat"] is None and other["lat"] is not None:
+        kept["lat"], kept["lng"] = other["lat"], other["lng"]
+    if not kept["mid"]:
+        kept["mid"] = other["mid"]
+
+
 def build(links: list[str]) -> dict:
     lists: list[dict] = []
     merged: dict[str, dict] = {}
@@ -247,8 +279,7 @@ def build(links: list[str]) -> dict:
         for place in places:
             key = place_key(place)
             if key in merged:
-                if lid not in merged[key]["lists"]:
-                    merged[key]["lists"].append(lid)
+                absorb(merged[key], place, lid)
             else:
                 merged[key] = place
                 order.append(key)
