@@ -32,7 +32,14 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # The branch, not the commit. A called workflow inherits the caller's git
+      # context, so the default checkout here is the commit that triggered
+      # `refresh` -- which is by definition the one *before* the data it just
+      # committed. Deploying that ships the previous refresh and leaves the site
+      # a day behind while every job reports success.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Fail if data is missing
         run: |
