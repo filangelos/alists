@@ -25,6 +25,8 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
+import derive
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LISTS_TXT = ROOT / "lists.txt"
 OUT = ROOT / "data" / "lists.json"
@@ -288,12 +290,16 @@ def build(links: list[str]) -> dict:
         time.sleep(1.0)
 
     owners = {meta["owner"] for meta in lists if meta["owner"]}
-    return {
+    # `derive` adds the city and the category to every place, and the two
+    # indexes the page browses by. Neither exists in Google's payload; see
+    # scripts/derive.py for why they are worked out here rather than in the
+    # browser, and for the two tables that are meant to be edited.
+    return derive.derive({
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "owner": sorted(owners)[0] if len(owners) == 1 else "",
         "lists": lists,
         "places": [merged[key] for key in order],
-    }
+    })
 
 
 def read_links() -> list[str]:
