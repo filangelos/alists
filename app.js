@@ -340,12 +340,24 @@
     }
   }
 
+  /* The id is what `aria-activedescendant` on the input points at. Focus never
+     leaves the prompt, so without it the selection moves silently: a screen
+     reader would announce nothing on ArrowDown and Enter would open a place it
+     had never named. */
+  const rowId = (i) => `gl-row-${i}`;
+
   const rowShell = (i, inner) =>
-    `<div class="gl-row${i === active ? ' is-active' : ''}" role="option" data-i="${i}"` +
+    `<div class="gl-row${i === active ? ' is-active' : ''}" role="option" id="${rowId(i)}" data-i="${i}"` +
     `${i === active ? ' aria-selected="true"' : ''}>` +
     '<span class="gl-bullet" aria-hidden="true">●</span>' +
     inner +
     '</div>';
+
+  function syncActiveDescendant() {
+    const input = $('gl-input');
+    if (active < 0) input.removeAttribute('aria-activedescendant');
+    else input.setAttribute('aria-activedescendant', rowId(active));
+  }
 
   function placeRow(place, i, words, showDistance) {
     const distance =
@@ -408,8 +420,11 @@
     locationHint(command);
 
     if (!rows.length) {
+      // `presentation`, because the listbox may only contain options: the count
+      // is announced from the footer, which is live where this is not.
       host.innerHTML =
-        '<div class="gl-empty">nothing matches. <code>Esc</code> to clear, <code>/</code> to pick a list.</div>';
+        '<div class="gl-empty" role="presentation">nothing matches. <code>Esc</code> to clear, <code>/</code> to pick a list.</div>';
+      syncActiveDescendant();
       status(rows.length, filtering, kind);
       return;
     }
@@ -428,7 +443,7 @@
           const list = listById.get(group);
           if (list) {
             html.push(
-              `<div class="gl-group"><span aria-hidden="true">${escapeHtml(list.emoji || '·')}</span>` +
+              `<div class="gl-group" role="presentation"><span aria-hidden="true">${escapeHtml(list.emoji || '·')}</span>` +
                 `<span class="gl-group-name">${escapeHtml(list.name)}</span>` +
                 `<span class="gl-group-rule"></span><span>${runLength(i)}</span></div>`
             );
@@ -439,6 +454,7 @@
     }
 
     host.innerHTML = html.join('');
+    syncActiveDescendant();
     scroll.scrollTop = 0;
     status(rows.length, filtering, kind);
   }
@@ -479,6 +495,7 @@
     rows[active].classList.add('is-active');
     rows[active].setAttribute('aria-selected', 'true');
     rows[active].scrollIntoView({ block: 'nearest' });
+    syncActiveDescendant();
   }
 
   function open(item) {
