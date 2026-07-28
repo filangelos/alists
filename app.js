@@ -390,7 +390,7 @@
             html.push(
               `<div class="gl-group"><span aria-hidden="true">${escapeHtml(list.emoji || '·')}</span>` +
                 `<span class="gl-group-name">${escapeHtml(list.name)}</span>` +
-                `<span class="gl-group-rule"></span><span>${list.count}</span></div>`
+                `<span class="gl-group-rule"></span><span>${runLength(i)}</span></div>`
             );
           }
         }
@@ -401,6 +401,18 @@
     host.innerHTML = html.join('');
     scroll.scrollTop = 0;
     status(rows.length, filtering, kind);
+  }
+
+  /* How many rows the header at `from` is about to sit above. Not `list.count`:
+     a place saved to two lists is printed under the first that claimed it, so a
+     run is already shorter than the list it names wherever the lists overlap,
+     and a scope or a word narrows it further. The header has to count the rows
+     beneath it or it contradicts them. */
+  function runLength(from) {
+    const id = view[from].lists[0];
+    let n = 1;
+    while (from + n < view.length && view[from + n].lists[0] === id) n++;
+    return n;
   }
 
   // `filtering` comes from the parsed query, not the raw string: a lone `/`
