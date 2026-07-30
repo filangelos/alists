@@ -216,7 +216,9 @@ What is stored is `at`, `kind`, `path`, a label, the referrer's host, a country
 and a bot/mobile/desktop class. **No IP, no cookie, no visitor id, and never the
 search text** — the search box is the one place a stranger writes free text into
 this page, and how many results they got is as much as anyone needs to know. So
-there is nothing to put behind a consent banner.
+there is nothing to put behind a consent banner. `count.js` answers Global
+Privacy Control and stops; it does not answer `DNT`, which has meant nothing
+since the group defining it closed in 2019.
 
 The URL that receives all this is in a public file in a public repo, which means
 anybody can post to it and no amount of cleverness changes that. Nothing tries

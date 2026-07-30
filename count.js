@@ -23,10 +23,20 @@
   if (ENDPOINT.indexOf('YOUR-SUBDOMAIN') !== -1) return;
   if (!navigator.sendBeacon) return;
 
-  /* Asked once, honoured for the session. Neither header is enforceable and
-     most sites ignore both, which is exactly why answering them is worth the
-     four lines: nothing here is worth overriding someone who has said no. */
-  if (navigator.globalPrivacyControl || navigator.doNotTrack === '1') return;
+  /* Asked once, honoured for the session. Neither signal is enforceable and
+     most sites ignore both, which is exactly why answering the one that still
+     means something is worth the line.
+
+     `doNotTrack` is not that one, and used to be checked here. The group that
+     defined it closed in 2019; Safari then dropped it because a browser that
+     sent it was easier to identify, not harder, which is the opposite of what
+     it was for. Firefox still offers the switch, and a page linked from GitHub
+     is disproportionately read in Firefox -- so honouring a header that no
+     longer means anything would quietly discard a real share of the traffic to
+     express a scruple this design already keeps in a stronger form. There is
+     no address here, no cookie and no identifier. Nothing is following anyone
+     between visits, so there is nothing for it to ask to stop. */
+  if (navigator.globalPrivacyControl) return;
 
   var SEARCH_IDLE = 900;
   var lastPath = null;
