@@ -27,9 +27,13 @@ lists.txt  ──scripts/fetch.py──▶  data/lists.json  ──▶  index.ht
                 (once a day)      (38 cities, 10 types)
 ```
 
-`data/lists.json` is committed, so the page is three static files plus a blob of
+`data/lists.json` is committed, so the page is four static files plus a blob of
 JSON. What is deployed is exactly what is in the tree — a broken deploy can be
 reproduced by opening `index.html` from disk.
+
+The fourth file is [`count.js`](count.js), which is the only thing here that
+talks to a server. It is deliberately not part of the page: see
+[Counting](#counting).
 
 ## The two derived levels
 
@@ -199,6 +203,28 @@ Once, in **Settings → Pages**, set **Source** to **GitHub Actions**. After tha
 
 GitHub disables scheduled workflows after ~60 days without repository activity.
 It emails first, and the `workflow_dispatch` button covers the gap.
+
+## Counting
+
+Three numbers, on a Cloudflare Worker writing to a D1 database I own: a page
+opened, a search made, a place opened in Maps. The Worker and its schema are in
+[`collector/`](collector/), which is a separate deploy from the site and can be
+down, blocked or never set up at all without the tree stopping working — the
+page is still what is in this repo.
+
+What is stored is `at`, `kind`, `path`, a label, the referrer's host, a country
+and a bot/mobile/desktop class. **No IP, no cookie, no visitor id, and never the
+search text** — the search box is the one place a stranger writes free text into
+this page, and how many results they got is as much as anyone needs to know. So
+there is nothing to put behind a consent banner.
+
+The URL that receives all this is in a public file in a public repo, which means
+anybody can post to it and no amount of cleverness changes that. Nothing tries
+to. Instead every field is checked against a closed set read from this repo's own
+`lists.json` — the 38 city keys, the 10 category keys, the 1651 place names, four
+search buckets — so a forged event can only say something the site could have
+said itself, and a daily cap turns filling the database into losing one day of
+counts. `collector/README.md` has the reasoning and the queries.
 
 ## Caveats
 

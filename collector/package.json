@@ -1,0 +1,13 @@
+{
+  "name": "alists-count",
+  "private": true,
+  "description": "The collector behind alists. Not part of the site -- the site is static.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "schema": "wrangler d1 execute alists-count --remote --file=./schema.sql",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

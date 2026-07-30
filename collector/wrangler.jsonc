@@ -1,0 +1,44 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "alists-count",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-07-30",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Stay on the free plan on purpose. It is the only thing here that turns a
+  // sustained flood into a Worker that stops answering rather than an invoice,
+  // and it is worth more than any of the checks in the code.
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+
+  "vars": {
+    "SITE_ORIGIN": "https://filangelos.github.io",
+    "LISTS_URL": "https://filangelos.github.io/alists/data/lists.json"
+    // "DEV_ORIGIN": "http://localhost:8000"  // uncomment to count a local server
+  },
+
+  "d1_databases": [
+    {
+      // `wrangler d1 create` suggests naming the binding after the database.
+      // It is `DB` here because that is what src/worker.js reads, and a
+      // binding name is a variable name rather than a fact about the database.
+      "binding": "DB",
+      "database_name": "alists-count",
+      "database_id": "0114513b-ec00-42c2-955b-4d1065ad7e22"
+    }
+  ],
+
+  // Per-location and deliberately approximate, so this bounds one loud source
+  // rather than a distributed one -- the daily cap in schema.sql is what covers
+  // the rest. If your plan rejects this binding, delete the block: the Worker
+  // checks for it and carries on without it.
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 60, "period": 60 }
+    }
+  ]
+}

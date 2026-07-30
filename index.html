@@ -94,6 +94,10 @@
     </div>
   </div>
 
+  <!-- First, so that `glCount` exists by the time app.js counts the page it
+       booted on. Nothing in app.js requires it to: every call site is guarded,
+       and this file failing to load is a page that works and does not count. -->
+  <script src="./count.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

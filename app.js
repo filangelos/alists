@@ -691,8 +691,13 @@
      turns the count into a claim about the words. */
   function status(total, words) {
     const el = $('gl-status');
-    if (words.length) el.textContent = `${total} match${total === 1 ? '' : 'es'}`;
-    else if (state.path.length) el.textContent = `${total} place${total === 1 ? '' : 's'}`;
+    if (words.length) {
+      el.textContent = `${total} match${total === 1 ? '' : 'es'}`;
+      // The only place that knows both that these words are a search and what
+      // they turned up, which is the pair worth counting. The words themselves
+      // stay here: they are the one thing on this page a stranger types.
+      window.glCount?.search(total);
+    } else if (state.path.length) el.textContent = `${total} place${total === 1 ? '' : 's'}`;
     else el.textContent = `${DATA.places.length} places · ${TREE.length} cities`;
   }
 
@@ -755,6 +760,9 @@
       drill(row);
       return;
     }
+    // Before the tab opens, not after: on a phone the new tab is what takes
+    // the process, and a beacon queued first is the one that survives it.
+    window.glCount?.open(row.node.name);
     window.open(mapsUrl(row.node), '_blank', 'noopener');
   }
 
@@ -785,6 +793,13 @@
   function syncUrl(push) {
     const raw = serialize(state);
     const hash = raw ? '#' + encodeURIComponent(raw) : '';
+    /* Counted from here because it is the one place a click, the back button
+       and the first paint all pass through -- and from *above* the early
+       return, which is precisely the case where someone opened a shared link
+       and the URL already says where they are. It also runs on every keystroke
+       in the search box, so `count.js` is what decides that thirty of those are
+       still one page. */
+    window.glCount?.view(state.path);
     if (hash === window.location.hash) return;
     const url = hash || window.location.pathname;
     if (push) history.pushState(null, '', url);
