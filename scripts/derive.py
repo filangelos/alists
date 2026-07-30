@@ -10,13 +10,14 @@ wrong should be *visible* -- it lands in the committed JSON where it shows up in
 a diff, can be read without opening devtools, and can be corrected by hand
 against `OVERRIDES` below. Doing it at load time would hide every one of those.
 
-Two tables are meant to be edited, and nothing else in this file is:
+Three tables are meant to be edited, and nothing else in this file is:
 
     CATEGORIES  the second level of the tree. Adding one -- "Museums",
                 "Bakery", "Markets" -- is one entry, in the order you want it
                 matched. Nothing else changes.
     CITIES      display names for lists whose own name is a private joke, and
                 the groups of lists that are really one place.
+    COUNTRIES   which country each city is in, for the flag in front of it.
 
 Stdlib only, like the fetcher that imports it.
 """
@@ -182,6 +183,85 @@ MERGE: dict[str, tuple[str, ...]] = {
     ),
 }
 
+# Which country each city is in, as an ISO 3166-1 alpha-2 code, for the flag the
+# page prints in front of it. Codes rather than the emoji itself so the table
+# stays greppable and diffable -- `flag` builds the pair of regional indicators.
+#
+# Stated rather than inferred, which is the opposite of how the category is
+# decided one screen up, and for a reason: the address is the only thing Google
+# gives that names a country, and it does not name Greece. Of the 443 places on
+# the sixteen Greek islands and Athens, four mention the country; Crete's thirty
+# have no address at all. So an inference would be confidently wrong about the
+# half of this collection it matters most for, while the truth is 38 lines long
+# and never changes for a city once written. `warn_countries` checks these
+# against whatever the addresses do say, so a typo here does not go quiet.
+COUNTRIES: dict[str, str] = {
+    "Athens": "GR",
+    "Crete": "GR",
+    "Mykonos": "GR",
+    "Naxos": "GR",
+    "Sifnos": "GR",
+    "Syros": "GR",
+    "Milos": "GR",
+    "Paros": "GR",
+    "Antiparos": "GR",
+    "Ikaria": "GR",
+    "Kythira": "GR",
+    "Kythnos": "GR",
+    "Spetses": "GR",
+    "Kea": "GR",
+    "Serifos": "GR",
+    "Small Cyclades": "GR",
+    "London": "GB",
+    "Oxford": "GB",
+    "Cambridge": "GB",
+    "Bristol": "GB",
+    "New York": "US",
+    "San Francisco": "US",
+    "Miami": "US",
+    "Washington": "US",
+    "New Haven": "US",
+    "Hawaii": "US",
+    # The falls are the border: ten places, six with a Canadian address and four
+    # with an American one. The flag follows the majority rather than pretending
+    # the city is in one country.
+    "Niagara Falls": "CA",
+    "Vancouver": "CA",
+    "Dublin": "IE",
+    "Paris": "FR",
+    "Berlin": "DE",
+    "Vienna": "AT",
+    "Copenhagen": "DK",
+    "Barcelona": "ES",
+    "Rome": "IT",
+    "Singapore": "SG",
+    "Bali": "ID",
+    "Dubai": "AE",
+}
+
+# Country names as Google spells them at the end of an address, and only for the
+# countries above -- this is the audit of COUNTRIES, not a second way to fill it
+# in, so a name that is missing here costs a check and never a flag.
+COUNTRY_NAMES: dict[str, str] = {
+    "United Kingdom": "GB",
+    "UK": "GB",
+    "United States": "US",
+    "USA": "US",
+    "Greece": "GR",
+    "Ελλάδα": "GR",
+    "Ireland": "IE",
+    "France": "FR",
+    "Germany": "DE",
+    "Austria": "AT",
+    "Denmark": "DK",
+    "Spain": "ES",
+    "Italy": "IT",
+    "Singapore": "SG",
+    "Indonesia": "ID",
+    "United Arab Emirates": "AE",
+    "Canada": "CA",
+}
+
 # Per-place corrections, keyed by CID, for the handful the guess gets wrong in a
 # way worth fixing by hand. Empty is the honest default: a wrong guess should be
 # fixed in the patterns above where it also fixes its siblings, and only pinned
@@ -230,6 +310,20 @@ def slug(text: str) -> str:
         "χ": "ch", "ψ": "ps", "ω": "o",
     })
     return re.sub(r"[^a-z0-9]+", "", fold(text).translate(table))
+
+
+def flag(code: str | None) -> str:
+    """The flag emoji for an ISO 3166-1 alpha-2 country code.
+
+    A flag is two regional indicator symbols, which are the letters A-Z offset
+    into their own block -- there is no table to keep current and no image to
+    ship. A city with no code gets an empty string and the page prints nothing,
+    which is the right failure: a missing flag reads as "not said yet", and a
+    wrong one reads as a claim about where a place is.
+    """
+    if not code or len(code) != 2 or not code.isalpha():
+        return ""
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in code.upper())
 
 
 def haversine(a: tuple[float, float], b: tuple[float, float]) -> float:
@@ -321,6 +415,46 @@ def warn_unclassified(lists: list[dict], members: dict[str, list[dict]]) -> None
 # --------------------------------------------------------------------- cities
 
 
+def warn_countries(cities: list[dict], places: list[dict]) -> None:
+    """Hold COUNTRIES up against whatever the addresses happen to say.
+
+    Two things go wrong with a hand-written table: a city gets added and nobody
+    fills it in, and a code gets mistyped into a real country that is the wrong
+    one. The first is silent on the page -- no flag, no error -- and the second
+    is worse than silent, because `IE` for Barcelona looks deliberate.
+
+    So both are checked here rather than trusted. Only a majority disagreement
+    is worth printing: Niagara Falls genuinely has addresses in two countries,
+    and a warning that fires on every run is one nobody reads.
+    """
+    said: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
+    for place in places:
+        address = place.get("address") or ""
+        for name, code in COUNTRY_NAMES.items():
+            if re.search(rf"\b{re.escape(name)}\b", address):
+                said[place["city"]][code] += 1
+
+    for city in cities:
+        name = city["name"]
+        if name not in COUNTRIES:
+            print(
+                f"  ! {name!r} has no country. Add it to COUNTRIES in scripts/derive.py "
+                f"to put a flag in front of it.",
+                file=sys.stderr,
+            )
+            continue
+        votes = said.get(name)
+        if not votes:
+            continue
+        top, count = votes.most_common(1)[0]
+        if top != COUNTRIES[name] and count * 2 > sum(votes.values()):
+            print(
+                f"  ! {name!r} is {COUNTRIES[name]} in COUNTRIES but {count} of its "
+                f"addresses say {top}.",
+                file=sys.stderr,
+            )
+
+
 def _city_of_list(name: str) -> str:
     for city, names in MERGE.items():
         if name in names:
@@ -398,11 +532,17 @@ def assign_cities(lists: list[dict], places: list[dict]) -> list[dict]:
             "key": slug(name),
             "name": name,
             "count": len(pts),
+            # Written out rather than looked up in the browser, for the same
+            # reason the city is: it is a judgement, and a judgement belongs in
+            # the diff.
+            "flag": flag(COUNTRIES.get(name)),
             # The centre is what a future `/near <city>` sorts from, so it is
             # written out rather than recomputed in the browser.
             "lat": round(statistics.median(p["lat"] for p in located), 6) if located else None,
             "lng": round(statistics.median(p["lng"] for p in located), 6) if located else None,
         })
+
+    warn_countries(cities, places)
     return cities
 
 

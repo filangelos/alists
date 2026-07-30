@@ -10,7 +10,7 @@ for every place and the page browses that: 38 cities you walk into, a trail and
 a back button to come out of them by, and a search box.
 
 ```
-‹  All places › London › ☕️ Coffee                        39 places
+‹  All places › 🇬🇧 London › ☕️ Coffee                     39 places
    ● Prufrock Coffee
      23-25 Leather Ln, London EC1N 7TE, United Kingdom
 ```
@@ -56,6 +56,17 @@ restaurants are in it, because a good restaurant is called `Palma`, not
 Words like *garden*, *square* and *market* are trusted only when the address has
 no street number, because otherwise `Dishoom Covent Garden` files as a park.
 
+**The flag** in front of a city is the one thing here that is neither in the
+payload nor inferred from it. The address is the only field that names a country
+and it does not name Greece: of the 443 places across Athens and the sixteen
+Greek islands, four mention it, and Crete's thirty have no address at all. An
+inference would therefore be confidently wrong about the half of the collection
+it matters most for, so `COUNTRIES` in `derive.py` states it instead — 38 lines
+of ISO codes that never change for a city once written. `warn_countries` holds
+them up against whatever the addresses *do* say and complains when the majority
+disagrees, which is what would catch `IE` typed for Barcelona. Niagara Falls is
+the honest edge: six addresses in Canada, four in the United States, one flag.
+
 ## Adding a list
 
 Append the share link to [`lists.txt`](lists.txt) and push. Short
@@ -73,6 +84,11 @@ Stdlib only — no `pip install`, no virtualenv, nothing to keep current.
 A new list becomes a city unless it is declared a category. If you add one that
 is really a kind of place, the fetcher notices — anything whose members span
 more than 200 km gets a warning naming the file to edit.
+
+A new city also needs a line in `COUNTRIES` for its flag: `"Lisbon": "PT"`. The
+fetcher warns until it gets one, and the city browses perfectly well in the
+meantime with a gap where the flag goes — missing reads as *not said yet*, which
+is what it is, where a wrong flag would read as a claim.
 
 ## Adding a category
 

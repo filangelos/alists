@@ -433,7 +433,9 @@
      the root included. */
   function renderNav(onCity, onCat) {
     const crumbs = [{ label: 'All places', path: [] }];
-    if (onCity) crumbs.push({ label: onCity.name, path: [onCity.key] });
+    if (onCity) {
+      crumbs.push({ label: `${onCity.flag} ${onCity.name}`.trim(), path: [onCity.key] });
+    }
     if (onCat) {
       crumbs.push({
         label: `${onCat.emoji} ${onCat.name}`,
@@ -595,7 +597,8 @@
             cityRow,
             row,
             '',
-            `<span class="gl-name">${highlight(city.name, words)}</span>` +
+            `<span class="gl-flag" aria-hidden="true">${escapeHtml(city.flag)}</span>` +
+              `<span class="gl-name">${highlight(city.name, words)}</span>` +
               `<span class="gl-count">${city.count}</span>`,
             `${city.name}, ${city.count} place${city.count === 1 ? '' : 's'}`
           )
@@ -972,6 +975,11 @@
         const city = {
           key: meta.key,
           name: meta.name,
+          // Worked out in the fetcher and read back out of the blob, like the
+          // category's emoji. Defaulted rather than assumed: a city added to
+          // lists.txt and not to COUNTRIES in derive.py arrives without one,
+          // and the page prints a name with a gap where the flag goes.
+          flag: meta.flag || '',
           lat: meta.lat,
           lng: meta.lng,
           total: meta.count,

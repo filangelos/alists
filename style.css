@@ -391,6 +391,16 @@ body {
 
 .gl-emoji { flex: none; font-size: 13px; line-height: 1.5; }
 
+/* Given a width of its own rather than left to its natural one, so the city
+   names still line up under each other when a flag is missing -- and they only
+   go missing for a city nobody has told derive.py about yet. */
+.gl-flag {
+  flex: none;
+  min-width: 1.25em;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .gl-bullet { flex: none; color: var(--accent); line-height: 1.5; }
 .gl-row.is-active .gl-bullet { font-weight: 700; }
 
