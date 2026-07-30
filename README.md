@@ -6,15 +6,13 @@ The lists are how the places are *organised* in Maps; they are not how they are
 browsed here. Half of them are named after private jokes, and the largest place
 in the collection — London, 319 places — has no list at all, only five ordering
 scratchpads and a neighbourhood. So the fetcher works out a city and a category
-for every place and the page browses that. There is one input, at the bottom,
-and it does everything.
+for every place and the page browses that: 38 cities you walk into, a trail and
+a back button to come out of them by, and a search box.
 
 ```
-❯ /london/coffee                                        39 matches
-▾ London                                                       39
-└─ ▾ ☕️ Coffee                                                  39
-      ● Prufrock Coffee
-        23-25 Leather Ln, London EC1N 7TE, United Kingdom
+‹  All places › London › ☕️ Coffee                        39 places
+   ● Prufrock Coffee
+     23-25 Leather Ln, London EC1N 7TE, United Kingdom
 ```
 
 ## How it works
@@ -98,28 +96,36 @@ else. Splitting one category in two, or renaming one, is the same edit.
 
 | | |
 |---|---|
-| type anything | filters on name, address, note and list name |
-| `/` | opens the index of cities and categories; `Tab` or `Enter` completes |
-| `/london` | just London — 319 places across nine categories |
-| `/london/coffee` | one cell of it |
-| `/coffee` | every coffee place, in every city |
-| `/naxos bakery` | words still narrow inside a path |
-| `/near` | sort by distance from you — asks for your location |
+| click a city | walk into it — 319 places across nine categories, opened |
+| the triangle | peek inside a folder without leaving where you are standing |
+| `‹`, any step of the trail, or the browser's own back button | come back out |
+| type anything | filters on name, address, note and list name, wherever you are |
+| `near me` | sort by distance from you — asks for your location |
+| `everywhere` | that category in every city: the one view no city contains |
 | `↑` `↓` | move the selection |
-| `Enter` | open a folder, or open that place in Google Maps |
-| `→` | open a folder, when the caret is at the end of the line |
-| `Esc` | widen one step: the words, then the category, then the city |
-| click | the same as `Enter` on that row |
+| `→` | open the folder, then step into it |
+| `←` | close the folder, then climb out of it, then leave the level entirely |
+| `Enter` | walk into a folder, or open that place in Google Maps |
+| `Esc` | up one level; in the search box, clear the search first |
 
-`←` is deliberately unbound: the prompt is a text field you are editing, and
-stealing the left arrow would make it feel broken.
+Any letter typed anywhere lands in the search box, so narrowing 1649 places
+never needs the mouse — that is also what the tree owes type-ahead, and
+filtering is a better answer than jumping to the next row starting with `p`.
 
-`/near` asks for location **only when you type it**, never on load — an
+There used to be a prompt instead: one input at the bottom, `/london/coffee` as
+a path, a completion menu over it. It was a good interface for whoever wrote the
+grammar and a wall for everyone else — a page of saved restaurants should not
+open by asking you to learn a command line. The query it built is untouched, and
+that is the point of the rewrite rather than a side effect of it: the hash still
+holds `/london/coffee flat white`, so every link ever shared still resolves. It
+is written by clicks now.
+
+`near me` asks for location **only when you press it**, never on load — an
 unprompted permission prompt gets reflexively denied, and a denial is sticky.
-When it works it says nothing: `/near` is sitting in the prompt and the
-distances are in the rows, so a banner would only restate them. Waiting and
-declined both report in the footer, and a decline leaves the tree in its usual
-order rather than re-asking.
+When it works it says so once, in the footer, because the distances in the rows
+are the real answer and a banner over them would only push the first result
+down. Waiting and declined report in the same place, and a decline leaves the
+tree in its usual order rather than re-asking.
 
 It sorts rather than filters: cities by how close their nearest place is, places
 by distance within their category, so the structure holds and the nearest thing
@@ -131,19 +137,25 @@ somewhere other than where you are standing is a second branch in
 
 ## What is open, and why nothing is remembered
 
-What is expanded is a pure function of the query. A node is open if you are
-standing on it, if it was pruned by a filter, or if it holds most of what
-survived — that last one so typing a city's name answers with its places rather
-than with its name.
+What is expanded is a pure function of where you are and what you typed. A node
+is open if you are standing in it, if it was pruned by a filter, or if it holds
+most of what survived — that last one so searching for a city answers with its
+places rather than with its name.
 
-Nothing is stored, because the hash *is* the prompt. Any state a click could
-create but typing could not would be lost the moment the URL was shared, and
-`…/#%2Flondon%2Fcoffee` being the whole of what you are looking at is the reason
-there is no share button.
+The triangles are the one exception, and they are deliberately not part of the
+state: they are a peek, they leave the address bar alone, and they are dropped
+the moment the query changes. A URL cannot honestly carry which folders happened
+to be open, so it carries the view instead, and `…/#%2Flondon%2Fcoffee` being the
+whole of what you are looking at is the reason there is no share button.
 
-Every filter is a URL, and every link shared before the tree existed still
+Every view is a URL, and every link shared before the tree existed still
 resolves: `/nyc` is New York, `/aθens` is Athens, `/lonfood` widens to London.
-Category links widen the same way — `/pizza` is now the whole Food branch.
+Category links widen the same way — `/pizza` is now the whole Food branch. An
+alias is rewritten into the slugs the trail is showing, once, on arrival, so the
+address bar and the page agree about which view they are on.
+
+Walking into a city is a history entry and typing is not: the browser's back
+button retraces the tree rather than the last thirty keystrokes.
 
 ## Matching
 

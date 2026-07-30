@@ -33,42 +33,62 @@
           <div class="bt-logo-subtitle" id="gl-subtitle">loading…</div>
           <div class="bt-logo-subtitle" id="gl-stamp"></div>
         </div>
+
+        <!-- A search field, not a prompt: no leading caret, no grammar to learn,
+             and nothing typed into it is ever a command. Paths are navigated
+             now, not spelled. -->
+        <div class="gl-search">
+          <svg class="gl-search-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="10" y1="10" x2="14" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <input
+            id="gl-search"
+            class="gl-search-input"
+            type="search"
+            placeholder="Search places"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+            autocorrect="off"
+            aria-label="Search places"
+            aria-controls="gl-rows"
+          >
+          <button type="button" id="gl-clear" class="gl-clear" aria-label="Clear search" hidden>&#10005;</button>
+        </div>
       </div>
       <div class="bt-header-divider"></div>
 
-      <!-- The tree is a listbox the input owns, not a focusable region of its
-           own: the caret never leaves the prompt, so a keystroke is always a
-           filter and never lands somewhere it does nothing.
+      <!-- Where you are, and the two ways back out of it. The trail is above the
+           tree rather than inside it so it does not scroll away, and it is the
+           same width as the rows it describes. -->
+      <div class="gl-navbar">
+        <button type="button" id="gl-up" class="gl-up" aria-label="Go back up one level">
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <polyline points="10,3 5,8 10,13" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+        </button>
+        <nav class="gl-crumbs" id="gl-crumbs" aria-label="Where you are"></nav>
+        <button type="button" id="gl-near" class="gl-chip" aria-pressed="false">
+          <span aria-hidden="true">◎</span> near me
+        </button>
+      </div>
 
-           Deliberately not `role="tree"`. That pattern claims every printable
-           character for type-ahead, which is exactly the collision this page
-           cannot afford -- any letter typed anywhere belongs to the filter.
-           Rows carry an authored `aria-label` naming what they are instead,
-           and since what is open is a pure function of the query there is no
-           expansion state left to announce. -->
+      <!-- A real tree, now that the caret is not holding every keystroke
+           hostage: rows take focus, the arrows walk them, and a letter still
+           belongs to the search box, which is where it goes. Levels are flat
+           with `aria-level` rather than nested groups, because what is open is
+           mostly derived and re-deriving a nested DOM on every keystroke buys
+           nothing a level number does not already say. -->
       <div class="bt-scroll" id="gl-scroll">
-        <div id="gl-rows" role="listbox" aria-label="Places by city"></div>
+        <div id="gl-rows" class="gl-tree" role="tree" tabindex="0" aria-label="Places by city and category"></div>
+        <div id="gl-empty" class="gl-empty" hidden></div>
       </div>
 
-      <div class="bt-prompt-row">
-        <div class="bt-autocomplete" id="gl-autocomplete" role="listbox" aria-label="Commands"></div>
-        <div class="bt-prompt-symbol" aria-hidden="true">&#10095;</div>
-        <input
-          id="gl-input"
-          class="bt-input"
-          type="text"
-          placeholder="Type to filter, / for cities"
-          spellcheck="false"
-          autocomplete="off"
-          autocapitalize="off"
-          autocorrect="off"
-          aria-label="Filter places"
-          aria-controls="gl-rows"
-        >
-      </div>
       <div class="bt-footer-bar">
         <!-- Doubles as the location-state line, so it has to announce. -->
-        <span id="gl-hint" aria-live="polite">/ to jump to a city · /near for distance</span>
+        <span id="gl-hint" aria-live="polite"></span>
         <span id="gl-status" aria-live="polite"></span>
       </div>
     </div>

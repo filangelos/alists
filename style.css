@@ -101,6 +101,165 @@ body {
   padding: 16px 20px 0;
 }
 
+/* ------------------------------------------------------------------ search */
+
+/* Deliberately a box with a magnifier in it and nothing else. The prompt this
+   replaced was the same input with a caret glyph in front, and that one
+   character was doing most of the work of making a list of restaurants look
+   like a terminal you were expected to know the commands for. */
+.gl-search {
+  margin-left: auto;
+  flex: 0 1 260px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 0 8px;
+  height: 30px;
+  background: var(--code-bg);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 15px;
+  color: var(--muted);
+}
+
+.gl-search:focus-within {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.gl-search-icon { flex: none; width: 14px; height: 14px; }
+
+.gl-search-input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  caret-color: var(--accent);
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.gl-search-input::placeholder { color: var(--faint); }
+
+/* The native one appears on top of ours and only in some browsers. */
+.gl-search-input::-webkit-search-cancel-button { display: none; }
+
+.gl-clear {
+  flex: none;
+  background: none;
+  border: none;
+  padding: 0 2px;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.gl-clear:hover { color: var(--ink-strong); }
+
+/* --------------------------------------------------------------- nav bar */
+
+.gl-navbar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px 6px;
+  min-width: 0;
+}
+
+.gl-up {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 6px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.gl-up svg { width: 14px; height: 14px; }
+.gl-up:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+
+/* Kept in place rather than hidden at the root: a control that comes and goes
+   moves the trail sideways every time you walk in or out of a city. */
+.gl-up:disabled { opacity: 0.35; cursor: default; }
+
+.gl-crumbs {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px;
+  min-width: 0;
+  font-size: 12.5px;
+  line-height: 20px;
+}
+
+.gl-crumb {
+  background: none;
+  border: none;
+  padding: 0 2px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.gl-crumb:hover { color: var(--accent); }
+.gl-crumb.is-current { color: var(--ink-strong); font-weight: 700; cursor: default; }
+.gl-crumb-sep { color: var(--faint); padding: 0 1px; }
+
+/* A step sideways rather than up, so it reads as an aside to the crumb it
+   follows instead of another level of it. */
+.gl-crumb-alt {
+  margin-left: 6px;
+  font-size: 11.5px;
+  color: var(--faint);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 10px;
+  padding: 1px 8px;
+  line-height: 16px;
+}
+
+.gl-crumb-alt:hover { color: var(--accent); border-color: var(--accent); }
+.gl-crumb-alt.is-current { font-weight: 400; }
+
+.gl-chip {
+  flex: none;
+  margin-left: auto;
+  padding: 3px 10px;
+  background: none;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 12px;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.gl-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+.gl-chip[aria-pressed='true'] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .bt-logo { flex: none; width: 46px; height: 32px; }
 
 .bt-logo-info {
@@ -131,36 +290,6 @@ body {
   line-height: 1.6;
 }
 
-.bt-prompt-row {
-  position: relative;
-  flex: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  border-top: 1px solid var(--hairline-strong);
-  border-bottom: 1px solid var(--hairline-strong);
-  font-size: 13px;
-}
-
-.bt-prompt-symbol { color: var(--muted); flex: none; }
-
-.bt-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--ink);
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 18px;
-  caret-color: var(--accent);
-  padding: 0;
-  min-width: 0;
-}
-
-.bt-input::placeholder { color: var(--faint); }
-
 .bt-footer-bar {
   flex: none;
   display: flex;
@@ -168,6 +297,7 @@ body {
   justify-content: space-between;
   gap: 12px;
   padding: 4px 20px 8px;
+  border-top: 1px solid var(--hairline-strong);
   color: var(--muted);
   font-size: 12px;
 }
@@ -180,6 +310,8 @@ body {
 
 /* --------------------------------------------------------------------- tree */
 
+.gl-tree { outline: none; }
+
 .gl-row {
   display: flex;
   align-items: flex-start;
@@ -191,9 +323,32 @@ body {
 
 .gl-row.is-active { background: var(--accent-soft); }
 
+/* The selection is only a highlight until the arrows are actually pointed at
+   it, and then it is a caret -- otherwise a row highlighted on load looks like
+   something the page is claiming rather than something you are holding. */
+.gl-tree:focus-visible .gl-row.is-active { box-shadow: inset 2px 0 0 var(--accent); }
+
 @media (hover: hover) {
   .gl-row:hover { background: var(--accent-soft); }
 }
+
+/* Its own target, because the row already means "go in there": a folder can be
+   peeked at from where you are standing without moving the trail. */
+.gl-twisty {
+  flex: none;
+  background: none;
+  border: none;
+  padding: 0 3px;
+  margin: 0 -3px;
+  color: var(--faint);
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.gl-twisty:hover { color: var(--accent); }
+.gl-row.is-active > .gl-twisty { color: var(--accent); }
 
 /* The guides are the depth cue, in place of an indent you would have to
    measure, and they are the one thing here borrowed from `tree` rather than
@@ -300,49 +455,17 @@ body {
   color: var(--accent);
 }
 
-/* ------------------------------------------------------------ autocomplete */
-
-.bt-autocomplete {
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 100%;
-  max-height: 42vh;
-  overflow-y: auto;
-  background: var(--surface);
-  border-top: 1px solid var(--hairline-strong);
-  padding: 4px 0;
-  font-size: 12px;
-  line-height: 20px;
-  z-index: 10;
-}
-
-.bt-autocomplete.is-open { display: block; }
-
-.bt-autocomplete-item {
-  display: flex;
-  gap: 16px;
-  padding: 2px 20px;
+/* The two ways out are the two things that got you here, so they are offered
+   as the sentence rather than beside it. */
+.gl-empty button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--accent);
+  text-decoration: underline;
   cursor: pointer;
-  color: var(--muted);
-}
-
-.bt-autocomplete-item.is-selected { background: var(--accent-soft); }
-
-.bt-autocomplete-cmd {
-  flex: none;
-  min-width: 150px;
-  color: var(--ink);
-}
-
-.bt-autocomplete-item.is-selected .bt-autocomplete-cmd { color: var(--accent); }
-
-.bt-autocomplete-desc {
-  color: var(--muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* ----------------------------------------------------------------- phone */
@@ -360,23 +483,42 @@ body {
   }
 
   .bt-titlebar { display: none; }
-  .bt-logo-header { padding: 12px 16px 0; }
   .bt-header-divider { margin: 10px 16px 0; }
-  .gl-row, .gl-empty, .bt-footer-bar, .bt-prompt-row { padding-left: 16px; padding-right: 16px; }
-  .bt-autocomplete-item { padding-left: 16px; padding-right: 16px; }
+  .gl-row, .gl-empty, .bt-footer-bar, .gl-navbar { padding-left: 16px; padding-right: 16px; }
+  .bt-footer-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+
+  /* The search box takes its own line: shoulder to shoulder with the title it
+     would be a slot too narrow to read a place name back out of. */
+  .bt-logo-header {
+    flex-wrap: wrap;
+    padding: 12px 16px 0;
+  }
+
+  .gl-search {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    height: 34px;
+    border-radius: 17px;
+  }
+
   /* 16px exactly: at anything smaller iOS Safari zooms the viewport when the
      input takes focus, and never zooms back out. */
-  .bt-input { font-size: 16px; }
-  .bt-footer-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+  .gl-search-input { font-size: 16px; }
+
+  #gl-hint.is-quiet { display: none; }
 }
 
 /* A city or a category is the thing a thumb aims at, and the whole row is the
-   target -- there is no separate disclosure triangle, because opening a folder
-   and going to it are the same action here. Places keep their natural height:
-   they carry an address line already, and 1649 of them at 44px would be a
-   scroll nobody finishes. */
+   target -- a thumb should not have to find the triangle to get into London.
+   The triangle is still there for peeking, at the width a thumb needs. Places
+   keep their natural height: they carry an address line already, and 1649 of
+   them at 44px would be a scroll nobody finishes. */
 @media (hover: none) {
   .gl-city, .gl-cat { min-height: 44px; align-items: center; }
+  .gl-twisty { min-width: 32px; padding: 12px 8px; margin: -12px -8px; font-size: 13px; }
+  .gl-up { width: 32px; height: 32px; }
+  .gl-chip { padding: 7px 12px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

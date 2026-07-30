@@ -6,10 +6,18 @@
  * works out a city and a category for every place (scripts/derive.py) and this
  * browses that instead -- two levels, both of which read as themselves.
  *
- * There is still one input and it still always filters. What changed is that
- * the slash grammar now names a path rather than a command: `/london/coffee` is
- * where you are standing, and any words after it narrow what is beneath you.
- * Typing prunes the tree; nothing is a command you had to know existed.
+ * It used to browse them through a prompt: one input at the bottom, a slash
+ * grammar for paths, a completion menu over it. That is a fine interface for
+ * whoever wrote the grammar and a wall for everyone else -- a page of saved
+ * restaurants should not open by asking you to learn a command line. So the
+ * same model is driven now by the things the grammar was only ever describing:
+ * a trail saying where you are standing, rows you click to go deeper, a back
+ * button and the browser's own back button to come out again, and a search box
+ * that is nothing but a search box.
+ *
+ * The query itself did not change. The hash still holds `/london/coffee flat
+ * white`, so every link ever shared still resolves and the address bar is
+ * still the share button -- it is written by clicks now rather than by typing.
  */
 
 (() => {
@@ -31,8 +39,6 @@
 
   let view = []; // rows currently rendered, in order
   let active = -1; // index into `view`, or -1 for nothing selected
-  let acItems = [];
-  let acIndex = 0;
 
   // ------------------------------------------------------------------ text
 
@@ -120,28 +126,36 @@
     return out + escapeHtml(text.slice(cursor));
   }
 
-  // ----------------------------------------------------------------- query
+  // ----------------------------------------------------------------- state
 
-  /* `near` is the only surviving command. The tree is its own index, so
-     `/all-lists` has nothing left to do that clearing the prompt does not --
-     it is kept only so the links already shared with it in them still land
-     somewhere sensible, and it resolves to the root. */
-  const COMMANDS = ['near', 'all-lists'];
+  /* Everything the page knows: the node you are standing in, what you typed in
+     the search box, and whether distances are on. `path` is canonical -- at
+     most a city key and a category key, in that order -- so the trail, the URL
+     and the tree all read the same two slots.
 
-  /* A query is an optional path, an optional command, and words.
-     `/london/coffee flat white` is the coffee places in London matching
-     `flat` and `white`. A leading slash is only ever a path or a command, so a
-     place called "24/7" is still reachable as a bare word.
+     Nothing about what is *expanded* lives here. See `expanded`. */
+  let state = { path: [], text: '', near: false };
 
-     Path segments are matched against city and category tokens, which include
-     every slug the lists used to have -- so `/nyc`, `/baker` and `/aθens` all
-     still resolve, and every link shared before this change still works. A
-     segment that names nothing is treated as a word rather than silently
-     dropped, so a typo narrows to nothing visibly instead of being ignored. */
+  /* Twisties are a peek, not a place. They are held outside `state` and outside
+     the URL, and thrown away the moment the query changes, because a shared
+     link has to arrive at the same page for the sender and the receiver -- and
+     "which folders happened to be open" is the one thing a URL cannot carry
+     without either bloating or lying. What the tree does by default is a pure
+     function of the query, exactly as before; this only records disagreements
+     with it, keyed by row. */
+  const expanded = new Map();
+
+  /* A query is a path, a `near` flag and words -- and it arrives as text
+     because it arrives out of the hash, where the old prompt left it. Path
+     segments are matched against city and category tokens, which include every
+     slug the lists used to have, so `/nyc`, `/baker` and `/aθens` all still
+     resolve and every link shared before this change still works. A segment
+     that names nothing becomes search text rather than being silently dropped,
+     so a typo narrows to nothing visibly instead of being ignored. */
   function parseQuery(raw) {
     const path = [];
-    const words = [];
-    let command = null;
+    const rest = [];
+    let near = false;
 
     for (const part of raw.trim().split(/\s+/)) {
       if (!part) continue;
@@ -149,17 +163,24 @@
         for (const seg of part.split('/')) {
           if (!seg) continue;
           const key = fold(seg);
-          if (COMMANDS.includes(key)) command = key;
+          if (key === 'near') near = true;
+          // `/all-lists` was the old way back to the root. The trail is that
+          // now, but links with it in them still have to land somewhere sane.
+          else if (key === 'all-lists') continue;
           else if (pathTokens.has(key)) path.push(key);
-          else words.push(key);
+          else rest.push(seg);
         }
       } else {
-        const word = fold(part);
-        if (word) words.push(word);
+        rest.push(part);
       }
     }
-    return { path, command, words };
+    return { path: canonical(path), text: rest.join(' '), near };
   }
+
+  const serialize = (s) =>
+    [s.path.length ? '/' + s.path.join('/') : '', s.near ? '/near' : '', s.text.trim()]
+      .filter(Boolean)
+      .join(' ');
 
   /* Resolve a path into the city and category it names. Either may be absent,
      and a category may be given without a city (`/coffee` is every coffee
@@ -173,6 +194,15 @@
       else if (!cat && catByKey.has(token)) cat = catByKey.get(token);
     }
     return { city, cat };
+  }
+
+  // Aliases resolve to the same nodes as the real slugs, so a path read out of
+  // an old link is rewritten to the one the trail will show and the URL will
+  // hold. `/nyc/pizza` becomes `/newyork/food` once, on arrival, rather than
+  // being translated again at every place it is read.
+  function canonical(path) {
+    const { city, cat } = resolvePath(path);
+    return [city && city.key, cat && cat.key].filter(Boolean);
   }
 
   /* Score a place against the words. Returns -1 for no match. Every word has to
@@ -195,12 +225,12 @@
 
   // -------------------------------------------------------------- location
 
-  /* The origin distance is measured from. Today `/near` always means "me", but
-     everything downstream reads this object rather than the browser's position
-     directly, so pointing it at somewhere else -- a city the person names, a
-     hotel they are staying in -- is a new branch in `resolveOrigin` and nothing
-     more. Every city already carries its centre in data/lists.json for exactly
-     that. */
+  /* The origin distance is measured from. Today the toggle always means "me",
+     but everything downstream reads this object rather than the browser's
+     position directly, so pointing it at somewhere else -- a city the person
+     names, a hotel they are staying in -- is a new branch in `resolveOrigin`
+     and nothing more. Every city already carries its centre in
+     data/lists.json for exactly that. */
   const origin = { state: 'idle', at: null, label: '', error: '' };
 
   const EARTH_KM = 6371;
@@ -222,12 +252,12 @@
     km < 1 ? `${Math.round(km * 1000)} m` : km < 10 ? `${km.toFixed(1)} km` : `${Math.round(km)} km`;
 
   /* Ask for whatever `spec` names, and call `done` once it has settled.
-     Location is requested only when `/near` is typed, never on load. Asking an
-     unprompted visitor where they are is the browser-permission equivalent of a
-     cold call: Chrome demotes origins that do it, Safari users reflexively deny,
-     and a denial is sticky -- so the one chance to ask is worth spending on a
-     moment when the person has just said what they want it for. Nothing here
-     throws; `origin.state` is what the UI reports. */
+     Location is requested only when the toggle is pressed, never on load.
+     Asking an unprompted visitor where they are is the browser-permission
+     equivalent of a cold call: Chrome demotes origins that do it, Safari users
+     reflexively deny, and a denial is sticky -- so the one chance to ask is
+     worth spending on a moment when the person has just said what they want it
+     for. Nothing here throws; `origin.state` is what the UI reports. */
   function resolveOrigin(spec, done) {
     if (spec.kind === 'city') {
       const city = cityByKey.get(spec.key);
@@ -285,10 +315,10 @@
      the structure holds and the nearest thing floats to the top of it. A place
      with no coordinates sorts last instead of disappearing -- it is still a
      place you saved. */
-  function search(raw) {
-    const { path, command, words } = parseQuery(raw);
-    const { city: onCity, cat: onCat } = resolvePath(path);
-    const sorting = command === 'near' && origin.state === 'ready';
+  function search() {
+    const { city: onCity, cat: onCat } = resolvePath(state.path);
+    const words = state.text.trim().split(/\s+/).map(fold).filter(Boolean);
+    const sorting = state.near && origin.state === 'ready';
 
     const cities = [];
     let matches = 0;
@@ -321,30 +351,27 @@
 
       if (!cityCount) continue;
       matches += cityCount;
-      const near = sorting
-        ? Math.min(...cats.map((c) => distanceTo(c.places[0])))
-        : 0;
+      const near = sorting ? Math.min(...cats.map((c) => distanceTo(c.places[0]))) : 0;
       cities.push({ ...city, cats, count: cityCount, near });
     }
 
     if (sorting) cities.sort((a, b) => a.near - b.near);
 
-    return { cities, matches, words, command, onCity, onCat, filtering: path.length > 0 || words.length > 0 };
+    return { cities, matches, words, onCity, onCat };
   }
 
-  /* What is open is a pure function of the query -- nothing is remembered.
-     The hash *is* the prompt, so any state a click could create but typing
-     could not would be lost the moment the URL was shared, and "the address bar
-     is the share button" would quietly stop being true.
+  /* What is open by default is still a pure function of the query, and the
+     reasons are unchanged. A node you are standing in is open because that is
+     what standing there means. A node the search pruned is open because its
+     count is now a selection, and hiding a selection behind a chevron makes the
+     number a claim you have to click to check. And a node holding most of what
+     survived is open because otherwise searching for a city answers with the
+     city's name -- one row, no places, which is not an answer.
 
-     Three ways in. A node on the path is open because that is what standing
-     there means. A node that was pruned is open because its count is now a
-     selection and hiding a selection behind a chevron makes the number a claim
-     you have to click to check. And a node holding most of what survived is
-     open because otherwise typing a city's name answers with the city's name --
-     one row, no places, which is not an answer. */
-  function isOpen(node, onPath, total) {
-    if (onPath) return true;
+     A twisty the person actually clicked outranks all three. */
+  function isOpen(id, node, standing, total) {
+    if (expanded.has(id)) return expanded.get(id);
+    if (standing) return true;
     if (node.count < node.total) return true;
     return total > 0 && node.count * 2 > total;
   }
@@ -358,145 +385,284 @@
           place.lat != null ? `${place.lat},${place.lng}` : place.name
         )}`;
 
-  const HINT = '/ to jump to a city · /near for distance';
-
-  /* Location state belongs in the footer, next to the prompt that caused it.
-     A success banner over the results would restate what `/near` in the input
-     and a column of distances already say, and it would push the first result
-     down every time -- so the granted case says nothing at all. Only the two
-     states the distances cannot express get a line. */
-  function locationHint(command) {
+  /* Location state belongs in the footer, next to the toggle that caused it.
+     A success banner over the results would restate what a pressed toggle and
+     a column of distances already say, and it would push the first result down
+     every time -- so the granted case says nothing at all. Only the two states
+     the distances cannot express get a line. */
+  function locationHint() {
     const hint = $('gl-hint');
-    if (command !== 'near') {
-      hint.textContent = HINT;
+    // Unhidden before it is written, not after: a live region that is
+    // `display: none` at the moment its text changes has already missed its
+    // chance to announce, whatever it looks like afterwards.
+    const say = (text, warn) => {
+      hint.classList.remove('is-quiet');
+      hint.textContent = text;
+      hint.classList.toggle('is-warn', !!warn);
+    };
+    if (!state.near) {
+      // Marked quiet so a phone can drop it: it is a keyboard legend, and on a
+      // narrow screen it would only crowd the count into an ellipsis. It has to
+      // stay in the DOM either way -- this is the line location state announces
+      // from, and a screen reader cannot read a node that was never rendered.
+      hint.textContent = window.matchMedia('(hover: none)').matches
+        ? 'tap a city to open it'
+        : '↑↓ to move · ← to go back · ↵ opens in Maps';
       hint.classList.remove('is-warn');
+      hint.classList.add('is-quiet');
       return;
     }
     switch (origin.state) {
       case 'asking':
-        hint.textContent = 'waiting for your location…';
-        hint.classList.remove('is-warn');
+        say('waiting for your location…');
         break;
       case 'denied':
       case 'unavailable':
         // Deliberately no retry button: re-prompting is blocked by the browser
         // once denied, so the only real fix is in site settings, and a button
         // that silently does nothing is worse than a sentence that is true.
-        hint.textContent = `${origin.error} — usual order; re-allow in site settings`;
-        hint.classList.add('is-warn');
+        say(`${origin.error} — usual order; re-allow in site settings`, true);
         break;
       default:
-        hint.textContent = HINT;
-        hint.classList.remove('is-warn');
+        say(`distances from ${origin.label || 'you'}`);
     }
   }
 
-  /* The id is what `aria-activedescendant` on the input points at. Focus never
-     leaves the prompt, so without it the selection moves silently: a screen
-     reader would announce nothing on ArrowDown and Enter would open a row it
-     had never named. */
+  /* The trail is the only thing on the page that says how deep you are, so it
+     also has to be the way out: every step above the current one is a button,
+     the root included. */
+  function renderNav(onCity, onCat) {
+    const crumbs = [{ label: 'All places', path: [] }];
+    if (onCity) crumbs.push({ label: onCity.name, path: [onCity.key] });
+    if (onCat) {
+      crumbs.push({
+        label: `${onCat.emoji} ${onCat.name}`,
+        path: onCity ? [onCity.key, onCat.key] : [onCat.key],
+      });
+    }
+
+    /* The one view the tree cannot walk to, because it is not under any city:
+       a category across all of them. It used to be a line in the `/` menu; now
+       it is a step sideways from the same category inside one city, which is
+       where you are standing when you want it -- "the coffee here" and "the
+       coffee everywhere" are one click apart in both directions. */
+    const sideways = onCat && onCity ? [onCat.key] : null;
+
+    $('gl-crumbs').innerHTML =
+      crumbs
+        .map((crumb, i) => {
+          const sep = i ? '<span class="gl-crumb-sep" aria-hidden="true">›</span>' : '';
+          const label = escapeHtml(crumb.label);
+          return (
+            sep +
+            (i === crumbs.length - 1
+              ? `<span class="gl-crumb is-current" aria-current="true">${label}</span>`
+              : `<button type="button" class="gl-crumb" data-path="${escapeHtml(
+                  crumb.path.join('/')
+                )}">${label}</button>`)
+          );
+        })
+        .join('') +
+      (sideways
+        ? `<button type="button" class="gl-crumb gl-crumb-alt" data-path="${escapeHtml(
+            sideways.join('/')
+          )}" title="${escapeHtml(onCat.name)} in every city">everywhere</button>`
+        : '') +
+      // Standing there, the same word says which of the two you got.
+      (onCat && !onCity ? '<span class="gl-crumb-alt is-current">everywhere</span>' : '');
+
+    $('gl-up').disabled = !state.path.length;
+    $('gl-near').setAttribute('aria-pressed', String(state.near));
+    $('gl-clear').hidden = !state.text;
+  }
+
+  /* The id is what `aria-activedescendant` on the tree points at. Focus stays
+     on the container rather than moving row to row, so without it the
+     selection moves silently: a screen reader would announce nothing on
+     ArrowDown and Enter would open a row it had never named. */
   const rowId = (i) => `gl-row-${i}`;
 
   /* The guides are the depth cue, in place of an indent you would have to
-     measure. `└` closes a run so the eye can see where a city ends without
-     counting rows back to the last header. */
-  const GUIDE = { mid: '├─', end: '└─', pipe: '│ ', blank: '  ' };
+     measure, and they are the one thing here borrowed from `tree` rather than
+     from the window chrome. `└` closes a run so the eye can see where a city
+     ends without counting rows back to the last header.
 
-  function rowHtml(i, kind, indent, inner, label) {
+     Whatever level is on top draws no guide at all: standing inside London
+     does not mean every row should carry a stem descending from a header that
+     is now in the trail instead. */
+  const branch = (last) => (last ? '└─ ' : '├─ ');
+  const stem = (last) => (last ? '   ' : '│  ');
+
+  function rowHtml(i, row, guide, inner, label) {
     return (
-      `<div class="gl-row gl-${kind}${i === active ? ' is-active' : ''}" role="option" ` +
-      `id="${rowId(i)}" data-i="${i}" aria-label="${escapeHtml(label)}"` +
-      `${i === active ? ' aria-selected="true"' : ''}>` +
-      `<span class="gl-guide" aria-hidden="true">${indent}</span>` +
+      `<div class="gl-row gl-${row.kind}" role="treeitem" id="${rowId(i)}" data-i="${i}" ` +
+      `aria-level="${row.depth + 1}" aria-label="${escapeHtml(label)}"` +
+      (row.folder ? ` aria-expanded="${row.open}"` : '') +
+      '>' +
+      (guide ? `<span class="gl-guide" aria-hidden="true">${guide}</span>` : '') +
+      (row.folder
+        ? `<button type="button" class="gl-twisty" data-toggle="${i}" tabindex="-1" ` +
+          `aria-label="${row.open ? 'Collapse' : 'Expand'} ${escapeHtml(row.node.name)}">` +
+          `${row.open ? '▾' : '▸'}</button>`
+        : '') +
       inner +
       '</div>'
     );
   }
 
   function syncActiveDescendant() {
-    const input = $('gl-input');
-    if (active < 0) input.removeAttribute('aria-activedescendant');
-    else input.setAttribute('aria-activedescendant', rowId(active));
+    const tree = $('gl-rows');
+    if (active < 0) tree.removeAttribute('aria-activedescendant');
+    else tree.setAttribute('aria-activedescendant', rowId(active));
   }
 
-  function render(raw) {
-    const result = search(raw);
-    const { cities, matches, words, command, onCity, onCat, filtering } = result;
-    const host = $('gl-rows');
-    const scroll = $('gl-scroll');
+  function paintActive() {
+    const rows = $('gl-rows').children;
+    if (active < 0 || !rows[active]) return;
+    rows[active].classList.add('is-active');
+    rows[active].setAttribute('aria-selected', 'true');
+  }
 
-    locationHint(command);
+  /* `keep` is for a re-render that is not a navigation -- a twisty, a location
+     that has just arrived. Selection follows the row rather than its index,
+     which shifts by however many rows the twisty just added above it, and the
+     scroll stays exactly where the thumb left it. */
+  function render(opts = {}) {
+    const result = search();
+    const { cities, matches, words, onCity, onCat } = result;
+    const host = $('gl-rows');
+    const empty = $('gl-empty');
+    const scroll = $('gl-scroll');
+    const keepId = opts.keep && view[active] ? view[active].id : null;
+    const keepTop = opts.keep ? scroll.scrollTop : 0;
+
+    renderNav(onCity, onCat);
+    locationHint();
 
     if (!cities.length) {
-      // `presentation`, because the listbox may only contain options: the count
-      // is announced from the footer, which is live where this is not.
-      host.innerHTML =
-        '<div class="gl-empty" role="presentation">nothing saved here matches. ' +
-        '<code>Esc</code> goes back up, <code>/</code> lists the cities.</div>';
+      host.innerHTML = '';
+      host.hidden = true;
+      empty.hidden = false;
+      empty.innerHTML =
+        'nothing saved here matches. ' +
+        (state.text ? '<button type="button" data-nav="clear">clear the search</button>' : '') +
+        (state.text && state.path.length ? ', or ' : '') +
+        (state.path.length ? '<button type="button" data-nav="up">go back up</button>' : '');
       view = [];
       active = -1;
       syncActiveDescendant();
-      status(0, filtering, raw);
+      status(0, words);
       return;
     }
 
+    empty.hidden = true;
+    host.hidden = false;
+
+    // Once the trail names a level, its rows are redundant -- the whole point
+    // of standing somewhere is that you stop being told where you are on every
+    // line. Dropping them is also what promotes the level below to the top.
+    const showCity = !onCity;
+    const showCat = !onCat;
+    const placeGuide = (last) =>
+      (showCity && showCat ? stem(last) : '') + (showCity || showCat ? '  ' : '');
+
     const html = [];
-    view = [];
-    const showDistance = command === 'near' && origin.state === 'ready';
+    const next = [];
+    const push = (row) => {
+      next.push(row);
+      return next.length - 1;
+    };
+    const showDistance = state.near && origin.state === 'ready';
 
     for (const city of cities) {
-      if (view.length >= MAX_ROWS) break;
-      const open = isOpen(city, !!onCity, matches);
-      view.push({ kind: 'city', node: city });
-      html.push(
-        rowHtml(
-          view.length - 1,
-          'city',
-          open ? '▾ ' : '▸ ',
-          `<span class="gl-name">${highlight(city.name, words)}</span>` +
-            `<span class="gl-count">${city.count}</span>`,
-          `${city.name}, ${city.count} place${city.count === 1 ? '' : 's'}`
-        )
-      );
-      if (!open) continue;
+      if (next.length >= MAX_ROWS) break;
+      let cityRow = -1;
 
-      city.cats.forEach((cat, ci) => {
-        if (view.length >= MAX_ROWS) return;
-        const lastCat = ci === city.cats.length - 1;
-        const catOpen = isOpen(cat, !!onCat, city.count);
-        view.push({ kind: 'cat', node: cat, city });
+      if (showCity) {
+        const id = `city:${city.key}`;
+        const row = {
+          kind: 'city',
+          node: city,
+          id,
+          depth: 0,
+          parent: -1,
+          folder: true,
+          open: isOpen(id, city, !!onCat, matches),
+        };
+        cityRow = push(row);
         html.push(
           rowHtml(
-            view.length - 1,
-            'cat',
-            `${lastCat ? GUIDE.end : GUIDE.mid} ${catOpen ? '▾' : '▸'} `,
-            `<span class="gl-emoji" aria-hidden="true">${escapeHtml(cat.emoji)}</span>` +
-              `<span class="gl-name">${highlight(cat.name, words)}</span>` +
-              `<span class="gl-count">${cat.count}</span>`,
-            `${cat.name} in ${city.name}, ${cat.count} place${cat.count === 1 ? '' : 's'}`
+            cityRow,
+            row,
+            '',
+            `<span class="gl-name">${highlight(city.name, words)}</span>` +
+              `<span class="gl-count">${city.count}</span>`,
+            `${city.name}, ${city.count} place${city.count === 1 ? '' : 's'}`
           )
         );
-        if (!catOpen) return;
+        if (!row.open) continue;
+      }
 
-        const stem = lastCat ? GUIDE.blank : GUIDE.pipe;
-        for (const place of cat.places) {
-          if (view.length >= MAX_ROWS) break;
-          view.push({ kind: 'place', node: place });
-          const km = showDistance && Number.isFinite(distanceTo(place))
-            ? `<span class="gl-km">${formatKm(distanceTo(place))}</span>`
-            : '';
+      city.cats.forEach((cat, ci) => {
+        if (next.length >= MAX_ROWS) return;
+        const lastCat = ci === city.cats.length - 1;
+        let catRow = cityRow;
+
+        if (showCat) {
+          const id = `cat:${city.key}:${cat.key}`;
+          const row = {
+            kind: 'cat',
+            node: cat,
+            city,
+            id,
+            depth: showCity ? 1 : 0,
+            parent: cityRow,
+            folder: true,
+            open: isOpen(id, cat, !!onCity, city.count),
+          };
+          catRow = push(row);
           html.push(
             rowHtml(
-              view.length - 1,
-              'place',
-              `${stem}    `,
-              `<span class="gl-bullet" aria-hidden="true">●</span>` +
+              catRow,
+              row,
+              showCity ? branch(lastCat) : '',
+              `<span class="gl-emoji" aria-hidden="true">${escapeHtml(cat.emoji)}</span>` +
+                `<span class="gl-name">${highlight(cat.name, words)}</span>` +
+                `<span class="gl-count">${cat.count}</span>`,
+              `${cat.name} in ${city.name}, ${cat.count} place${cat.count === 1 ? '' : 's'}`
+            )
+          );
+          if (!row.open) return;
+        }
+
+        const guide = placeGuide(lastCat);
+        for (const place of cat.places) {
+          if (next.length >= MAX_ROWS) break;
+          const row = {
+            kind: 'place',
+            node: place,
+            city,
+            cat,
+            id: `place:${place.cid || place.mid || place.name}`,
+            depth: (showCity ? 1 : 0) + (showCat ? 1 : 0),
+            parent: catRow,
+            folder: false,
+          };
+          const i = push(row);
+          const km =
+            showDistance && Number.isFinite(distanceTo(place))
+              ? `<span class="gl-km">${formatKm(distanceTo(place))}</span>`
+              : '';
+          html.push(
+            rowHtml(
+              i,
+              row,
+              guide,
+              '<span class="gl-bullet" aria-hidden="true">●</span>' +
                 '<span class="gl-body">' +
                 `<span class="gl-name">${highlight(place.name, words)}</span>` +
                 (place.far ? '<span class="gl-far" title="placed by its nearest city">~</span>' : '') +
-                (place.address
-                  ? `<div class="gl-meta">${highlight(place.address, words)}</div>`
-                  : '') +
+                (place.address ? `<div class="gl-meta">${highlight(place.address, words)}</div>` : '') +
                 (place.note ? `<div class="gl-note">${highlight(place.note, words)}</div>` : '') +
                 '</span>' +
                 km,
@@ -507,60 +673,80 @@
       });
     }
 
+    view = next;
     host.innerHTML = html.join('');
-    active = view.length ? 0 : -1;
-    if (active >= 0) {
-      host.querySelector('.gl-row').classList.add('is-active');
-      host.querySelector('.gl-row').setAttribute('aria-selected', 'true');
-    }
+    const kept = keepId ? view.findIndex((row) => row.id === keepId) : -1;
+    active = view.length ? Math.max(0, kept) : -1;
+    paintActive();
     syncActiveDescendant();
-    scroll.scrollTop = 0;
-    status(matches, filtering, raw);
+    scroll.scrollTop = keepTop;
+    status(matches, words);
   }
 
-  // `filtering` comes from the parsed query, not the raw string: a lone `/`
-  // with the menu open narrows nothing yet, and reporting it as "1649 matches"
-  // would claim a filter that is not applied.
-  function status(total, filtering, raw) {
+  /* Two different numbers, because "319 matches" is not what standing in
+     London means -- nothing was matched, you walked there. A search is what
+     turns the count into a claim about the words. */
+  function status(total, words) {
     const el = $('gl-status');
-    if (!filtering) {
-      el.textContent = `${DATA.places.length} places · ${TREE.length} cities`;
-      return;
-    }
-    el.textContent = `${total} match${total === 1 ? '' : 'es'}`;
+    if (words.length) el.textContent = `${total} match${total === 1 ? '' : 'es'}`;
+    else if (state.path.length) el.textContent = `${total} place${total === 1 ? '' : 's'}`;
+    else el.textContent = `${DATA.places.length} places · ${TREE.length} cities`;
   }
 
   function setActive(next) {
-    const rows = $('gl-rows').querySelectorAll('.gl-row');
+    const rows = $('gl-rows').children;
     if (!rows.length) return;
     const clamped = Math.max(0, Math.min(rows.length - 1, next));
-    rows[active]?.classList.remove('is-active');
-    rows[active]?.removeAttribute('aria-selected');
+    if (rows[active]) {
+      rows[active].classList.remove('is-active');
+      rows[active].removeAttribute('aria-selected');
+    }
     active = clamped;
-    rows[active].classList.add('is-active');
-    rows[active].setAttribute('aria-selected', 'true');
+    paintActive();
     rows[active].scrollIntoView({ block: 'nearest' });
     syncActiveDescendant();
   }
 
-  /* Drilling writes the path into the prompt rather than toggling a hidden
-     flag, because a query is the only state this page has. Opening a city is
-     therefore the same event as typing its name, and produces the same URL. */
+  // ------------------------------------------------------------ navigation
+
+  /* One way in and out of `state`, so that a click, a key and a back button
+     cannot drift apart. `push` is what separates a move through the tree --
+     which the browser's back button should undo -- from a keystroke in the
+     search box, which it should not: a history entry per character would bury
+     the page you arrived from under thirty of them. */
+  function go(next, push) {
+    state = { ...state, ...next };
+    // A new query gets the openness its own shape implies, not the last one's.
+    expanded.clear();
+    if (state.near && origin.state === 'idle') {
+      resolveOrigin({ kind: 'me' }, () => render());
+    }
+    render();
+    syncUrl(push);
+  }
+
+  function toggle(i) {
+    const row = view[i];
+    if (!row || !row.folder) return;
+    expanded.set(row.id, !row.open);
+    render({ keep: true });
+  }
+
+  /* Going into a folder is a change of path, which is why it is the row's
+     primary action: it is the same event as arriving on `#/london`, produces
+     the same URL, and the trail above it grows a step you can click back. */
   function drill(row) {
-    if (!row) return false;
-    const input = $('gl-input');
-    const { command, words } = parseQuery(input.value);
-    let path;
-    if (row.kind === 'city') path = `/${row.node.key}`;
-    else if (row.kind === 'cat') path = `/${row.city.key}/${row.node.key}`;
-    else return false;
-    input.value =
-      [path, command ? `/${command}` : '', ...words].filter(Boolean).join(' ') + ' ';
-    onInput();
+    if (!row || row.kind === 'place') return false;
+    const { city: onCity } = resolvePath(state.path);
+    const path =
+      row.kind === 'city'
+        ? [row.node.key]
+        : [(row.city || onCity) && (row.city || onCity).key, row.node.key].filter(Boolean);
+    go({ path: canonical(path) }, true);
     return true;
   }
 
-  function open(row) {
+  function openRow(row) {
     if (!row) return;
     if (row.kind !== 'place') {
       drill(row);
@@ -569,130 +755,37 @@
     window.open(mapsUrl(row.node), '_blank', 'noopener');
   }
 
-  /* Esc widens by one step rather than clearing outright: from
-     `/london/coffee flat white` it drops the words, then the category, then the
-     city. Clearing in one press is still there at the end of it, and widening
-     is what someone who has drilled too far actually wants. */
-  function widen() {
-    const input = $('gl-input');
-    const { path, command, words } = parseQuery(input.value);
-    let next;
-    if (words.length) next = path;
-    else if (path.length) next = path.slice(0, -1);
-    else if (command) next = [];
-    else {
-      input.value = '';
-      onInput();
-      return;
-    }
-    const keep = words.length ? command : next.length ? command : null;
-    input.value =
-      [next.length ? '/' + next.join('/') : '', keep ? `/${keep}` : '']
-        .filter(Boolean)
-        .join(' ') + (next.length || keep ? ' ' : '');
-    onInput();
+  /* Up is a step, not a reset: from London's coffee it goes to London, then to
+     everywhere. The search survives it, because a search is a filter you are
+     carrying around rather than a place you are standing in -- the clear button
+     is what puts that down. */
+  function up() {
+    if (state.path.length) go({ path: state.path.slice(0, -1) }, true);
   }
 
-  // --------------------------------------------------------- autocomplete
-
-  /* The `/` menu is the index of everywhere you can stand. It opens on the
-     token being typed, so it is reachable mid-query (`bagel /ny`), not just at
-     the start of the line. Cities come first: there are thirty-eight of them
-     against nine categories, and a city is what someone arriving is usually
-     looking for. */
-  function currentSlashToken(input) {
-    const upto = input.value.slice(0, input.selectionStart ?? input.value.length);
-    const match = /(?:^|\s)\/([^\s]*)$/.exec(upto);
-    if (!match) return null;
-    // Only the segment being typed completes, so `/london/cof` offers
-    // categories rather than re-offering cities.
-    const parts = match[1].split('/');
-    return { typed: parts[parts.length - 1], prefix: parts.slice(0, -1) };
+  function clearSearch() {
+    if (!state.text) return;
+    $('gl-search').value = '';
+    go({ text: '' }, false);
   }
 
-  function closeAutocomplete() {
-    $('gl-autocomplete').classList.remove('is-open');
-    acItems = [];
-  }
-
-  function refreshAutocomplete() {
-    const input = $('gl-input');
-    const box = $('gl-autocomplete');
-    const token = currentSlashToken(input);
-
-    if (token === null) {
-      closeAutocomplete();
-      return;
-    }
-
-    const needle = fold(token.typed);
-    const deep = token.prefix.some((p) => cityByKey.has(fold(p)));
-    const entries = [];
-
-    const plural = (n) => `${n} place${n === 1 ? '' : 's'}`;
-
-    if (!deep) {
-      for (const city of TREE) {
-        entries.push({ slug: city.key, desc: `${city.name} · ${plural(city.total)}` });
-      }
-    }
-    for (const cat of DATA.categories) {
-      const where = deep ? cityByKey.get(fold(token.prefix.find((p) => cityByKey.has(fold(p))))) : null;
-      const n = where
-        ? (where.cats.find((c) => c.key === cat.key)?.total ?? 0)
-        : DATA.places.filter((p) => p.type === cat.key).length;
-      if (deep && !n) continue;
-      entries.push({ slug: cat.key, desc: `${cat.emoji} ${cat.name} · ${plural(n)}` });
-    }
-    if (!deep) {
-      entries.push({ slug: 'near', desc: 'sort by distance — asks for your location' });
-    }
-
-    acItems = entries.filter(
-      (entry) => entry.slug.startsWith(needle) || fold(entry.desc).includes(needle)
-    );
-
-    if (!acItems.length) {
-      box.classList.remove('is-open');
-      return;
-    }
-
-    acIndex = Math.min(acIndex, acItems.length - 1);
-    box.innerHTML = acItems
-      .map(
-        (entry, i) =>
-          `<div class="bt-autocomplete-item${i === acIndex ? ' is-selected' : ''}" data-ac="${i}" role="option">` +
-          `<span class="bt-autocomplete-cmd">/${escapeHtml(entry.slug)}</span>` +
-          `<span class="bt-autocomplete-desc">${escapeHtml(entry.desc)}</span></div>`
-      )
-      .join('');
-    box.classList.add('is-open');
-  }
-
-  function acceptAutocomplete(index) {
-    const entry = acItems[index];
-    const input = $('gl-input');
-    if (!entry) return false;
-    const caret = input.selectionStart ?? input.value.length;
-    const before = input.value.slice(0, caret).replace(/\/[^\s/]*$/, '');
-    const after = input.value.slice(caret);
-    input.value = `${before}${entry.slug} ${after.replace(/^\s+/, '')}`;
-    const at = before.length + entry.slug.length + 1;
-    input.setSelectionRange(at, at);
-    onInput();
-    return true;
+  function toggleNear() {
+    go({ near: !state.near }, false);
   }
 
   // ------------------------------------------------------------------ url
 
-  /* The address bar is the share mechanism: every filter is a URL, so sending
+  /* The address bar is the share mechanism: every view is a URL, so sending
      someone the bakeries you like is copy-and-paste with no extra affordance to
-     find. replaceState, not pushState -- each keystroke is not a history entry. */
-  function syncUrl(raw) {
-    const hash = raw.trim() ? '#' + encodeURIComponent(raw.trim()) : '';
-    if (hash !== window.location.hash) {
-      history.replaceState(null, '', hash || window.location.pathname);
-    }
+     find. The shape is the one the prompt used to hold, unchanged, so a link
+     from before this rewrite lands on exactly the view it named. */
+  function syncUrl(push) {
+    const raw = serialize(state);
+    const hash = raw ? '#' + encodeURIComponent(raw) : '';
+    if (hash === window.location.hash) return;
+    const url = hash || window.location.pathname;
+    if (push) history.pushState(null, '', url);
+    else history.replaceState(null, '', url);
   }
 
   const queryFromUrl = () => {
@@ -703,134 +796,161 @@
     }
   };
 
+  /* Arriving somewhere -- on load, on a shared link, or on the back button --
+     is the same event three times over, so it has one handler. `near` asks for
+     a location on every one of them: the permission belongs to whoever is
+     looking at the page, not to whoever sent the link. */
+  function fromUrl() {
+    const raw = queryFromUrl();
+    if (raw === serialize(state)) return;
+    const parsed = parseQuery(raw);
+    state = { path: parsed.path, text: parsed.text, near: parsed.near };
+    expanded.clear();
+    $('gl-search').value = state.text;
+    if (state.near && origin.state === 'idle') {
+      resolveOrigin({ kind: 'me' }, () => render());
+    }
+    render();
+    // Rewrite an alias into the slugs the trail is showing -- `/nyc/pizza` and
+    // `/newyork/food` are the same view, and the address bar should agree with
+    // the page about which one you are looking at. Replaced, never pushed: this
+    // is the same entry, spelled the way the page spells it.
+    syncUrl(false);
+  }
+
   // -------------------------------------------------------------- wiring
 
-  /* Show a query and honour what it asks for. Typed, arrived at on load, or
-     arrived at by a hash change are the same event as far as `/near` goes: the
-     permission belongs to whoever is looking at the page, not to whoever sent
-     the link, so every route in has to be able to ask.
-
-     Asked before rendering, so the first paint already says it is waiting.
-     `origin.state` leaves `idle` immediately, so editing the rest of the query
-     cannot re-prompt and a denial is not asked about again. */
-  function applyQuery(raw) {
-    if (parseQuery(raw).command === 'near' && origin.state === 'idle') {
-      resolveOrigin({ kind: 'me' }, () => render($('gl-input').value));
-    }
-    render(raw);
-  }
-
-  function onInput() {
-    const raw = $('gl-input').value;
-    acIndex = 0;
-    refreshAutocomplete();
-    applyQuery(raw);
-    syncUrl(raw);
-  }
-
-  function onKeydown(event) {
-    const box = $('gl-autocomplete');
-    const acOpen = box.classList.contains('is-open');
-    const input = $('gl-input');
-
+  function onTreeKeydown(event) {
+    const row = view[active];
     switch (event.key) {
       case 'ArrowDown':
-      case 'ArrowUp': {
-        event.preventDefault();
-        const step = event.key === 'ArrowDown' ? 1 : -1;
-        if (acOpen) {
-          acIndex = (acIndex + step + acItems.length) % acItems.length;
-          refreshAutocomplete();
-        } else {
-          setActive(active + step);
-        }
-        return;
-      }
+        setActive(active + 1);
+        break;
+      case 'ArrowUp':
+        setActive(active - 1);
+        break;
+      case 'Home':
+        setActive(0);
+        break;
+      case 'End':
+        setActive(view.length - 1);
+        break;
       case 'ArrowRight':
-        /* Only at the very end of the line, and never with a selection --
-           anywhere else this is the caret moving through text someone is
-           editing, and stealing it would make the prompt feel broken.
-           ArrowLeft is deliberately never bound, for the same reason. */
-        if (
-          !acOpen &&
-          input.selectionStart === input.value.length &&
-          input.selectionStart === input.selectionEnd &&
-          view[active] &&
-          view[active].kind !== 'place'
-        ) {
-          event.preventDefault();
-          drill(view[active]);
-        }
-        return;
-      case 'Tab':
-        if (acOpen) {
-          event.preventDefault();
-          acceptAutocomplete(acIndex);
-        }
-        return;
+        // Open it, then walk into it -- the second press is the one that moves,
+        // so a closed folder never swallows the keystroke that revealed it.
+        if (row && row.folder && !row.open) toggle(active);
+        else if (row && row.folder) setActive(active + 1);
+        break;
+      case 'ArrowLeft':
+        /* Close, then climb, then leave the level entirely. Read downwards it
+           is one gesture -- "out" -- and it ends where the back button does. */
+        if (row && row.folder && row.open) toggle(active);
+        else if (row && row.parent >= 0) setActive(row.parent);
+        else up();
+        break;
       case 'Enter':
-        event.preventDefault();
-        if (acOpen) acceptAutocomplete(acIndex);
-        else open(view[active]);
-        return;
+        openRow(row);
+        break;
       case 'Escape':
-        event.preventDefault();
-        if (acOpen) closeAutocomplete();
-        else widen();
-        return;
+        up();
+        break;
+      /* Backspace is deliberately absent, though every file browser binds it to
+         "up": it is also how you fix a typo, and the search box it belongs to
+         is one keystroke away from the tree. Left and Escape are already the
+         way out; taking Backspace as a third one would cost the correction. */
       default:
+        return;
     }
+    event.preventDefault();
   }
 
   function wire() {
-    const input = $('gl-input');
-    input.addEventListener('input', onInput);
-    input.addEventListener('keydown', onKeydown);
-    input.addEventListener('click', refreshAutocomplete);
+    const searchEl = $('gl-search');
+    const tree = $('gl-rows');
 
-    $('gl-rows').addEventListener('click', (event) => {
-      const row = event.target.closest('.gl-row');
-      if (!row) return;
-      setActive(Number(row.dataset.i));
-      open(view[active]);
-    });
-
-    $('gl-autocomplete').addEventListener('mousedown', (event) => {
-      const item = event.target.closest('[data-ac]');
-      if (!item) return;
-      event.preventDefault(); // keep focus in the input; a blur would close the menu
-      acceptAutocomplete(Number(item.dataset.ac));
-    });
-
-    window.addEventListener('hashchange', () => {
-      const next = queryFromUrl();
-      if (next !== input.value) {
-        input.value = next;
-        acIndex = 0;
-        // Close rather than refresh: arriving at a query is not typing one, so
-        // a link would otherwise land with the menu sitting over the very
-        // results it was sent to show.
-        closeAutocomplete();
-        applyQuery(next);
+    searchEl.addEventListener('input', () => go({ text: searchEl.value }, false));
+    searchEl.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        tree.focus();
+        setActive(active < 0 ? 0 : active);
+      } else if (event.key === 'Enter') {
+        // The first row is what the words found, so Enter on it is the fastest
+        // path from a name you half-remember to the pin in Maps.
+        event.preventDefault();
+        openRow(view[active]);
+      } else if (event.key === 'Escape') {
+        event.preventDefault();
+        if (state.text) clearSearch();
+        else up();
       }
     });
 
-    /* Any stray keystroke belongs to the filter. Guarded on modifiers so
-       browser shortcuts still work, and on touch so the on-screen keyboard is
-       never summoned by a tap on a row. */
-    document.addEventListener('keydown', (event) => {
-      if (event.target === input || event.metaKey || event.ctrlKey || event.altKey) return;
-      if (event.key.length === 1 || event.key === 'Backspace') input.focus();
+    $('gl-clear').addEventListener('click', () => {
+      clearSearch();
+      searchEl.focus();
     });
 
-    if (!window.matchMedia('(hover: none)').matches) input.focus();
+    tree.addEventListener('keydown', onTreeKeydown);
+    tree.addEventListener('click', (event) => {
+      const twisty = event.target.closest('[data-toggle]');
+      const row = event.target.closest('.gl-row');
+      if (!row) return;
+      // Clicking anywhere puts the arrows back in the tree, so the pointer and
+      // the keyboard never end up describing two different selections.
+      tree.focus({ preventScroll: true });
+      setActive(Number(row.dataset.i));
+      if (twisty) toggle(Number(twisty.dataset.toggle));
+      else openRow(view[active]);
+    });
+
+    $('gl-up').addEventListener('click', up);
+    $('gl-near').addEventListener('click', toggleNear);
+
+    $('gl-crumbs').addEventListener('click', (event) => {
+      const crumb = event.target.closest('[data-path]');
+      if (!crumb) return;
+      const path = crumb.dataset.path ? crumb.dataset.path.split('/') : [];
+      go({ path: canonical(path) }, true);
+    });
+
+    $('gl-empty').addEventListener('click', (event) => {
+      const action = event.target.closest('[data-nav]');
+      if (!action) return;
+      if (action.dataset.nav === 'clear') clearSearch();
+      else up();
+    });
+
+    window.addEventListener('popstate', fromUrl);
+    window.addEventListener('hashchange', fromUrl);
+
+    /* A letter belongs to the search box wherever it was typed, which is the
+       one thing worth keeping from the prompt -- it is also what the tree owes
+       type-ahead, and filtering 1649 places is a better answer than jumping to
+       the next row starting with `p`. Guarded on modifiers so browser shortcuts
+       still work, on touch so a tap on a row never summons the keyboard, and on
+       `defaultPrevented` so Backspace consumed by the tree is not also a
+       reason to focus the field. */
+    document.addEventListener('keydown', (event) => {
+      if (event.target === searchEl || event.defaultPrevented) return;
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      if (event.key === '/') {
+        event.preventDefault();
+        searchEl.focus();
+        return;
+      }
+      // No preventDefault: the character itself has to land in the field, and
+      // the browser routes it to whatever has focus by the time it does.
+      if (event.key.length === 1 || event.key === 'Backspace') searchEl.focus();
+    });
+
+    if (!window.matchMedia('(hover: none)').matches) tree.focus();
   }
 
   // ------------------------------------------------------------------ boot
 
   function prepare(data) {
     DATA = data;
-    const catMeta = new Map(data.categories.map((c) => [c.key, c]));
     const byCity = new Map();
 
     for (const place of data.places) {
@@ -939,18 +1059,23 @@
     .then((data) => {
       prepare(data);
       wire();
-      const initial = queryFromUrl();
-      $('gl-input').value = initial;
-      // No `refreshAutocomplete()` here on purpose: arriving on a shared link
-      // is not typing, and the menu would open over the results the link was
-      // sent to show. `applyQuery` still asks for a location if the link is a
-      // `/near` one -- see there.
-      applyQuery(initial);
+      const parsed = parseQuery(queryFromUrl());
+      state = { path: parsed.path, text: parsed.text, near: parsed.near };
+      $('gl-search').value = state.text;
+      if (state.near) resolveOrigin({ kind: 'me' }, () => render());
+      render();
+      // An old link may name a city by a slug the trail no longer uses; this
+      // is where `/nyc/pizza` becomes `/newyork/food` in the address bar, once,
+      // without adding a history entry to go back through.
+      syncUrl(false);
     })
     .catch((err) => {
       $('gl-subtitle').textContent = 'could not load places';
-      $('gl-rows').innerHTML =
-        `<div class="gl-empty">data/lists.json did not load (${escapeHtml(String(err.message))}).\n` +
-        'Run <code>python3 scripts/fetch.py</code> and reload.</div>';
+      $('gl-rows').hidden = true;
+      const empty = $('gl-empty');
+      empty.hidden = false;
+      empty.innerHTML =
+        `data/lists.json did not load (${escapeHtml(String(err.message))}).\n` +
+        'Run <code>python3 scripts/fetch.py</code> and reload.';
     });
 })();
