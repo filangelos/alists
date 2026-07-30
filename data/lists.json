@@ -90,10 +90,10 @@
    "name": "New York"
   },
   {
-   "count": 104,
+   "count": 106,
    "key": "athens",
-   "lat": 37.979095,
-   "lng": 23.744517,
+   "lat": 37.979214,
+   "lng": 23.743083,
    "name": "Athens"
   },
   {
@@ -342,10 +342,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-07-28T17:30:04Z",
+ "generated": "2026-07-30T07:44:49Z",
  "lists": [
   {
-   "count": 66,
+   "count": 67,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -354,7 +354,7 @@
    "url": "https://www.google.com/maps/placelists/list/JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
   },
   {
-   "count": 39,
+   "count": 40,
    "description": "",
    "emoji": "🍷",
    "id": "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
@@ -363,7 +363,7 @@
    "url": "https://www.google.com/maps/placelists/list/TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
   },
   {
-   "count": 69,
+   "count": 71,
    "description": "",
    "emoji": "🏛️",
    "id": "ZkzMjrM6SXWD7BtpwoxAgg",
@@ -807,6 +807,21 @@
  "owner": "Angelos",
  "places": [
   {
+   "address": "35 Sclater St, London E1 6LB, United Kingdom",
+   "cid": "-970580478292469905",
+   "city": "London",
+   "lat": 51.5237045,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
+   ],
+   "lng": -0.0729238,
+   "mid": "/g/11c1szr8hp",
+   "name": "SMOKESTAK",
+   "note": "",
+   "type": "food"
+  },
+  {
    "address": "Athinon Chalkidos 17, Anixi 145 69",
    "cid": "1980233128533099843",
    "city": "Athens",
@@ -825,7 +840,7 @@
    "address": "",
    "cid": "-6094299273144457517",
    "city": "Sifnos",
-   "lat": 36.983114199999996,
+   "lat": 36.9831141,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
@@ -1785,6 +1800,21 @@
    "type": "food"
   },
   {
+   "address": "Valtetsiou 21, Athina 106 80",
+   "cid": "9022899639138628987",
+   "city": "Athens",
+   "lat": 37.9841441,
+   "lists": [
+    "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.736793499999997,
+   "mid": "/g/11bx0dxfs_",
+   "name": "Warehouse",
+   "note": "",
+   "type": "drinks"
+  },
+  {
    "address": "Ioulis 840 02",
    "cid": "5459535616161153178",
    "city": "Kea",
@@ -2356,6 +2386,20 @@
    "name": "Binch",
    "note": "",
    "type": "drinks"
+  },
+  {
+   "address": "Asklipiou 41, Athina 106 80",
+   "cid": "3090502306565876927",
+   "city": "Athens",
+   "lat": 37.983221799999995,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.737496699999998,
+   "mid": "/g/11hbl278tn",
+   "name": "Nabokov",
+   "note": "",
+   "type": "other"
   },
   {
    "address": "",
@@ -4831,20 +4875,6 @@
    "type": "shops"
   },
   {
-   "address": "35 Sclater St, London E1 6LB, United Kingdom",
-   "cid": "-970580478292469905",
-   "city": "London",
-   "lat": 51.5237045,
-   "lists": [
-    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
-   ],
-   "lng": -0.0729238,
-   "mid": "/g/11c1szr8hp",
-   "name": "SMOKESTAK",
-   "note": "",
-   "type": "other"
-  },
-  {
    "address": "97 St Marks Pl, New York, NY 10009, United States",
    "cid": "6971984010392762983",
    "city": "New York",
@@ -5644,11 +5674,11 @@
    "address": "825 7th Ave, New York, NY 10019, United States",
    "cid": "-5752242370159446629",
    "city": "New York",
-   "lat": 40.7630856,
+   "lat": 40.7631671,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9815966,
+   "lng": -73.98150009999999,
    "mid": "/g/11y618y2_4",
    "name": "Venchi Chocolate & Gelato 7th Avenue",
    "note": "",
@@ -6330,11 +6360,11 @@
    "address": "55 Water St, Brooklyn, NY 11201",
    "cid": "-3164217234637295004",
    "city": "New York",
-   "lat": 40.7034205,
+   "lat": 40.7034272,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9921457,
+   "lng": -73.9921126,
    "mid": null,
    "name": "Time Out Market New York",
    "note": "",
@@ -7270,11 +7300,11 @@
    "address": "Σεράλια, Seralia 840 03",
    "cid": "2704122551009748547",
    "city": "Sifnos",
-   "lat": 36.9726813,
+   "lat": 36.9726886,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.7457799,
+   "lng": 24.745974399999998,
    "mid": "/g/11cnc92jtq",
    "name": "Captain Sifakis",
    "note": "",
@@ -9690,11 +9720,11 @@
    "address": "University College, Belfield, Dublin 4, Ireland",
    "cid": "3924371348803338191",
    "city": "Dublin",
-   "lat": 53.306378099999996,
+   "lat": 53.3097268,
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.218890699999999,
+   "lng": -6.2215897,
    "mid": "/m/0373qt",
    "name": "University College Dublin",
    "note": "",
@@ -14984,11 +15014,11 @@
    "address": "Paros 844 01",
    "cid": "8399130461508107963",
    "city": "Paros",
-   "lat": 37.1390992,
+   "lat": 37.138258199999996,
    "lists": [
     "Zf5AT3kiBq-XKW9McLcNgym6tl4tWA"
    ],
-   "lng": 25.2873043,
+   "lng": 25.2854061,
    "mid": "/g/11b7kfbyw8",
    "name": "Παραλία Μικρή Σάντα Μαρία",
    "note": "",
@@ -18008,11 +18038,11 @@
    "address": "904 Palmer Alley NW, Washington, DC 20001, United States",
    "cid": "-6409071363281121661",
    "city": "Washington",
-   "lat": 38.9002631,
+   "lat": 38.9002486,
    "lists": [
     "BetPSmKJ1ri15ctvsig9cMcTJPTo5A"
    ],
-   "lng": -77.0241904,
+   "lng": -77.0241945,
    "mid": "/g/11bycjjx_v",
    "name": "Dolcezza Gelato & Coffee",
    "note": "",
