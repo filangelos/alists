@@ -10,11 +10,13 @@ wrong should be *visible* -- it lands in the committed JSON where it shows up in
 a diff, can be read without opening devtools, and can be corrected by hand
 against `OVERRIDES` below. Doing it at load time would hide every one of those.
 
-Three tables are meant to be edited, and nothing else in this file is:
+Four tables are meant to be edited, and nothing else in this file is:
 
     CATEGORIES  the second level of the tree. Adding one -- "Museums",
                 "Bakery", "Markets" -- is one entry, in the order you want it
                 matched. Nothing else changes.
+    MARKS       lists that say something about the places on them rather than
+                where or what they are. One entry, and the page grows a button.
     CITIES      display names for lists whose own name is a private joke, and
                 the groups of lists that are really one place.
     COUNTRIES   which country each city is in, for the flag in front of it.
@@ -137,6 +139,43 @@ CATEGORIES: tuple[Category, ...] = (
 # Two in five places land here, and most of the best restaurants are among them,
 # because a good restaurant is called `Palma`, not `Palma Restaurant`.
 OTHER = Category("other", "Other", "·")
+
+
+class Mark(NamedTuple):
+    """A list that says something about the places on it rather than where or
+    what they are.
+
+    A city list and a category list both *file* a place: they answer the two
+    questions the tree is made of. A mark answers neither. `next` is the list of
+    places that have not been eaten in, drunk at or walked around yet -- they
+    are real places in real cities, and the only thing they are not is
+    recommended, which is the one claim every other place on this page makes.
+
+    So a marked place is held out of the tree until the button that turns its
+    mark on is pressed, and drawn with the mark's glyph in place of its bullet
+    once it is. Folding them in silently would be the cheaper change and the
+    wrong one: it would quietly cost the collection the only thing it says.
+
+    `lists` names the Maps lists that carry the mark, matched on the letters and
+    digits of the name -- `next`, `Next` and `next 🔜` are one intention, and
+    unlike a category, which is named by this taxonomy, a mark is named by
+    whoever made the list.
+    """
+
+    key: str  # what a marked place carries in the JSON, and what the URL says
+    label: str  # what the button that turns it on says, and what the glyph means
+    emoji: str  # drawn in front of a marked place, in place of its bullet
+    lists: tuple[str, ...] = ()
+
+
+# Order is display order: the buttons appear left to right in this order, and a
+# place carrying two marks lists them in it.
+MARKS: tuple[Mark, ...] = (
+    Mark(
+        "unverified", "not been yet", "○",
+        lists=("next",),
+    ),
+)
 
 # Names the fetcher cannot be expected to work out, and the only hand-written
 # geography in the project.
@@ -350,6 +389,56 @@ _COMPILED = [
 CATEGORY_LISTS = {name for category in CATEGORIES for name in category.lists}
 
 
+# ---------------------------------------------------------------------- marks
+
+
+def token(name: str) -> str:
+    """A list name reduced to the letters and digits in it.
+
+    The same reduction `app.js` does to turn a list name into a slug, so a name
+    matched here and a name typed into the address bar agree.
+    """
+    return re.sub(r"[\W_]+", "", fold(name))
+
+
+_MARK_BY_TOKEN = {token(name): mark.key for mark in MARKS for name in mark.lists}
+
+
+def mark_of_list(name: str) -> str | None:
+    """The mark a list carries, or None if it is a place or a kind of place."""
+    return _MARK_BY_TOKEN.get(token(name))
+
+
+def is_city_list(name: str) -> bool:
+    """Whether a list is one of the places, rather than a kind of place or a mark.
+
+    The default, and deliberately so: a list added to lists.txt and nowhere else
+    becomes a city, because that is what almost every list here is.
+    """
+    return name not in CATEGORY_LISTS and mark_of_list(name) is None
+
+
+def warn_marks(lists: list[dict]) -> None:
+    """Say so when a mark names a list that was not fetched.
+
+    This is the one table keyed on a name nothing else validates, and getting it
+    wrong fails quietly in the worst way: the list files itself as a *city*, its
+    places scatter into a heading named after a to-do list, and the button that
+    was the point of the exercise never appears at all. `warn_unclassified`
+    would also complain about the spread, but it would name the wrong fix.
+    """
+    seen = {token(meta["name"]) for meta in lists}
+    for mark in MARKS:
+        missing = [name for name in mark.lists if token(name) not in seen]
+        if missing:
+            print(
+                f"  ! the {mark.key!r} mark names {', '.join(repr(n) for n in missing)}, "
+                f"which no list in lists.txt is called. Fix the name in MARKS in "
+                f"scripts/derive.py, or add the list.",
+                file=sys.stderr,
+            )
+
+
 def classify(place: dict, list_names: set[str]) -> str:
     """Decide which category a place belongs to.
 
@@ -387,13 +476,13 @@ def classify(place: dict, list_names: set[str]) -> str:
 def warn_unclassified(lists: list[dict], members: dict[str, list[dict]]) -> None:
     """Say so when a list looks like a category but is not declared as one.
 
-    Every list not named in CATEGORIES becomes a city, so a new `Museums` list
-    added to lists.txt and nowhere else would quietly appear as a place, with
-    its members scattered across the globe under one heading. A list whose
-    members span the planet is not a place, and that is cheap to notice.
+    Every list not named in CATEGORIES or MARKS becomes a city, so a new
+    `Museums` list added to lists.txt and nowhere else would quietly appear as a
+    place, with its members scattered across the globe under one heading. A list
+    whose members span the planet is not a place, and that is cheap to notice.
     """
     for meta in lists:
-        if meta["name"] in CATEGORY_LISTS:
+        if not is_city_list(meta["name"]):
             continue
         places = [p for p in members.get(meta["id"], []) if p["lat"] is not None]
         if len(places) < 3:
@@ -471,9 +560,10 @@ def assign_cities(lists: list[dict], places: list[dict]) -> list[dict]:
     partition and needs none of the "first list that claims it" arbitration the
     flat view had to do.
 
-    The 116 places on no city list at all, only on a `Coffee` or a `Food`, are
-    placed by their nearest city centre. That is what makes them reachable: no
-    geographic query finds them today, including 35 in Athens.
+    The 116 places on no city list at all, only on a `Coffee` or a `Food` -- or
+    on nothing but a mark like `next` -- are placed by their nearest city
+    centre. That is what makes them reachable: no geographic query finds them
+    today, including 35 in Athens.
     """
     by_id = {meta["id"]: meta for meta in lists}
     members: dict[str, list[dict]] = {meta["id"]: [] for meta in lists}
@@ -489,7 +579,7 @@ def assign_cities(lists: list[dict], places: list[dict]) -> list[dict]:
     def city_from_lists(place: dict) -> str | None:
         owned = [
             by_id[lid] for lid in place["lists"]
-            if lid in by_id and by_id[lid]["name"] not in CATEGORY_LISTS
+            if lid in by_id and is_city_list(by_id[lid]["name"])
         ]
         if not owned:
             return None
@@ -550,16 +640,25 @@ def assign_cities(lists: list[dict], places: list[dict]) -> list[dict]:
 
 
 def derive(data: dict) -> dict:
-    """Add `city` and `type` to every place, and the two indexes the page reads."""
+    """Add `city`, `type` and any marks to every place, and the indexes the page reads."""
     by_id = {meta["id"]: meta for meta in data["lists"]}
 
+    warn_marks(data["lists"])
     cities = assign_cities(data["lists"], data["places"])
 
     for place in data["places"]:
         names = {by_id[lid]["name"] for lid in place["lists"] if lid in by_id}
         place["type"] = classify(place, names)
+        # Written only when there is one, like `far`: absent is the ordinary
+        # case for all but a handful of places, and a key repeated 1600 times to
+        # say `false` is 1600 lines of diff that never change.
+        carried = {mark_of_list(name) for name in names}
+        marks = [m.key for m in MARKS if m.key in carried]
+        if marks:
+            place["marks"] = marks
 
     used = {p["type"] for p in data["places"]}
+    marked = {key for p in data["places"] for key in p.get("marks", ())}
     data["cities"] = cities
     # `lists` travels with the category so the page can resolve the slugs the
     # lists used to answer to -- `/baker` still means the bakeries -- without a
@@ -569,10 +668,21 @@ def derive(data: dict) -> dict:
         for c in (*CATEGORIES, OTHER)
         if c.key in used
     ]
+    # Only the marks that actually claimed a place, so the page draws a button
+    # for a mark that means something and no button for one that is declared and
+    # empty -- a toggle that turns nothing on is worse than no toggle.
+    data["marks"] = [
+        {"key": m.key, "label": m.label, "emoji": m.emoji, "lists": list(m.lists)}
+        for m in MARKS
+        if m.key in marked
+    ]
 
     typed = sum(1 for p in data["places"] if p["type"] != OTHER.key)
     print(
         f"  {len(cities)} cities · {len(data['categories'])} categories · "
         f"{typed}/{len(data['places'])} typed"
     )
+    for mark in data["marks"]:
+        held = sum(1 for p in data["places"] if mark["key"] in p.get("marks", ()))
+        print(f"  {mark['emoji']} {held} {mark['label']}")
     return data

@@ -31,11 +31,13 @@
      one. */
   const MAX_ROWS = 6000;
 
-  let DATA = { lists: [], places: [], cities: [], categories: [] };
+  let DATA = { lists: [], places: [], cities: [], categories: [], marks: [] };
   let TREE = []; // cities, each holding categories, each holding places
   let cityByKey = new Map();
   let catByKey = new Map();
+  let markByKey = new Map();
   let pathTokens = new Set(); // every token that can name a city or a category
+  let markTokens = new Map(); // token -> mark key, for `/unverified` and `/next`
 
   let view = []; // rows currently rendered, in order
   let active = -1; // index into `view`, or -1 for nothing selected
@@ -129,12 +131,17 @@
   // ----------------------------------------------------------------- state
 
   /* Everything the page knows: the node you are standing in, what you typed in
-     the search box, and whether distances are on. `path` is canonical -- at
-     most a city key and a category key, in that order -- so the trail, the URL
-     and the tree all read the same two slots.
+     the search box, whether distances are on, and which marks are folded in.
+     `path` is canonical -- at most a city key and a category key, in that
+     order -- so the trail, the URL and the tree all read the same two slots.
+
+     `marks` is in here rather than beside it because it belongs in the URL: a
+     link to the places worth going and a link to those plus the ones nobody has
+     been to yet are two different pages, and the address bar is this page's
+     only share button.
 
      Nothing about what is *expanded* lives here. See `expanded`. */
-  let state = { path: [], text: '', near: false };
+  let state = { path: [], text: '', near: false, marks: [] };
 
   /* Twisties are a peek, not a place. They are held outside `state` and outside
      the URL, and thrown away the moment the query changes, because a shared
@@ -155,6 +162,7 @@
   function parseQuery(raw) {
     const path = [];
     const rest = [];
+    const marks = new Set();
     let near = false;
 
     for (const part of raw.trim().split(/\s+/)) {
@@ -167,6 +175,9 @@
           // `/all-lists` was the old way back to the root. The trail is that
           // now, but links with it in them still have to land somewhere sane.
           else if (key === 'all-lists') continue;
+          // Before the path, because a mark is named from its own token set:
+          // `/unverified` and `/next` both mean the same button pressed.
+          else if (markTokens.has(key)) marks.add(markTokens.get(key));
           else if (pathTokens.has(key)) path.push(key);
           else rest.push(seg);
         }
@@ -174,11 +185,25 @@
         rest.push(part);
       }
     }
-    return { path: canonical(path), text: rest.join(' '), near };
+    return {
+      path: canonical(path),
+      text: rest.join(' '),
+      near,
+      marks: markOrder(marks),
+    };
   }
 
+  // Kept in the order the fetcher declared them, so two links to the same view
+  // spell it the same way whichever button was pressed first.
+  const markOrder = (keys) => DATA.marks.map((m) => m.key).filter((k) => keys.has(k));
+
   const serialize = (s) =>
-    [s.path.length ? '/' + s.path.join('/') : '', s.near ? '/near' : '', s.text.trim()]
+    [
+      s.path.length ? '/' + s.path.join('/') : '',
+      s.marks.length ? '/' + s.marks.join('/') : '',
+      s.near ? '/near' : '',
+      s.text.trim(),
+    ]
       .filter(Boolean)
       .join(' ');
 
@@ -304,6 +329,48 @@
   const distanceTo = (place) =>
     origin.at && place.lat != null ? haversine(origin.at, place) : Infinity;
 
+  // ------------------------------------------------------------------- marks
+
+  /* What the tree currently contains, once the marks have had their say. Kept
+     as a pair of numbers rather than recounted at each call site because the
+     header, the footer and the empty state all have to agree with the rows. */
+  let shown = { places: 0, cities: 0 };
+  let markSig = null;
+
+  /* Fold marked places into the tree, or hold them out of it.
+
+     This is not the search box wearing a different hat, and it is not done
+     inside `search` for that reason: a mark changes what the collection *is*,
+     so the totals a folder reports move with it. `isOpen` reads "fewer than the
+     total" as "pruned by a filter, so open it and show the selection" -- and if
+     the totals still counted places a button had put away, one press would
+     expand every folder on the page to prove a point nobody made.
+
+     A place is shown when every mark it carries is on. Carrying none is the
+     ordinary case and is why the fast path exists at all: a category with
+     nothing marked in it hands back the array it already had. */
+  function applyMarks() {
+    const sig = state.marks.join(',');
+    if (sig === markSig) return;
+    markSig = sig;
+
+    const on = new Set(state.marks);
+    const visible = (place) => !place.marks || place.marks.every((key) => on.has(key));
+    shown = { places: 0, cities: 0 };
+
+    for (const city of TREE) {
+      let total = 0;
+      for (const cat of city.cats) {
+        cat.visible = cat.marked ? cat.places.filter(visible) : cat.places;
+        cat.total = cat.visible.length;
+        total += cat.total;
+      }
+      city.total = total;
+      shown.places += total;
+      if (total) shown.cities += 1;
+    }
+  }
+
   // ------------------------------------------------------------------ search
 
   /* Walk the tree keeping only what matches, and count what survives.
@@ -330,7 +397,10 @@
 
       for (const cat of city.cats) {
         if (onCat && cat.key !== onCat.key) continue;
-        let places = cat.places;
+        // `visible`, not `places`: whatever the marks are currently letting
+        // through. Its length is already in `cat.total`, which the spread
+        // below carries into the copy `isOpen` reads.
+        let places = cat.visible;
         if (words.length) {
           const hits = [];
           for (const place of places) {
@@ -401,6 +471,18 @@
       hint.classList.toggle('is-warn', !!warn);
     };
     if (!state.near) {
+      /* A pressed mark buys the line off the keyboard legend, because the
+         glyph it just scattered through the tree is the one thing on the page
+         nothing else explains -- the button says what it turns on, not what it
+         looks like. Location outranks both when it has something to report,
+         and the pressed button is still saying it in the meantime. */
+      if (state.marks.length) {
+        say(state.marks.map((key) => {
+          const mark = markByKey.get(key);
+          return `${mark.emoji} ${mark.label}`;
+        }).join(' · '));
+        return;
+      }
       // Marked quiet so a phone can drop it: it is a keyboard legend, and on a
       // narrow screen it would only crowd the count into an ellipsis. It has to
       // stay in the DOM either way -- this is the line location state announces
@@ -475,7 +557,30 @@
 
     $('gl-up').disabled = !state.path.length;
     $('gl-near').setAttribute('aria-pressed', String(state.near));
+    for (const chip of $('gl-chips').querySelectorAll('[data-mark]')) {
+      chip.setAttribute('aria-pressed', String(state.marks.includes(chip.dataset.mark)));
+    }
     $('gl-clear').hidden = !state.text;
+  }
+
+  /* One button per mark the data actually has, built here rather than written
+     into index.html: a mark is a table in the fetcher, and a page that hardcoded
+     its button would offer to turn on a list that had been taken away. They sit
+     to the left of `near me`, which was there first and is where a thumb has
+     learned to look for it. */
+  function renderChips() {
+    const near = $('gl-near');
+    for (const mark of DATA.marks) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'gl-chip';
+      chip.dataset.mark = mark.key;
+      chip.setAttribute('aria-pressed', 'false');
+      chip.title = `Fold in the places marked ${mark.emoji} — ${mark.label}`;
+      chip.innerHTML =
+        `<span aria-hidden="true">${escapeHtml(mark.emoji)}</span> ${escapeHtml(mark.label)}`;
+      near.parentNode.insertBefore(chip, near);
+    }
   }
 
   /* The id is what `aria-activedescendant` on the tree points at. Focus stays
@@ -530,6 +635,10 @@
      which shifts by however many rows the twisty just added above it, and the
      scroll stays exactly where the thumb left it. */
   function render(opts = {}) {
+    // Before `search`, and the only place it is called: every path into a
+    // re-render passes through here, and the marks decide what there is to
+    // search before the words decide what survives it.
+    applyMarks();
     const result = search();
     const { cities, matches, words, onCity, onCat } = result;
     const host = $('gl-rows');
@@ -539,6 +648,7 @@
     const keepTop = opts.keep ? scroll.scrollTop : 0;
 
     renderNav(onCity, onCat);
+    renderCounts();
     locationHint();
 
     if (!cities.length) {
@@ -656,12 +766,22 @@
             showDistance && Number.isFinite(distanceTo(place))
               ? `<span class="gl-km">${formatKm(distanceTo(place))}</span>`
               : '';
+          /* The bullet is the mark. A row that is here because a button put it
+             here should say so where the eye already is -- in the column every
+             place has a glyph in -- rather than in a badge after the name that
+             would push the addresses out of line. Hollow against filled reads
+             as provisional against settled at any size, and the button that
+             turned it on is carrying the same glyph as its legend. */
+          const mark = place.marks ? markByKey.get(place.marks[0]) : null;
           html.push(
             rowHtml(
               i,
               row,
               guide,
-              '<span class="gl-bullet" aria-hidden="true">●</span>' +
+              (mark
+                ? `<span class="gl-bullet is-mark" aria-hidden="true" ` +
+                  `title="${escapeHtml(mark.label)}">${escapeHtml(mark.emoji)}</span>`
+                : '<span class="gl-bullet" aria-hidden="true">●</span>') +
                 '<span class="gl-body">' +
                 `<span class="gl-name">${highlight(place.name, words)}</span>` +
                 (place.far ? '<span class="gl-far" title="placed by its nearest city">~</span>' : '') +
@@ -669,7 +789,10 @@
                 (place.note ? `<div class="gl-note">${highlight(place.note, words)}</div>` : '') +
                 '</span>' +
                 km,
-              `${place.name}${place.address ? ', ' + place.address : ''}`
+              // Said rather than drawn for whoever is listening to the row: the
+              // shape of a bullet is not something a screen reader can convey.
+              `${place.name}${place.address ? ', ' + place.address : ''}` +
+                (mark ? `, ${mark.label}` : '')
             )
           );
         }
@@ -698,7 +821,17 @@
       // stay here: they are the one thing on this page a stranger types.
       window.glCount?.search(total);
     } else if (state.path.length) el.textContent = `${total} place${total === 1 ? '' : 's'}`;
-    else el.textContent = `${DATA.places.length} places · ${TREE.length} cities`;
+    else el.textContent = counts();
+  }
+
+  /* What the collection currently is, which is not what is in the file: a mark
+     that is off is holding places back, and a header counting rows nobody can
+     see is the same lie as a folder whose number disagrees with what is inside
+     it. */
+  const counts = () => `${shown.places} places · ${shown.cities} cities`;
+
+  function renderCounts() {
+    $('gl-subtitle').textContent = DATA.owner ? `${DATA.owner} · ${counts()}` : counts();
   }
 
   function setActive(next) {
@@ -784,6 +917,17 @@
     go({ near: !state.near }, false);
   }
 
+  /* Not a history entry, for the same reason `near me` is not one: it is a
+     lens on the view rather than a move through it, and the back button owes
+     you the city you came from rather than the last thing you pressed. The URL
+     still learns about it -- see `serialize` -- so the link you copy is the
+     page you are looking at. */
+  function toggleMark(key) {
+    const wanted = new Set(state.marks);
+    if (!wanted.delete(key)) wanted.add(key);
+    go({ marks: markOrder(wanted) }, false);
+  }
+
   // ------------------------------------------------------------------ url
 
   /* The address bar is the share mechanism: every view is a URL, so sending
@@ -822,7 +966,7 @@
     const raw = queryFromUrl();
     if (raw === serialize(state)) return;
     const parsed = parseQuery(raw);
-    state = { path: parsed.path, text: parsed.text, near: parsed.near };
+    state = { path: parsed.path, text: parsed.text, near: parsed.near, marks: parsed.marks };
     expanded.clear();
     $('gl-search').value = state.text;
     if (state.near && origin.state === 'idle') {
@@ -925,6 +1069,13 @@
     $('gl-up').addEventListener('click', up);
     $('gl-near').addEventListener('click', toggleNear);
 
+    // Delegated, because the mark buttons are built from the data and there may
+    // be none of them, one, or several.
+    $('gl-chips').addEventListener('click', (event) => {
+      const chip = event.target.closest('[data-mark]');
+      if (chip) toggleMark(chip.dataset.mark);
+    });
+
     $('gl-crumbs').addEventListener('click', (event) => {
       const crumb = event.target.closest('[data-path]');
       if (!crumb) return;
@@ -968,7 +1119,10 @@
   // ------------------------------------------------------------------ boot
 
   function prepare(data) {
-    DATA = data;
+    // Defaulted rather than assumed: a `lists.json` written before marks
+    // existed has no `marks` key, and it should still open a page -- with no
+    // buttons, which is the truthful thing for it to have.
+    DATA = { marks: [], ...data };
     const byCity = new Map();
 
     for (const place of data.places) {
@@ -1006,6 +1160,12 @@
               name: c.name,
               emoji: c.emoji,
               places: cats.get(c.key),
+              // Whether anything in here is held by a mark, so that the
+              // overwhelming majority of folders -- which are not -- cost
+              // nothing to fold in and out. `total` and `visible` are
+              // `applyMarks`'s to fill in, and it runs before the first paint.
+              marked: cats.get(c.key).some((p) => p.marks),
+              visible: cats.get(c.key),
               total: cats.get(c.key).length,
               count: cats.get(c.key).length,
             })),
@@ -1038,6 +1198,8 @@
 
     cityByKey = new Map(TREE.map((c) => [c.key, c]));
     catByKey = new Map(data.categories.map((c) => [c.key, c]));
+    markByKey = new Map(DATA.marks.map((m) => [m.key, m]));
+    markTokens = new Map(DATA.marks.map((m) => [m.key, m.key]));
 
     /* Everything a path segment may name. Every slug the lists used to answer
        to is folded in as an alias, so links shared before the tree existed
@@ -1050,9 +1212,28 @@
     for (const cat of data.categories) {
       for (const name of cat.lists || []) listToCat.set(name, cat.key);
     }
+    /* A mark's own lists become aliases for the mark, keyed the same way the
+       fetcher matched them -- so `/next` is the button, exactly as `/baker` is
+       the bakeries. Doing it first is what stops `next` from being read as a
+       *city* instead: the alias loop below would otherwise find the first place
+       on the list and quietly decide that `/next` means London. */
+    const listToMark = new Map();
+    for (const mark of DATA.marks) {
+      for (const name of mark.lists || []) {
+        listToMark.set(name, mark.key);
+        const alias = fold(name).replace(/[^\p{L}\p{N}]+/gu, '');
+        // A level of the tree keeps its own slug: an alias is a convenience and
+        // a city called `Next` is a page. The mark's key is not an alias and is
+        // never given up -- it is what the URL is written in.
+        if (alias && !markTokens.has(alias) && !pathTokens.has(alias)) {
+          markTokens.set(alias, mark.key);
+        }
+      }
+    }
     for (const list of data.lists) {
       const alias = fold(list.name).replace(/[^\p{L}\p{N}]+/gu, '');
       if (!alias || pathTokens.has(alias)) continue;
+      if (listToMark.has(list.name) || markTokens.has(alias)) continue;
       if (listToCat.has(list.name)) {
         catByKey.set(alias, catByKey.get(listToCat.get(list.name)));
         pathTokens.add(alias);
@@ -1067,8 +1248,8 @@
       }
     }
 
-    const counts = `${data.places.length} places · ${TREE.length} cities`;
-    $('gl-subtitle').textContent = data.owner ? `${data.owner} · ${counts}` : counts;
+    // The counts themselves are `renderCounts`'s, because they move with the
+    // marks; here there is only the date, which does not.
     if (data.generated) {
       $('gl-stamp').textContent = `updated ${data.generated.slice(0, 10)}`;
     }
@@ -1081,9 +1262,10 @@
     })
     .then((data) => {
       prepare(data);
+      renderChips();
       wire();
       const parsed = parseQuery(queryFromUrl());
-      state = { path: parsed.path, text: parsed.text, near: parsed.near };
+      state = { path: parsed.path, text: parsed.text, near: parsed.near, marks: parsed.marks };
       $('gl-search').value = state.text;
       if (state.near) resolveOrigin({ kind: 'me' }, () => render());
       render();

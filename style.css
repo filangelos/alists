@@ -166,12 +166,25 @@ body {
 
 /* --------------------------------------------------------------- nav bar */
 
+/* Two things, and they wrap in that order: where you are, and what is folded
+   in. `wrap` is for the narrow phone that cannot hold a deep trail and two
+   toggles on one line -- the toggles drop below rather than squeezing the trail
+   into a column of one word per line. */
 .gl-navbar {
   flex: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 8px 20px 6px;
+  min-width: 0;
+}
+
+.gl-where {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   min-width: 0;
 }
 
@@ -237,9 +250,19 @@ body {
 .gl-crumb-alt:hover { color: var(--accent); border-color: var(--accent); }
 .gl-crumb-alt.is-current { font-weight: 400; }
 
-.gl-chip {
+/* The right-hand edge belongs to the group rather than to whichever button was
+   written first, which is what lets a second one be added without moving the
+   first. */
+.gl-chips {
   flex: none;
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gl-chip {
+  flex: none;
   padding: 3px 10px;
   background: none;
   border: 1px solid var(--hairline-strong);
@@ -403,6 +426,13 @@ body {
 
 .gl-bullet { flex: none; color: var(--accent); line-height: 1.5; }
 .gl-row.is-active .gl-bullet { font-weight: 700; }
+
+/* A place carrying a mark -- today, one nobody has been to yet. Hollow rather
+   than filled and out of the accent rather than in it: the filled blue dot is
+   the page vouching for a place, which is the one thing it cannot do here. Two
+   cues in one glyph, so the distinction survives both a screenshot and a
+   glance, and the row's label says it in words for anyone listening. */
+.gl-bullet.is-mark { color: var(--muted); }
 
 .gl-meta {
   color: var(--muted);

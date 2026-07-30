@@ -23,7 +23,7 @@ here and no build step:
 
 ```
 lists.txt  ──scripts/fetch.py──▶  data/lists.json  ──▶  index.html + app.js
-(51 links)   + scripts/derive.py    (1649 places)         (static, on Pages)
+(52 links)   + scripts/derive.py    (1649 places)         (static, on Pages)
                 (once a day)      (38 cities, 10 types)
 ```
 
@@ -71,6 +71,38 @@ them up against whatever the addresses *do* say and complains when the majority
 disagrees, which is what would catch `IE` typed for Barcelona. Niagara Falls is
 the honest edge: six addresses in Canada, four in the United States, one flag.
 
+## The list that files nothing
+
+`next` is the places I have not eaten in, drunk at or walked around yet: things
+heard about, saved, and still owed a visit. They are real places in real cities
+and the one thing they are not is *recommended*, which is the only claim the
+rest of the page makes. Folding them in silently would have been the cheap
+change and the wrong one — the collection would quietly stop meaning what it
+says.
+
+So `next` is a **mark** rather than a city or a category. A city list says where
+a place is; a category list says what it is; both file it somewhere in the tree.
+A mark files nothing. Its places are held out of the tree until the
+`○ not been yet` button is pressed, and drawn with a hollow bullet instead of a
+filled one once they are — the button carries the same glyph, so the control is
+its own legend.
+
+```
+   ● Prufrock Coffee          been, and worth going
+   ○ Somewhere Else           saved, not yet
+```
+
+Every count moves with the button, the one in the header included: a number
+counting rows nobody can see is the same lie as a folder that disagrees with
+what is inside it. And it is a view rather than a gesture, so
+`…/#%2Funverified` is a link to the collection with the unvisited places folded
+in, exactly as `…/#%2Flondon%2Fcoffee` is a link to a folder. `/next` — the
+list's own name — resolves to the same page, like every other list slug.
+
+A marked place is still a place: it is filed by whichever city list it is on,
+and by its nearest city centre when it is on none, marked `~` if that lands
+more than 12 km out.
+
 ## Adding a list
 
 Append the share link to [`lists.txt`](lists.txt) and push. Short
@@ -85,9 +117,9 @@ python3 scripts/fetch.py
 
 Stdlib only — no `pip install`, no virtualenv, nothing to keep current.
 
-A new list becomes a city unless it is declared a category. If you add one that
-is really a kind of place, the fetcher notices — anything whose members span
-more than 200 km gets a warning naming the file to edit.
+A new list becomes a city unless it is declared a category or a mark. If you add
+one that is really a kind of place, the fetcher notices — anything whose members
+span more than 200 km gets a warning naming the file to edit.
 
 A new city also needs a line in `COUNTRIES` for its flag: `"Lisbon": "PT"`. The
 fetcher warns until it gets one, and the city browses perfectly well in the
@@ -112,6 +144,25 @@ Nothing else changes. `lists` is authoritative and beats every pattern, because
 it is a judgement you actually made; the patterns are the guess for everything
 else. Splitting one category in two, or renaming one, is the same edit.
 
+## Adding a mark
+
+One entry in `MARKS` in [`scripts/derive.py`](scripts/derive.py), and the page
+grows a second button:
+
+```python
+Mark(
+    "closed", "gone now", "×",
+    lists=("RIP",),          # the Maps list that carries the mark
+),
+```
+
+The name is matched on its letters and digits alone — `next`, `Next` and
+`next 🔜` are one intention, because a mark is named by whoever made the list
+rather than by this taxonomy. The fetcher says so when a mark names a list that
+`lists.txt` does not have, because that failure is otherwise silent in the worst
+way: the list would file itself as a *city*, its places would scatter under a
+heading named after a to-do list, and the button would never appear at all.
+
 ## Using it
 
 | | |
@@ -121,6 +172,7 @@ else. Splitting one category in two, or renaming one, is the same edit.
 | `‹`, any step of the trail, or the browser's own back button | come back out |
 | type anything | filters on name, address, note and list name, wherever you are |
 | `near me` | sort by distance from you — asks for your location |
+| `○ not been yet` | fold in the places I have not been to yet, hollow-bulleted |
 | `everywhere` | that category in every city: the one view no city contains |
 | `↑` `↓` | move the selection |
 | `→` | open the folder, then step into it |
