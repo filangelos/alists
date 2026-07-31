@@ -292,13 +292,24 @@ its own field; never rendered into this page; and the one page that does render
 it has no script source at all.
 [`collector/README.md`](collector/README.md) has the reasoning.
 
-**Keeping one has no code path into the site**, which is the part worth saying
-out loud. I open `/review`, type a passphrase, and press the name. Maps opens. I
-save it to whichever list it belongs on, the same way I save everything.
-Tomorrow's `refresh` finds it because it is now on one of my lists, and the
-review page works that out by itself and marks the card *already saved* the next
-time I look. There is no import step, no approve button that publishes, and
-nothing in this repo that a stranger's submission can reach.
+**There is no keep button**, and that is the part worth saying out loud. I open
+`/review` and press a name; Maps opens; I save it to whichever list it belongs
+on, the same way I save everything else. Tomorrow's `refresh` puts it in
+`data/lists.json` — which is the file the queue is reading — so the card is
+simply not there the next time I look, and a folded-away line says how many
+went that way. Accepting a recommendation and adding a place are the same act,
+so there is no import step, no approve button that publishes, and nothing in
+this repo that a stranger's submission can reach.
+
+A `kept` column would have been a second place to store a fact the collection
+already holds, and two copies of a fact are two facts the moment one of them is
+wrong. The one button is `pass` — somewhere I am never going to add, which is
+the only thing the refresh can never work out on its own. It is not a delete:
+passed places keep their own view and a way back.
+
+There is no passphrase either. Everything on that page is a public Maps link
+and a sentence somebody chose to send, so it is readable by anyone who has the
+URL.
 
 And if I save it without having been yet, it goes on `next` and arrives here
 hollow-bulleted behind the `○ not been yet` button — which is exactly what it

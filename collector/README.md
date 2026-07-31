@@ -18,7 +18,7 @@ app.js    ──fetch───────▶  POST /recommend  ──▶ D1  su
 (the form)                 src/suggest.js        (the one free-text table)
 
 you       ──a browser───▶  /review          ◀──     src/review.js
-                           (a passphrase)           (keep, or pass)
+                           (open to anyone)         (what is still waiting)
 ```
 
 Three jobs, one Worker, because they share a database, an origin and every
@@ -49,25 +49,12 @@ a local file that the deployed Worker never sees:
 npm run schema
 ```
 
-Set the passphrase for `/review`. Make it long: it is the whole of the
-authentication, and a short one is a short one whatever else is in front of it.
-Until it is set, `/review` answers 404 -- an instance with no passphrase has no
-review page, rather than one that announces itself as locked.
-
-```bash
-npm run key
-```
-
-It is a Cloudflare secret and so is nowhere in this repo. For `wrangler dev`,
-put the same value in `collector/.dev.vars`, which `.gitignore` covers:
-
-```
-REVIEW_KEY = "your-passphrase-here"
-```
-
 ```bash
 npm run deploy
 ```
+
+There is no secret to set. `/review` is readable by anyone who has the URL --
+see below for why, and for what that costs.
 
 That prints the Worker's URL. Put it in the `alists-collector` meta tag in
 [`index.html`](../index.html) in place of `YOUR-SUBDOMAIN`, and nothing happens
@@ -105,24 +92,40 @@ change your mind about, and early on they will be most of the traffic.
 
 This one *does* have a page, and for the opposite reason: a recommendation is
 not a number to look at later, it is a link to press now. Open
-`https://your-worker.workers.dev/review`, type the passphrase, and every waiting
-place is one card with its Maps link, whatever was said about it, and two
-buttons.
+`https://your-worker.workers.dev/review` and every waiting place is one card
+with its Maps link and whatever was said about it. Two people recommending the
+same place is one card with both reasons on it and a `×2`.
 
-Pressing the name opens the place in Google Maps. Save it there, to whichever
-list it belongs on, exactly as you would any other place. That is the whole of
-"accepting" a recommendation: nothing here writes to the site, the next daily
-`refresh` finds the place because it is now on one of your lists, and the review
-page notices on its own and marks the card **already saved** the next time you
-look.
+Press the name. Google Maps opens on the place. Save it to whichever list it
+belongs on, exactly as you would any other place, and you are done -- there is
+nothing to come back and press here. The next daily `refresh` writes the place
+into `data/lists.json`, which is the file this page reads to build its
+vocabulary, so the card is gone the next time you look and a folded-away line
+says how many left that way.
 
-So `keep` and `pass` are bookkeeping -- they clear the card, they do not publish
-anything. Two people recommending the same place is one card with both reasons
-on it and a `×2`, and one press decides all of it.
+**That is why there is no keep button.** A recommendation that has been taken up
+is one whose CID is in the collection, and the page can see that for itself.
+Recording it in the database as well would be a second copy of a fact the site
+already holds, and the two would eventually disagree.
+
+The one button is `pass`, for the places that are never going on a list --
+nothing else can ever clear those. It does not delete: passed cards keep their
+own view and a `put it back`.
+
+**Anyone with the URL can open it**, which is a decision rather than an
+oversight. Nothing on it is private: a public Google Maps link, and a sentence
+somebody typed into a public form in order to send it to you. The cost is that
+`pass` is public too, so it is built to be survivable rather than trusted --
+nothing is ever deleted, every pass is reversible from the page itself, and the
+write is rate limited on its own binding. If you would rather it were not, put
+the button behind a check in `review.js`; the read is the part worth leaving
+open.
 
 The page has no JavaScript at all, which is not austerity. It is the one page
 in this repo that renders a string a stranger typed, and with no script source
-in its CSP a mistake in the escaping is a mistake that cannot execute.
+in its CSP a mistake in the escaping is a mistake that cannot execute. Deciding
+is a POST that answers a redirect, so a refresh re-reads the queue rather than
+re-deciding it.
 
 If you would rather read it as rows:
 
@@ -136,11 +139,10 @@ npx wrangler d1 execute alists-count --remote --command "SELECT id, name, url, n
 npx wrangler tail
 ```
 
-Rejected events log `{"at":"reject"}`, a wrong passphrase logs
-`{"at":"review"}`, and a day that hits a cap logs `{"at":"cap"}` on every event
-past it. The last one is the alarm worth having: 20,000 events in a day is not
-this site, and 200 recommendations in a day is not people recommending
-restaurants.
+Rejected events log `{"at":"reject"}`, and a day that hits a cap logs
+`{"at":"cap"}` on every event past it. The second one is the alarm worth having:
+20,000 events in a day is not this site, and 200 recommendations in a day is not
+people recommending restaurants.
 
 An attack is a contiguous range of a column you own, so it comes out in one
 statement:

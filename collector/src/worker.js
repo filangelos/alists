@@ -25,7 +25,7 @@
  *
  *   POST /            counting        events.js   silent, closed sets only
  *   POST /recommend   somebody else's suggest.js  the one free-text column
- *   /review           yours           review.js   the queue, behind a passphrase
+ *   /review           yours           review.js   what is still waiting, openly
  *
  * `/recommend` is the one that breaks the rule in the first paragraph -- a
  * recommendation is a sentence a stranger wrote -- and suggest.js opens with

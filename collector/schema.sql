@@ -61,8 +61,13 @@ CREATE TABLE IF NOT EXISTS counters (
 -- Places other people think should be on a list. Nothing here reaches the site:
 -- a recommendation becomes a place by being added in Google Maps by hand, and
 -- the daily refresh finds it the way it finds everything else. So this table is
--- an inbox, not a staging area, and `state` is bookkeeping rather than a
--- publishing step.
+-- an inbox, not a staging area.
+--
+-- Note what `state` cannot be. There is no 'kept': a recommendation that has
+-- been taken up is one whose CID is in data/lists.json, and the review page
+-- works that out by reading the site rather than by being told. Recording it
+-- here as well would be a second copy of a fact the collection already holds,
+-- and two copies of a fact are two facts as soon as one of them is wrong.
 --
 -- It is also the one table in this repo that holds strings a stranger chose --
 -- `note`, `who`, and `name` when it came out of a pasted URL's own path. There
@@ -82,7 +87,11 @@ CREATE TABLE IF NOT EXISTS suggestions (
   -- looked at and stopped checking.
   at      INTEGER NOT NULL,
 
-  state   TEXT    NOT NULL DEFAULT 'new' CHECK (state IN ('new', 'kept', 'passed')),
+  state   TEXT    NOT NULL DEFAULT 'new' CHECK (state IN ('new', 'passed')),
+
+  -- When it was passed on, and null while it is still waiting. There is no
+  -- column for when it was added to a list, because nothing here finds out:
+  -- the place simply turns up in the collection.
   decided INTEGER,
 
   -- Rebuilt, never pasted. See above.

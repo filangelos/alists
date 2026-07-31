@@ -4,7 +4,7 @@ __pycache__/
 collector/node_modules/
 collector/.wrangler/
 
-# The review passphrase, for `wrangler dev`. The deployed one is a Cloudflare
-# secret and is not in this repo at all -- this file is the local stand-in for
-# it, and a public repo is the one place it must never be.
+# Where `wrangler dev` reads local secrets from. Nothing here needs one today,
+# and this is ignored anyway: it is the file that gets committed by accident
+# once, into a public repo, and is then a secret forever.
 collector/.dev.vars

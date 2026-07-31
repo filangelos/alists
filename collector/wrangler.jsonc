@@ -37,8 +37,8 @@
   //
   // Three ceilings because the three endpoints are three different actions. A
   // page fires a handful of events a minute without trying; a recommendation is
-  // typed by hand; and a passphrase is the one thing here worth guessing at, so
-  // it gets the lowest of the three by an order of magnitude.
+  // typed by hand; and `pass` on the review page is a button anybody who has
+  // the URL can press, so it gets the tightest of the three.
   "ratelimits": [
     {
       "name": "RATE_LIMITER",
@@ -57,8 +57,7 @@
     }
   ]
 
-  // REVIEW_KEY is a secret rather than a var and so is not here:
-  //   npx wrangler secret put REVIEW_KEY
-  // Until it is set, /review answers 404 -- an instance with no passphrase has
-  // no review page rather than one that says it is locked.
+  // There is no secret here, and nothing to set. /review is readable by anyone
+  // who has the URL: everything on it is a public Maps link plus a sentence
+  // somebody chose to send, and the one button it has never deletes anything.
 }
