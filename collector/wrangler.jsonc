@@ -30,15 +30,35 @@
     }
   ],
 
-  // Per-location and deliberately approximate, so this bounds one loud source
-  // rather than a distributed one -- the daily cap in schema.sql is what covers
-  // the rest. If your plan rejects this binding, delete the block: the Worker
-  // checks for it and carries on without it.
+  // Per-location and deliberately approximate, so these bound one loud source
+  // rather than a distributed one -- the daily caps in schema.sql are what
+  // cover the rest. If your plan rejects this binding, delete the block: the
+  // Worker checks for each one and carries on without it.
+  //
+  // Three ceilings because the three endpoints are three different actions. A
+  // page fires a handful of events a minute without trying; a recommendation is
+  // typed by hand; and a passphrase is the one thing here worth guessing at, so
+  // it gets the lowest of the three by an order of magnitude.
   "ratelimits": [
     {
       "name": "RATE_LIMITER",
       "namespace_id": "1001",
       "simple": { "limit": 60, "period": 60 }
+    },
+    {
+      "name": "SUGGEST_LIMITER",
+      "namespace_id": "1002",
+      "simple": { "limit": 5, "period": 60 }
+    },
+    {
+      "name": "REVIEW_LIMITER",
+      "namespace_id": "1003",
+      "simple": { "limit": 10, "period": 60 }
     }
   ]
+
+  // REVIEW_KEY is a secret rather than a var and so is not here:
+  //   npx wrangler secret put REVIEW_KEY
+  // Until it is set, /review answers 404 -- an instance with no passphrase has
+  // no review page rather than one that says it is locked.
 }

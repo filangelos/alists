@@ -44,11 +44,75 @@ CREATE INDEX IF NOT EXISTS events_at      ON events (at);
 CREATE INDEX IF NOT EXISTS events_kind_at ON events (kind, at);
 CREATE INDEX IF NOT EXISTS events_path    ON events (path) WHERE path IS NOT NULL;
 
--- One row per day, incremented before each insert. This is the backstop that
--- makes the free tier a wall rather than a bill: past the cap the Worker stops
--- writing, so the worst an attacker buys is one ruined day of counts, and the
--- day after starts clean without anyone waking up to fix it.
+-- One row per day per endpoint, incremented before each insert. This is the
+-- backstop that makes the free tier a wall rather than a bill: past the cap the
+-- Worker stops writing, so the worst an attacker buys is one ruined day, and
+-- the day after starts clean without anyone waking up to fix it.
+--
+-- `day` is '2026-07-31' for events and 'rec:2026-07-31' for recommendations,
+-- because they are different volumes with different ceilings and one filling up
+-- must not stop the other. Events keep the bare date: their rows predate this
+-- and a renamed key would restart the count mid-day.
 CREATE TABLE IF NOT EXISTS counters (
   day TEXT PRIMARY KEY,
   n   INTEGER NOT NULL
 );
+
+-- Places other people think should be on a list. Nothing here reaches the site:
+-- a recommendation becomes a place by being added in Google Maps by hand, and
+-- the daily refresh finds it the way it finds everything else. So this table is
+-- an inbox, not a staging area, and `state` is bookkeeping rather than a
+-- publishing step.
+--
+-- It is also the one table in this repo that holds strings a stranger chose --
+-- `note`, `who`, and `name` when it came out of a pasted URL's own path. There
+-- is no way to make free text not be free text; what there is instead is
+-- nowhere for it to go. It is never rendered into the public site, and the one
+-- page that renders it at all runs under a CSP with no script source.
+--
+-- `url` is the exception and is deliberately not what anyone pasted: the Worker
+-- parses one identifier out of the link -- a CID or a place id, both bounded
+-- tokens -- and rebuilds the URL from it. So the column that gets clicked can
+-- only ever hold a Google Maps link this repo's own code wrote.
+CREATE TABLE IF NOT EXISTS suggestions (
+  id      INTEGER PRIMARY KEY AUTOINCREMENT,
+
+  -- Server clock, always, for the same reason as events.at: an attacker who
+  -- picks their own timestamp can backdate rows into a window you have already
+  -- looked at and stopped checking.
+  at      INTEGER NOT NULL,
+
+  state   TEXT    NOT NULL DEFAULT 'new' CHECK (state IN ('new', 'kept', 'passed')),
+  decided INTEGER,
+
+  -- Rebuilt, never pasted. See above.
+  url     TEXT    NOT NULL,
+
+  -- The identity, when the link carried one. `cid` is what data/lists.json
+  -- holds too, which is what lets a suggestion be recognised as already saved.
+  cid     TEXT,
+  mid     TEXT,
+  lat     REAL,
+  lng     REAL,
+
+  -- Free text, all three, and bounded to 80/240/40 characters.
+  name    TEXT,
+  note    TEXT,
+  who     TEXT,
+
+  -- Where they were standing on the site. Checked against the same closed set
+  -- of city and category keys as events.path, so this column holds no page the
+  -- site does not have.
+  path    TEXT,
+
+  country TEXT,
+  agent   TEXT    NOT NULL DEFAULT 'other' CHECK (agent IN ('bot', 'mobile', 'desktop', 'other'))
+);
+
+-- The review page's only query, and the only index it needs: what is waiting,
+-- newest first.
+CREATE INDEX IF NOT EXISTS suggestions_state ON suggestions (state, id DESC);
+
+-- Two people recommending the same place is one decision with two reasons, so
+-- the review page groups by CID. This is what makes that cheap.
+CREATE INDEX IF NOT EXISTS suggestions_cid   ON suggestions (cid) WHERE cid IS NOT NULL;

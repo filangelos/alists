@@ -5,6 +5,8 @@
   "scripts": {
     "deploy": "wrangler deploy",
     "schema": "wrangler d1 execute alists-count --remote --file=./schema.sql",
+    "key": "wrangler secret put REVIEW_KEY",
+    "queue": "wrangler d1 execute alists-count --remote --command \"SELECT id, name, url, note, who FROM suggestions WHERE state='new' ORDER BY id DESC\"",
     "tail": "wrangler tail"
   },
   "devDependencies": {

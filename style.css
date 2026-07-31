@@ -17,6 +17,12 @@
   --faint: #c9c2ac;
   --accent: #3d7fd6;
   --accent-soft: rgba(61, 127, 214, 0.09);
+  /* The one colour on the page that is not the accent, and it is spent on the
+     one control that writes rather than filters. `near me` and a mark change
+     what you are looking at; `recommend` sends something to somebody. A second
+     hue is how that reads at a glance without a second row of chrome. */
+  --suggest: #237a4f;
+  --suggest-soft: rgba(35, 122, 79, 0.1);
   --code-bg: #f4f3ef;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
@@ -34,6 +40,8 @@
     --faint: #5d5a52;
     --accent: #6ea8f0;
     --accent-soft: rgba(110, 168, 240, 0.14);
+    --suggest: #5ec98d;
+    --suggest-soft: rgba(94, 201, 141, 0.15);
     --code-bg: #262931;
     --shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
   }
@@ -283,6 +291,27 @@ body {
   color: var(--accent);
 }
 
+/* Carries its own colour pressed and unpressed, so it is distinguishable
+   before you touch it rather than only after. It reads as the odd one out on
+   purpose: the other chips are lenses on what is already here, and this one is
+   the only thing on the page that says something to somebody. */
+.gl-chip-suggest {
+  border-color: var(--suggest);
+  color: var(--suggest);
+}
+
+.gl-chip-suggest:hover {
+  border-color: var(--suggest);
+  color: var(--suggest);
+  background: var(--suggest-soft);
+}
+
+.gl-chip-suggest[aria-pressed='true'] {
+  background: var(--suggest-soft);
+  border-color: var(--suggest);
+  color: var(--suggest);
+}
+
 .bt-logo { flex: none; width: 46px; height: 32px; }
 
 .bt-logo-info {
@@ -508,6 +537,108 @@ body {
   cursor: pointer;
 }
 
+/* ---------------------------------------------------------- recommending */
+
+/* Standing where the tree was, at the same left edge, so pressing the chip
+   reads as going somewhere on this page rather than as a box opening on top of
+   it. Narrower than the rows because a line of prose is not a line of data:
+   the fields have somewhere to stop. */
+.gl-recommend {
+  padding: 14px 20px 28px;
+  max-width: 560px;
+}
+
+.gl-recommend-lede {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+.gl-field { display: block; margin-bottom: 14px; }
+
+.gl-field-name {
+  display: block;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.gl-field-opt { color: var(--faint); }
+
+.gl-recommend input,
+.gl-recommend textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px 10px;
+  background: var(--code-bg);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* The field takes the chip's colour when it is being filled in, so the whole
+   gesture -- press the green button, type into the green box, press the green
+   button -- is one thread of the same hue. */
+.gl-recommend input:focus,
+.gl-recommend textarea:focus {
+  outline: none;
+  border-color: var(--suggest);
+}
+
+.gl-recommend ::placeholder { color: var(--faint); }
+
+.gl-field-hint {
+  display: block;
+  margin-top: 4px;
+  color: var(--faint);
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.gl-recommend-foot {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.gl-send {
+  flex: none;
+  padding: 7px 16px;
+  background: var(--suggest-soft);
+  border: 1px solid var(--suggest);
+  border-radius: 14px;
+  color: var(--suggest);
+  font-family: inherit;
+  font-size: 12.5px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.gl-send:hover:not(:disabled) { background: var(--suggest); color: var(--surface); }
+.gl-send:disabled { opacity: 0.5; cursor: default; }
+
+/* Whatever the collector said, in its own words. A refusal is not red: a link
+   that could not be read is something to try again, not an alarm -- the same
+   register the footer uses when location is declined. */
+.gl-said {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.gl-said.is-warn { color: var(--ink); }
+
 /* ----------------------------------------------------------------- phone */
 
 @media (max-width: 720px) {
@@ -524,7 +655,10 @@ body {
 
   .bt-titlebar { display: none; }
   .bt-header-divider { margin: 10px 16px 0; }
-  .gl-row, .gl-empty, .bt-footer-bar, .gl-navbar { padding-left: 16px; padding-right: 16px; }
+  .gl-row, .gl-empty, .gl-recommend, .bt-footer-bar, .gl-navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .bt-footer-bar { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
 
   /* The search box takes its own line: shoulder to shoulder with the title it
@@ -543,8 +677,12 @@ body {
   }
 
   /* 16px exactly: at anything smaller iOS Safari zooms the viewport when the
-     input takes focus, and never zooms back out. */
-  .gl-search-input { font-size: 16px; }
+     input takes focus, and never zooms back out. The form's fields are the
+     same bargain, and it matters more there -- a zoomed page with a keyboard
+     over it is most of a phone screen gone. */
+  .gl-search-input,
+  .gl-recommend input,
+  .gl-recommend textarea { font-size: 16px; }
 
   #gl-hint.is-quiet { display: none; }
 }

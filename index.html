@@ -9,6 +9,11 @@
 <meta property="og:title" content="alists">
 <meta property="og:description" content="Places worth going, saved from Google Maps.">
 <meta property="og:type" content="website">
+<!-- The collector, named once. Both count.js and app.js read it from here so
+     that a fork has one line to change, and so that a fork which has not
+     changed it counts nothing and offers no recommend button -- a form that
+     posted into somebody else's database would be worse than no form. -->
+<meta name="alists-collector" content="https://alists-count.filangelos.workers.dev">
 <link rel="icon" href="./assets/pin.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,10 +84,18 @@
         <!-- The toggles, in one group so a second one does not have to fight
              the first for the right-hand edge. A mark's button is built from
              data/lists.json rather than written here: a button for a list that
-             is not in the data would be a control that turns nothing on. -->
+             is not in the data would be a control that turns nothing on.
+             Marks are inserted to the left of `near me`, which was there first;
+             `recommend` goes to the right of it for the same reason, and is the
+             only one of them that is a different colour, because it is the only
+             one that writes rather than filters. -->
         <div class="gl-chips" id="gl-chips">
           <button type="button" id="gl-near" class="gl-chip" aria-pressed="false">
             <span aria-hidden="true">◎</span> near me
+          </button>
+          <button type="button" id="gl-suggest" class="gl-chip gl-chip-suggest"
+                  aria-pressed="false" aria-controls="gl-recommend">
+            <span aria-hidden="true">+</span> recommend
           </button>
         </div>
       </div>
@@ -96,6 +109,46 @@
       <div class="bt-scroll" id="gl-scroll">
         <div id="gl-rows" class="gl-tree" role="tree" tabindex="0" aria-label="Places by city and category"></div>
         <div id="gl-empty" class="gl-empty" hidden></div>
+
+        <!-- A view rather than a dialog, and it takes the tree's place rather
+             than floating over it: `…/#%2Fathens%2Frecommend` is a link that
+             means "recommend me somewhere in Athens", which a modal could not
+             be. A real <form> so Enter sends it and the browser does the
+             required-field check without any of this having to. -->
+        <form id="gl-recommend" class="gl-recommend" hidden novalidate>
+          <p class="gl-recommend-lede">
+            Somewhere worth going? Paste its Google Maps link. It does not appear
+            on this page — it lands in a queue only I read, and if I save it in
+            Maps the tree finds it by itself the next day.
+          </p>
+
+          <label class="gl-field">
+            <span class="gl-field-name">the place</span>
+            <input id="gl-rec-link" type="text" maxlength="2048" required
+                   placeholder="maps.app.goo.gl/… or a Maps URL"
+                   spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off">
+            <span class="gl-field-hint">share it from the Maps app, or copy the address bar</span>
+          </label>
+
+          <label class="gl-field">
+            <span class="gl-field-name">why <span class="gl-field-opt">optional</span></span>
+            <textarea id="gl-rec-note" rows="2" maxlength="240"
+                      placeholder="what makes it worth the trip"></textarea>
+          </label>
+
+          <label class="gl-field">
+            <span class="gl-field-name">you <span class="gl-field-opt">optional</span></span>
+            <input id="gl-rec-who" type="text" maxlength="40" autocomplete="name"
+                   placeholder="a name, so I know who to thank">
+          </label>
+
+          <div class="gl-recommend-foot">
+            <button type="submit" id="gl-rec-send" class="gl-send">recommend it</button>
+            <!-- The one place this page prints a sentence written by a server.
+                 Set with textContent, never innerHTML. -->
+            <span id="gl-rec-said" class="gl-said" role="status" aria-live="polite"></span>
+          </div>
+        </form>
       </div>
 
       <div class="bt-footer-bar">

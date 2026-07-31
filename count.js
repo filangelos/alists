@@ -14,13 +14,16 @@
 (function () {
   'use strict';
 
-  // Public, and unavoidably so -- see collector/README.md for why that is the
-  // premise rather than a leak. A clone of this repo that has not deployed its
-  // own collector should count nothing rather than count into mine, so the
-  // placeholder check below stays.
-  var ENDPOINT = 'https://alists-count.filangelos.workers.dev';
+  /* Public, and unavoidably so -- see collector/README.md for why that is the
+     premise rather than a leak. It lives in index.html rather than here
+     because app.js needs the same URL for the recommend form, and one address
+     written twice is one address that gets changed once. A clone of this repo
+     that has not deployed its own collector should count nothing rather than
+     count into mine, so the placeholder check below stays. */
+  var meta = document.querySelector('meta[name="alists-collector"]');
+  var ENDPOINT = meta ? (meta.getAttribute('content') || '').trim() : '';
 
-  if (ENDPOINT.indexOf('YOUR-SUBDOMAIN') !== -1) return;
+  if (!ENDPOINT || ENDPOINT.indexOf('YOUR-SUBDOMAIN') !== -1) return;
   if (!navigator.sendBeacon) return;
 
   /* Asked once, honoured for the session. Neither signal is enforceable and

@@ -25,6 +25,16 @@
 
   const $ = (id) => document.getElementById(id);
 
+  /* The collector, named once in index.html because count.js needs the same
+     address. Empty here means a fork that has not deployed one -- in which
+     case there is no recommend button at all, rather than a button that posts
+     into somebody else's database. */
+  const COLLECTOR = (() => {
+    const meta = document.querySelector('meta[name="alists-collector"]');
+    const url = meta ? (meta.getAttribute('content') || '').trim() : '';
+    return url && url.indexOf('YOUR-SUBDOMAIN') === -1 ? url.replace(/\/+$/, '') : '';
+  })();
+
   /* A backstop, not a paging scheme. The tree can only ever render the 1649
      places plus their headers, so this is unreachable in practice -- it exists
      so a bug in the expansion rule degrades to a slow page rather than a hung
@@ -140,8 +150,13 @@
      been to yet are two different pages, and the address bar is this page's
      only share button.
 
+     `recommend` is in here for the same reason as `marks`, and more so: it is
+     a view rather than a lens -- the form stands where the tree was -- and
+     `/athens /recommend` is a link that means "recommend me somewhere in
+     Athens", which a dialog could not be.
+
      Nothing about what is *expanded* lives here. See `expanded`. */
-  let state = { path: [], text: '', near: false, marks: [] };
+  let state = { path: [], text: '', near: false, marks: [], recommend: false };
 
   /* Twisties are a peek, not a place. They are held outside `state` and outside
      the URL, and thrown away the moment the query changes, because a shared
@@ -164,6 +179,7 @@
     const rest = [];
     const marks = new Set();
     let near = false;
+    let recommend = false;
 
     for (const part of raw.trim().split(/\s+/)) {
       if (!part) continue;
@@ -172,6 +188,9 @@
           if (!seg) continue;
           const key = fold(seg);
           if (key === 'near') near = true;
+          // Dropped rather than kept when there is nowhere to send it, so a
+          // link to a form this deploy does not have lands on the tree.
+          else if (key === 'recommend') recommend = !!COLLECTOR;
           // `/all-lists` was the old way back to the root. The trail is that
           // now, but links with it in them still have to land somewhere sane.
           else if (key === 'all-lists') continue;
@@ -189,6 +208,7 @@
       path: canonical(path),
       text: rest.join(' '),
       near,
+      recommend,
       marks: markOrder(marks),
     };
   }
@@ -202,6 +222,7 @@
       s.path.length ? '/' + s.path.join('/') : '',
       s.marks.length ? '/' + s.marks.join('/') : '',
       s.near ? '/near' : '',
+      s.recommend ? '/recommend' : '',
       s.text.trim(),
     ]
       .filter(Boolean)
@@ -557,6 +578,9 @@
 
     $('gl-up').disabled = !state.path.length;
     $('gl-near').setAttribute('aria-pressed', String(state.near));
+    // Absent on a deploy with no collector -- see `renderChips`.
+    const suggest = $('gl-suggest');
+    if (suggest) suggest.setAttribute('aria-pressed', String(state.recommend));
     for (const chip of $('gl-chips').querySelectorAll('[data-mark]')) {
       chip.setAttribute('aria-pressed', String(state.marks.includes(chip.dataset.mark)));
     }
@@ -570,6 +594,11 @@
      learned to look for it. */
   function renderChips() {
     const near = $('gl-near');
+    // Written into index.html rather than built here, because unlike a mark it
+    // does not come from the data -- but it is taken away for the same reason a
+    // mark's button is only added when its list exists: a control with nothing
+    // behind it is worse than no control.
+    if (!COLLECTOR) $('gl-suggest').remove();
     for (const mark of DATA.marks) {
       const chip = document.createElement('button');
       chip.type = 'button';
@@ -650,6 +679,30 @@
     renderNav(onCity, onCat);
     renderCounts();
     locationHint();
+
+    /* The form stands where the tree was rather than over it, which is what
+       makes it a view: the trail above still says which city you were in when
+       you pressed the button, and that is the city the form is about. Its
+       fields are only hidden, never rebuilt, so walking off to check something
+       and coming back does not cost you what you had typed. */
+    const form = $('gl-recommend');
+    if (state.recommend) {
+      host.innerHTML = '';
+      host.hidden = true;
+      empty.hidden = true;
+      form.hidden = false;
+      scroll.scrollTop = 0;
+      view = [];
+      active = -1;
+      syncActiveDescendant();
+      // Nothing was searched and nothing matched; the collection is what it
+      // was. The hint line goes quiet because there is no tree to explain.
+      $('gl-hint').textContent = '';
+      $('gl-hint').classList.remove('is-warn');
+      $('gl-status').textContent = counts();
+      return;
+    }
+    form.hidden = true;
 
     if (!cities.length) {
       host.innerHTML = '';
@@ -883,7 +936,7 @@
       row.kind === 'city'
         ? [row.node.key]
         : [(row.city || onCity) && (row.city || onCity).key, row.node.key].filter(Boolean);
-    go({ path: canonical(path) }, true);
+    go({ path: canonical(path), recommend: false }, true);
     return true;
   }
 
@@ -904,6 +957,12 @@
      carrying around rather than a place you are standing in -- the clear button
      is what puts that down. */
   function up() {
+    // Out of the form is the first step out, so `←` and `Esc` mean the same
+    // thing here as everywhere else: leave the thing you are in.
+    if (state.recommend) {
+      go({ recommend: false }, true);
+      return;
+    }
     if (state.path.length) go({ path: state.path.slice(0, -1) }, true);
   }
 
@@ -926,6 +985,98 @@
     const wanted = new Set(state.marks);
     if (!wanted.delete(key)) wanted.add(key);
     go({ marks: markOrder(wanted) }, false);
+  }
+
+  /* A history entry, unlike the other two chips, because this one is a move
+     rather than a lens: it puts the tree away, so the back button owes you the
+     tree back. */
+  function toggleRecommend() {
+    const on = !state.recommend;
+    go({ recommend: on }, true);
+    if (on) focusForm();
+  }
+
+  /* Arriving at the form puts you in the form, however you arrived -- pressing
+     the chip, opening a link, or walking forward into it. That is worth doing
+     for its own sake, and it is also what makes `Esc` mean "leave" here: the
+     key is handled by the form, so it only reaches the form if something in it
+     has the focus.
+
+     Never on touch, where focusing a field summons a keyboard over the thing it
+     is meant to be filling in. */
+  function focusForm() {
+    if (!window.matchMedia('(hover: none)').matches) $('gl-rec-link').focus();
+  }
+
+  // ------------------------------------------------------------ recommending
+
+  /* The one sentence on this page written by a server, so it is set as text
+     and never as markup. Everything the collector says is already a whole
+     sentence -- see the `SAYS` table in collector/src/suggest.js -- because the
+     thing that knows what went wrong is the thing that should say it, rather
+     than a code translated back into English at this end. */
+  function said(text, warn) {
+    const el = $('gl-rec-said');
+    el.textContent = text;
+    el.classList.toggle('is-warn', !!warn);
+  }
+
+  let sending = false;
+
+  async function recommend(event) {
+    event.preventDefault();
+    if (sending) return;
+
+    const link = $('gl-rec-link');
+    if (!link.value.trim()) {
+      said('a Google Maps link is the one thing it needs', true);
+      link.focus();
+      return;
+    }
+
+    sending = true;
+    $('gl-rec-send').disabled = true;
+    said('sending…');
+
+    try {
+      const response = await fetch(`${COLLECTOR}/recommend`, {
+        method: 'POST',
+        /* `text/plain` makes this a simple request, which means no preflight:
+           one round trip instead of two. The body is JSON either way and the
+           Worker parses it as such -- a content type is not a claim anything
+           here believes. */
+        headers: { 'content-type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify({
+          link: link.value,
+          note: $('gl-rec-note').value,
+          who: $('gl-rec-who').value,
+          // Where they were standing, so the queue says which city a
+          // recommendation was made from. Checked against the same closed set
+          // of keys at the other end.
+          path: state.path.length ? '/' + state.path.join('/') : null,
+        }),
+      });
+      const answer = await response.json();
+
+      if (!answer || !answer.ok) {
+        said((answer && answer.says) || 'that did not go through', true);
+      } else if (answer.state === 'already') {
+        // The most useful thing it can say, and the only one that needs no
+        // review at all: it is on a list, and this page is showing it already.
+        said(answer.name ? `already saved — ${answer.name}` : 'already saved', false);
+      } else {
+        said(answer.name ? `thank you — ${answer.name} is in the queue` : 'thank you — it is in the queue');
+        link.value = '';
+        $('gl-rec-note').value = '';
+        // `who` survives on purpose: somebody with one place to recommend
+        // usually has three, and retyping their name each time is a toll.
+      }
+    } catch {
+      said('could not reach the collector — try again in a moment', true);
+    } finally {
+      sending = false;
+      $('gl-rec-send').disabled = false;
+    }
   }
 
   // ------------------------------------------------------------------ url
@@ -966,13 +1117,20 @@
     const raw = queryFromUrl();
     if (raw === serialize(state)) return;
     const parsed = parseQuery(raw);
-    state = { path: parsed.path, text: parsed.text, near: parsed.near, marks: parsed.marks };
+    state = {
+      path: parsed.path,
+      text: parsed.text,
+      near: parsed.near,
+      marks: parsed.marks,
+      recommend: parsed.recommend,
+    };
     expanded.clear();
     $('gl-search').value = state.text;
     if (state.near && origin.state === 'idle') {
       resolveOrigin({ kind: 'me' }, () => render());
     }
     render();
+    if (state.recommend) focusForm();
     // Rewrite an alias into the slugs the trail is showing -- `/nyc/pizza` and
     // `/newyork/food` are the same view, and the address bar should agree with
     // the page about which one you are looking at. Replaced, never pushed: this
@@ -1030,7 +1188,10 @@
     const searchEl = $('gl-search');
     const tree = $('gl-rows');
 
-    searchEl.addEventListener('input', () => go({ text: searchEl.value }, false));
+    // Typing is looking for something, which is not what the form is for -- so
+    // it puts the form away. Nothing is lost: the fields are hidden rather
+    // than cleared, and the chip is where it was.
+    searchEl.addEventListener('input', () => go({ text: searchEl.value, recommend: false }, false));
     searchEl.addEventListener('keydown', (event) => {
       if (event.key === 'ArrowDown') {
         event.preventDefault();
@@ -1069,6 +1230,19 @@
     $('gl-up').addEventListener('click', up);
     $('gl-near').addEventListener('click', toggleNear);
 
+    // Absent when there is no collector to send to, so both of these are
+    // guarded rather than assumed.
+    const suggest = $('gl-suggest');
+    if (suggest) suggest.addEventListener('click', toggleRecommend);
+    const form = $('gl-recommend');
+    form.addEventListener('submit', recommend);
+    form.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      event.preventDefault();
+      up();
+      if (suggest) suggest.focus();
+    });
+
     // Delegated, because the mark buttons are built from the data and there may
     // be none of them, one, or several.
     $('gl-chips').addEventListener('click', (event) => {
@@ -1080,7 +1254,7 @@
       const crumb = event.target.closest('[data-path]');
       if (!crumb) return;
       const path = crumb.dataset.path ? crumb.dataset.path.split('/') : [];
-      go({ path: canonical(path) }, true);
+      go({ path: canonical(path), recommend: false }, true);
     });
 
     $('gl-empty').addEventListener('click', (event) => {
@@ -1102,6 +1276,8 @@
        reason to focus the field. */
     document.addEventListener('keydown', (event) => {
       if (event.target === searchEl || event.defaultPrevented) return;
+      // The form is the other place on this page where a letter means itself.
+      if (event.target.closest && event.target.closest('#gl-recommend')) return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       if (event.key === '/') {
         event.preventDefault();
@@ -1265,10 +1441,18 @@
       renderChips();
       wire();
       const parsed = parseQuery(queryFromUrl());
-      state = { path: parsed.path, text: parsed.text, near: parsed.near, marks: parsed.marks };
+      state = {
+        path: parsed.path,
+        text: parsed.text,
+        near: parsed.near,
+        marks: parsed.marks,
+        recommend: parsed.recommend,
+      };
       $('gl-search').value = state.text;
       if (state.near) resolveOrigin({ kind: 'me' }, () => render());
       render();
+      // `wire` has just given the focus to a tree that is not on screen.
+      if (state.recommend) focusForm();
       // An old link may name a city by a slug the trail no longer uses; this
       // is where `/nyc/pizza` becomes `/newyork/food` in the address bar, once,
       // without adding a history entry to go back through.

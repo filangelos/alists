@@ -31,9 +31,10 @@ lists.txt  ──scripts/fetch.py──▶  data/lists.json  ──▶  index.ht
 JSON. What is deployed is exactly what is in the tree — a broken deploy can be
 reproduced by opening `index.html` from disk.
 
-The fourth file is [`count.js`](count.js), which is the only thing here that
-talks to a server. It is deliberately not part of the page: see
-[Counting](#counting).
+Two things here talk to a server, and they talk to the same one:
+[`count.js`](count.js), which is the fourth file, and the recommend form in
+`app.js`. Neither is part of the page in any load-bearing sense — see
+[Counting](#counting) and [Somewhere I should go](#somewhere-i-should-go).
 
 ## The two derived levels
 
@@ -173,6 +174,7 @@ heading named after a to-do list, and the button would never appear at all.
 | type anything | filters on name, address, note and list name, wherever you are |
 | `near me` | sort by distance from you — asks for your location |
 | `○ not been yet` | fold in the places I have not been to yet, hollow-bulleted |
+| `+ recommend` | send me somewhere you think should be here — a Maps link, and why |
 | `everywhere` | that category in every city: the one view no city contains |
 | `↑` `↓` | move the selection |
 | `→` | open the folder, then step into it |
@@ -256,13 +258,60 @@ Once, in **Settings → Pages**, set **Source** to **GitHub Actions**. After tha
 GitHub disables scheduled workflows after ~60 days without repository activity.
 It emails first, and the `workflow_dispatch` button covers the gap.
 
+## Somewhere I should go
+
+Everything in the tree is a place I have been to and would send you to. That is
+the only claim this page makes, and it is why `next` is a mark rather than a
+folder. So somebody else's recommendation cannot be a row here — it is the
+opposite of one: a place I have *not* been, vouched for by someone who has.
+
+It is a queue instead. `+ recommend` is the one chip that is not the accent
+colour, because it is the one control on the page that writes rather than
+filters, and it opens a form where the tree was. What it asks for is a Google
+Maps link.
+
+```
+somebody's link ──▶ /recommend ──▶  D1  ──▶ /review ──▶ me, in Google Maps
+                                                              │
+                              data/lists.json ◀──refresh──────┘
+```
+
+**A link rather than a name**, for three reasons that turn out to be one
+reason. It makes reviewing a press instead of a search. It lets the collector
+answer *already saved — SMOKESTAK* while the person is still standing there,
+because the CID in a Maps link is the same identifier `data/lists.json` holds
+for every place in it. And it means the URL that gets stored is not a string
+anybody typed: the Worker parses one bounded token out of the link and rebuilds
+the address from that, so the thing I am going to click can only ever be a Maps
+URL this repo's own code wrote.
+
+The `why` and the `you` are free text, and nothing can make free text not be
+free text. What there is instead is nowhere for it to go: bounded lengths,
+rejected rather than truncated; no links, because the place already arrives in
+its own field; never rendered into this page; and the one page that does render
+it has no script source at all.
+[`collector/README.md`](collector/README.md) has the reasoning.
+
+**Keeping one has no code path into the site**, which is the part worth saying
+out loud. I open `/review`, type a passphrase, and press the name. Maps opens. I
+save it to whichever list it belongs on, the same way I save everything.
+Tomorrow's `refresh` finds it because it is now on one of my lists, and the
+review page works that out by itself and marks the card *already saved* the next
+time I look. There is no import step, no approve button that publishes, and
+nothing in this repo that a stranger's submission can reach.
+
+And if I save it without having been yet, it goes on `next` and arrives here
+hollow-bulleted behind the `○ not been yet` button — which is exactly what it
+then is: somewhere heard about, saved, and still owed a visit.
+
 ## Counting
 
 Three numbers, on a Cloudflare Worker writing to a D1 database I own: a page
-opened, a search made, a place opened in Maps. The Worker and its schema are in
-[`collector/`](collector/), which is a separate deploy from the site and can be
-down, blocked or never set up at all without the tree stopping working — the
-page is still what is in this repo.
+opened, a search made, a place opened in Maps. The same Worker carries the
+recommendation queue above — [`collector/`](collector/) is one deploy doing
+three jobs, because they share a database, an origin and every bound in it. It
+is a separate deploy from the site and can be down, blocked or never set up at
+all without the tree stopping working — the page is still what is in this repo.
 
 What is stored is `at`, `kind`, `path`, a label, the referrer's host, a country
 and a bot/mobile/desktop class. **No IP, no cookie, no visitor id, and never the
