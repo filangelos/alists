@@ -76,75 +76,83 @@
  ],
  "cities": [
   {
-   "count": 319,
+   "count": 488,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.518445,
-   "lng": -0.124083,
+   "lat": 51.517625,
+   "lng": -0.124159,
    "name": "London"
   },
   {
-   "count": 170,
+   "count": 265,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.734668,
-   "lng": -73.993685,
+   "lat": 40.729927,
+   "lng": -73.990467,
    "name": "New York"
   },
   {
-   "count": 106,
+   "count": 147,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979214,
-   "lng": 23.743083,
+   "lat": 37.979158,
+   "lng": 23.742085,
    "name": "Athens"
   },
   {
-   "count": 78,
+   "count": 132,
    "flag": "🇮🇪",
    "key": "dublin",
-   "lat": 53.339802,
-   "lng": -6.260874,
+   "lat": 53.339898,
+   "lng": -6.261723,
    "name": "Dublin"
   },
   {
-   "count": 78,
+   "count": 102,
    "flag": "🇺🇸",
    "key": "sanfrancisco",
-   "lat": 37.789442,
-   "lng": -122.409473,
+   "lat": 37.788003,
+   "lng": -122.407864,
    "name": "San Francisco"
   },
   {
-   "count": 75,
+   "count": 76,
    "flag": "🇬🇧",
    "key": "oxford",
-   "lat": 51.754448,
-   "lng": -1.259265,
+   "lat": 51.754495,
+   "lng": -1.259305,
    "name": "Oxford"
   },
   {
-   "count": 65,
+   "count": 71,
    "flag": "🇸🇬",
    "key": "singapore",
-   "lat": 1.286789,
-   "lng": 103.847849,
+   "lat": 1.286942,
+   "lng": 103.848509,
    "name": "Singapore"
   },
   {
-   "count": 52,
+   "count": 56,
    "flag": "🇫🇷",
    "key": "paris",
-   "lat": 48.864645,
-   "lng": 2.339909,
+   "lat": 48.864526,
+   "lng": 2.340923,
    "name": "Paris"
   },
   {
-   "count": 44,
+   "count": 49,
+   "flag": "🇬🇷",
+   "key": "paros",
+   "lat": 37.124222,
+   "lng": 25.238486,
+   "name": "Paros"
+  },
+  {
+   "count": 45,
    "flag": "🇩🇪",
    "key": "berlin",
-   "lat": 52.516762,
-   "lng": 13.402084,
+   "lat": 52.516897,
+   "lng": 13.401709,
    "name": "Berlin"
   },
   {
@@ -158,26 +166,50 @@
   {
    "count": 41,
    "flag": "🇬🇷",
+   "key": "crete",
+   "lat": 35.339433,
+   "lng": 25.121737,
+   "name": "Crete"
+  },
+  {
+   "count": 41,
+   "flag": "🇬🇷",
    "key": "mykonos",
    "lat": 37.445385,
    "lng": 25.332399,
    "name": "Mykonos"
   },
   {
-   "count": 39,
+   "count": 41,
+   "flag": "🇬🇷",
+   "key": "sifnos",
+   "lat": 36.973204,
+   "lng": 24.724661,
+   "name": "Sifnos"
+  },
+  {
+   "count": 40,
    "flag": "🇮🇩",
    "key": "bali",
-   "lat": -8.513045,
-   "lng": 115.26063,
+   "lat": -8.515591,
+   "lng": 115.260674,
    "name": "Bali"
   },
   {
-   "count": 39,
+   "count": 40,
    "flag": "🇺🇸",
    "key": "miami",
-   "lat": 25.799935,
-   "lng": -80.164032,
+   "lat": 25.799974,
+   "lng": -80.175501,
    "name": "Miami"
+  },
+  {
+   "count": 38,
+   "flag": "🇬🇷",
+   "key": "naxos",
+   "lat": 37.0755,
+   "lng": 25.377282,
+   "name": "Naxos"
   },
   {
    "count": 35,
@@ -189,43 +221,35 @@
   },
   {
    "count": 34,
-   "flag": "🇬🇷",
-   "key": "naxos",
-   "lat": 37.094094,
-   "lng": 25.376506,
-   "name": "Naxos"
+   "flag": "🇪🇸",
+   "key": "barcelona",
+   "lat": 41.384049,
+   "lng": 2.16876,
+   "name": "Barcelona"
   },
   {
    "count": 33,
    "flag": "🇬🇷",
-   "key": "sifnos",
-   "lat": 36.973715,
-   "lng": 24.724367,
-   "name": "Sifnos"
-  },
-  {
-   "count": 32,
-   "flag": "🇬🇷",
    "key": "syros",
-   "lat": 37.444395,
-   "lng": 24.942693,
+   "lat": 37.444412,
+   "lng": 24.942606,
    "name": "Syros"
-  },
-  {
-   "count": 31,
-   "flag": "🇪🇸",
-   "key": "barcelona",
-   "lat": 41.384136,
-   "lng": 2.171585,
-   "name": "Barcelona"
   },
   {
    "count": 30,
    "flag": "🇬🇷",
-   "key": "crete",
-   "lat": 35.454029,
-   "lng": 24.130019,
-   "name": "Crete"
+   "key": "ikaria",
+   "lat": 37.622277,
+   "lng": 26.09436,
+   "name": "Ikaria"
+  },
+  {
+   "count": 30,
+   "flag": "🇮🇹",
+   "key": "rome",
+   "lat": 41.898544,
+   "lng": 12.473357,
+   "name": "Rome"
   },
   {
    "count": 29,
@@ -244,35 +268,19 @@
    "name": "Milos"
   },
   {
-   "count": 29,
-   "flag": "🇮🇹",
-   "key": "rome",
-   "lat": 41.898477,
-   "lng": 12.47364,
-   "name": "Rome"
-  },
-  {
    "count": 26,
    "flag": "🇬🇷",
-   "key": "paros",
-   "lat": 37.124491,
-   "lng": 25.238213,
-   "name": "Paros"
+   "key": "kea",
+   "lat": 37.653266,
+   "lng": 24.326625,
+   "name": "Kea"
   },
   {
    "count": 24,
-   "flag": "🇬🇷",
-   "key": "ikaria",
-   "lat": 37.616902,
-   "lng": 26.09436,
-   "name": "Ikaria"
-  },
-  {
-   "count": 23,
    "flag": "🇨🇦",
    "key": "vancouver",
-   "lat": 49.287599,
-   "lng": -123.116762,
+   "lat": 49.286955,
+   "lng": -123.114178,
    "name": "Vancouver"
   },
   {
@@ -284,36 +292,44 @@
    "name": "Kythira"
   },
   {
-   "count": 17,
-   "flag": "🇬🇧",
-   "key": "cambridge",
-   "lat": 52.204336,
-   "lng": 0.117679,
-   "name": "Cambridge"
-  },
-  {
-   "count": 14,
+   "count": 19,
    "flag": "🇬🇷",
    "key": "kythnos",
-   "lat": 37.412523,
-   "lng": 24.425249,
+   "lat": 37.412436,
+   "lng": 24.425196,
    "name": "Kythnos"
   },
   {
-   "count": 14,
+   "count": 18,
+   "flag": "🇬🇧",
+   "key": "cambridge",
+   "lat": 52.2055,
+   "lng": 0.117787,
+   "name": "Cambridge"
+  },
+  {
+   "count": 16,
+   "flag": "🇬🇷",
+   "key": "antiparos",
+   "lat": 37.039937,
+   "lng": 25.08078,
+   "name": "Antiparos"
+  },
+  {
+   "count": 15,
    "flag": "🇬🇷",
    "key": "spetses",
-   "lat": 37.267281,
-   "lng": 23.156118,
+   "lat": 37.267279,
+   "lng": 23.156113,
    "name": "Spetses"
   },
   {
-   "count": 13,
-   "flag": "🇬🇷",
-   "key": "kea",
-   "lat": 37.66564,
-   "lng": 24.323677,
-   "name": "Kea"
+   "count": 14,
+   "flag": "🇦🇹",
+   "key": "vienna",
+   "lat": 48.207153,
+   "lng": 16.373248,
+   "name": "Vienna"
   },
   {
    "count": 13,
@@ -322,14 +338,6 @@
    "lat": 37.144142,
    "lng": 24.513786,
    "name": "Serifos"
-  },
-  {
-   "count": 13,
-   "flag": "🇦🇹",
-   "key": "vienna",
-   "lat": 48.207448,
-   "lng": 16.373719,
-   "name": "Vienna"
   },
   {
    "count": 11,
@@ -341,19 +349,19 @@
   },
   {
    "count": 8,
-   "flag": "🇬🇷",
-   "key": "antiparos",
-   "lat": 37.039937,
-   "lng": 25.079954,
-   "name": "Antiparos"
-  },
-  {
-   "count": 8,
    "flag": "🇬🇧",
    "key": "bristol",
    "lat": 51.452467,
    "lng": -2.61444,
    "name": "Bristol"
+  },
+  {
+   "count": 8,
+   "flag": "🇺🇸",
+   "key": "newhaven",
+   "lat": 41.305424,
+   "lng": -72.924271,
+   "name": "New Haven"
   },
   {
    "count": 8,
@@ -364,14 +372,6 @@
    "name": "Small Cyclades"
   },
   {
-   "count": 7,
-   "flag": "🇺🇸",
-   "key": "newhaven",
-   "lat": 41.307817,
-   "lng": -72.926199,
-   "name": "New Haven"
-  },
-  {
    "count": 3,
    "flag": "🇺🇸",
    "key": "hawaii",
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-07-30T11:06:37Z",
+ "generated": "2026-07-31T06:16:06Z",
  "lists": [
   {
    "count": 67,
@@ -840,6 +840,25 @@
    "name": "LON (2nd Order)",
    "owner": "Angelos",
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+  },
+  {
+   "count": 489,
+   "description": "",
+   "emoji": "⏩️",
+   "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
+   "name": "next",
+   "owner": "Angelos",
+   "url": "https://www.google.com/maps/placelists/list/ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+  }
+ ],
+ "marks": [
+  {
+   "emoji": "○",
+   "key": "unverified",
+   "label": "not been yet",
+   "lists": [
+    "next"
+   ]
   }
  ],
  "owner": "Angelos",
@@ -2445,9 +2464,13 @@
    "city": "Athens",
    "lat": 37.9737374,
    "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
+    "ZkzMjrM6SXWD7BtpwoxAgg",
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
    "lng": 23.7326816,
+   "marks": [
+    "unverified"
+   ],
    "mid": null,
    "name": "EKIBEN KITCHEN Syntagma",
    "note": "",
@@ -2875,9 +2898,13 @@
    "city": "Athens",
    "lat": 37.9746235,
    "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
+    "ZkzMjrM6SXWD7BtpwoxAgg",
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
    "lng": 23.732326999999998,
+   "marks": [
+    "unverified"
+   ],
    "mid": "/g/11g0qx4tb0",
    "name": "Birdman - Japanese Pub + Grill",
    "note": "",
@@ -2889,9 +2916,13 @@
    "city": "Athens",
    "lat": 37.9744241,
    "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
+    "ZkzMjrM6SXWD7BtpwoxAgg",
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
    "lng": 23.7324616,
+   "marks": [
+    "unverified"
+   ],
    "mid": "/g/11ckv4rf_q",
    "name": "Sushimou",
    "note": "",
@@ -7842,11 +7873,11 @@
    "address": "Vourkari 840 02",
    "cid": "-3483705995618772570",
    "city": "Kea",
-   "lat": 37.665838199999996,
+   "lat": 37.6658596,
    "lists": [
     "v8TD7Dw3Jhw4hLeUewfXeoAPI9ZdMQ"
    ],
-   "lng": 24.3236766,
+   "lng": 24.3236825,
    "mid": "/g/11b5wlpz_d",
    "name": "All Around Vinyllio",
    "note": "",
@@ -10538,9 +10569,13 @@
    "city": "London",
    "lat": 51.5174678,
    "lists": [
-    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
+    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
    "lng": -0.1419736,
+   "marks": [
+    "unverified"
+   ],
    "mid": "/g/11ykqqwkjr",
    "name": "Oula",
    "note": "",
@@ -10578,12 +10613,12 @@
    "address": "Euston Rd., London NW1 2AR, United Kingdom",
    "cid": "-2586759438416770946",
    "city": "London",
-   "lat": 51.5297748,
+   "lat": 51.5298327,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1259021,
+   "lng": -0.1255402,
    "mid": "/g/11b6gq3z03",
    "name": "Booking Office 1869",
    "note": "",
@@ -22612,11 +22647,11 @@
    "address": "La Rambla, 83, 08001 Barcelona, Spain",
    "cid": "-3907683098764893929",
    "city": "Barcelona",
-   "lat": 41.381575,
+   "lat": 41.381552,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1726756,
+   "lng": 2.1726259999999997,
    "mid": "/g/120x66ln",
    "name": "Pastisseria Escribà",
    "note": "",
@@ -24231,6 +24266,8305 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "address": "62 Bridge St, Manchester M3 3BW, United Kingdom",
+   "cid": "-7082614800166637006",
+   "city": "Oxford",
+   "far": true,
+   "lat": 53.4808635,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -2.2492256,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y8hzldfl",
+   "name": "Stow",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Keramikou 99, Athina 104 35",
+   "cid": "-4245642858522286190",
+   "city": "Athens",
+   "lat": 37.980527699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7166066,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n4tq2th6",
+   "name": "ExCreme",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "42 Newington Causeway, London SE1 6DR, United Kingdom",
+   "cid": "-7626656721414609837",
+   "city": "London",
+   "lat": 51.498624,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.09874079999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mslzbxg2",
+   "name": "Secret Slider Club",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "10 Rue de la Tremoille, 75008 Paris, France",
+   "cid": "5133966221395679624",
+   "city": "Paris",
+   "lat": 48.866473899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3023965,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vcdjstnc",
+   "name": "Café Nuances",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "68 Kingsland Rd, London E2 8DP, United Kingdom",
+   "cid": "5579120501428860544",
+   "city": "London",
+   "lat": 51.5292233,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0775117,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v3tp2x61",
+   "name": "Pomme Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "24 Floral St, London WC2E 9DS, United Kingdom",
+   "cid": "-875734506109667244",
+   "city": "London",
+   "lat": 51.5118602,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1254043,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rn5d23k1",
+   "name": "Chestnut Bakery, Covent Garden",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Arch 72 Dunbridge St, Bethnal Green, London E2 6JG, United Kingdom",
+   "cid": "154137752982075881",
+   "city": "London",
+   "lat": 51.5237407,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0635819,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f6yx9ttv",
+   "name": "Breidbakers",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Unit 3, 201 Richmond Rd, London E8 3NJ, United Kingdom",
+   "cid": "-5387931092310877969",
+   "city": "London",
+   "lat": 51.5436087,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.057109999999999994,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cfgqpjq",
+   "name": "LARDO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "367 Mentmore Terrace, London E8 3RT, United Kingdom",
+   "cid": "-8586216211175433978",
+   "city": "London",
+   "lat": 51.5388386,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0580766,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11qp276lbv",
+   "name": "Pockets",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Unit 8, Monohaus, 143 Mare St, London E8 3FW, United Kingdom",
+   "cid": "7561092779996454391",
+   "city": "London",
+   "lat": 51.5392018,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.056748299999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fj07fw3j",
+   "name": "Caldera",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "392-393 Mentmore Terrace, London E8 3PH, United Kingdom",
+   "cid": "-6016739678970393281",
+   "city": "London",
+   "lat": 51.5409711,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0576502,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mrmj8mlx",
+   "name": "Cafe Kowloon - Modern Cantonese Restaurant",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "392-393 Mentmore Terrace, London E8 3PH, United Kingdom",
+   "cid": "7007366821502801721",
+   "city": "London",
+   "lat": 51.5409711,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0576502,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mldlb5m7",
+   "name": "Wonton Charlie's | Wonton Noodle Soup Bar",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "15 Sherwood St, London W1B 5AP, United Kingdom",
+   "cid": "8288138781932269509",
+   "city": "London",
+   "lat": 51.510970099999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1359675,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nk11d50t",
+   "name": "Marrone",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "104 North End Rd, London W14 9EX, United Kingdom",
+   "cid": "-4953663492185272480",
+   "city": "London",
+   "lat": 51.489375499999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.20612,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z9qkmgd7",
+   "name": "LONDÖNER BY BEST MANGAL",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Asklipiou 41, Athina 106 80",
+   "cid": "-8802978719709585704",
+   "city": "Athens",
+   "lat": 37.983151899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7373665,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l5hjsj35",
+   "name": "Soyuz",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Themistokleous 42, Athina 106 78",
+   "cid": "5630278983732018632",
+   "city": "Athens",
+   "lat": 37.985071,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7324687,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mm5p3rr_",
+   "name": "erli athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "119 Bethnal Grn Rd, London E2 7DG, United Kingdom",
+   "cid": "8900308108913705989",
+   "city": "London",
+   "lat": 51.524896999999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07195119999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xdftb4vs",
+   "name": "Dumbo Shoreditch",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "88-89 Cowcross St, London EC1M 6BP, United Kingdom",
+   "cid": "-8703344682961420052",
+   "city": "London",
+   "lat": 51.520004199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1023182,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z7lkcgpt",
+   "name": "Allpress Coffee Roasters Farringdon",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "8 Ganton St, Carnaby, London W1F 7QP, United Kingdom",
+   "cid": "-3604987159744269160",
+   "city": "London",
+   "lat": 51.5133746,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13834639999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z8139wj0",
+   "name": "Parlour by Ice Cream Union",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "7 Hanover Square, London W1S 1HQ, United Kingdom",
+   "cid": "-2217113776854500203",
+   "city": "London",
+   "lat": 51.5140902,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1431859,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f4vv9qwy",
+   "name": "Nathalie",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "31 Kensington Park Rd, London W11 2EU, United Kingdom",
+   "cid": "1320411615308038948",
+   "city": "London",
+   "lat": 51.5153921,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.20593619999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fj5rvrdy",
+   "name": "Dove Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "126 Hamilton Pl, New York, NY 10031, United States",
+   "cid": "8007463342773964501",
+   "city": "New York",
+   "lat": 40.8240151,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9493944,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xvf8h2tc",
+   "name": "Rough Draft",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "4541 Irving St, San Francisco, CA 94122, United States",
+   "cid": "-3927093354794387051",
+   "city": "San Francisco",
+   "lat": 37.7621329,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.5067823,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dzw8jf05",
+   "name": "Black Bird Bookstore and Café",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Πλ. Σιαδήμα, Filothei 152 37",
+   "cid": "4181474695113602103",
+   "city": "Athens",
+   "lat": 38.0217155,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.783471499999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n9r14cs8",
+   "name": "KORA Filothei – Petrino",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "36 Redchurch St, London E2 7DP, United Kingdom",
+   "cid": "-7476404097355380946",
+   "city": "London",
+   "lat": 51.5243446,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0753652,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vs95g0g3",
+   "name": "Chiave",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 3 Chome−20−2 大成ビル ２階",
+   "cid": "8142454491056932777",
+   "city": "Singapore",
+   "far": true,
+   "lat": 35.6632436,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 139.6692659,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1vj5_7c4",
+   "name": "Little Soul Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Av. Diagonal, 335, Eixample, 08037 Barcelona, Spain",
+   "cid": "5997723860026955486",
+   "city": "Barcelona",
+   "lat": 41.398349599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.1681076,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xlhvwlgy",
+   "name": "Jaç Hi-fi Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Pasteur, Beirut, Lebanon",
+   "cid": "6165876040879576551",
+   "city": "Ikaria",
+   "far": true,
+   "lat": 33.8963629,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 35.5124979,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11x5t0qdcz",
+   "name": "Drop Sociale",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Level 1/270 Lonsdale St, Melbourne VIC 3000, Australia",
+   "cid": "5824915869836580731",
+   "city": "Bali",
+   "far": true,
+   "lat": -37.8115136,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 144.9641502,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sm9b9gsr",
+   "name": "Music Room",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "226569568275461609",
+   "city": "Athens",
+   "lat": 38.015317599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7852696,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Mavreas Dimitris - Orthodontics ( Μαυρέας Δημήτρης )",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Via Bernina, 1C, 20158 Milano MI, Italy",
+   "cid": "9177710971514196733",
+   "city": "Rome",
+   "far": true,
+   "lat": 45.4938161,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 9.180307299999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mck170pk",
+   "name": "MOGO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "6 Rue Emile Lepeu, 75011 Paris, France",
+   "cid": "-1626538573829869051",
+   "city": "Paris",
+   "lat": 48.855554299999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3872668,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v652x0f5",
+   "name": "NOTRE DAME Music Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "R. das Gaivotas 11A, 1200-163 Lisboa, Portugal",
+   "cid": "7453373408562286179",
+   "city": "Barcelona",
+   "far": true,
+   "lat": 38.7094224,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -9.1511857,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11pdqty97c",
+   "name": "Vago",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "18-20 St John St, Barbican, London EC1M 4AY, United Kingdom",
+   "cid": "1055028265019221577",
+   "city": "London",
+   "lat": 51.520240099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.10160849999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v_0n9j7c",
+   "name": "Space Talk",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Große Rainstraße 18, 22765 Altona, Germany",
+   "cid": "3811262367717535991",
+   "city": "Berlin",
+   "far": true,
+   "lat": 53.5525558,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 9.9308158,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yjb5rttd",
+   "name": "Trader Hifi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "45 Curtain Rd, London EC2A 3PT, United Kingdom",
+   "cid": "8307385148383038884",
+   "city": "London",
+   "lat": 51.5238297,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.08051119999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lp3xz9lk",
+   "name": "Hidden Grooves",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "-5514249116328454969",
+   "city": "Sifnos",
+   "lat": 36.930293299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.7269015,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Almyra Seaside Beach Bar & Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "",
+   "cid": "8664687691681748243",
+   "city": "Sifnos",
+   "lat": 36.9733795,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.723764499999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Dipséli",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "-7220411797471975141",
+   "city": "Sifnos",
+   "lat": 36.9712561,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.726652599999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Yfes",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "212 Dolphin Square East Side, Pimlico, London SW1V 3NQ, UK",
+   "cid": "-4532416431297426944",
+   "city": "London",
+   "lat": 51.4870916,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13651069999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tzgj2_p",
+   "name": "Dolphin Square",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Πλατύς Γιαλός 840 03",
+   "cid": "42412097124840812",
+   "city": "Sifnos",
+   "lat": 36.9315163,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.7285018,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xll6knpn",
+   "name": "Way Cup Specialty Coffee & Homemade gelato",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Αρτεμώνας 840 03",
+   "cid": "4073333015866242486",
+   "city": "Sifnos",
+   "lat": 36.9821272,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.7237294,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bw4vmffz",
+   "name": "Το Χρυσό",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Άνω Πετάλι 228 40",
+   "cid": "-4834288411250277400",
+   "city": "Sifnos",
+   "lat": 36.9777262,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.724242999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z8vrt31v",
+   "name": "O FELOS",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "757916658808093562",
+   "city": "Sifnos",
+   "lat": 36.972192199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.7459667,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Cantina",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "Kythnos 840 06",
+   "cid": "4478926729173234030",
+   "city": "Kythnos",
+   "lat": 37.3883235,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3970242,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vjds9m_z",
+   "name": "Noca Bar & Spirits",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "Κύθνος 840 06",
+   "cid": "3610818424154152032",
+   "city": "Kythnos",
+   "lat": 37.4634086,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.4098984,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c5x76618",
+   "name": "Oria Castle",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "Perdikari, Driopida, Kithnos 840 06",
+   "cid": "-7651329642376651410",
+   "city": "Kythnos",
+   "lat": 37.3752698,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.4295743,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g8bh2lt7",
+   "name": "Da Massimo Sunset Restaurant Kythnos",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Kithnos 840 06",
+   "cid": "7745986555426232084",
+   "city": "Kythnos",
+   "lat": 37.3341183,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.41821,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/119tzrtbf",
+   "name": "Skilos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "195 00, Leof. Souniou 114, Kato Sounio 195 00",
+   "cid": "6206774721190264771",
+   "city": "Kea",
+   "far": true,
+   "lat": 37.665083599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.0358627,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b6_t2hwh",
+   "name": "Taverna Syrtaki",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "40.5, Leof. Athinon Souniou, Kalivia Thorikou 190 10",
+   "cid": "6386852004260434395",
+   "city": "Athens",
+   "far": true,
+   "lat": 37.7816441,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8905714,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cmmzy4gh",
+   "name": "Kyra Popi Tavern",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Leof. Poseidonos 17, Vouliagmeni 166 71",
+   "cid": "-2645958854799405701",
+   "city": "Athens",
+   "far": true,
+   "lat": 37.8119382,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.782637599999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n55ctxmp",
+   "name": "Synaxis Taverna",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "ΑΡΧΑΙΟΛΟΓΙΚΟΣ ΧΩΡΟΣ ΡΑΜΝΟΥΣ, ΛΕΟΦΩΡΟΣ ΡΑΜΝΟΥΝΤΟΣ ΤΕΡΜΑ, Marathonas 190 07",
+   "cid": "1969066115911241358",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.2126616,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.030706499999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dfh_skp3",
+   "name": "ΤΑΒΕΡΝΑ ΡΑΜΝΟΥΣ",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Ανεμομυλος, Kithnos 840 06",
+   "cid": "7409983698083885973",
+   "city": "Kythnos",
+   "lat": 37.412521399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.4324661,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h48yl0tp",
+   "name": "ΓΙΑΓΙΑ ΚΟΥΚΟΥ Kythnos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Queen Elizabeth Olympic Park, East Bank, 107 Carpenters Rd, Stratford Cross, London E20 2AR, United Kingdom",
+   "cid": "5984073617793338259",
+   "city": "London",
+   "lat": 51.5417753,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0136712,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mdsfxwn1",
+   "name": "V&A East Museum",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "Ioulis 840 02",
+   "cid": "-3434920002076866773",
+   "city": "Kea",
+   "lat": 37.640444699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3430426,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q5bmgfdk",
+   "name": "Leon Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "Vourkari 840 02",
+   "cid": "-4464676820949385309",
+   "city": "Kea",
+   "lat": 37.6676594,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3284867,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b5wqrhs5",
+   "name": "Strofi Tou Mimi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Κέα, Kea 840 02",
+   "cid": "-6021526763199936134",
+   "city": "Kea",
+   "lat": 37.668720199999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.327842699999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bvcvcct1",
+   "name": "Nine Daughters",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Κέα, Kea 840 02",
+   "cid": "-5374696270254543810",
+   "city": "Kea",
+   "lat": 37.5967901,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.2899338,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b8jd8h1p",
+   "name": "Το Εξοχικό της Μαργαρίτας",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Beach, Koundouros 840 02",
+   "cid": "3259161883617656376",
+   "city": "Kea",
+   "lat": 37.578495,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.2815861,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z9bkqdty",
+   "name": "Salt House Kea",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ioulis 840 02",
+   "cid": "8344583123635687945",
+   "city": "Kea",
+   "lat": 37.6415686,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3405244,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b5wpw15g",
+   "name": "Piatsa",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ioulis 840 02",
+   "cid": "-55395439514153648",
+   "city": "Kea",
+   "lat": 37.640014199999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3412822,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11d_z5x7tg",
+   "name": "Paparounas",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "ΙΟΥΛΙΔΑ, ΚΕΑ ΚΥΚΛΑΔΕΣ 840 02",
+   "cid": "4357759479820431862",
+   "city": "Kea",
+   "lat": 37.6401769,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.341420799999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cnd72ccz",
+   "name": "Kalophagadon",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Unnamed Road, Ioulida 840 02",
+   "cid": "-3961671616574092660",
+   "city": "Kea",
+   "lat": 37.6414599,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3404357,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hz37mbv0",
+   "name": "Tyrakeion",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Kea 840 02",
+   "cid": "3264692608127853145",
+   "city": "Kea",
+   "lat": 37.6408876,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.348066499999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11d_d2212w",
+   "name": "Lion of Kea",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "beach, Faros 840 03",
+   "cid": "2936103977101183630",
+   "city": "Sifnos",
+   "lat": 36.944220099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.7512555,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11stv9b5jr",
+   "name": "Pelicanos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ιουλίδα, Κέα 840 02",
+   "cid": "-8283966575724699080",
+   "city": "Kea",
+   "lat": 37.6407135,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.3430696,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cn0m43q4",
+   "name": "Steki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Coressia 840 02",
+   "cid": "-7163101104403683950",
+   "city": "Kea",
+   "lat": 37.6595361,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.311605,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z42cv41_",
+   "name": "Rakitzia - Ρακιτζιά",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Dinocharous, Athina 118 52",
+   "cid": "2314042568331038305",
+   "city": "Athens",
+   "lat": 37.9674486,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7129272,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "HankyPankyAth",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "55 Dalston Ln, London E8 2NG, United Kingdom",
+   "cid": "-4960842828606361984",
+   "city": "London",
+   "lat": 51.5464602,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07060709999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b7wc54xt",
+   "name": "Allpress Coffee Roasters Dalston",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "224 Rye Ln, London SE15 4NL, United Kingdom",
+   "cid": "6512480619407901078",
+   "city": "London",
+   "lat": 51.466349,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.066208,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mn85p8pn",
+   "name": "Nola Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "52 Old Compton St, London W1D 4QE, United Kingdom",
+   "cid": "-3429016890323679562",
+   "city": "London",
+   "lat": 51.512915299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1322128,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tdbkgdv",
+   "name": "Algerian Coffee Stores",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Westbourne House, 14-16 Westbourne Grove, London W2 5RH, United Kingdom",
+   "cid": "4247406531673842727",
+   "city": "London",
+   "lat": 51.51576,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1895935,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g7_g1ncb",
+   "name": "TAB X TAB",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Veikou 39, Athina 117 42",
+   "cid": "-4075011823980806325",
+   "city": "Athens",
+   "lat": 37.966241499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.726407899999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11p46f7x37",
+   "name": "Baldo The Saucy Pasta",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "5032401387275041705",
+   "city": "Athens",
+   "lat": 37.9654242,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7269056,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "This is Loco",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "2-4 Clarence Rd, Lower Clapton, London E5 8HB, United Kingdom",
+   "cid": "1956729853699357714",
+   "city": "London",
+   "lat": 51.5497756,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0548984,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vzcgpmzr",
+   "name": "Artwords Bookshop",
+   "note": "",
+   "type": "shops"
+  },
+  {
+   "address": "20-22 Broadway Market, London E8 4QJ, United Kingdom",
+   "cid": "-4514949528798519858",
+   "city": "London",
+   "lat": 51.5361471,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0618164,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1thk86_q",
+   "name": "Artwords Bookshop",
+   "note": "",
+   "type": "shops"
+  },
+  {
+   "address": "23 Goodge St, London W1T 2PL, United Kingdom",
+   "cid": "8409564350585859969",
+   "city": "London",
+   "lat": 51.519655699999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1347431,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g1gnbp3m",
+   "name": "Tongue & Brisket",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "60 Wigmore St, London W1U 2RZ, United Kingdom",
+   "cid": "-8306325277187188282",
+   "city": "London",
+   "lat": 51.5163423,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14957099999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vr0112g6",
+   "name": "Maya Marylebone",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "180 Shoreditch High St, London E1 6HY, United Kingdom",
+   "cid": "-2298724140993703059",
+   "city": "London",
+   "lat": 51.5243834,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0774202,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wj6w_zfg",
+   "name": "Bar Lina Shoreditch",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "18 Brewer St, London W1F 0SG, United Kingdom",
+   "cid": "-7304506177799548374",
+   "city": "London",
+   "lat": 51.512340099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1342553,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vbr2pnc7",
+   "name": "Bar Lina Soho",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "140 Wardour St, London W1F 8ZT, United Kingdom",
+   "cid": "-3204175520215288568",
+   "city": "London",
+   "lat": 51.5145602,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1345361,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yp46bjct",
+   "name": "Napoli on the Road • Soho",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "58 Poland St, London W1F 7NR, United Kingdom",
+   "cid": "2777771962739908511",
+   "city": "London",
+   "lat": 51.5138381,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1366367,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xscjp4qr",
+   "name": "Kamara Bar Soho",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "4 Broadway Market Mews, London E8 4TS, United Kingdom",
+   "cid": "-115131449573992365",
+   "city": "London",
+   "lat": 51.5361482,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0624365,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xkmjdshp",
+   "name": "Katsute100 Broadway Market",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "372 Kingsland Rd, London E8 4DA, United Kingdom",
+   "cid": "6019901848513751249",
+   "city": "London",
+   "lat": 51.5406999,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0762354,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xzfnc4kb",
+   "name": "Fresh Hot Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Unit 8, Unit 8 Filmworks Walk, London W5 5FA, United Kingdom",
+   "cid": "4829531279766985293",
+   "city": "London",
+   "far": true,
+   "lat": 51.5122,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.3068167,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w918ypn2",
+   "name": "Sarv's Slice",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "120a Anerley Rd, London SE19 2AN, United Kingdom",
+   "cid": "-6916835631611136636",
+   "city": "London",
+   "lat": 51.415610699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0720391,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l9ps0s02",
+   "name": "Chatsworth Bakehouse",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "126-128 Lauriston Rd, London E9 7LH, United Kingdom",
+   "cid": "5067495704235773607",
+   "city": "London",
+   "lat": 51.5371332,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0448432,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11x62wp_7p",
+   "name": "ACE Pizza Victoria Park",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "The Spurstowe Arms, 68 Greenwood Rd, London E8 1AB, United Kingdom",
+   "cid": "5773255744801250627",
+   "city": "London",
+   "lat": 51.5454072,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0632223,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11shs3fn8b",
+   "name": "Dough Hands East",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "144-146 Commercial St, London E1 6NU, United Kingdom",
+   "cid": "-8688161926992690382",
+   "city": "London",
+   "lat": 51.5217028,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0758355,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xkdffzzr",
+   "name": "Paulie's Shoreditch",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "53 Cambridge Rd, Kingston upon Thames KT1 3NS, United Kingdom",
+   "cid": "3759329787043997093",
+   "city": "London",
+   "far": true,
+   "lat": 51.4084788,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2851632,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11jvqpqpqt",
+   "name": "Patio Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "122 Bethnal Grn Rd, London E2 6DG, United Kingdom",
+   "cid": "3138223061755566022",
+   "city": "London",
+   "lat": 51.5248524,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0713985,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yn38425f",
+   "name": "Vincenzo's Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Hand of Glory Pub, 240 Amhurst Rd, Lower Clapton, London E8 2BS, United Kingdom",
+   "cid": "-4515868619324297192",
+   "city": "London",
+   "lat": 51.554654,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.06806569999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zbbzy1l5",
+   "name": "Tracks Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "5a Rosebery Ave, London EC1R 4SP, United Kingdom",
+   "cid": "-3087040738180828191",
+   "city": "London",
+   "lat": 51.5236498,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.111506,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z947fs75",
+   "name": "Ebi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "24 Opal Cres, Singapore 328418",
+   "cid": "-8532129866445327746",
+   "city": "Singapore",
+   "lat": 1.3280246999999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 103.8670684,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l20l4bqj",
+   "name": "Fluid",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "465 N Bridge Rd, #02-5063, Singapore 191465",
+   "cid": "-1926699864488689608",
+   "city": "Singapore",
+   "lat": 1.305245,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 103.863084,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11pz3tgkdf",
+   "name": "Zerah Coffee Roasters",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "64 Club St, Back Entrance, Singapore 069438",
+   "cid": "3131947651205888023",
+   "city": "Singapore",
+   "lat": 1.2813676999999999,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 103.845891,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ghfprc8r",
+   "name": "Maxi Coffee Bar",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "261 Waterloo St, #01-24, Singapore 180261",
+   "cid": "4005587498597274753",
+   "city": "Singapore",
+   "lat": 1.2984136,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 103.8519238,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g8p8q8q8",
+   "name": "Kurasu Singapore",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "115 25, Adrianiou 31, Athina 115 25",
+   "cid": "-5235936607036251506",
+   "city": "Athens",
+   "lat": 37.9997022,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7725995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b72hsfn9",
+   "name": "Χοχλιδάκι - Ουζερί / Μεζεδοπωλείο",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Πλ, Ελευθερωτών 8, Chalandri 152 32",
+   "cid": "-7032583030691660771",
+   "city": "Athens",
+   "lat": 38.0213476,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.797519299999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tq4hj4m",
+   "name": "ΟΥΖΕΡΙ ΤΟΥ ΜΗΤΣΟΥ",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Aalsmeerweg 14H, 1059 AJ Amsterdam, Netherlands",
+   "cid": "7178763489585404619",
+   "city": "Cambridge",
+   "far": true,
+   "lat": 52.3506484,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 4.8493447,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zk1jmcvd",
+   "name": "Five Pizzas",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "252 Paradise Row, London E2 9LE, United Kingdom",
+   "cid": "7877934963653687062",
+   "city": "London",
+   "lat": 51.528461099999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0562415,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ymxyk76p",
+   "name": "Tempo",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "50 Notting Hill Gate, London W11 3JD, United Kingdom",
+   "cid": "-1695379221534508760",
+   "city": "London",
+   "lat": 51.509568699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1953471,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y_3z91l_",
+   "name": "KINZ Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "St Dunstan's Hill, London EC3R 5DD, United Kingdom",
+   "cid": "-4810568775306840787",
+   "city": "London",
+   "lat": 51.509715,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0824601,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/04g9t1",
+   "name": "St Dunstan in the East Church Garden",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "Αριστοτέλους 42 &, Chaimanta 34, Athina 152 34",
+   "cid": "6035421826020901379",
+   "city": "Athens",
+   "lat": 38.0206555,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8023001,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xnrl6x6_",
+   "name": "The Jamming Buns",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Odissea Androutsou 32, Athina 117 41",
+   "cid": "-8684523956695270140",
+   "city": "Athens",
+   "lat": 37.9630815,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7233445,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z76rx01v",
+   "name": "RISTORANTE DI CARAVAGGIO",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "14, 15 Eccleston Yards, London SW1W 9AZ, United Kingdom",
+   "cid": "-6023950607713843389",
+   "city": "London",
+   "lat": 51.4937664,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14903049999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z4n5x99d",
+   "name": "Weezie's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "22 Brook's Mews, London W1K 4DY, United Kingdom",
+   "cid": "837066549281222024",
+   "city": "London",
+   "lat": 51.512161899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.147232,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xndd42cw",
+   "name": "Three Sisters",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Leof. Al. Papanastasiou 4, Ag. Dimitrios 173 43",
+   "cid": "8143521943361617236",
+   "city": "Athens",
+   "lat": 37.949865599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7376745,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mrc05h2b",
+   "name": "Elaya Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Leof. Agiou Dimitriou 33, Ag. Dimitrios 173 43",
+   "cid": "-7149175392539792271",
+   "city": "Athens",
+   "lat": 37.946813899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.736016499999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l5lycb_p",
+   "name": "Local Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Archelaou 14, Athina 116 35",
+   "cid": "6342104502660642444",
+   "city": "Athens",
+   "lat": 37.9711649,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7465367,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yxhwzrb7",
+   "name": "Greasy Spoon Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "252 High Holborn, London WC1V 7EN, United Kingdom",
+   "cid": "7928340162549216150",
+   "city": "London",
+   "lat": 51.5176326,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.11805979999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1ptyz84p1",
+   "name": "Scarfes Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "28 Scrutton St, London EC2A 4RP, United Kingdom",
+   "cid": "-5931790851480106513",
+   "city": "London",
+   "lat": 51.523230299999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0828898,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wqkh4dyy",
+   "name": "Waltz",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "237 Wooster St, New Haven, CT 06511, United States",
+   "cid": "-1324000422501908361",
+   "city": "New Haven",
+   "lat": 41.3030318,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -72.9200707,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/06wx8z",
+   "name": "Sally's Apizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Chelsea Barracks, London SW1W 8DS, United Kingdom",
+   "cid": "8064580674075532706",
+   "city": "London",
+   "lat": 51.489059999999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1541632,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h9rpqw81",
+   "name": "Chelsea Barracks",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Kapodistria 1, Ano Siros 841 00",
+   "cid": "3590840822110554996",
+   "city": "Syros",
+   "lat": 37.4494514,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.9359958,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kqcrtz4b",
+   "name": "Piatsa Loukoumades",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Bloom Ln, Northside, Dublin 1, D01 V127, Ireland",
+   "cid": "-4023904056397025897",
+   "city": "Dublin",
+   "lat": 53.3466607,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2651973,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11jp4s068p",
+   "name": "Sfuso",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "29-30 Dame St, Dublin 2, D02 A025, Ireland",
+   "cid": "-2743755367285744262",
+   "city": "Dublin",
+   "lat": 53.344074299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.263609199999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11jg5kr9wx",
+   "name": "Reyna",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Bow St, Smithfield, Dublin 7, D07 V57C, Ireland",
+   "cid": "316533759331883540",
+   "city": "Dublin",
+   "lat": 53.348185099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2770288999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/052ly2v",
+   "name": "Jameson Distillery Bow St.",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "22 Tileyard Rd, London N7 9AH, United Kingdom",
+   "cid": "-3508643136941754226",
+   "city": "London",
+   "lat": 51.542516899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1250848,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n9ctz4s8",
+   "name": "House of Racquet",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "66 Union St, London SE1 1TD, United Kingdom",
+   "cid": "-1113305077735716795",
+   "city": "London",
+   "lat": 51.5041072,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.09498179999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11msn8g8f4",
+   "name": "Oudh 1722",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Lamb St, London E1 6ED, United Kingdom",
+   "cid": "7213733830880694913",
+   "city": "London",
+   "lat": 51.520328,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0762713,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g6xn90p6",
+   "name": "Smokoloko BBQ",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "310 Portobello Rd, London W10 5TA, United Kingdom",
+   "cid": "805014342329076223",
+   "city": "London",
+   "lat": 51.5210407,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.20940199999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vl5tq9sk",
+   "name": "Canteen | Notting Hill",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "37 Sloane Square, London SW1W 8AN, United Kingdom",
+   "cid": "1837987290832543954",
+   "city": "London",
+   "lat": 51.4922632,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15692219999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mlq1yfbd",
+   "name": "MARTINO'S",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Yards, Unit 1C Montacute, London E1 6HU, United Kingdom",
+   "cid": "-3263453464918373440",
+   "city": "London",
+   "lat": 51.5244244,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0783523,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mdfg71hb",
+   "name": "Legado Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "61, 63 Brushfield St, London E1 6AA, United Kingdom",
+   "cid": "3948246244840605234",
+   "city": "London",
+   "lat": 51.519162699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0756723,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n9r_3_h2",
+   "name": "Holy Carrot Bistro Spitalfields",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "109 Columbia Rd, London E2 7RL, United Kingdom",
+   "cid": "-110146010980265119",
+   "city": "London",
+   "lat": 51.5303464,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.06824809999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yqxrjb7l",
+   "name": "Tiella Trattoria & Bar",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Dragatsaniou 08, Athina 105 59",
+   "cid": "-5627314883358900650",
+   "city": "Athens",
+   "lat": 37.9797618,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.730815,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11myr48g0h",
+   "name": "Blue Brick",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "133 Upper St, London N1 1QP, United Kingdom",
+   "cid": "-2259971552089119585",
+   "city": "London",
+   "lat": 51.5391173,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1027386,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mly03b3d",
+   "name": "Copains",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "One Burger, Agathonos 7, Greece 105 51",
+   "cid": "7187598671440373694",
+   "city": "Athens",
+   "lat": 37.978316899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7274937,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lf92yy5g",
+   "name": "ONE",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Regueirão dos Anjos 43, 1150-028 Lisboa, Portugal",
+   "cid": "5480967866211997455",
+   "city": "Barcelona",
+   "far": true,
+   "lat": 38.7254441,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -9.135867,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y05mfgvb",
+   "name": "Lugar Nenhum",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "41 Paddington St, London W1U 4HN, United Kingdom",
+   "cid": "-3307419609532163694",
+   "city": "London",
+   "lat": 51.520334399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1557962,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z68gqnwz",
+   "name": "Sticks & Cones",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "3725 Balboa St, San Francisco, CA 94121, United States",
+   "cid": "-7789497135890823478",
+   "city": "San Francisco",
+   "lat": 37.7755351,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.49890529999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rtsjcmkp",
+   "name": "The Laundromat SF",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
+   "cid": "1213862716908497279",
+   "city": "London",
+   "lat": 51.516050899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1026115,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vsxyww39",
+   "name": "LEYDI",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "8 Charlotte St., London W1T 2LS, United Kingdom",
+   "cid": "-8688734103294953073",
+   "city": "London",
+   "lat": 51.5183399,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1343925,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h48wnqqk",
+   "name": "Norma",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "10.201, THE LEATHER MARKET, Weston St, London SE1 3ER, United Kingdom",
+   "cid": "4995873513055729938",
+   "city": "London",
+   "lat": 51.500415999999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0849327,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f403s5f1",
+   "name": "Pact Coffee Head Office",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "7 Charlotte St., London W1T 1RF, United Kingdom",
+   "cid": "7076022182200111606",
+   "city": "London",
+   "lat": 51.5181864,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1346679,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zj8z5ky2",
+   "name": "Gallio",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "12A Little Portland St, London W1W 8BJ, United Kingdom",
+   "cid": "8969442312707338578",
+   "city": "London",
+   "lat": 51.5169583,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1421741,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nbh83ccq",
+   "name": "BLK CAB®️(Coffee & People) - Little Portland St.",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Ktena 3, Athina 105 63",
+   "cid": "-903424416244359314",
+   "city": "Athens",
+   "lat": 37.9765638,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7300154,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wxpmd7b4",
+   "name": "Yphes Restaurant Athens",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Milioni 12, Athina 106 73",
+   "cid": "2224518967900465375",
+   "city": "Athens",
+   "lat": 37.9776902,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7394768,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yzyf5s_d",
+   "name": "Varia Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "7357 NW Miami Ct, Miami, FL 33150, United States",
+   "cid": "3835461307548709024",
+   "city": "Miami",
+   "lat": 25.8428713,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -80.1970398,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h3z2kcps",
+   "name": "Sunny’s Steakhouse",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "1 Sloane Gardens, London SW1W 8EA, United Kingdom",
+   "cid": "1328465166792094223",
+   "city": "London",
+   "lat": 51.4919971,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15640179999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11svpbz8x0",
+   "name": "At Sloane",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "100 Portobello Rd, London W11 2QD, United Kingdom",
+   "cid": "3187872027469798623",
+   "city": "London",
+   "lat": 51.5133009,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2026305,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sx04b_26",
+   "name": "Zephyr Notting Hill",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "7 Langton St, London SW10 0JL, United Kingdom",
+   "cid": "7135715538663603019",
+   "city": "London",
+   "lat": 51.482243399999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1806902,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1vd75d4b",
+   "name": "La Famiglia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Leventi 5, Athina 106 73",
+   "cid": "1172612214821697647",
+   "city": "Athens",
+   "lat": 37.9779389,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7417253,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yxzpq75g",
+   "name": "Kissa Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
+   "cid": "-7190428460876992923",
+   "city": "London",
+   "lat": 51.5102361,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1242071,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z0nb3h2l",
+   "name": "Zylia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "135 Keefer St, Vancouver, BC V6A 1X3, Canada",
+   "cid": "4140688760003366567",
+   "city": "Vancouver",
+   "lat": 49.27961,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -123.1013292,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/113gwc3vs",
+   "name": "The Keefer Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "157 Westbourne Grove, London W11 2RS, United Kingdom",
+   "cid": "-6697120301114696863",
+   "city": "London",
+   "lat": 51.514804,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1963739,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lg39l925",
+   "name": "SUMI",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "River Terrace, Somerset House, Strand, London WC2R 1LA, United Kingdom",
+   "cid": "7273725366576031679",
+   "city": "London",
+   "lat": 51.5103983,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1171497,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hyd3gn_2",
+   "name": "Setlist",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
+   "cid": "-2273323504778211984",
+   "city": "London",
+   "lat": 51.5102707,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1241105,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z5qfmvvy",
+   "name": "Arcade Covent Garden",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "15 Henrietta St, London WC2E 8QG, United Kingdom",
+   "cid": "-6367240057554719469",
+   "city": "London",
+   "lat": 51.5108639,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.123973,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nn1x0mxj",
+   "name": "Ave Mario",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "75 Dean St, London W1D 3PU, United Kingdom",
+   "cid": "5606698313876022866",
+   "city": "London",
+   "lat": 51.513815699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1330786,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mrbwcltb",
+   "name": "ada",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Three Colts Tavern, 199 Cambridge Heath Rd, London E2 0EL, United Kingdom",
+   "cid": "-8406215773226923061",
+   "city": "London",
+   "lat": 51.5247014,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.055121699999999996,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y8rl4f3y",
+   "name": "Short Road Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "36 Buckingham Palace Rd, London SW1W 0RE, United Kingdom",
+   "cid": "6861224293189494184",
+   "city": "London",
+   "lat": 51.497243,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1447387,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xmnzyghd",
+   "name": "Hanbaagaasuuteeki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "65 Shepherd's Bush Grn, London W12 8QE, United Kingdom",
+   "cid": "-4535820177424798900",
+   "city": "London",
+   "lat": 51.5047435,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2248539,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sc9g_8kv",
+   "name": "Chet's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "58 Brewer St, London W1F 9TL, United Kingdom",
+   "cid": "3638117081155949496",
+   "city": "London",
+   "lat": 51.511400699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13605899999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c4bc48kr",
+   "name": "Kiln",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "31 Foubert's Pl, Carnaby, London W1F 7QG, United Kingdom",
+   "cid": "-3886895390055057679",
+   "city": "London",
+   "lat": 51.5139072,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1390293,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xt2n10zf",
+   "name": "Heard. Burger Soho",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "1 Flat Iron Square, London SE1 0AB, United Kingdom",
+   "cid": "-4424808052679226172",
+   "city": "London",
+   "lat": 51.5039953,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.09547789999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11x02s04yq",
+   "name": "Heard. Burger Borough",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "87-89 George St, London W1U 8AQ, United Kingdom",
+   "cid": "3298289798188848014",
+   "city": "London",
+   "lat": 51.5170525,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.157253,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h5wbby87",
+   "name": "Santo Mare",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Kendal St, St George's Fields, London W2 2AW, United Kingdom",
+   "cid": "6004752173248186037",
+   "city": "London",
+   "lat": 51.514851,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.166241,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vqt7sr8_",
+   "name": "Kendal Street Kitchen",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "18 Thayer St, London W1U 3JY, United Kingdom",
+   "cid": "3514113171774969310",
+   "city": "London",
+   "lat": 51.517156299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1514405,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w_zvrh1s",
+   "name": "Nina",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "247 Liverpool Rd, London N1 1LX, United Kingdom",
+   "cid": "-19406959983539882",
+   "city": "London",
+   "lat": 51.5400219,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1065497,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xkq_xrd6",
+   "name": "Angel Dabang",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "52 St Thomas's Rd, Finsbury Park, London N4 2QQ, United Kingdom",
+   "cid": "-3516155317469889902",
+   "city": "London",
+   "lat": 51.5620146,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1051081,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rd_20y_f",
+   "name": "The Plimsoll",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "15 Hanbury St, London E1 6QR, United Kingdom",
+   "cid": "-1592790739407510444",
+   "city": "London",
+   "lat": 51.5203991,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0737994,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tlbj12_",
+   "name": "Goodhood",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "138 St John's Wood High St, London NW8 7SE, United Kingdom",
+   "cid": "-1848404421031579307",
+   "city": "London",
+   "lat": 51.5338644,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1709279,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f4pn4vhc",
+   "name": "Unico Gelato & Caffè",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "207 Belsize Rd, London NW6 4AA, United Kingdom",
+   "cid": "-7457681840662864675",
+   "city": "London",
+   "lat": 51.538398699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.19054179999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yj2rdpv6",
+   "name": "KillBean",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "104 Goldhawk Rd, London W12 8HD, United Kingdom",
+   "cid": "4706782461481735300",
+   "city": "London",
+   "lat": 51.502020599999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2293009,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ckkxq5gp",
+   "name": "Bertotti Gelato Laboratory",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "191 Portobello Rd, London W11 2ED, United Kingdom",
+   "cid": "5698337051212182872",
+   "city": "London",
+   "lat": 51.515646399999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2049424,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xkx4hn1p",
+   "name": "Speedboat Bar at The Electric",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "30 Rupert St, London W1D 6DL, United Kingdom",
+   "cid": "1457660498308052845",
+   "city": "London",
+   "lat": 51.5111755,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13265449999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t4wtssgq",
+   "name": "Speedboat Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "3 Hopkins St, London W1F 0HS, United Kingdom",
+   "cid": "5169710329517601011",
+   "city": "London",
+   "lat": 51.5133387,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1350283,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11md1snf8x",
+   "name": "Panadera Soho",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Seven Dials Market, 35 Earlham St, London WC2H 9LX, United Kingdom",
+   "cid": "3930981885276149391",
+   "city": "London",
+   "lat": 51.514041,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1256102,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1thxq3nm",
+   "name": "Chin Chin Ice Cream",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "Unit 1 Discovery Business Park, St James's Rd, London SE16 4RA, United Kingdom",
+   "cid": "7326719028025411032",
+   "city": "London",
+   "lat": 51.4958713,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0673729,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tfjklz2",
+   "name": "Ice Cream Union - SPA Terminus Market",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "14 Bute St, South Kensington, London SW7 3EX, United Kingdom",
+   "cid": "765226192248987076",
+   "city": "London",
+   "lat": 51.4936103,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.17619189999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1thx3j4c",
+   "name": "Oddono's South Kensington",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "4 Brushfield St, London E1 6AN, United Kingdom",
+   "cid": "5091187382129407449",
+   "city": "London",
+   "lat": 51.5188713,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0789291,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h75kscht",
+   "name": "Darlish Ice Cream",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "25 Bury Pl, London WC1A 2JH, United Kingdom",
+   "cid": "7150722758633921821",
+   "city": "London",
+   "lat": 51.5185691,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1246693,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nbb4j9d4",
+   "name": "Darlish Ice Cream",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "1 Kingly St, Carnaby, London W1B 5PA, United Kingdom",
+   "cid": "-3408621036029153467",
+   "city": "London",
+   "lat": 51.512119999999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1385478,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w3fpjcl8",
+   "name": "Big Kid Ice Cream",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "Arch 151 Tilbury Rd, London E10 6RE, United Kingdom",
+   "cid": "-7147580270950109940",
+   "city": "London",
+   "lat": 51.5701265,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.008649,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ygg97mxw",
+   "name": "Chunk Provisions",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "4b Holywell Ln, London EC2A 3ET, United Kingdom",
+   "cid": "8796824778034495348",
+   "city": "London",
+   "lat": 51.5238495,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07785829999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vcmrcspv",
+   "name": "Flying Horse Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Studio 1, 31 New Inn Yard, London EC2A 3EY, United Kingdom",
+   "cid": "-6163199721448338835",
+   "city": "London",
+   "lat": 51.5246649,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07824049999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n426rz1z",
+   "name": "Studio 1",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "138-139 Shoreditch High St, London E1 6JE, United Kingdom",
+   "cid": "2725727299906988570",
+   "city": "London",
+   "lat": 51.5262142,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07822699999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ysgx834d",
+   "name": "Dallas Burger Joint - Shoreditch",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "73 Rivington St, London EC2A 3AY, United Kingdom",
+   "cid": "9140343525357269465",
+   "city": "London",
+   "lat": 51.526285699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0795104,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vtbq02ft",
+   "name": "LIFT COFFEE Shoreditch",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "44 Rivington St, London EC2A 3QP, United Kingdom",
+   "cid": "-8899779796404924831",
+   "city": "London",
+   "lat": 51.5260312,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.08108689999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xgnz519w",
+   "name": "Project 44",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1 Bath Pl, Rivington St, London EC2A 3DA, United Kingdom",
+   "cid": "-7395527003679625400",
+   "city": "London",
+   "lat": 51.526158699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.082277,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wxgrz41g",
+   "name": "YAYACAS Authentic Greek Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "11 Hackney Rd, London E2 7NX, United Kingdom",
+   "cid": "1967003980439303656",
+   "city": "London",
+   "lat": 51.5274474,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0772407,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fqz9p2p7",
+   "name": "Rawlala juice bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "1 Monmouth St, London WC2H 9DA, United Kingdom",
+   "cid": "-3787090636793211191",
+   "city": "London",
+   "lat": 51.5150205,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1266803,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z5qjft_c",
+   "name": "Carmy's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "60 Dean St, London W1D 6AW, United Kingdom",
+   "cid": "8244632950538864189",
+   "city": "London",
+   "lat": 51.5128212,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1320505,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l_888x5c",
+   "name": "Crunch - sandwich[up]rising",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Unit 5, The Kitchens, Spitalfields Market, 16 Horner Square, London E1 6EW, United Kingdom",
+   "cid": "-9149357838400496286",
+   "city": "London",
+   "lat": 51.5196286,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0750189,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t2c_zl1c",
+   "name": "Crunch - sandwich[up]rising",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Kiprou 13, Glifada 166 75",
+   "cid": "1218303065325132750",
+   "city": "Athens",
+   "far": true,
+   "lat": 37.866842,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7476909,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sw48fxrg",
+   "name": "La Linda Bakery & Café",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Χριστοκοπίδου 14 &, Ναυάρχου Αποστόλη, Athina 105 54",
+   "cid": "-5213002378588620852",
+   "city": "Athens",
+   "lat": 37.978053599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7233354,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j59r324w",
+   "name": "Picky Brunch & Specialty Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "163 Gloucester Rd, South Kensington, London SW7 4TH, United Kingdom",
+   "cid": "2129692290890266603",
+   "city": "London",
+   "lat": 51.4914304,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1800772,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yvr8npmd",
+   "name": "Mulliri LDN",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "441 9th Ave Suite 101, New York, NY 10001, United States",
+   "cid": "-3094897822868177768",
+   "city": "New York",
+   "lat": 40.753834999999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99624299999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j2w8817l",
+   "name": "In Common NYC - A Breakfast & Brunch Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "44 E 21st St, New York, NY 10010",
+   "cid": "-5140134576660950390",
+   "city": "New York",
+   "lat": 40.7391283,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9881953,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Lysée",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "36 W 40th St, New York, NY 10018, United States",
+   "cid": "8774649321791112423",
+   "city": "New York",
+   "lat": 40.752837299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9835743,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/12mkw9530",
+   "name": "Lady M Cake Boutique - Bryant Park",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "81 Goldsmiths Row, London E2 8QR, United Kingdom",
+   "cid": "-8073065279674498424",
+   "city": "London",
+   "lat": 51.533153399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0654155,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ytq9g5h1",
+   "name": "Logma",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "552 Higashiaburanokojicho, Shimogyo Ward, Kyoto, 600-8235, Japan",
+   "cid": "6876186519374092049",
+   "city": "Singapore",
+   "far": true,
+   "lat": 34.9863776,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 135.7538511,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bzyvk431",
+   "name": "Kurasu Kyoto Stand",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ground Floor, 2 Newburgh St, Carnaby, London W1F 7RD, United Kingdom",
+   "cid": "4122601921965876891",
+   "city": "London",
+   "lat": 51.5134566,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1384387,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y9yr_sn7",
+   "name": "Nagare Coffee Carnaby",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Ground Floor, 40 Brushfield St, London E1 6AG, United Kingdom",
+   "cid": "-3703835343123689967",
+   "city": "London",
+   "lat": 51.518943099999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0769985,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11k4zw2bt7",
+   "name": "Nagare Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "141 10th Ave, New York, NY 10011, United States",
+   "cid": "-4631684317743766354",
+   "city": "New York",
+   "lat": 40.7450912,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0063088,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sb3v0285",
+   "name": "Alba Accanto",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "144 10th Ave, New York, NY 10011, United States",
+   "cid": "8090165769920238070",
+   "city": "New York",
+   "lat": 40.7450287,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0058689,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tfjwmzsn",
+   "name": "Urbana Cafe and Gallery",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "176 2nd Ave, New York, NY 10003, United States",
+   "cid": "2198912262055854115",
+   "city": "New York",
+   "lat": 40.7304562,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.986072,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ydvfh_z3",
+   "name": "Ops",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "115 Montague St, Brooklyn, NY 11201, United States",
+   "cid": "4177251435847614736",
+   "city": "New York",
+   "lat": 40.695205099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9947842,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vkc698pb",
+   "name": "L’Apéro by 4F",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "47 Java St, Brooklyn, NY 11222, United States",
+   "cid": "8746778114406004288",
+   "city": "New York",
+   "lat": 40.7312836,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.95936739999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ckr55_4k",
+   "name": "Naked Dog",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "80 Franklin St, Brooklyn, NY 11222, United States",
+   "cid": "4400316439366038996",
+   "city": "New York",
+   "lat": 40.7273664,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9569454,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11msgqq9gx",
+   "name": "Peek in Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "90 Calyer St, Brooklyn, NY 11222, United States",
+   "cid": "-3308701091304268468",
+   "city": "New York",
+   "lat": 40.7269205,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9575444,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c70cj1k9",
+   "name": "Chez Ma Tante",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "331 Bedford Ave, Brooklyn, NY 11211, United States",
+   "cid": "1572888878981016213",
+   "city": "New York",
+   "lat": 40.7126564,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.96234539999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fn206llr",
+   "name": "Sauced",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "340 Bedford Ave, Brooklyn, NY 11249, United States",
+   "cid": "-4584152202799084503",
+   "city": "New York",
+   "lat": 40.7127907,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9625269,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vszkwyfj",
+   "name": "With Others",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1748 1st Ave, New York, NY 10128, United States",
+   "cid": "333400375942641781",
+   "city": "New York",
+   "lat": 40.7797109,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9471111,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sd28x7_0",
+   "name": "Tinos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "315 Smith St, Brooklyn, NY 11231, United States",
+   "cid": "159596224141307658",
+   "city": "New York",
+   "lat": 40.681216,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.994074,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y5mx88qx",
+   "name": "Liz's Book Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "192 Amity St, Brooklyn, NY 11201, United States",
+   "cid": "6845478151727268730",
+   "city": "New York",
+   "lat": 40.6883279,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99343259999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ylzq2bnf",
+   "name": "Enso Cafe & Wine bar",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "6 Columbia Pl, Brooklyn, NY 11201, United States",
+   "cid": "-4873322075484594072",
+   "city": "New York",
+   "lat": 40.693546999999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9985087,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11m5sg4m6l",
+   "name": "Laundry & Latte",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "64 Downing St, New York, NY 10014, United States",
+   "cid": "-7370452745522266670",
+   "city": "New York",
+   "lat": 40.7288427,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0048793,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xtz33kqv",
+   "name": "Birds",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "73 Greenwich Ave, New York, NY 10014, United States",
+   "cid": "-5539789009414455958",
+   "city": "New York",
+   "lat": 40.7366105,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0012856,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w392yzs2",
+   "name": "Apollo Bagels",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "34 Carmine St, New York, NY 10014, United States",
+   "cid": "4330840820772263236",
+   "city": "New York",
+   "lat": 40.7299274,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0029971,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vkld52sj",
+   "name": "Demo",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "211 W Broadway, New York, NY 10013, United States",
+   "cid": "8727553616843101003",
+   "city": "New York",
+   "lat": 40.718913799999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0062106,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l2lw807y",
+   "name": "Paros Tribeca",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "177 Orchard St, New York, NY 10002, United States",
+   "cid": "6874209058699743227",
+   "city": "New York",
+   "lat": 40.7217896,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.988479,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y55qtyv3",
+   "name": "Son del North",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1123 Broadway, New York, NY 10010, United States",
+   "cid": "6977616736185410523",
+   "city": "New York",
+   "lat": 40.7432459,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9892711,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mdjxvmvz",
+   "name": "Mama Mezze",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "209 W 57th St, New York, NY 10019, United States",
+   "cid": "6559005598410250542",
+   "city": "New York",
+   "lat": 40.7659178,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9804941,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nbb5ktcc",
+   "name": "Yeero Greek Eatery",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "45 E 42nd St, New York, NY 10017, United States",
+   "cid": "6811134064814784110",
+   "city": "New York",
+   "lat": 40.752774599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9787253,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l_drfg66",
+   "name": "SUMMIT One Vanderbilt",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "Kelsou 10, Athina 116 36",
+   "cid": "-403259631734089743",
+   "city": "Athens",
+   "lat": 37.963226299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.734458,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xvly5mh9",
+   "name": "Garum Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "113 St Marks Pl, New York, NY 10009, United States",
+   "cid": "-7127327452575559609",
+   "city": "New York",
+   "lat": 40.7270797,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.98377719999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0zv33x7",
+   "name": "Please Don't Tell",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "146 Essex St, New York, NY 10002, United States",
+   "cid": "5916795963296968237",
+   "city": "New York",
+   "lat": 40.7204282,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9868606,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1w3w3yt6",
+   "name": "Beauty & Essex",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "242 W 10th St Storefront 2, New York, NY 10014, United States",
+   "cid": "5697715061645247856",
+   "city": "New York",
+   "lat": 40.7336769,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0057112,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sdx_0z0c",
+   "name": "WEST10WEST",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "194 Elizabeth St, New York, NY 10012, United States",
+   "cid": "5240146326513001438",
+   "city": "New York",
+   "lat": 40.721696,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.994272,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b6xhrl4b",
+   "name": "Peasant",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "136 Broadway, Brooklyn, NY 11249, United States",
+   "cid": "7969399199012325838",
+   "city": "New York",
+   "lat": 40.7101876,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9640308,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11frr3zbmg",
+   "name": "Francie",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "191 Grand St, Brooklyn, NY 11211, United States",
+   "cid": "4270517806310989374",
+   "city": "New York",
+   "lat": 40.7143166,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.96053429999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g6pgx1z6",
+   "name": "Birds of a Feather",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "13 W 36th St., New York, NY 10018, United States",
+   "cid": "5095634395467051887",
+   "city": "New York",
+   "lat": 40.7502712,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9845225,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f2ckg9x8",
+   "name": "TONCHIN NEW YORK",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1185 Broadway Ground Floor, New York, NY 10001, United States",
+   "cid": "1148433431242659261",
+   "city": "New York",
+   "lat": 40.745546,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9889515,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11swd77_c0",
+   "name": "Zaytinya",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "329 Kent Ave, Brooklyn, NY 11249, United States",
+   "cid": "8495836090338517267",
+   "city": "New York",
+   "lat": 40.713432999999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9672365,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f9h31v3l",
+   "name": "Misi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "79 Rivington St, New York, NY 10002, United States",
+   "cid": "1328532255896244276",
+   "city": "New York",
+   "lat": 40.720315299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.98946049999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y_fl55rr",
+   "name": "Ms. Alice",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "183 Bowery, New York, NY 10002, United States",
+   "cid": "6792902209581019190",
+   "city": "New York",
+   "lat": 40.7204136,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9935814,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xdjvw76z",
+   "name": "The Ripple Room",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "249 Park Ave S, New York, NY 10003, United States",
+   "cid": "-6732340247572550627",
+   "city": "New York",
+   "lat": 40.738152299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.987657,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tyt6835",
+   "name": "L’Express",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "77 Irving Pl, New York, NY 10003, United States",
+   "cid": "-3629856834523670778",
+   "city": "New York",
+   "lat": 40.7370091,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9867455,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h1fz3sxl",
+   "name": "Caffè Panna",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "259 W 4th St, New York, NY 10014, United States",
+   "cid": "4210105208644209139",
+   "city": "New York",
+   "lat": 40.7354187,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.003149,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1ts3m3f_",
+   "name": "Sant Ambroeus W 4",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "92 2nd Ave, New York, NY 10003, United States",
+   "cid": "2372372215556756909",
+   "city": "New York",
+   "lat": 40.726923299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9885382,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wh61b6l8",
+   "name": "Bar Snack",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "Archelaou 1, Athina 116 35",
+   "cid": "-1231162120357651105",
+   "city": "Athens",
+   "lat": 37.9704106,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7469474,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yycsnbt4",
+   "name": "Archelaou Ena",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "475 W Broadway, New York, NY 10012",
+   "cid": "3215417553495563710",
+   "city": "New York",
+   "lat": 40.726568,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99983499999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "The Corner Store",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "181 Thompson St, New York, NY 10012, United States",
+   "cid": "6958892335243387212",
+   "city": "New York",
+   "lat": 40.727989099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0002414,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hjgjv7vl",
+   "name": "Carbone New York",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "61 Commerce St, Brooklyn, NY 11231, United States",
+   "cid": "-4311194593358563287",
+   "city": "New York",
+   "lat": 40.680306099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0077605,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bvvx965x",
+   "name": "La Newyorkina: La Tiendita",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "139 E 12th St, New York, NY 10003, United States",
+   "cid": "-8607170501601655926",
+   "city": "New York",
+   "lat": 40.7321753,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.98831009999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y02fcjjp",
+   "name": "Stars",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "85 10th Ave, New York, NY 10011, United States",
+   "cid": "-6399362879039055629",
+   "city": "New York",
+   "lat": 40.7434185,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0075256,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lngdzd4t",
+   "name": "Crane Club",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "384 Broome St, New York, NY 10012, United States",
+   "cid": "-2545350793650862721",
+   "city": "New York",
+   "lat": 40.7205296,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99658869999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xfrx8r1g",
+   "name": "Deux Luxe",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "261 7th Ave, New York, NY 10001, United States",
+   "cid": "4021870718225789442",
+   "city": "New York",
+   "lat": 40.7452152,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9945269,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c6cd32m5",
+   "name": "Variety Coffee Roasters",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Brooklyn, NY, United States",
+   "cid": "1696722114425354904",
+   "city": "New York",
+   "lat": 40.6602037,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9689558,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/01s7jw",
+   "name": "Prospect Park",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "19 Kenmare St, New York, NY 10012, United States",
+   "cid": "-4422994216344481853",
+   "city": "New York",
+   "lat": 40.7206739,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9947071,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yqf3d5vg",
+   "name": "Only The Wild Ones",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "510 Madison Ave, New York, NY 10022, United States",
+   "cid": "5128653813641669800",
+   "city": "New York",
+   "lat": 40.7597022,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9746995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dxd3zskm",
+   "name": "Empellon",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "35 E 21st St, New York, NY 10010, United States",
+   "cid": "3833293956369346540",
+   "city": "New York",
+   "lat": 40.7395952,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9883564,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b7gp091z",
+   "name": "Cosme",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "3 Allen St, New York, NY 10002, United States",
+   "cid": "-1751019291187786953",
+   "city": "New York",
+   "lat": 40.714678299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9931228,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ssmmvzt0",
+   "name": "Corima",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "51a Orchard St, New York, NY 10002, United States",
+   "cid": "-2711352811763134438",
+   "city": "New York",
+   "lat": 40.716559499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9912397,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mlw2t7_7",
+   "name": "colbo next door",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "375 Canal St, New York, NY 10013, United States",
+   "cid": "-7374659144129493752",
+   "city": "New York",
+   "lat": 40.721419499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.00441239999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vhdb66_t",
+   "name": "Lucia Pizza Of SoHo",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "70 Diamond St, Brooklyn, NY 11222, United States",
+   "cid": "-3442452323150643641",
+   "city": "New York",
+   "lat": 40.7251198,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.94637949999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wxqvdx0c",
+   "name": "Diamond Slice",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "305 Bedford Ave, Brooklyn, NY 11211, United States",
+   "cid": "4309396921978654900",
+   "city": "New York",
+   "lat": 40.7134901,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.961811,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t6s1x3mx",
+   "name": "Fini Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "36 St Marks Pl, New York, NY 10003, United States",
+   "cid": "-5633763663808009863",
+   "city": "New York",
+   "lat": 40.7286439,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9881729,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v_1cybj4",
+   "name": "Cello's Pizzeria",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "164 Mott St, New York, NY 10013, United States",
+   "cid": "-2267805717231399037",
+   "city": "New York",
+   "lat": 40.719733399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9961107,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wv_tm32s",
+   "name": "Ceres",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "325 Bleecker St, New York, NY 10014, United States",
+   "cid": "5234602151780165430",
+   "city": "New York",
+   "lat": 40.733270499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.00406389999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vyh57h35",
+   "name": "Mama's TOO! Pizzeria West Village",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "55 W 35th St, New York, NY 10001, United States",
+   "cid": "-3515333150159119318",
+   "city": "New York",
+   "lat": 40.750162499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9863713,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tfrhpgg",
+   "name": "Cho Dang Gol",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "90 E 10th St 1st Floor, New York, NY 10003, United States",
+   "cid": "-3726232093140164200",
+   "city": "New York",
+   "lat": 40.7308752,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9896706,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v9xzg9t3",
+   "name": "Penny",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "70 Forsyth St, New York, NY 10002, United States",
+   "cid": "1195473898074130668",
+   "city": "New York",
+   "lat": 40.7170718,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.993389,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t0lfhjyn",
+   "name": "Mắm",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "241 W Broadway, New York, NY 10013, United States",
+   "cid": "-8826123397216367684",
+   "city": "New York",
+   "lat": 40.7196553,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0057849,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f03smhn1",
+   "name": "Frenchette",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Unit Ab004, 73-75 Shacklewell Ln, London E8 2EB, United Kingdom",
+   "cid": "6738074355862184891",
+   "city": "London",
+   "lat": 51.552540799999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0713699,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z25q0kc4",
+   "name": "EDAMI",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "42 Mortimer St, London W1W 7RH, United Kingdom",
+   "cid": "-8835359009921189334",
+   "city": "London",
+   "lat": 51.517908,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14048049999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xz2ch6s5",
+   "name": "Kronotrop Fitzrovia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "25 Rue Saint-Sébastien, 75011 Paris, France",
+   "cid": "-4909582471973661357",
+   "city": "Paris",
+   "lat": 48.8613821,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3697899,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h8l4ptk_",
+   "name": "BAMBINO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "80 Duke St, London W1K 6JG, United Kingdom",
+   "cid": "-4566814076954731388",
+   "city": "London",
+   "lat": 51.5129899,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15091649999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yyxbfww1",
+   "name": "Berenjak Mayfair",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "18 Theberton St, London N1 0QX, United Kingdom",
+   "cid": "-1199724662057309435",
+   "city": "London",
+   "lat": 51.537635699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.10364949999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tfdybb0",
+   "name": "Le Sacre Coeur",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "21-23 Bruton Pl, London W1J 6NB, United Kingdom",
+   "cid": "-3488930655273877344",
+   "city": "London",
+   "lat": 51.5110302,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1447857,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z14j16gc",
+   "name": "MAZA Mayfair",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ermou 98, Athina 105 55",
+   "cid": "1069051144049418058",
+   "city": "Athens",
+   "lat": 37.977018,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7242736,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xvqlgvz7",
+   "name": "Taverna Ermou Athens",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "16 St Anne's Ct, London W1F 0BF, United Kingdom",
+   "cid": "9073484323239241200",
+   "city": "London",
+   "lat": 51.5143774,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1343204,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gv0qcxhb",
+   "name": "Aulis London",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "159 Brick Ln, London E1 6SB, United Kingdom",
+   "cid": "-3899588846849444596",
+   "city": "London",
+   "lat": 51.5244985,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0717608,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0hzpb5p",
+   "name": "Beigel Bake",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "6 Sackville St, London W1S 3DD, United Kingdom",
+   "cid": "-8352173601826367591",
+   "city": "London",
+   "lat": 51.5092327,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1378391,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xm5xljzk",
+   "name": "Punk Royale London",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "133 Kensington Church St, London W8 7LP, United Kingdom",
+   "cid": "-5313325671085664766",
+   "city": "London",
+   "lat": 51.5074745,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1949041,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hzv0c7hz",
+   "name": "LIFT COFFEE",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "105 Queensway, London W2 4SJ, United Kingdom",
+   "cid": "4417792874210087520",
+   "city": "London",
+   "lat": 51.5128832,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.187915,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11x_dx4mr2",
+   "name": "KYEL - The Greek Bakehouse",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "260-262 Brompton Rd, South Kensington, London SW3 2AS, United Kingdom",
+   "cid": "-4985879408298353425",
+   "city": "London",
+   "lat": 51.4941123,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.168964,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11md35y14j",
+   "name": "Myrtos by Asimakis",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Tatoiou 133, Kifisia 145 64",
+   "cid": "1714856526713373058",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.098553599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8104242,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yw25c518",
+   "name": "FOU",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "22 Charlotte St., London W1T 2NB, United Kingdom",
+   "cid": "7285162156480373156",
+   "city": "London",
+   "lat": 51.518734599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1348487,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bwp1ymt3",
+   "name": "The Ninth",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "100 Portobello Rd, London W11 2QD, United Kingdom",
+   "cid": "-993147056892920725",
+   "city": "London",
+   "lat": 51.513313,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2026489,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ssdsqn30",
+   "name": "Naked & Famous Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "16-22 Great Russell St, London WC1B 3NN, United Kingdom",
+   "cid": "-6575755671179315033",
+   "city": "London",
+   "lat": 51.517217099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1289725,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gccbrwjr",
+   "name": "The Coral Room",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Pl. Navarinou 5, Thessaloniki 546 22",
+   "cid": "-3772480449920311293",
+   "city": "Athens",
+   "far": true,
+   "lat": 40.6303382,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 22.9483478,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y6hlnv7d",
+   "name": "Philia Thessaloniki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "117 Mount St, London W1K 3LA, United Kingdom",
+   "cid": "3365512379420712427",
+   "city": "London",
+   "lat": 51.5100342,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14871499999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h1ky2rpg",
+   "name": "Marchesi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Bayfield Rd, Portree IV51 9EL, United Kingdom",
+   "cid": "262033339464590325",
+   "city": "Dublin",
+   "far": true,
+   "lat": 57.4126779,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.1934271,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fvh2q91_",
+   "name": "Birch Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "73 Berkeley St., Glasgow G3 7DX, United Kingdom",
+   "cid": "-6526740961066107987",
+   "city": "Dublin",
+   "far": true,
+   "lat": 55.865142,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -4.2748838,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b7q90lf8",
+   "name": "Ottoman Coffeehouse",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "",
+   "cid": "-6405989656251432262",
+   "city": "Dublin",
+   "lat": 53.312793,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2587101,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Copper + Straw Speciality Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Stillorgan Rd, Booterstown, Dublin, A94 V6W3, Ireland",
+   "cid": "2271307996296029538",
+   "city": "Dublin",
+   "lat": 53.304817899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2056814,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bwhbc2yg",
+   "name": "Talavera Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Unit G2, 116 Upper St, London N1 1QP, United Kingdom",
+   "cid": "7718439740056428905",
+   "city": "London",
+   "lat": 51.5383601,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1025142,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rcnyj4qx",
+   "name": "Supply 91",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "57 Main St, Newtown Blackrock, Blackrock, Co. Dublin, A94 A2Y0, Ireland",
+   "cid": "2413479948879216670",
+   "city": "Dublin",
+   "lat": 53.300815899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.1762406,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lkg25r_s",
+   "name": "Little Forest",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "6 Carrickbrennan Rd, Monkstown, Dublin, A94 YXW3, Ireland",
+   "cid": "8176534375694927206",
+   "city": "Dublin",
+   "lat": 53.292953399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.1522656,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lkzswzzc",
+   "name": "Pine Cone Coffee - Shop",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "201 King's Cross Rd, London WC1X 9DB, United Kingdom",
+   "cid": "3046861559609316093",
+   "city": "London",
+   "lat": 51.530749899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1192695,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xn0_32fy",
+   "name": "Tommy's Sandwiches",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "194 Southgate Rd, London N1 3HT, United Kingdom",
+   "cid": "-2867108202278311548",
+   "city": "London",
+   "lat": 51.5458991,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.08346279999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc13rw0n",
+   "name": "The Hunter S",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "London, UK",
+   "cid": "-9043379976449881427",
+   "city": "London",
+   "lat": 51.489326999999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1837058,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/06zn5pq",
+   "name": "The Boltons",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "855 El Camino Real #130, Palo Alto, CA 94301, United States",
+   "cid": "3717042603262137464",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.4383765,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.1583028,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fnp_dlmn",
+   "name": "Telefèric Barcelona Palo Alto",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "5700 Geary Blvd, San Francisco, CA 94121, United States",
+   "cid": "6924344292273102319",
+   "city": "San Francisco",
+   "lat": 37.78046,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.48061039999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b77fsgvk",
+   "name": "Dragon Beaux",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "753 Alabama St, San Francisco, CA 94110, United States",
+   "cid": "7300198297212145296",
+   "city": "San Francisco",
+   "lat": 37.7595209,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4115269,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gdtvh6fl",
+   "name": "True Laurel",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "550 Montgomery St, San Francisco, CA 94111, United States",
+   "cid": "4298937888919864801",
+   "city": "San Francisco",
+   "lat": 37.7945463,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4029353,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vxw8lxy6",
+   "name": "The Bank at Amador",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1018 Alma St, Menlo Park, CA 94025, United States",
+   "cid": "-8040118236293683458",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.4547178,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.1815384,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hzywf7rh",
+   "name": "Saint Frank Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "1165 Merrill St, Menlo Park, CA 94025, United States",
+   "cid": "4110511169258071761",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.4549056,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.1834202,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11jk1rzgqh",
+   "name": "Farmhouse Kitchen Thai Cuisine",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "2020 W El Camino Real, Mountain View, CA 94040, United States",
+   "cid": "-6428456281880096969",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.3953351,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.0996445,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q5gnb4pj",
+   "name": "ViVe Sol",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "162 University Ave, Palo Alto, CA 94301, United States",
+   "cid": "-8390677449183565776",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.4442191,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.16308629999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f4pkwgfq",
+   "name": "Verve Coffee Roasters",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "306 Broderick St, San Francisco, CA 94117, United States",
+   "cid": "-1809454551964577166",
+   "city": "San Francisco",
+   "lat": 37.773285099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4389738,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tcx_1cb",
+   "name": "Nopalito",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "In the alley across from Tender Greens Restaurant, 50 Fremont St #125, San Francisco, CA 94105, United States",
+   "cid": "-2049096778617555118",
+   "city": "San Francisco",
+   "lat": 37.790694699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.39743379999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vybmz9xl",
+   "name": "Koolfi Creamery and Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "86 2nd St, San Francisco, CA 94105, United States",
+   "cid": "-2268882872531787695",
+   "city": "San Francisco",
+   "lat": 37.7881826,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4002515,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c708wlh9",
+   "name": "Tequila Mockingbird",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ferry Building, 1, #5, San Francisco, CA 94111, United States",
+   "cid": "725268654691222244",
+   "city": "San Francisco",
+   "lat": 37.7961856,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.39400189999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xkn4djzd",
+   "name": "Parachute Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "28 Waverly Pl, San Francisco, CA 94108, United States",
+   "cid": "-7216468322587662661",
+   "city": "San Francisco",
+   "lat": 37.793714099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.40666019999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11p5xt8840",
+   "name": "Grand Opening",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "40 N Santa Cruz Ave, Los Gatos, CA 95030, United States",
+   "cid": "-1972188873745333534",
+   "city": "San Francisco",
+   "far": true,
+   "lat": 37.223775499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -121.9831674,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b75ht7hx",
+   "name": "Manresa Bread",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "345 Taylor St, San Francisco, CA 94102, United States",
+   "cid": "-5327471131067195835",
+   "city": "San Francisco",
+   "lat": 37.785607399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4114919,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ypbprvkc",
+   "name": "Le Carousel Patisserie at Tilden",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "633 Battery St Ste 130, San Francisco, CA 94111, United States",
+   "cid": "-5945859457020125971",
+   "city": "San Francisco",
+   "lat": 37.7971457,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4011537,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc6wghn8",
+   "name": "Cassava San Francisco",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1998 Polk St, San Francisco, CA 94109, United States",
+   "cid": "-2397858072414101455",
+   "city": "San Francisco",
+   "lat": 37.7949449,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.42145479999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kdtv7zb8",
+   "name": "Cafe Réveille",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "2535 3rd St, San Francisco, CA 94107, United States",
+   "cid": "-6414088005984357068",
+   "city": "San Francisco",
+   "lat": 37.757324,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.38793969999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xrk4qf8t",
+   "name": "SOHN",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "599 3rd St #100, San Francisco, CA 94107, United States",
+   "cid": "-3472662959391194670",
+   "city": "San Francisco",
+   "lat": 37.7804645,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.39447539999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h547vvy9",
+   "name": "Golden Goat Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "1448 Pacific Ave, San Francisco, CA 94109, United States",
+   "cid": "-7250338596722910344",
+   "city": "San Francisco",
+   "lat": 37.795550399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.41909199999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xm2s4sq5",
+   "name": "Better Half Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "443 Clement St, San Francisco, CA 94118, United States",
+   "cid": "-2041592642956189294",
+   "city": "San Francisco",
+   "lat": 37.7827246,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.464106,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w8msmdp1",
+   "name": "HI NRG",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Brook's Mews, London W1K 4HR, United Kingdom",
+   "cid": "3477577003090623020",
+   "city": "London",
+   "lat": 51.5123758,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1472685,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yxp36gb6",
+   "name": "Claridge's Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Brook St, London W1K 4HR, United Kingdom",
+   "cid": "3794048101439825545",
+   "city": "London",
+   "lat": 51.5124212,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1478613,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/04vtkg",
+   "name": "Claridge's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "171 Union St, London SE1 0LN, United Kingdom",
+   "cid": "7975589469022448614",
+   "city": "London",
+   "lat": 51.503664799999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.09929679999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y7tgsnk2",
+   "name": "Scenery",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "67 Southwark St, London SE1 0HX, United Kingdom",
+   "cid": "1291659693763953479",
+   "city": "London",
+   "lat": 51.5052909,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.09845079999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hmjhj5j2",
+   "name": "Saint Nine Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "6 Orchard Pl, London SW1H 0BF, United Kingdom",
+   "cid": "5441862989564152208",
+   "city": "London",
+   "lat": 51.4986733,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1333018,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y2fkqphn",
+   "name": "Nostos Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "389 Hackney Rd, London E2 8PP, United Kingdom",
+   "cid": "-3615606077197967614",
+   "city": "London",
+   "lat": 51.5317801,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0629956,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11pyc3h2r6",
+   "name": "Specialty Cafetiere",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "19 Widegate St, London E1 7HP, United Kingdom",
+   "cid": "-1037477011730395743",
+   "city": "London",
+   "lat": 51.5181603,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.078206,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y6kkmlrw",
+   "name": "ZeroToOne Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "1 Hazlebury Rd, London SW6 2NA, United Kingdom",
+   "cid": "3541075585418505636",
+   "city": "London",
+   "lat": 51.472628199999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1914044,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11q40dbb5h",
+   "name": "Carbon Kopi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "48 Grays Inn Rd, Chancery Ln, London WC1X 8LT, United Kingdom",
+   "cid": "-4616760603252587865",
+   "city": "London",
+   "lat": 51.5198051,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1119989,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ddwhmdp5",
+   "name": "Catalyst",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "153 S Lambeth Rd, London SW8 1XN, United Kingdom",
+   "cid": "6971067853939867251",
+   "city": "London",
+   "lat": 51.4780654,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.12327719999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v696_qqt",
+   "name": "Moonstruck Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Unit C, 101 Lower Marsh, London SE1 7AB, United Kingdom",
+   "cid": "-7131193018756463317",
+   "city": "London",
+   "lat": 51.5012536,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1120707,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w879l_jq",
+   "name": "Calico Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "9A Cullum St, London EC3M 7JJ, United Kingdom",
+   "cid": "4678677164363957019",
+   "city": "London",
+   "lat": 51.5120832,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0825571,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc66qd6r",
+   "name": "Curators Coffee Studio",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "104 Heath St, London NW3 1DR, United Kingdom",
+   "cid": "-6570793517164937228",
+   "city": "London",
+   "lat": 51.558808299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1784303,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wqw3y1k7",
+   "name": "Souvlakia",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "22 Sherwood St, London W1F 7ED, United Kingdom",
+   "cid": "5908825441411410619",
+   "city": "London",
+   "lat": 51.5106368,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13557529999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h1k4q7h",
+   "name": "Bar Amercain",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "Diadochou Pavlou 46, Glifada 166 75",
+   "cid": "-4688807403542960211",
+   "city": "Athens",
+   "far": true,
+   "lat": 37.8616745,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.746807099999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tx9kw2n4",
+   "name": "Astakos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Seegrube, 6020 Innsbruck, Austria",
+   "cid": "-2829505901011254754",
+   "city": "Vienna",
+   "far": true,
+   "lat": 47.306213899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 11.3792966,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bx55g5_n",
+   "name": "Cloud 9 - Iglu Bar Innsbruck",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "10 Rue des Archives, 75004 Paris, France",
+   "cid": "1095318649036982905",
+   "city": "Paris",
+   "lat": 48.857567499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3544852,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11py64rcrm",
+   "name": "La Baguette du Relais",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Pl. Agion Theodoron 3, Athina 105 61",
+   "cid": "1366830091904729648",
+   "city": "Athens",
+   "lat": 37.9792492,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7296388,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wbp15m2d",
+   "name": "Manári Taverna",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Kerkini 620 55",
+   "cid": "552388772235002284",
+   "city": "Athens",
+   "far": true,
+   "lat": 41.21,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.13,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/03nwqw9",
+   "name": "Lake Kerkini",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "Leof. Kifisias 98, Marousi 151 25",
+   "cid": "-8684798035301007814",
+   "city": "Athens",
+   "lat": 38.049457,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.808712999999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b7hplx4q",
+   "name": "Φύσις Ζαχαροπλαστείο",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Skouleniou 1, Athina 105 61",
+   "cid": "-3517542605079053549",
+   "city": "Athens",
+   "lat": 37.979158,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.729896,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1thv1vz2",
+   "name": "Dopios Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Themistokleous 47, Athina 106 83",
+   "cid": "-7368283481386303751",
+   "city": "Athens",
+   "lat": 37.985915399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7337891,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c0tb02hx",
+   "name": "Ap’alloú",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Leof. Irinis 4, Polidendri 190 14",
+   "cid": "4392299129783372704",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.2165197,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8682154,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11btww4t1q",
+   "name": "Το τζάκι",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "10-14 Lonsdale Rd, London NW6 6RD, United Kingdom",
+   "cid": "-2493460515723816458",
+   "city": "London",
+   "lat": 51.5373318,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2033653,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wpp8058k",
+   "name": "Don't Tell Dad",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "28-30 Cale St, London SW3 3QU, United Kingdom",
+   "cid": "3270470209278207956",
+   "city": "London",
+   "lat": 51.4906243,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.167175,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11k44wnr76",
+   "name": "Birley Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "16 All Saints Rd, London W11 1HH, United Kingdom",
+   "cid": "-1722585977860175425",
+   "city": "London",
+   "lat": 51.5179586,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2036112,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lnm6pz6q",
+   "name": "Moi Et Toi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "460 Hackney Rd, London E2 9EG, United Kingdom",
+   "cid": "8463318751132519882",
+   "city": "London",
+   "lat": 51.532183599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.058934,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11q3n6m81g",
+   "name": "Rogues.",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "19 Willow St, London EC2A 3HU, United Kingdom",
+   "cid": "2475987911548006616",
+   "city": "London",
+   "lat": 51.5252276,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0823184,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yhwwzyxv",
+   "name": "Lagana",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Unit 4.1, Copeland Park, 133 Copeland Rd, London SE15 3SN, United Kingdom",
+   "cid": "6284794180496597390",
+   "city": "London",
+   "lat": 51.469882999999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.065583,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t2z3ps4r",
+   "name": "Jumbi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "MUST Wine Bar, 63 S End Rd, London NW3 2QB, United Kingdom",
+   "cid": "-8536079145376925475",
+   "city": "London",
+   "lat": 51.5558128,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1667454,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rcf01c87",
+   "name": "MUST Wine Bar Hampstead",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "157 26th of July Corridor, Mohammed Mazhar, Zamalek, Cairo Governorate 4271050, Egypt",
+   "cid": "2714039524833916229",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.059462999999997,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2241708,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1wb4460m",
+   "name": "Abou El Sid Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "27R7+3XQ, Salah Salem St, El-Darb El-Ahmar, Al-Darb Al-Ahmar, Cairo Governorate 4294010, Egypt",
+   "cid": "-3912893164624332712",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.040223899999997,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.264982,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11qpybyyqq",
+   "name": "نافورة الازهر بارك - Al-Azhar Park Fountain",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "27J4+VJH, El-Refaey, El-Darb El-Ahmar, El Khalifa, Cairo Governorate 4292008, Egypt",
+   "cid": "8414616983190867172",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.0321866,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.256611499999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/05z5m3",
+   "name": "Mosque-Madrasa of Sultan Hassan",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "1 Al Saraya, Al Manyal Ash Sharqi, Old Cairo, Cairo Governorate 4240291, Egypt",
+   "cid": "3149803841298071709",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.0288042,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2299203,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0bp4_8",
+   "name": "Prince Mohamed Ali Palace (Manial Palace)",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "X4HF+8P, Nazlet El-Semman, Al Haram, Giza Governorate 12512, Egypt",
+   "cid": "4037717018046666194",
+   "city": "Crete",
+   "far": true,
+   "lat": 29.978332299999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.1242706,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t82kn5x0",
+   "name": "Khufu's Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "19 Saray El Gezira St, 11511, Egypt",
+   "cid": "1655341128557573970",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.052903399999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2274328,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c4s9rb9c",
+   "name": "Pier88 Nile River",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "18 Taha Hussein, Abu Al Feda, Zamalek, Cairo Governorate 4271150, Egypt",
+   "cid": "-2056209602030360213",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.067371599999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2195839,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c481d2gk",
+   "name": "Olivo Pizzeria & Bar (Zamalek)",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "St President Hotel، 22 Taha Hussein, Abu Al Feda, Zamalek, Cairo Governorate 4271150, Egypt",
+   "cid": "-345952324017722741",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.0675067,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2195528,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mtjylk_9",
+   "name": "La Terrace Restaurant & Lounge",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "17 Ahmed Heshmat, Mohammed Mazhar, Zamalek, Cairo Governorate 4271160, Egypt",
+   "cid": "-5528182548116538562",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.0659289,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.221634599999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xd4y8vgs",
+   "name": "Nomadic Specialty Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "157, 26th July street, AZ Zamalek, Egypt",
+   "cid": "1026930494609219460",
+   "city": "Crete",
+   "far": true,
+   "lat": 30.059043799999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.2244167,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1td22f9m",
+   "name": "Aperitivo",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "14 Abo Alhoul El Siyahii St, Nazlet El-Semman, Al Haram, Giza Governorate 12557, Egypt",
+   "cid": "4068311724060174228",
+   "city": "Crete",
+   "far": true,
+   "lat": 29.974588999999998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 31.141031199999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nnpcb7bd",
+   "name": "Rooftop 7000",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "455 Hackney Rd, London E2 9DY, United Kingdom",
+   "cid": "6542216991786341626",
+   "city": "London",
+   "lat": 51.5323371,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0604401,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vw_f40x6",
+   "name": "Knees Up",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "32-34 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland",
+   "cid": "936883518929716524",
+   "city": "Dublin",
+   "lat": 53.3399297,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2419766999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xqpy3v6",
+   "name": "3fe Grand Canal Street",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "3 Wynnefield Rd, Rathmines, Dublin, D06 F2Y2, Ireland",
+   "cid": "5129457864738766646",
+   "city": "Dublin",
+   "lat": 53.322153,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2664781,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dxkwd6p_",
+   "name": "Bethlehem Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "23 Dunville Ave, Ranelagh, Dublin 6, D06 C902, Ireland",
+   "cid": "-7856363618917847692",
+   "city": "Dublin",
+   "lat": 53.3210561,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2563669,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11hnb8jqc3",
+   "name": "Green Beards",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "52 Stratton St, London W1J 8LN, United Kingdom",
+   "cid": "4615347177640180280",
+   "city": "London",
+   "lat": 51.507183299999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14332119999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h093lfhy",
+   "name": "Kwãnt Mayfair",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "180 Rathmines Rd Lower, Rathmines, Dublin 6, D06 XK73, Ireland",
+   "cid": "59611841888494084",
+   "city": "Dublin",
+   "lat": 53.324639499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.264967599999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c1ww22q7",
+   "name": "Umi Falafel",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Howth, Dublin, Ireland",
+   "cid": "7544516947576472805",
+   "city": "Dublin",
+   "far": true,
+   "lat": 53.385003399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.0468173,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tr_fzk6s",
+   "name": "Howth Cliff Walk",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "Co. Dublin, Ireland",
+   "cid": "720795471579321792",
+   "city": "Dublin",
+   "far": true,
+   "lat": 53.450923599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.1501377999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/03s4sv",
+   "name": "Malahide",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Bank House, Bird Ave, Clonskeagh, Dublin, D14 RX74, Ireland",
+   "cid": "-681575079357087427",
+   "city": "Dublin",
+   "lat": 53.3058706,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.237258,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nnqjmxqb",
+   "name": "Grounded",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "47 Dunville Ave, Rathmines, Dublin 6, D06 H7T8, Ireland",
+   "cid": "-3777844710918735748",
+   "city": "Dublin",
+   "lat": 53.3206175,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2581658,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11r_cjm3vl",
+   "name": "Nobó (Treathouse)",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Unit 6, Norseman Court, Manor St, Stoneybatter, Dublin 7, D07 NP83, Ireland",
+   "cid": "-6343103447974961339",
+   "city": "Dublin",
+   "lat": 53.3512944,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2830639,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s4_v06cv",
+   "name": "A Fianco",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "9 St Stephen's Green, Dublin, D02 C891, Ireland",
+   "cid": "5040350546414660536",
+   "city": "Dublin",
+   "lat": 53.339866699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.259705599999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gds3w_pl",
+   "name": "9 Below",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1-5 Green St, Rotunda, Dublin, D07 YT6H, Ireland",
+   "cid": "-8641643442136450463",
+   "city": "Dublin",
+   "lat": 53.349303899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2704026,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h106fbd1",
+   "name": "BAR 1661",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "27 Wicklow St, Dublin 2, D02 WN51, Ireland",
+   "cid": "-6217032534383714339",
+   "city": "Dublin",
+   "lat": 53.3429613,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2615054,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hm5_c3gc",
+   "name": "Murphys Ice Cream",
+   "note": "",
+   "type": "gelato"
+  },
+  {
+   "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
+   "cid": "-6752398179009724708",
+   "city": "Dublin",
+   "lat": 53.340754399999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.265438199999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mcwhs3fp",
+   "name": "La Strada by Manifesto",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "17 D'Olier Street, Dublin 2, Ireland",
+   "cid": "8380988868984377840",
+   "city": "Dublin",
+   "lat": 53.346078,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2572719999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b75b_r6s",
+   "name": "Books Upstairs",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "9 Essex St E, Temple Bar, Dublin 8, D02 RW53, Ireland",
+   "cid": "-3957917340599183409",
+   "city": "Dublin",
+   "lat": 53.3452013,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2661415,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/12cp6blnd",
+   "name": "Indigo & Cloth",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "34 Lennox St, Portobello, Dublin 8, D08 N265, Ireland",
+   "cid": "5275536074496608606",
+   "city": "Dublin",
+   "lat": 53.331352599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2674803,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f5p5_5rs",
+   "name": "Brindle Coffee & Wine",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Fumbally Ln, The Liberties, Dublin 8, D08 HFF2, Ireland",
+   "cid": "-8433417497616550526",
+   "city": "Dublin",
+   "lat": 53.336991,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.27299,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/119tkdqg6",
+   "name": "The Fumbally",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "St. James's Gate, Dublin 8, D08 VF8H, Ireland",
+   "cid": "-5541341162381121630",
+   "city": "Dublin",
+   "lat": 53.3416694,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.286728399999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/02p9xg3",
+   "name": "Guinness Storehouse",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Trinity Long Room, The University of Dublin Trinity College, College Green, South-East Inner City, Dublin, Ireland",
+   "cid": "5819525132518903716",
+   "city": "Dublin",
+   "lat": 53.343888,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.256755399999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1pxy1d06v",
+   "name": "The Book of Kells Experience",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "13-17 Newmarket, The Liberties, Dublin 8, D08 KD91, Ireland",
+   "cid": "-2495393073876738586",
+   "city": "Dublin",
+   "lat": 53.337850499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2771840999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cn6bq5l8",
+   "name": "Teeling Whiskey Distillery",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "2 Montague St, Dublin 2, D02 TX48, Ireland",
+   "cid": "7229459063253559798",
+   "city": "Dublin",
+   "lat": 53.3364908,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2650673999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y47jr4gd",
+   "name": "Two Faced",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "23 Essex St E, Temple Bar, Dublin, D02 WP71, Ireland",
+   "cid": "6839830126462210896",
+   "city": "Dublin",
+   "lat": 53.3455831,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2643056999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kj3k9zpx",
+   "name": "PI Temple Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "57 Deerpark Rd, Mount Merrion, Dublin, A94 F761, Ireland",
+   "cid": "2029215372278451086",
+   "city": "Dublin",
+   "lat": 53.2962141,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.213251,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tdq5f4w",
+   "name": "Michael's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "13A Bachelors Walk, North City, Dublin, D01 VN82, Ireland",
+   "cid": "2219567177270172286",
+   "city": "Dublin",
+   "lat": 53.3470194,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2619685,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hhk8x_5f",
+   "name": "Terra Madre",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "3-4 Bedford Row, Temple Bar, Dublin 2, D02 HD77, Ireland",
+   "cid": "1414265476398143361",
+   "city": "Dublin",
+   "lat": 53.345936099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2619400999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/12hmss08y",
+   "name": "Banyi Japanese Dining",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "18 Merrion Row, Dublin, D02 A316",
+   "cid": "-8214833595161622225",
+   "city": "Dublin",
+   "lat": 53.338161899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.253908,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Etto",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "DARUMA, 13 Parliament St, Temple Bar, Dublin 2, D02 P658, Ireland",
+   "cid": "1127080472096264173",
+   "city": "Dublin",
+   "lat": 53.3447685,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2673019,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11thf3zcyk",
+   "name": "DARUMA",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "18-19 Parnell Square N, Rotunda, Dublin 1, D01 T3V8, Ireland",
+   "cid": "708522748158991526",
+   "city": "Dublin",
+   "lat": 53.3544157,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2639458,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0gmd9kk",
+   "name": "Chapter One Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "26 Fenian St, Dublin, D02 FX09, Ireland",
+   "cid": "-7540781941177209134",
+   "city": "Dublin",
+   "lat": 53.3414809,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2483531999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11qh2wdvbl",
+   "name": "Note Dublin",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1 Portobello Rd, Portobello, Dublin 8, D08 E0C0, Ireland",
+   "cid": "-7727996441916898098",
+   "city": "Dublin",
+   "lat": 53.3300462,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2690301999999996,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q5bx5txp",
+   "name": "I Monelli",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1 Windsor Terrace, Portobello, Dublin 8, D08 HT20, Ireland",
+   "cid": "4607768878771828691",
+   "city": "Dublin",
+   "lat": 53.329915799999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2717497,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w_pmb61c",
+   "name": "Lena",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "43 Richmond St S, Portobello, Dublin 2, D02 X499, Ireland",
+   "cid": "-6319904521920666509",
+   "city": "Dublin",
+   "lat": 53.331075,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.264691699999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bxdztkrm",
+   "name": "Richmond",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "39 Camden Street Lower, Saint Kevin's, Dublin, D02 K277, Ireland",
+   "cid": "-6661889790255835990",
+   "city": "Dublin",
+   "lat": 53.334271799999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2650125,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g6gpzdzk",
+   "name": "Sitting Room at Delahunt",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Camden Street Lower, Saint Kevin's, Dublin, Ireland",
+   "cid": "5158851547050921180",
+   "city": "Dublin",
+   "lat": 53.335080899999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2649818,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c30ssvpc",
+   "name": "Frank's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "82 Aungier St, Dublin 2, D02 NP30, Ireland",
+   "cid": "-6446138801214350995",
+   "city": "Dublin",
+   "lat": 53.3414211,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.265561,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c6rhcycv",
+   "name": "Scoop Dessert Parlour Aungier",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "42 Drury St, Dublin, D02 T210, Ireland",
+   "cid": "5639952712070957855",
+   "city": "Dublin",
+   "lat": 53.3427952,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2631578999999995,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vjwg6xgm",
+   "name": "MANI",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Lansdowne Rd, Dublin 4, Ireland",
+   "cid": "-2054035542957152664",
+   "city": "Dublin",
+   "lat": 53.334288099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2279427,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/05h4fd2",
+   "name": "Aviva Stadium",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "18 Merrion St Upper, Dublin 2, D02 X064, Ireland",
+   "cid": "-3782478753133474873",
+   "city": "Dublin",
+   "lat": 53.3381823,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2533628,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lmmfgrtf",
+   "name": "BAMBINO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "45 Richmond St S, Portobello, Dublin, D02 XD93, Ireland",
+   "cid": "-6750177401482685237",
+   "city": "Dublin",
+   "lat": 53.3311868,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2646929,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1w0sc8m_",
+   "name": "Wall & Keogh Superior Teas",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "16 New St, Townparks, Skerries, Co. Dublin, K34 AW80, Ireland",
+   "cid": "2577901364897312747",
+   "city": "Dublin",
+   "far": true,
+   "lat": 53.578763099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.109336,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lt3n6_rc",
+   "name": "The Rock Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "10b Main St, Raheny, Dublin, D05 P6H0, Ireland",
+   "cid": "-5798713053676606901",
+   "city": "Dublin",
+   "lat": 53.3795195,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.175408,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bwqnnvlz",
+   "name": "Bread Naturally Artisan Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Behan Square, Unit 2, Russell St, Dublin, D01 HX78, Ireland",
+   "cid": "4828487701911061401",
+   "city": "Dublin",
+   "lat": 53.3590631,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2545125,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11k9f199cd",
+   "name": "Russell Street Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "Unit E, The Bracken, Marina village, Greystones, Co. Wicklow, A63 K7W7, Ireland",
+   "cid": "944586764357301751",
+   "city": "Dublin",
+   "far": true,
+   "lat": 53.1519814,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.0669882,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fqyr4vnx",
+   "name": "Scéal Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "50 James St, London W1U 1HB, United Kingdom",
+   "cid": "-9056590610093135560",
+   "city": "London",
+   "lat": 51.5156786,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1507711,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xn5v4sn7",
+   "name": "Berberè Pizzeria - Marylebone",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Solomou 9, Athina 154 51",
+   "cid": "-711878877687036231",
+   "city": "Athens",
+   "lat": 38.004495299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7768527,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11js_vsrv_",
+   "name": "Jesus Crust",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "4 Butler Pl, London SW1H 0QD, United Kingdom",
+   "cid": "-8097912248833872353",
+   "city": "London",
+   "lat": 51.4979102,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1354426,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h0b6jgrs",
+   "name": "Formative Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "10 Lower Belgrave St, London SW1W 0LJ, United Kingdom",
+   "cid": "9213877542763297347",
+   "city": "London",
+   "lat": 51.4963738,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1474325,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1ty73r7f",
+   "name": "Olivomare",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Navarino Dunes, Costa Navarino, Messinia, Costa Navarino 240 01",
+   "cid": "-2169503342620750084",
+   "city": "Spetses",
+   "far": true,
+   "lat": 36.996744199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 21.6498702,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc8dlhmh",
+   "name": "Da Luigi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "1570 Stockton St, San Francisco, CA 94133, United States",
+   "cid": "-4633081560339842240",
+   "city": "San Francisco",
+   "lat": 37.8003905,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -122.4090475,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b900mvkk",
+   "name": "Tony's Pizza Napoletana",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "175 Orchard St, New York, NY 10002, United States",
+   "cid": "-6314439162183615711",
+   "city": "New York",
+   "lat": 40.7217573,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9886214,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f3x6k6kf",
+   "name": "Una Pizza Napoletana",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "",
+   "cid": "5456394056942978756",
+   "city": "London",
+   "lat": 51.528968,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.070239,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Brawn",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Aminta 12, Athina 116 35",
+   "cid": "-6725405341643449555",
+   "city": "Athens",
+   "lat": 37.9718716,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7450343,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tt2cc_bb",
+   "name": "Akra",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "179 E Houston St, New York, NY 10002, United States",
+   "cid": "2935000539321943627",
+   "city": "New York",
+   "lat": 40.7226372,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9882837,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/02psc66",
+   "name": "Russ & Daughters",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "4 Charles St, New York, NY 10014, United States",
+   "cid": "1547793992896720178",
+   "city": "New York",
+   "lat": 40.735186299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.00065459999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1263yyqdf",
+   "name": "4 Charles Prime Rib",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Temporarily Closed Relocation Info Coming Soon, 12 Belvidere St, Brooklyn, NY 11206, United States",
+   "cid": "1035091721094626229",
+   "city": "New York",
+   "lat": 40.698385599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9370477,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j454lf49",
+   "name": "drip coffee makers",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "86 Central Ave, Brooklyn, NY 11206, United States",
+   "cid": "6092798844515364804",
+   "city": "New York",
+   "lat": 40.7006361,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9300135,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rw1rw63_",
+   "name": "Loveless Coffees",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "8 Wilson Ave, Brooklyn, NY 11237, United States",
+   "cid": "6659405694926998446",
+   "city": "New York",
+   "lat": 40.7035659,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9309763,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v3ts0g_j",
+   "name": "Dayglow",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "",
+   "cid": "-2159535651400130007",
+   "city": "New York",
+   "lat": 40.718962499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9534195,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "RHYTHM ZERO | WILLIAMSBURG",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "100 Forsyth St, New York, NY 10002, United States",
+   "cid": "7947763207542904144",
+   "city": "New York",
+   "lat": 40.7182852,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9926038,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g1dvyn9m",
+   "name": "Wayla",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "284 3rd Ave, Brooklyn, NY 11215, United States",
+   "cid": "1383272621093411990",
+   "city": "New York",
+   "lat": 40.6774158,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9862271,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f070hh23",
+   "name": "Claro",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "97 Wythe Ave, Brooklyn, NY 11249, United States",
+   "cid": "4291546541433569430",
+   "city": "New York",
+   "lat": 40.7208328,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.95879359999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11snmdxtqp",
+   "name": "Laser Wolf Brooklyn",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "288 N 8th St, Brooklyn, NY 11211, United States",
+   "cid": "6709283481243788233",
+   "city": "New York",
+   "lat": 40.7154788,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.95275459999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kj8p42f2",
+   "name": "elNico",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "111 N 12th St, Brooklyn, NY 11249, United States",
+   "cid": "5305007946342074985",
+   "city": "New York",
+   "lat": 40.722297,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9565396,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cs3qqsf_",
+   "name": "Westlight",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "One Penn Plaza, Plaza 33 East, New York, NY 10119, United States",
+   "cid": "5908520870111761510",
+   "city": "New York",
+   "lat": 40.750707,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99157799999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y5qjq9s4",
+   "name": "Roberta’s",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "358 Marcus Garvey Blvd, Brooklyn, NY 11221, United States",
+   "cid": "-8606339728675777515",
+   "city": "New York",
+   "lat": 40.6848694,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.93855909999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ty6s577b",
+   "name": "Frog",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "298 Bedford Ave, Brooklyn, NY 11249",
+   "cid": "-3794874988308620490",
+   "city": "New York",
+   "lat": 40.7142687,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.96166459999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Maison Premiere",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "52 Harrison Pl, Brooklyn, NY 11237, United States",
+   "cid": "1592220495623483239",
+   "city": "New York",
+   "lat": 40.7062811,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9313702,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rcrt16vl",
+   "name": "Sobre Masa",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "23 2nd Ave, New York, NY 10003, United States",
+   "cid": "4276305386632085711",
+   "city": "New York",
+   "lat": 40.724555599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9908453,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ybxlv5pt",
+   "name": "Win Son Bakery",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "address": "25 Bogart St, Brooklyn, NY 11206, United States",
+   "cid": "-4983575839248151307",
+   "city": "New York",
+   "lat": 40.704164299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9331686,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rqgg95zl",
+   "name": "Eyval",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "243 DeKalb Ave, Brooklyn, NY 11205, United States",
+   "cid": "2076421618519717799",
+   "city": "New York",
+   "lat": 40.6895975,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.96954269999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tdy9_45",
+   "name": "Roman's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "372 Fulton St, Brooklyn, NY 11201, United States",
+   "cid": "5525597799487446014",
+   "city": "New York",
+   "lat": 40.6913485,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9878195,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fjbsv93x",
+   "name": "Gage & Tollner",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "365 5th Ave, Brooklyn, NY 11215, United States",
+   "cid": "3758858882430911029",
+   "city": "New York",
+   "lat": 40.671256,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.98426549999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s5txsvvc",
+   "name": "Masalawala & Sons",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "240 9th Ave, New York, NY 10001, United States",
+   "cid": "5016526719371026502",
+   "city": "New York",
+   "lat": 40.7473895,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.00044869999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc76gqkv",
+   "name": "Txikito",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "254 S 2nd St, Brooklyn, NY 11211, United States",
+   "cid": "-7655001095635581115",
+   "city": "New York",
+   "lat": 40.711623499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9578569,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11btvlb64w",
+   "name": "L'Industrie Pizzeria",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "15 Avenue A, New York, NY 10009, United States",
+   "cid": "-3977821698775707178",
+   "city": "New York",
+   "lat": 40.722786,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9862345,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11trtyp2np",
+   "name": "Foul Witch",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "186 Mott St, New York, NY 10012, United States",
+   "cid": "-509114908453278289",
+   "city": "New York",
+   "lat": 40.7207143,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.99565,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h_2d63hv",
+   "name": "Thai Diner",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "640 Manhattan Ave, Brooklyn, NY 11222, United States",
+   "cid": "-7642280320396025332",
+   "city": "New York",
+   "lat": 40.724232099999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9507157,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vcr1yyln",
+   "name": "Ask For Janice",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "320 E 6th St, New York, NY 10003, United States",
+   "cid": "-4003316224160838577",
+   "city": "New York",
+   "lat": 40.726881899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9875405,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wjh_0dx7",
+   "name": "Adore",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "667 Franklin Ave, Brooklyn, NY 11238, United States",
+   "cid": "4320781961886772911",
+   "city": "New York",
+   "lat": 40.675677799999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9560243,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ldp63brs",
+   "name": "Kissa Kissa",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "674 Manhattan Ave, Brooklyn, NY 11222, United States",
+   "cid": "5010801983877852407",
+   "city": "New York",
+   "lat": 40.724922,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9511595,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s18l4941",
+   "name": "Eavesdrop",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "212 E 52nd St 2nd fl, New York, NY 10022, United States",
+   "cid": "-8724677762162940981",
+   "city": "New York",
+   "lat": 40.7566694,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9692585,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11pybf1qg_",
+   "name": "Bar Orai",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "15, 16 Sherwood St, London W1F 7BJ, United Kingdom",
+   "cid": "-8359876473080682091",
+   "city": "London",
+   "lat": 51.5109516,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1359502,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rj4_29xk",
+   "name": "Old Spike Piccadilly",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "97 Ranelagh, Dublin 6, D06 A0K7, Ireland",
+   "cid": "4098845188201598350",
+   "city": "Dublin",
+   "lat": 53.323891499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2517654,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dy_k5fm4",
+   "name": "Bunsen Ranelagh",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "37 Stephen Street Lower, Dublin, D02 T862, Ireland",
+   "cid": "-4524270489989565589",
+   "city": "Dublin",
+   "lat": 53.341159399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -6.2635421,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11swk5ckvt",
+   "name": "BAMBINO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "110 William St Lower Level, New York, NY 10038, United States",
+   "cid": "-435713695393288026",
+   "city": "New York",
+   "lat": 40.708841799999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0070094,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cky7r8ng",
+   "name": "Voyager Espresso",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "228 W 10th St, New York, NY 10014, United States",
+   "cid": "-5403124669958267722",
+   "city": "New York",
+   "lat": 40.7338431,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -74.0051565,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0zcpvgt",
+   "name": "L'Artusi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "42 Peckham Rye, London SE15 4JR, United Kingdom",
+   "cid": "-5932203791763462062",
+   "city": "London",
+   "lat": 51.4654454,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0665292,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11grpqzj1g",
+   "name": "Funkidory",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "171 Mare St, London E8 3RH, United Kingdom",
+   "cid": "-2966946624536123637",
+   "city": "London",
+   "lat": 51.5400725,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0559567,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w2cql7zn",
+   "name": "Rasputin's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "245 Hackney Rd, London E2 8NA, United Kingdom",
+   "cid": "-3635198454037102686",
+   "city": "London",
+   "lat": 51.5311192,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.069483,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tj6m7cf7",
+   "name": "EQUAL PARTS",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "100 Shoreditch High St, London E1 6JQ, United Kingdom",
+   "cid": "-1841528365797964735",
+   "city": "London",
+   "lat": 51.5254273,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0772913,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rsr514tm",
+   "name": "Seed Library",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "address": "298 King's Rd, London SW3 5UG, United Kingdom",
+   "cid": "-7561081127257216351",
+   "city": "London",
+   "lat": 51.485994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1729407,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11q8g8khtq",
+   "name": "The Cadogan Arms",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "address": "177 Portobello Rd, London W11 2DY, United Kingdom",
+   "cid": "6754628165849291570",
+   "city": "London",
+   "lat": 51.514989299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.20458859999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1td52xyd",
+   "name": "Trailer Happiness",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "Platonos 14, Chalandri 152 34",
+   "cid": "8110668952902080577",
+   "city": "Athens",
+   "lat": 38.0214734,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7997285,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xh2dpl0y",
+   "name": "OK FYNE",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Νας, Kato Raches 833 01",
+   "cid": "-9003890367593057061",
+   "city": "Ikaria",
+   "lat": 37.6222932,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 26.0617612,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y2nw7mrk",
+   "name": "Ρείκι - Riki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "ικαρια, Armenistis 833 01",
+   "cid": "-4918106439753343452",
+   "city": "Ikaria",
+   "lat": 37.634237399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 26.088531699999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11d_9jxxn7",
+   "name": "Hidden Ikaria",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ράχες 833 01",
+   "cid": "8072978806575503111",
+   "city": "Ikaria",
+   "lat": 37.630996599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 26.090694199999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/119wnq01_",
+   "name": "Paralia Armenistis",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ag. Kirikos 833 00",
+   "cid": "-62557305648272569",
+   "city": "Ikaria",
+   "far": true,
+   "lat": 37.6883426,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 26.364009,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/119wn1gmz",
+   "name": "Paralia Agios Georgios",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Kirikos 833 00, Anonymous, Ag. Panteleimon 190 05",
+   "cid": "8949945237263344598",
+   "city": "Ikaria",
+   "far": true,
+   "lat": 37.6538021,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 26.3371779,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c4ww9h5l",
+   "name": "Anefanti Beach",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "70 Brompton Rd, London SW3 1ER, United Kingdom",
+   "cid": "-5225352306175524288",
+   "city": "London",
+   "lat": 51.500097399999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.16324239999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wr2jxhk8",
+   "name": "ALBA London - Italian Restaurant Knightsbridge",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Θέση Μαυρομάτη 0, Antiparos 840 07",
+   "cid": "2660945031917734107",
+   "city": "Antiparos",
+   "lat": 37.0344444,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.0747555,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s5zfgvlv",
+   "name": "afros | sip & bites",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Αμπελάς 844 01",
+   "cid": "3100934438398309823",
+   "city": "Paros",
+   "lat": 37.0947755,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2640486,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sq_cjfgh",
+   "name": "PAROCKS Luxury Hotel & Spa",
+   "note": "",
+   "type": "stay"
+  },
+  {
+   "address": "Agioi Anargyroi, Naousa 844 01",
+   "cid": "-5127988855200407109",
+   "city": "Paros",
+   "lat": 37.123773799999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2490909,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j00ptj10",
+   "name": "Cove Paros",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "address": "Unnamed Road, Drios 844 00",
+   "cid": "-347222412048395556",
+   "city": "Paros",
+   "far": true,
+   "lat": 37.0025116,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.227600199999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f12pjzfy",
+   "name": "Kima Restaurant Paros",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Κώστος 844 00",
+   "cid": "-3549336033580590727",
+   "city": "Paros",
+   "lat": 37.077679499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2182459,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g9qhl_vc",
+   "name": "O Kostos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Μάρμαρα 1, Marmara 844 00",
+   "cid": "1580773928599449931",
+   "city": "Paros",
+   "lat": 37.050703,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2465627,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11flkcbnb8",
+   "name": "Family Tavern Ververas",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Naousa 844 01",
+   "cid": "1784113459751971079",
+   "city": "Paros",
+   "lat": 37.124035299999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.23575,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1pyqvc5k0",
+   "name": "Mediterraneo",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Πάρου, Αγ. Δημήτριος Αττικής 173 42",
+   "cid": "8213679003480914278",
+   "city": "Paros",
+   "lat": 37.124573,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.238837,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c1c3ssxr",
+   "name": "Taverna Glafkos",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Naousa 844 01",
+   "cid": "-1056161227255813016",
+   "city": "Paros",
+   "lat": 37.1243322,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2385898,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11dzt23gbs",
+   "name": "Kafeneion - i Palia Agora",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Ξιφαρά 844 01",
+   "cid": "-4980036968680299207",
+   "city": "Paros",
+   "lat": 37.12623,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.266448999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1w8g3cx0",
+   "name": "Siparos Seaside Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Aliki 844 00",
+   "cid": "5760907925232701812",
+   "city": "Antiparos",
+   "lat": 36.9946566,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.1361682,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q2vwknv9",
+   "name": "Aliki Restaurant Paros",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Agios Dimitrios Beach, Naousa 844 01",
+   "cid": "1202864020576410809",
+   "city": "Paros",
+   "lat": 37.1244637,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2391175,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kq9k12bl",
+   "name": "Matina Greek Taverna",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Αντίπαρος 840 07",
+   "cid": "3503672204140053357",
+   "city": "Antiparos",
+   "lat": 37.040100699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.078660499999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b5wl7cc5",
+   "name": "BOOGALOO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Avant Mar Hotel, Paros 844 01",
+   "cid": "-1597357653891300774",
+   "city": "Paros",
+   "lat": 37.122332199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2324463,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kqwshnl4",
+   "name": "Matsuhisa Paros",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Chora, Schinoussa, Χώρα, Σχοινούσα, Chora, Schinoussa 843 00",
+   "cid": "-4223496782491037029",
+   "city": "Naxos",
+   "far": true,
+   "lat": 36.8694153,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.5196631,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c0xncq0q",
+   "name": "Kira Pothiti",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Schoinousa 843 00",
+   "cid": "1591597797958248224",
+   "city": "Naxos",
+   "far": true,
+   "lat": 36.869554,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.5187773,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/113jv62v7",
+   "name": "Deli Restaurant and cafe bar",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "ΧΩΡΑ ΣΧΟΙΝΟΥΣΑ, Schinoussa 843 00",
+   "cid": "4501021536561497619",
+   "city": "Naxos",
+   "far": true,
+   "lat": 36.8697674,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.519076599999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b_2ztys5",
+   "name": "Καφενειο ΧΑΡΑ",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "Overlooking the Marina, Aliki 844 00",
+   "cid": "2950796868167400303",
+   "city": "Antiparos",
+   "lat": 36.9938298,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.1361174,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q6jhvc26",
+   "name": "THALASSAMOU",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Epar.Od. Parikias-Marpissas, Lefkes 844 00",
+   "cid": "-3137702178928829929",
+   "city": "Paros",
+   "lat": 37.057823,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.209381399999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c0qy_j8b",
+   "name": "ARANTO",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "ΠΑΡΟΙΚΙΑ-ΠΑΡΟΣ ΜΠΟΥΝΤΑΡΑΚΙ ΠΑΡΟΣ, Paros 844 00",
+   "cid": "-5883073248716099257",
+   "city": "Antiparos",
+   "lat": 37.0810901,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.1444875,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1hc1bsk5j",
+   "name": "Bountaraki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Naousa 844 01",
+   "cid": "779672405538803367",
+   "city": "Paros",
+   "lat": 37.124504099999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.239259099999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c6w01hnn",
+   "name": "Statheros Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Unnamed Road, Naousa 844 01",
+   "cid": "-6741073900016688470",
+   "city": "Paros",
+   "lat": 37.1245706,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2382644,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h75rskfz",
+   "name": "Yemeni Wine Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Naousa 844 01",
+   "cid": "-7071855502544547047",
+   "city": "Paros",
+   "lat": 37.1242221,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2395781,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c1mzz_xg",
+   "name": "Kapari Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "46GX+68, Naousa 844 01",
+   "cid": "8455666884007084608",
+   "city": "Paros",
+   "lat": 37.1254833,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.248352999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s7zcv7rz",
+   "name": "Parostiā",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Αγ. Γεώργιος 843 00",
+   "cid": "-8575877506191222911",
+   "city": "Naxos",
+   "far": true,
+   "lat": 36.8582375,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.4702795,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fmv2lxn7",
+   "name": "Araklia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Apantima 840 07",
+   "cid": "4718374868148447756",
+   "city": "Antiparos",
+   "lat": 36.981828199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.0696318,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w1dwfl07",
+   "name": "Cookoovaya Antiparos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Kolympithres, Naousa 844 01",
+   "cid": "-1416330337915242074",
+   "city": "Paros",
+   "lat": 37.1205188,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2132214,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w59pfwjt",
+   "name": "Parōn Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Punda Beach, Marpissa 844 00",
+   "cid": "3374908936786866323",
+   "city": "Paros",
+   "lat": 37.0303073,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2503545,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h42pq2hy",
+   "name": "Galazia Hytra",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Agioi Anargyroi, Naousa 844 01",
+   "cid": "-5470873456799808173",
+   "city": "Paros",
+   "lat": 37.124744799999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2478666,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11pwwzc5vb",
+   "name": "RADA Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "46FQ+8F, Naousa 844 01",
+   "cid": "2901787936432955429",
+   "city": "Paros",
+   "lat": 37.1233278,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.2386812,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h7c0kzl5",
+   "name": "Stilvi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Λιβάδια, Paros 844 00",
+   "cid": "718620292100670640",
+   "city": "Paros",
+   "lat": 37.091335199999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.156749599999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kb7g8p1f",
+   "name": "Mario Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Unnamed Road, Ampelas 844 01",
+   "cid": "5624230713376864577",
+   "city": "Paros",
+   "lat": 37.102228499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.265273999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11stxqgvcy",
+   "name": "SeaRocks Paros",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Αγία Τριάδα, Paros 844 00",
+   "cid": "-3155163664885874615",
+   "city": "Antiparos",
+   "lat": 37.0832488,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.147199399999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11x5__lsxn",
+   "name": "Sama",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Rema Floga, Paros 844 00",
+   "cid": "3345396188398133954",
+   "city": "Antiparos",
+   "lat": 37.083201599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.1512343,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xd8xx1vl",
+   "name": "Rema Floga Paros | Ρέμα Φλόγα Πάρος",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Ιερά Οδός 25-27-29, Iera Odos 29, Athina 118 54",
+   "cid": "2296849372281063651",
+   "city": "Athens",
+   "lat": 37.9798129,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7138548,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11s862d_y5",
+   "name": "Στα Καλά Καθούμενα",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Agia Ipakoi, Kostos 844 00",
+   "cid": "-3981244145032607902",
+   "city": "Paros",
+   "lat": 37.0809485,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.211784899999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t25bgb84",
+   "name": "Santa Pacou Restaurant",
+   "note": "",
+   "type": "food"
   }
  ]
 }
