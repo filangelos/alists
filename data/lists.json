@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 488,
+   "count": 490,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517625,
-   "lng": -0.124159,
+   "lat": 51.517609,
+   "lng": -0.124097,
    "name": "London"
   },
   {
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-07-31T06:16:06Z",
+ "generated": "2026-07-31T08:12:16Z",
  "lists": [
   {
    "count": 67,
@@ -401,7 +401,7 @@
    "url": "https://www.google.com/maps/placelists/list/TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
   },
   {
-   "count": 71,
+   "count": 72,
    "description": "",
    "emoji": "🏛️",
    "id": "ZkzMjrM6SXWD7BtpwoxAgg",
@@ -410,7 +410,7 @@
    "url": "https://www.google.com/maps/placelists/list/ZkzMjrM6SXWD7BtpwoxAgg"
   },
   {
-   "count": 45,
+   "count": 46,
    "description": "",
    "emoji": "🥖",
    "id": "Erx85_Y4gKkhT_4MERn11iWshw_Ynw",
@@ -419,7 +419,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 49,
+   "count": 50,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 489,
+   "count": 490,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -2445,6 +2445,21 @@
    "type": "drinks"
   },
   {
+   "address": "Πλ. Σιαδήμα, Filothei 152 37",
+   "cid": "4181474695113602103",
+   "city": "Athens",
+   "lat": 38.0217155,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg",
+    "Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
+   ],
+   "lng": 23.783471499999997,
+   "mid": "/g/11n9r14cs8",
+   "name": "KORA Filothei – Petrino",
+   "note": "",
+   "type": "bakery"
+  },
+  {
    "address": "Asklipiou 41, Athina 106 80",
    "cid": "3090502306565876927",
    "city": "Athens",
@@ -3814,6 +3829,21 @@
    "name": "Panadera",
    "note": "",
    "type": "bakery"
+  },
+  {
+   "address": "115 Allen St, New York, NY 10002, United States",
+   "cid": "-124537888051140194",
+   "city": "New York",
+   "lat": 40.7196074,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
+    "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
+   ],
+   "lng": -73.99046729999999,
+   "mid": "/g/11mvrcqd1b",
+   "name": "Double Chicken Please",
+   "note": "",
+   "type": "drinks"
   },
   {
    "address": "Agias Zonis 1, Athina 113 61",
@@ -5608,20 +5638,6 @@
    "lng": -74.0089773,
    "mid": "/g/11s5k7k8pc",
    "name": "Google NYC - Pier 57",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "address": "115 Allen St, New York, NY 10002, United States",
-   "cid": "-124537888051140194",
-   "city": "New York",
-   "lat": 40.7196074,
-   "lists": [
-    "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
-   ],
-   "lng": -73.99046729999999,
-   "mid": "/g/11mvrcqd1b",
-   "name": "Double Chicken Please",
    "note": "",
    "type": "other"
   },
@@ -24268,6 +24284,40 @@
    "type": "other"
   },
   {
+   "address": "11 Harrow Pl, London E1 7DB, United Kingdom",
+   "cid": "-1218052704224889782",
+   "city": "London",
+   "lat": 51.516166,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0772124,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vx6vl0x5",
+   "name": "Rose's Kitchen",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "13 Bonnington Square, London SW8 1TE, United Kingdom",
+   "cid": "5303184160104565833",
+   "city": "London",
+   "lat": 51.4844856,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1202873,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1td0xyz9",
+   "name": "Italo",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "62 Bridge St, Manchester M3 3BW, United Kingdom",
    "cid": "-7082614800166637006",
    "city": "Oxford",
@@ -24658,23 +24708,6 @@
    "name": "Black Bird Bookstore and Café",
    "note": "",
    "type": "coffee"
-  },
-  {
-   "address": "Πλ. Σιαδήμα, Filothei 152 37",
-   "cid": "4181474695113602103",
-   "city": "Athens",
-   "lat": 38.0217155,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 23.783471499999997,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11n9r14cs8",
-   "name": "KORA Filothei – Petrino",
-   "note": "",
-   "type": "other"
   },
   {
    "address": "36 Redchurch St, London E2 7DP, United Kingdom",
