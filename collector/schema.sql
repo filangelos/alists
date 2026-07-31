@@ -85,6 +85,16 @@ CREATE TABLE IF NOT EXISTS counters (
 -- parses one identifier out of the link -- a CID or a place id, both bounded
 -- tokens -- and rebuilds the URL from it. So the column that gets clicked can
 -- only ever hold a Google Maps link this repo's own code wrote.
+--
+-- There is no index below it. The review page's only query is
+-- `ORDER BY id DESC LIMIT`, which the primary key already answers, and the two
+-- filters deciding what it shows are over files rather than columns. An index
+-- here would be a guess about a query nobody writes.
+--
+-- This note is above the table rather than after it because wrangler's SQL
+-- splitter buffers whatever follows the last `;` and warns about it on every
+-- run -- a trailing comment is a warning you learn to ignore, which is the
+-- worst thing a warning can become.
 CREATE TABLE IF NOT EXISTS suggestions (
   id      INTEGER PRIMARY KEY AUTOINCREMENT,
 
@@ -116,8 +126,3 @@ CREATE TABLE IF NOT EXISTS suggestions (
   country TEXT,
   agent   TEXT    NOT NULL DEFAULT 'other' CHECK (agent IN ('bot', 'mobile', 'desktop', 'other'))
 );
-
--- No index. The review page's only query is `ORDER BY id DESC LIMIT`, which the
--- primary key already answers, and the two filters that decide what it shows
--- are over files rather than columns. An index here would be a guess about a
--- query nobody writes.
