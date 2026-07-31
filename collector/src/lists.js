@@ -55,6 +55,49 @@ function build(data) {
   return { at: Date.now(), paths, labels, places, cids, mids };
 }
 
+/* The other file this Worker reads back off the deployed site: the
+   recommendations I have said no to.
+
+   Kept apart from the vocabulary above rather than folded into it, because the
+   two fail in opposite directions and should. A vocabulary this Worker cannot
+   read means events are refused -- failing shut, because the alternative is
+   letting unvalidated strings into the table. A passed list it cannot read
+   means nothing is filtered out, which shows a card that should have gone.
+   Failing open is right there: the cost is one row too many on a page only I
+   look at, and the alternative would be an unreachable text file emptying the
+   queue.
+
+   Five minutes rather than an hour, because the whole point of putting this in
+   the repo is that a commit is the gesture, and a gesture you have to wait an
+   hour to see the effect of is one you stop trusting. */
+const PASSED_TTL = 300 * 1000;
+
+let passed = null;
+
+export async function dismissed(env) {
+  if (!env.PASSED_URL) return new Set();
+  if (passed && Date.now() - passed.at < PASSED_TTL) return passed.keys;
+
+  try {
+    const res = await fetch(env.PASSED_URL, { cf: { cacheTtl: 60, cacheEverything: true } });
+    if (!res.ok) throw new Error(`passed.txt responded ${res.status}`);
+    const keys = new Set();
+    for (const line of (await res.text()).split('\n')) {
+      const key = line.split('#')[0].trim();
+      // A CID, or a place id for the rare recommendation that arrived without
+      // one. Anything else in the file is a typo and is ignored rather than
+      // matched against, so a stray word cannot silently mean nothing.
+      if (/^-?\d{6,20}$/.test(key) || /^[A-Za-z0-9_-]{20,128}$/.test(key)) keys.add(key);
+    }
+    passed = { at: Date.now(), keys };
+  } catch (err) {
+    console.error(JSON.stringify({ at: 'passed', error: String(err), stale: !!passed }));
+    if (!passed) return new Set();
+  }
+
+  return passed.keys;
+}
+
 export async function vocabulary(env) {
   if (vocab && Date.now() - vocab.at < VOCAB_TTL) return vocab;
 

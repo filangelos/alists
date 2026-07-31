@@ -13,9 +13,18 @@
     "head_sampling_rate": 1
   },
 
+  // Both files are read back off the deployed site rather than pinned here, so
+  // that a commit is what changes them and this Worker never has to be
+  // redeployed to agree with the repo.
   "vars": {
     "SITE_ORIGIN": "https://filangelos.github.io",
-    "LISTS_URL": "https://filangelos.github.io/alists/data/lists.json"
+    "LISTS_URL": "https://filangelos.github.io/alists/data/lists.json",
+    "PASSED_URL": "https://filangelos.github.io/alists/passed.txt",
+
+    // Optional, and only ever a convenience: the review page turns the words
+    // "passed.txt" into a link straight to GitHub's editor, so saying no to a
+    // recommendation is paste, commit, done.
+    "PASSED_EDIT_URL": "https://github.com/filangelos/alists/edit/main/passed.txt"
     // "DEV_ORIGIN": "http://localhost:8000"  // uncomment to count a local server
   },
 
@@ -35,10 +44,9 @@
   // cover the rest. If your plan rejects this binding, delete the block: the
   // Worker checks for each one and carries on without it.
   //
-  // Three ceilings because the three endpoints are three different actions. A
-  // page fires a handful of events a minute without trying; a recommendation is
-  // typed by hand; and `pass` on the review page is a button anybody who has
-  // the URL can press, so it gets the tightest of the three.
+  // Two ceilings for the two endpoints that write. A page fires a handful of
+  // events a minute without trying; a recommendation is typed by hand, so it
+  // gets an order of magnitude less. /review has none, because it only reads.
   "ratelimits": [
     {
       "name": "RATE_LIMITER",
@@ -49,15 +57,10 @@
       "name": "SUGGEST_LIMITER",
       "namespace_id": "1002",
       "simple": { "limit": 5, "period": 60 }
-    },
-    {
-      "name": "REVIEW_LIMITER",
-      "namespace_id": "1003",
-      "simple": { "limit": 10, "period": 60 }
     }
   ]
 
   // There is no secret here, and nothing to set. /review is readable by anyone
   // who has the URL: everything on it is a public Maps link plus a sentence
-  // somebody chose to send, and the one button it has never deletes anything.
+  // somebody chose to send, and there is nothing on it to press.
 }

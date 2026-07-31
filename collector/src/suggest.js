@@ -294,16 +294,19 @@ export async function recommend(request, env, ctx, site) {
 
   /* The most useful answer this endpoint has, and it costs nothing: the
      vocabulary it already holds for validating events is also every CID in the
-     collection. Somebody recommending a place that is already on a list should
-     be told so at the moment they press the button, not left waiting for a
-     reply that is never coming -- and it keeps the queue to things that are
-     actually new. */
+     collection, so it can tell somebody their place is already on a list at
+     the moment they press the button rather than never.
+
+     It is an answer and not a refusal. This used to reject the submission, and
+     that was the wrong shape twice over -- it threw away whatever they had
+     written about a place that *is* worth going to, and it answered a kindness
+     with a no. So it is stored like any other, and the review page folds it
+     away by itself: a recommendation the collection already contains is not one
+     that is waiting, whether it was added because somebody said so or was there
+     all along. */
   let saved = null;
   if (id.cid && known.cids.has(id.cid)) saved = known.cids.get(id.cid);
   else if (id.mid && known.mids.has(id.mid)) saved = id.name;
-  if (saved !== null) {
-    return reply(site.headers, 200, { ok: true, state: 'already', name: saved });
-  }
 
   if (await overCap(env, 'rec:', site.facts.at, DAILY_CAP)) return said(SAYS.busy);
 
@@ -327,5 +330,11 @@ export async function recommend(request, env, ctx, site) {
     )
     .run();
 
-  return reply(site.headers, 200, { ok: true, state: 'received', name: id.name });
+  return reply(site.headers, 200, {
+    ok: true,
+    state: saved === null ? 'received' : 'already',
+    // The collection's own spelling when it has one: it is the name on the
+    // list, and it is the one the page is showing everywhere else.
+    name: saved === null ? id.name : saved || id.name,
+  });
 }

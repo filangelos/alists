@@ -63,11 +63,17 @@ CREATE TABLE IF NOT EXISTS counters (
 -- the daily refresh finds it the way it finds everything else. So this table is
 -- an inbox, not a staging area.
 --
--- Note what `state` cannot be. There is no 'kept': a recommendation that has
--- been taken up is one whose CID is in data/lists.json, and the review page
--- works that out by reading the site rather than by being told. Recording it
--- here as well would be a second copy of a fact the collection already holds,
--- and two copies of a fact are two facts as soon as one of them is wrong.
+-- Note what is not here: any column saying what became of a row. Append-only,
+-- like `events`, and for a stronger reason than symmetry. A recommendation
+-- stops being one two ways, and both are already written down somewhere else --
+-- its CID appears in data/lists.json because the place was saved to a list, or
+-- it appears in passed.txt because I committed it there. A `state` column would
+-- be a third copy of a fact two files already hold, and copies of a fact become
+-- separate facts the moment one of them is wrong.
+--
+-- It is also what keeps the review page harmless. Nothing a visitor can reach
+-- writes to this table except an insert, so a page anyone can open has nothing
+-- on it anyone can press.
 --
 -- It is also the one table in this repo that holds strings a stranger chose --
 -- `note`, `who`, and `name` when it came out of a pasted URL's own path. There
@@ -86,13 +92,6 @@ CREATE TABLE IF NOT EXISTS suggestions (
   -- picks their own timestamp can backdate rows into a window you have already
   -- looked at and stopped checking.
   at      INTEGER NOT NULL,
-
-  state   TEXT    NOT NULL DEFAULT 'new' CHECK (state IN ('new', 'passed')),
-
-  -- When it was passed on, and null while it is still waiting. There is no
-  -- column for when it was added to a list, because nothing here finds out:
-  -- the place simply turns up in the collection.
-  decided INTEGER,
 
   -- Rebuilt, never pasted. See above.
   url     TEXT    NOT NULL,
@@ -118,10 +117,7 @@ CREATE TABLE IF NOT EXISTS suggestions (
   agent   TEXT    NOT NULL DEFAULT 'other' CHECK (agent IN ('bot', 'mobile', 'desktop', 'other'))
 );
 
--- The review page's only query, and the only index it needs: what is waiting,
--- newest first.
-CREATE INDEX IF NOT EXISTS suggestions_state ON suggestions (state, id DESC);
-
--- Two people recommending the same place is one decision with two reasons, so
--- the review page groups by CID. This is what makes that cheap.
-CREATE INDEX IF NOT EXISTS suggestions_cid   ON suggestions (cid) WHERE cid IS NOT NULL;
+-- No index. The review page's only query is `ORDER BY id DESC LIMIT`, which the
+-- primary key already answers, and the two filters that decide what it shows
+-- are over files rather than columns. An index here would be a guess about a
+-- query nobody writes.

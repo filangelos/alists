@@ -272,18 +272,26 @@ Maps link.
 
 ```
 somebody's link ──▶ /recommend ──▶  D1  ──▶ /review ──▶ me, in Google Maps
-                                                              │
-                              data/lists.json ◀──refresh──────┘
+                                             ▲    ▲           │
+                              data/lists.json ┘    └ passed.txt
+                                     ▲
+                                  refresh ◀────────────────────┘
 ```
 
 **A link rather than a name**, for three reasons that turn out to be one
 reason. It makes reviewing a press instead of a search. It lets the collector
-answer *already saved — SMOKESTAK* while the person is still standing there,
-because the CID in a Maps link is the same identifier `data/lists.json` holds
-for every place in it. And it means the URL that gets stored is not a string
-anybody typed: the Worker parses one bounded token out of the link and rebuilds
-the address from that, so the thing I am going to click can only ever be a Maps
-URL this repo's own code wrote.
+answer *SMOKESTAK is on a list already — thank you anyway* while the person is
+still standing there, because the CID in a Maps link is the same identifier
+`data/lists.json` holds for every place in it. And it means the URL that gets
+stored is not a string anybody typed: the Worker parses one bounded token out
+of the link and rebuilds the address from that, so the thing I am going to
+click can only ever be a Maps URL this repo's own code wrote.
+
+Somewhere I already have is worth being told about and is kept like anything
+else. Refusing it was the first thing this did and the wrong shape twice over:
+it threw away what somebody had written about a place that *is* worth going to,
+and it answered a kindness with a no. The queue folds it away by itself, so
+saying yes costs nothing.
 
 The `why` and the `you` are free text, and nothing can make free text not be
 free text. What there is instead is nowhere for it to go: bounded lengths,
@@ -292,24 +300,28 @@ its own field; never rendered into this page; and the one page that does render
 it has no script source at all.
 [`collector/README.md`](collector/README.md) has the reasoning.
 
-**There is no keep button**, and that is the part worth saying out loud. I open
-`/review` and press a name; Maps opens; I save it to whichever list it belongs
-on, the same way I save everything else. Tomorrow's `refresh` puts it in
-`data/lists.json` — which is the file the queue is reading — so the card is
-simply not there the next time I look, and a folded-away line says how many
-went that way. Accepting a recommendation and adding a place are the same act,
-so there is no import step, no approve button that publishes, and nothing in
-this repo that a stranger's submission can reach.
+**The queue has no buttons on it at all**, and that is the part worth saying
+out loud. A recommendation leaves it two ways, and both of them are facts kept
+somewhere else:
 
-A `kept` column would have been a second place to store a fact the collection
-already holds, and two copies of a fact are two facts the moment one of them is
-wrong. The one button is `pass` — somewhere I am never going to add, which is
-the only thing the refresh can never work out on its own. It is not a delete:
-passed places keep their own view and a way back.
+| | |
+|---|---|
+| I add it | I press the name, Maps opens, I save it to a list the way I save everything else. Tomorrow's `refresh` writes it into `data/lists.json`, which is the file the queue reads — so the card is simply not there next time. |
+| I pass on it | its number goes in [`passed.txt`](passed.txt), which the queue also reads. The page prints the exact line to paste under every card. |
 
-There is no passphrase either. Everything on that page is a public Maps link
-and a sentence somebody chose to send, so it is readable by anyone who has the
-URL.
+So accepting a recommendation and adding a place are the same act, and
+declining one is a commit — which is what every other judgement in this repo
+already is. It shows up in a diff, it comes back by deleting a line, and the
+table behind all this never stores what became of a row. A `kept` or `passed`
+column would be a third copy of a fact two files already hold, and copies of a
+fact become separate facts the moment one is wrong.
+
+It also settles who can do it. There is no passphrase — everything on that page
+is a public Maps link and a sentence somebody chose to send, so anyone with the
+URL can read it — and a button on a page anyone can open is a button anyone can
+press. With the one destructive gesture living in the repo, saying no is
+something only whoever can push here can do, and the page is a plain GET that
+changes nothing.
 
 And if I save it without having been yet, it goes on `next` and arrives here
 hollow-bulleted behind the `○ not been yet` button — which is exactly what it

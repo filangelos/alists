@@ -1,0 +1,22 @@
+# Recommendations I am not going to add.
+#
+# A recommendation leaves the queue at /review one of two ways, and neither of
+# them is a button on that page:
+#
+#   it gets added   -- I save it to a list in Maps, the daily refresh writes it
+#                      into data/lists.json, and the queue reads that file
+#   it gets passed  -- its number goes in here
+#
+# So saying no is a commit, which is the same thing every other judgement in
+# this repo is: it shows up in a diff, it can be undone by deleting a line, and
+# nobody who merely has the URL to the queue can do it.
+#
+# One identifier per line. The review page prints the exact line to paste under
+# each card -- a CID, or a Google place id for the rare recommendation that
+# arrived without one. Everything after `#` is a comment, and the name is worth
+# writing there because a file of bare 19-digit numbers is a file nobody can
+# read back.
+#
+# This is not where spam goes. Spam should not be published to a public file
+# with the sender's chosen place in it -- delete the row instead; see
+# collector/README.md.

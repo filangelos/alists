@@ -1,32 +1,34 @@
-/* The queue, and the one decision left in it.
+/* The queue. It has no buttons at all, and that is the design rather than what
+ * is left of one.
  *
- * There used to be two buttons here. There is one, because *keeping* a
- * recommendation is not a thing anybody needs to record: adding the place to a
- * list in Google Maps is the whole of accepting it, and the next daily
- * `refresh` puts it in `data/lists.json`, which this page already reads. So a
- * recommendation stops being one the moment the collection contains it, and it
- * leaves the queue by itself. A `kept` button would have been a second place to
- * store a fact the site already holds, and the two would eventually disagree.
+ * A recommendation leaves this page two ways, and both of them are facts held
+ * somewhere else:
  *
- * What is left is `pass` -- somewhere I am not going to add -- because nothing
- * else can ever clear that, and a queue you cannot say no in is a queue you
- * stop opening.
+ *   added   its CID turns up in data/lists.json, because I saved the place to
+ *           a list in Maps and the daily refresh wrote it down
+ *   passed  its CID is in passed.txt, because I committed it there
  *
- * No passphrase. The page is readable by anyone who has the URL, which is a
- * decision rather than an oversight: there is nothing here that is not already
- * a public Google Maps link plus a sentence somebody chose to send. The cost is
- * that `pass` is public too, so it is built to be survivable rather than
- * trusted -- nothing is ever deleted, a passed card keeps its own view and a
- * way back, and the write is rate limited.
+ * So the page is a pure function of three files it reads and one table it only
+ * ever appends to. There is no `kept` column and no `passed` column: both would
+ * be a second copy of a fact already recorded elsewhere, and two copies of a
+ * fact are two facts as soon as one of them is wrong.
+ *
+ * The practical reason is better than the tidy one. This page is readable by
+ * anyone who has the URL -- nothing on it is private, being a public Google
+ * Maps link plus a sentence somebody chose to send -- and a button on a page
+ * anyone can open is a button anyone can press. Moving the one destructive
+ * gesture into a commit means saying no is something only whoever can push to
+ * this repo can do, it shows up in a diff, and it comes back by deleting a
+ * line.
  *
  * No JavaScript either, and that is not austerity: this is the one page
  * anywhere in this repo that renders a string a stranger typed, and with no
  * script source at all in the CSP, a mistake in the escaping below is a mistake
- * that cannot execute.
+ * that cannot execute. With nothing to submit there is no form either, so the
+ * whole page is a GET that changes nothing.
  */
 
-import { vocabulary } from './lists.js';
-import { throttled } from './limits.js';
+import { vocabulary, dismissed } from './lists.js';
 
 /* Newest first, so what falls off the end is the oldest -- and the oldest are
    overwhelmingly ones already added, which is the half of the queue nobody is
@@ -91,11 +93,12 @@ a:hover { text-decoration:underline }
 .tag { display:inline-block; font-size:11px; line-height:16px; padding:1px 8px;
   border:1px solid var(--hairline); border-radius:10px; color:var(--muted); margin-left:6px;
   vertical-align:1px }
-.acts { margin-top:10px }
-button { font-family:inherit; font-size:12px; line-height:16px; padding:6px 12px;
-  background:none; border:1px solid var(--hairline); border-radius:12px; color:var(--muted);
-  cursor:pointer }
-button:hover { border-color:var(--accent); color:var(--accent) }
+/* The line to paste into passed.txt, and it is a <code> rather than a button
+   because that is exactly what it is: the text of a commit you are about to
+   make. Selectable in one gesture on both a desktop and a phone. */
+.key { display:block; margin-top:10px; padding:5px 8px; background:var(--code);
+  border-radius:6px; color:var(--muted); font-size:11.5px; overflow-wrap:anywhere;
+  -webkit-user-select:all; user-select:all }
 .empty { color:var(--muted); padding:32px 0 }
 details { margin-top:22px; color:var(--muted); font-size:12px }
 summary { cursor:pointer; color:var(--good) }
@@ -125,10 +128,11 @@ const HEADERS = {
   'x-robots-tag': 'noindex, nofollow',
   'referrer-policy': 'no-referrer',
   // No script source at all, so nothing rendered below can run even if the
-  // escaping above were wrong. `form-action 'self'` keeps the buttons from
-  // being pointed anywhere else by injected markup.
+  // escaping above were wrong. `form-action 'none'` rather than `'self'`: this
+  // page has no form, and the policy should say what is true of it rather than
+  // what was true of the version before.
   'content-security-policy':
-    "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; " +
+    "default-src 'none'; style-src 'unsafe-inline'; form-action 'none'; " +
     "base-uri 'none'; frame-ancestors 'none'",
 };
 
@@ -160,6 +164,14 @@ function saved(row, known) {
   return null;
 }
 
+/* What a row is called in passed.txt: its CID, or the place id out of the URL
+   the Worker rebuilt for the rare recommendation that arrived without one.
+   Printed on the card and matched against the file, from this one function, so
+   the two cannot drift into spelling the same place differently. */
+const PLACE_ID = /place_id:([A-Za-z0-9_-]+)/;
+
+const identity = (row) => row.cid || (PLACE_ID.exec(row.url || '') || [])[1] || row.url;
+
 /* One card per place, not per row. The same restaurant recommended by three
    people is one decision and three reasons to make it -- and the count is the
    most useful thing on the page, so it should not be spread over three cards
@@ -180,13 +192,12 @@ function group(rows) {
   return [...groups.values()].map((rows) => rows.slice().reverse());
 }
 
-function card(rows, known, show) {
+function card(rows, known) {
   const first = rows[0];
   // Whichever sighting carried a name; a link pasted bare has none, and the
   // same place shared from the Maps app does.
   const named = rows.find((row) => row.name);
   const name = (named && named.name) || 'an unnamed place';
-  const ids = rows.map((row) => row.id).join(',');
 
   const notes = rows.filter((row) => row.note).map((row) => html`<p class="note">${row.note}</p>`);
 
@@ -206,118 +217,80 @@ function card(rows, known, show) {
     }</h2>
     ${notes}
     ${from}
-    <div class="acts">
-      <form method="post" action="${show === 'passed' ? '/review?show=passed' : '/review'}">
-        <input type="hidden" name="ids" value="${ids}">
-        <button type="submit" name="decide" value="${show === 'passed' ? 'new' : 'passed'}">${
-          show === 'passed' ? 'put it back' : 'pass'
-        }</button>
-      </form>
-    </div>
+    <code class="key">${identity(first)}  # ${name}</code>
   </li>`;
 }
 
-const LEDE =
-  'Nothing here needs accepting. Open the place, save it to a list in Maps, ' +
-  'and it leaves this page by itself once the daily refresh has been round. ' +
-  'Pass is for the ones that are never going on a list.';
-
-function queue({ waiting, taken, known, show }) {
+function queue({ waiting, held, known, editUrl }) {
   const groups = group(waiting);
 
   const body = groups.length
-    ? html`<ul>${groups.map((g) => card(g, known, show))}</ul>`
-    : html`<p class="empty">${show === 'passed' ? 'nothing passed.' : 'nothing waiting.'}</p>`;
+    ? html`<ul>${groups.map((g) => card(g, known))}</ul>`
+    : html`<p class="empty">nothing waiting.</p>`;
 
-  /* The proof that the loop closed, and the reason there is no `keep` button:
-     these left the queue because the collection grew, not because anybody
-     pressed anything. Folded away because it is reassurance rather than work. */
-  const added =
-    taken.length && show !== 'passed'
-      ? html`<details>
-      <summary>${taken.length} added to a list since</summary>
-      <ul>${taken.map((row) => html`<li>${row.name || 'an unnamed place'}</li>`)}</ul>
+  const file = editUrl
+    ? html`<a href="${editUrl}" target="_blank" rel="noreferrer noopener">passed.txt</a>`
+    : raw('<code>passed.txt</code>');
+
+  /* Both ways out of the queue, said once at the top, because neither of them
+     is a control on this page and a page with nothing to press has to explain
+     itself somewhere. */
+  const lede = html`Press a name, save the place to a list in Maps, and it
+    leaves this page by itself once the daily refresh has been round. For the
+    ones that are never going on a list, paste the line under the card into
+    ${file} and commit it.`;
+
+  /* The proof that the loop closed. These are on a list already -- some because
+     I added them after somebody said so, some because they were on one before
+     anybody did -- and either way the answer to "is this still a
+     recommendation" is no. Folded away because it is reassurance rather than
+     work. */
+  const already = held.length
+    ? html`<details>
+      <summary>${held.length} on a list already</summary>
+      <ul>${held.map((row) => html`<li>${row.name || 'an unnamed place'}</li>`)}</ul>
     </details>`
-      : '';
+    : '';
 
   return page(
     'alists · recommendations',
     html`<main>
     <h1>alists</h1>
-    <p class="sub">${show === 'passed' ? 'passed' : 'waiting'} · ${groups.length} ${
-      groups.length === 1 ? 'place' : 'places'
-    }</p>
-    <p class="lede">${LEDE}</p>
+    <p class="sub">waiting · ${groups.length} ${groups.length === 1 ? 'place' : 'places'}</p>
+    <p class="lede">${lede}</p>
     ${body}
-    ${added}
-    <p class="foot">${
-      show === 'passed'
-        ? raw('<a href="/review">back to what is waiting</a>')
-        : raw('<a href="/review?show=passed">see what I passed on</a>')
-    }</p>
+    ${already}
   </main>`,
   );
 }
 
 // ----------------------------------------------------------------- handler
 
-// `kept` is deliberately not one of these. See the note at the top of the file.
-const STATES = new Set(['passed', 'new']);
-
-async function decide(env, ids, state, at) {
-  const wanted = String(ids)
-    .split(',')
-    .map((id) => Number(id))
-    .filter((id) => Number.isInteger(id) && id > 0)
-    .slice(0, 50);
-  if (!wanted.length || !STATES.has(state)) return;
-
-  const holes = wanted.map(() => '?').join(',');
-  await env.DB.prepare(`UPDATE suggestions SET state = ?, decided = ? WHERE id IN (${holes})`)
-    .bind(state, state === 'new' ? null : at, ...wanted)
-    .run();
-}
-
 export async function review(request, env, ctx, site) {
-  const url = new URL(request.url);
-  const show = url.searchParams.get('show') === 'passed' ? 'passed' : 'waiting';
-
-  if (request.method === 'POST') {
-    // The one write on a page anyone can open, so it is the one thing throttled.
-    if (!(await throttled(env.REVIEW_LIMITER || env.RATE_LIMITER, site.ip))) {
-      const form = await request.formData();
-      await decide(env, form.get('ids') || '', String(form.get('decide') || ''), site.facts.at);
-    }
-    /* 303 rather than rendering the result, so the browser lands on a GET: a
-       refresh re-reads the queue instead of re-deciding it, and the back button
-       does not offer to resubmit. */
-    return new Response(null, {
-      status: 303,
-      headers: { location: show === 'passed' ? '/review?show=passed' : '/review', 'cache-control': 'no-store' },
-    });
-  }
-
+  // Nothing here writes, so nothing here is anything but a GET. A page that
+  // answered POST would be a page with something to press.
   if (request.method !== 'GET') {
-    return new Response(null, { status: 405, headers: { allow: 'GET, POST' } });
+    return new Response(null, { status: 405, headers: { allow: 'GET' } });
   }
 
-  const known = await vocabulary(env);
+  const [known, passed, { results }] = await Promise.all([
+    vocabulary(env),
+    dismissed(env),
+    env.DB.prepare(`SELECT * FROM suggestions ORDER BY id DESC LIMIT ?`).bind(PAGE).all(),
+  ]);
 
-  const { results } = await env.DB.prepare(
-    show === 'passed'
-      ? `SELECT * FROM suggestions WHERE state = 'passed' ORDER BY decided DESC, id DESC LIMIT ?`
-      : `SELECT * FROM suggestions WHERE state = 'new' ORDER BY id DESC LIMIT ?`,
-  )
-    .bind(PAGE)
-    .all();
+  /* The whole of the state machine, and it is two filters over files. A row is
+     still a recommendation if the collection does not hold it and I have not
+     written it down as one I am not taking. Passed rows are dropped rather than
+     shown anywhere: passed.txt is the record of those, in a diff, and repeating
+     it here would be the second copy this design exists to avoid. */
+  const waiting = [];
+  const held = [];
+  for (const row of results || []) {
+    if (passed.has(identity(row))) continue;
+    if (saved(row, known) === null) waiting.push(row);
+    else held.push(row);
+  }
 
-  /* The split that replaces the keep button. Everything still marked `new` is
-     partitioned by whether the collection now holds it -- a question
-     `lists.json` answers and this table therefore never has to. The passed view
-     has nothing to partition: it is a list of decisions, not of candidates. */
-  const rows = results || [];
-  const waiting = show === 'passed' ? rows : rows.filter((row) => saved(row, known) === null);
-  const taken = show === 'passed' ? [] : rows.filter((row) => saved(row, known) !== null);
-
-  return respond(queue({ waiting, taken, known, show }));
+  return respond(queue({ waiting, held, known, editUrl: env.PASSED_EDIT_URL }));
 }

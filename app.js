@@ -1060,12 +1060,21 @@
 
       if (!answer || !answer.ok) {
         said((answer && answer.says) || 'that did not go through', true);
-      } else if (answer.state === 'already') {
-        // The most useful thing it can say, and the only one that needs no
-        // review at all: it is on a list, and this page is showing it already.
-        said(answer.name ? `already saved — ${answer.name}` : 'already saved', false);
       } else {
-        said(answer.name ? `thank you — ${answer.name} is in the queue` : 'thank you — it is in the queue');
+        /* Both answers are a yes. A place that is already on a list is still
+           worth having been told about -- the collector keeps it either way,
+           and saying so is friendlier and more use than a refusal, because it
+           is the one thing the person could not have known from this page
+           without going and looking. */
+        said(
+          answer.state === 'already'
+            ? answer.name
+              ? `${answer.name} is on a list already — thank you anyway`
+              : 'that one is on a list already — thank you anyway'
+            : answer.name
+              ? `thank you — ${answer.name} is in the queue`
+              : 'thank you — it is in the queue'
+        );
         link.value = '';
         $('gl-rec-note').value = '';
         // `who` survives on purpose: somebody with one place to recommend

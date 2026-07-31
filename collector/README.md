@@ -18,7 +18,10 @@ app.js    ──fetch───────▶  POST /recommend  ──▶ D1  su
 (the form)                 src/suggest.js        (the one free-text table)
 
 you       ──a browser───▶  /review          ◀──     src/review.js
-                           (open to anyone)         (what is still waiting)
+                           (open to anyone)         (a GET, and nothing else)
+
+                                 what is still waiting =
+                                 suggestions - data/lists.json - passed.txt
 ```
 
 Three jobs, one Worker, because they share a database, an origin and every
@@ -53,14 +56,15 @@ npm run schema
 npm run deploy
 ```
 
-There is no secret to set. `/review` is readable by anyone who has the URL --
-see below for why, and for what that costs.
-
 That prints the Worker's URL. Put it in the `alists-collector` meta tag in
 [`index.html`](../index.html) in place of `YOUR-SUBDOMAIN`, and nothing happens
 until you do: `count.js` counts nothing and `app.js` removes the recommend
 chip entirely rather than offering a button that posts into somebody else's
 database.
+
+There is no secret to set anywhere in this. `/review` is readable by anyone who
+has the URL, and the only thing that can take a recommendation off it is a
+commit -- see [Reading the queue](#reading-the-queue).
 
 If `wrangler` rejects the `ratelimits` block, delete it. The Worker checks for
 each binding and carries on without it, and the daily caps in
@@ -96,41 +100,57 @@ not a number to look at later, it is a link to press now. Open
 with its Maps link and whatever was said about it. Two people recommending the
 same place is one card with both reasons on it and a `×2`.
 
-Press the name. Google Maps opens on the place. Save it to whichever list it
-belongs on, exactly as you would any other place, and you are done -- there is
-nothing to come back and press here. The next daily `refresh` writes the place
-into `data/lists.json`, which is the file this page reads to build its
-vocabulary, so the card is gone the next time you look and a folded-away line
-says how many left that way.
+There is nothing on the page to press, and that is the design rather than what
+is left of one. A recommendation leaves the queue two ways:
 
-**That is why there is no keep button.** A recommendation that has been taken up
-is one whose CID is in the collection, and the page can see that for itself.
-Recording it in the database as well would be a second copy of a fact the site
-already holds, and the two would eventually disagree.
+**You add it.** Press the name; Google Maps opens on the place; save it to
+whichever list it belongs on, exactly as you would any other place. You are
+done. The next daily `refresh` writes it into `data/lists.json`, which is the
+file this page reads to build its vocabulary, so the card is gone the next time
+you look and a folded-away line accounts for it.
 
-The one button is `pass`, for the places that are never going on a list --
-nothing else can ever clear those. It does not delete: passed cards keep their
-own view and a `put it back`.
+**You pass on it.** Put its identifier in [`passed.txt`](../passed.txt) and
+commit. Every card prints the exact line to paste -- a CID and the place's name
+as a comment -- and the page turns the words `passed.txt` into a link straight
+to GitHub's editor if `PASSED_EDIT_URL` is set. The Worker re-reads that file
+every five minutes, so a commit takes effect about as fast as the Pages deploy
+that publishes it.
+
+So the table stores nothing about what became of a row. Both answers are facts
+already written down somewhere else, and a `state` column would be a third copy
+of them -- copies of a fact become separate facts the moment one is wrong.
 
 **Anyone with the URL can open it**, which is a decision rather than an
 oversight. Nothing on it is private: a public Google Maps link, and a sentence
-somebody typed into a public form in order to send it to you. The cost is that
-`pass` is public too, so it is built to be survivable rather than trusted --
-nothing is ever deleted, every pass is reversible from the page itself, and the
-write is rate limited on its own binding. If you would rather it were not, put
-the button behind a check in `review.js`; the read is the part worth leaving
-open.
+somebody typed into a public form in order to send it to you. It is also why
+saying no lives in the repo. A button on a page anyone can open is a button
+anyone can press; a commit is not. `/review` answers GET and nothing else.
 
-The page has no JavaScript at all, which is not austerity. It is the one page
+The page has no JavaScript either, which is not austerity. It is the one page
 in this repo that renders a string a stranger typed, and with no script source
-in its CSP a mistake in the escaping is a mistake that cannot execute. Deciding
-is a POST that answers a redirect, so a refresh re-reads the queue rather than
-re-deciding it.
+in its CSP a mistake in the escaping is a mistake that cannot execute.
 
-If you would rather read it as rows:
+If you would rather read the queue as rows:
 
 ```bash
-npx wrangler d1 execute alists-count --remote --command "SELECT id, name, url, note, who FROM suggestions WHERE state='new' ORDER BY id DESC"
+npm run queue
+```
+
+## Getting rid of something
+
+`passed.txt` is for places you are not adding. It is not for spam, and the
+difference matters: that file is public and names the place, which is precisely
+what somebody posting rubbish wanted. Delete the row instead.
+
+```bash
+npx wrangler d1 execute alists-count --remote --command "DELETE FROM suggestions WHERE id = 42"
+```
+
+`npm run queue` prints the ids. A whole bad afternoon is a contiguous range, the
+same as it is for events:
+
+```bash
+npx wrangler d1 execute alists-count --remote --command "DELETE FROM suggestions WHERE at BETWEEN 1730000000000 AND 1730003600000"
 ```
 
 ## When something goes wrong
@@ -149,10 +169,6 @@ statement:
 
 ```bash
 npx wrangler d1 execute alists-count --remote --command "DELETE FROM events WHERE at BETWEEN 1730000000000 AND 1730003600000"
-```
-
-```bash
-npx wrangler d1 execute alists-count --remote --command "DELETE FROM suggestions WHERE at BETWEEN 1730000000000 AND 1730003600000"
 ```
 
 ## What it stores
