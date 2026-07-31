@@ -3,3 +3,8 @@ __pycache__/
 .DS_Store
 collector/node_modules/
 collector/.wrangler/
+
+# The review passphrase, for `wrangler dev`. The deployed one is a Cloudflare
+# secret and is not in this repo at all -- this file is the local stand-in for
+# it, and a public repo is the one place it must never be.
+collector/.dev.vars

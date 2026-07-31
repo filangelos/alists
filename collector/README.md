@@ -58,6 +58,13 @@ review page, rather than one that announces itself as locked.
 npm run key
 ```
 
+It is a Cloudflare secret and so is nowhere in this repo. For `wrangler dev`,
+put the same value in `collector/.dev.vars`, which `.gitignore` covers:
+
+```
+REVIEW_KEY = "your-passphrase-here"
+```
+
 ```bash
 npm run deploy
 ```
