@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 490,
+   "count": 493,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517609,
-   "lng": -0.124097,
+   "lat": 51.517618,
+   "lng": -0.12411,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 147,
+   "count": 157,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979158,
-   "lng": 23.742085,
+   "lat": 37.979762,
+   "lng": 23.745034,
    "name": "Athens"
   },
   {
@@ -380,10 +380,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-07-31T08:12:16Z",
+ "generated": "2026-08-01T07:39:55Z",
  "lists": [
   {
-   "count": 67,
+   "count": 69,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -401,7 +401,7 @@
    "url": "https://www.google.com/maps/placelists/list/TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
   },
   {
-   "count": 72,
+   "count": 76,
    "description": "",
    "emoji": "🏛️",
    "id": "ZkzMjrM6SXWD7BtpwoxAgg",
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 490,
+   "count": 499,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -863,6 +863,36 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "address": "Leof. Galatsiou 98, Galatsi 111 46",
+   "cid": "2085130802141201551",
+   "city": "Athens",
+   "lat": 38.0136981,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.7504653,
+   "mid": "/g/11gf95wgs_",
+   "name": "Lefkes on the Side",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Leof. Galatsiou 100, Galatsi 111 46",
+   "cid": "5545317980000674977",
+   "city": "Athens",
+   "lat": 38.0135861,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.7506667,
+   "mid": "/g/1tj3hcbg",
+   "name": "Lefkes",
+   "note": "",
+   "type": "food"
+  },
   {
    "address": "35 Sclater St, London E1 6LB, United Kingdom",
    "cid": "-970580478292469905",
@@ -2443,6 +2473,34 @@
    "name": "Binch",
    "note": "",
    "type": "drinks"
+  },
+  {
+   "address": "Grammou 46, Vrilissia 152 35",
+   "cid": "-2812942636350745379",
+   "city": "Athens",
+   "lat": 38.0373716,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.828333399999998,
+   "mid": "/g/11whwyh2qq",
+   "name": "Peek Out",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Κατάστημα Βριλησσίων Θέτιδος 1 &, Omirou 2, Vrilissia 152 38",
+   "cid": "6519970339608248123",
+   "city": "Athens",
+   "lat": 38.0376258,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.826320799999998,
+   "mid": "/g/11py72lj01",
+   "name": "The Roosters Vrilissia",
+   "note": "",
+   "type": "other"
   },
   {
    "address": "Πλ. Σιαδήμα, Filothei 152 37",
@@ -24284,6 +24342,161 @@
    "type": "other"
   },
   {
+   "address": "25is Martiou 3, Nea Penteli 152 36",
+   "cid": "1938291659808392174",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.0567792,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.856849099999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g0ttl__5",
+   "name": "Καραβαϊκή",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "P. Tsaldari 32-34, Melissia 151 27",
+   "cid": "-2816334392749661487",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.0541341,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8429131,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mj05lh7t",
+   "name": "Nolio Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Kiprou 25, Vrilissia 152 35",
+   "cid": "1534586074271319933",
+   "city": "Athens",
+   "lat": 38.034238699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.833624999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11g6wdym8v",
+   "name": "Οι πίτες της γιαγιάς Ευριδίκης",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Grammou 34, Vrilissia 152 38",
+   "cid": "5453892743097001789",
+   "city": "Athens",
+   "lat": 38.036721899999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.827368099999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kpnxq34d",
+   "name": "Angram",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "Agiou Spiridonos 18, Galatsi 111 46",
+   "cid": "-3373348023651341332",
+   "city": "Athens",
+   "lat": 38.022762,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.750111999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wqbnrmnr",
+   "name": "Slow Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "45 Ledbury Rd, London W11 2AA, United Kingdom",
+   "cid": "2057005326159617802",
+   "city": "London",
+   "lat": 51.5137972,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.19907909999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y_pv5hvq",
+   "name": "Celeste Restaurant and Members Club",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "address": "Skoufou 2, Athina 105 57",
+   "cid": "3244348133116373947",
+   "city": "Athens",
+   "lat": 37.9745922,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7323699,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y_fdvyds",
+   "name": "Brush Matcha Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "28 Blandford St, London W1U 4BZ, United Kingdom",
+   "cid": "-6961619835943950020",
+   "city": "London",
+   "lat": 51.518510799999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15304959999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nb4w0140",
+   "name": "Cup of Joy Marylebone",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "26 Rivington St, London EC2A 3DU, United Kingdom",
+   "cid": "-4075107508058734554",
+   "city": "London",
+   "lat": 51.5260439,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0820977,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cs4fbsr9",
+   "name": "Popolo Shoreditch",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "11 Harrow Pl, London E1 7DB, United Kingdom",
    "cid": "-1218052704224889782",
    "city": "London",
@@ -24662,11 +24875,11 @@
    "address": "31 Kensington Park Rd, London W11 2EU, United Kingdom",
    "cid": "1320411615308038948",
    "city": "London",
-   "lat": 51.5153921,
+   "lat": 51.515417,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.20593619999999999,
+   "lng": -0.2058448,
    "marks": [
     "unverified"
    ],
