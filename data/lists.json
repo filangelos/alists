@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 493,
+   "count": 494,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517618,
-   "lng": -0.12411,
+   "lat": 51.517609,
+   "lng": -0.124159,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 157,
+   "count": 158,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979762,
-   "lng": 23.745034,
+   "lat": 37.979727,
+   "lng": 23.744076,
    "name": "Athens"
   },
   {
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-01T07:39:55Z",
+ "generated": "2026-08-02T07:42:58Z",
  "lists": [
   {
    "count": 69,
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 499,
+   "count": 501,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -24342,6 +24342,40 @@
    "type": "other"
   },
   {
+   "address": "Mikonos 10, Athina 105 54",
+   "cid": "-2817139321196776602",
+   "city": "Athens",
+   "lat": 37.9781896,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7242095,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lv8dnvrm",
+   "name": "Via Maris",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "23 Rose St, London WC2E 9EA, United Kingdom",
+   "cid": "-3405041170130220220",
+   "city": "London",
+   "lat": 51.5118866,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1261414,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nhm94x7m",
+   "name": "Gelatone",
+   "note": "",
+   "type": "gelato"
+  },
+  {
    "address": "25is Martiou 3, Nea Penteli 152 36",
    "cid": "1938291659808392174",
    "city": "Athens",
@@ -26776,11 +26810,11 @@
    "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
    "cid": "1213862716908497279",
    "city": "London",
-   "lat": 51.516050899999996,
+   "lat": 51.5163449,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1026115,
+   "lng": -0.10258099999999999,
    "marks": [
     "unverified"
    ],
@@ -28767,11 +28801,11 @@
    "address": "305 Bedford Ave, Brooklyn, NY 11211, United States",
    "cid": "4309396921978654900",
    "city": "New York",
-   "lat": 40.7134901,
+   "lat": 40.713490199999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.961811,
+   "lng": -73.9618112,
    "marks": [
     "unverified"
    ],
