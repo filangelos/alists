@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 494,
+   "count": 496,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517609,
-   "lng": -0.124159,
+   "lat": 51.517534,
+   "lng": -0.124172,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 158,
+   "count": 159,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979727,
-   "lng": 23.744076,
+   "lat": 37.979762,
+   "lng": 23.743118,
    "name": "Athens"
   },
   {
@@ -380,10 +380,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-02T07:42:58Z",
+ "generated": "2026-08-03T08:45:21Z",
  "lists": [
   {
-   "count": 69,
+   "count": 70,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 501,
+   "count": 503,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -863,6 +863,21 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "address": "",
+   "cid": "-7303243223050038102",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.4559962,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": 23.594523,
+   "mid": null,
+   "name": "Αλάτι - Ψαροταβέρνα Χαλκίδα",
+   "note": "",
+   "type": "food"
+  },
   {
    "address": "Leof. Galatsiou 98, Galatsi 111 46",
    "cid": "2085130802141201551",
@@ -7443,11 +7458,11 @@
    "address": "Σεράλια, Seralia 840 03",
    "cid": "2704122551009748547",
    "city": "Sifnos",
-   "lat": 36.9726886,
+   "lat": 36.9726576,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.745974399999998,
+   "lng": 24.745967699999998,
    "mid": "/g/11cnc92jtq",
    "name": "Captain Sifakis",
    "note": "",
@@ -17947,11 +17962,11 @@
    "address": "1090 I St NW, Washington, DC 20001, United States",
    "cid": "6845695694602596014",
    "city": "Washington",
-   "lat": 38.900713599999996,
+   "lat": 38.900644199999995,
    "lists": [
     "BetPSmKJ1ri15ctvsig9cMcTJPTo5A"
    ],
-   "lng": -77.0267102,
+   "lng": -77.02674619999999,
    "mid": "/g/11t0v4ntc1",
    "name": "Tatte Bakery & Cafe | City Center",
    "note": "",
@@ -24342,6 +24357,57 @@
    "type": "other"
   },
   {
+   "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
+   "cid": "-1882438293486784131",
+   "city": "London",
+   "lat": 51.510254499999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1241374,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z0wf4rlh",
+   "name": "Studio Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "address": "",
+   "cid": "-6961619835943950020",
+   "city": "London",
+   "lat": 51.518510799999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15304959999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Cup of Joy Marylebone",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "address": "160a Pavilion Rd, London SW1X 0AW, United Kingdom",
+   "cid": "-6224909553946816946",
+   "city": "London",
+   "lat": 51.493866,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1590069,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z3zwvmxl",
+   "name": "Pavilion Press",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "Mikonos 10, Athina 105 54",
    "cid": "-2817139321196776602",
    "city": "Athens",
@@ -24493,23 +24559,6 @@
    ],
    "mid": "/g/11y_fdvyds",
    "name": "Brush Matcha Athens",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "address": "28 Blandford St, London W1U 4BZ, United Kingdom",
-   "cid": "-6961619835943950020",
-   "city": "London",
-   "lat": 51.518510799999994,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.15304959999999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11nb4w0140",
-   "name": "Cup of Joy Marylebone",
    "note": "",
    "type": "other"
   },
