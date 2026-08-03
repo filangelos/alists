@@ -41,6 +41,26 @@
      one. */
   const MAX_ROWS = 6000;
 
+  /* The change list: everything saved in the last seven days. The file can say
+     that at all only because `scripts/fetch.py` writes down the day it first
+     saw each place -- Google's payload has no such date, so `added` is the day
+     a place turned up in a refresh rather than the day it was starred.
+
+     Seven days measured from `generated`, not from the visitor's clock. The
+     file cannot know about anything that happened after the refresh that wrote
+     it, so a page sitting on a fortnight-old blob should still show that blob's
+     last week rather than quietly emptying the list to prove the clock moved.
+
+     `from` is the first day in the window and is inclusive; empty means the
+     data carries no dates at all, which is what a fork's first refresh
+     produces and is why every path here is guarded on `week.count`. */
+  const WEEK_DAYS = 7;
+  const WEEK_EMOJI = '◷';
+  const WEEK_LABEL = 'new this week';
+  let week = { from: '', count: 0 };
+
+  const isRecent = (place) => !!week.from && !!place.added && place.added >= week.from;
+
   let DATA = { lists: [], places: [], cities: [], categories: [], marks: [] };
   let TREE = []; // cities, each holding categories, each holding places
   let cityByKey = new Map();
@@ -155,8 +175,12 @@
      `/athens /recommend` is a link that means "recommend me somewhere in
      Athens", which a dialog could not be.
 
+     `recent` is the change list, and is in the URL for the same reason: "the
+     places saved this week" is a page worth sending somebody, and `/london
+     /new` is the same sentence about one city.
+
      Nothing about what is *expanded* lives here. See `expanded`. */
-  let state = { path: [], text: '', near: false, marks: [], recommend: false };
+  let state = { path: [], text: '', near: false, marks: [], recent: false, recommend: false };
 
   /* Twisties are a peek, not a place. They are held outside `state` and outside
      the URL, and thrown away the moment the query changes, because a shared
@@ -179,6 +203,7 @@
     const rest = [];
     const marks = new Set();
     let near = false;
+    let recent = false;
     let recommend = false;
 
     for (const part of raw.trim().split(/\s+/)) {
@@ -191,6 +216,12 @@
           // Dropped rather than kept when there is nowhere to send it, so a
           // link to a form this deploy does not have lands on the tree.
           else if (key === 'recommend') recommend = !!COLLECTOR;
+          // Dropped for the same reason, and it is the same reason the button
+          // is absent: a link to a week in which nothing was saved would
+          // otherwise land on an empty tree with no pressed chip to explain it.
+          // `/recent` is spelled out because it is the word the button is
+          // about; `/new` is what the URL is written in.
+          else if (key === 'new' || key === 'recent') recent = week.count > 0;
           // `/all-lists` was the old way back to the root. The trail is that
           // now, but links with it in them still have to land somewhere sane.
           else if (key === 'all-lists') continue;
@@ -208,6 +239,7 @@
       path: canonical(path),
       text: rest.join(' '),
       near,
+      recent,
       recommend,
       marks: markOrder(marks),
     };
@@ -221,6 +253,7 @@
     [
       s.path.length ? '/' + s.path.join('/') : '',
       s.marks.length ? '/' + s.marks.join('/') : '',
+      s.recent ? '/new' : '',
       s.near ? '/near' : '',
       s.recommend ? '/recommend' : '',
       s.text.trim(),
@@ -350,18 +383,19 @@
   const distanceTo = (place) =>
     origin.at && place.lat != null ? haversine(origin.at, place) : Infinity;
 
-  // ------------------------------------------------------------------- marks
+  // ----------------------------------------------------------------- lenses
 
-  /* What the tree currently contains, once the marks have had their say. Kept
+  /* What the tree currently contains, once the chips have had their say. Kept
      as a pair of numbers rather than recounted at each call site because the
      header, the footer and the empty state all have to agree with the rows. */
   let shown = { places: 0, cities: 0 };
-  let markSig = null;
+  let lensSig = null;
 
-  /* Fold marked places into the tree, or hold them out of it.
+  /* Decide what the collection currently is: which marked places are folded
+     into it, or -- when the change list is on -- only what arrived this week.
 
      This is not the search box wearing a different hat, and it is not done
-     inside `search` for that reason: a mark changes what the collection *is*,
+     inside `search` for that reason: a chip changes what the collection *is*,
      so the totals a folder reports move with it. `isOpen` reads "fewer than the
      total" as "pruned by a filter, so open it and show the selection" -- and if
      the totals still counted places a button had put away, one press would
@@ -369,20 +403,30 @@
 
      A place is shown when every mark it carries is on. Carrying none is the
      ordinary case and is why the fast path exists at all: a category with
-     nothing marked in it hands back the array it already had. */
-  function applyMarks() {
-    const sig = state.marks.join(',');
-    if (sig === markSig) return;
-    markSig = sig;
+     nothing marked in it hands back the array it already had.
+
+     The change list replaces that rule rather than narrowing it, and the marks
+     stop applying while it is on. Nearly everything saved in a given week is
+     somewhere I have not been yet -- that is what saving it means -- so a
+     change list that also held those places back would answer "what arrived
+     this week" with a tenth of what arrived. They keep their hollow bullet,
+     which is the honest way to show them: the row still says it is a place I
+     have not been to, the week still says it is new. */
+  function applyLenses() {
+    const sig = state.recent ? 'new' : state.marks.join(',');
+    if (sig === lensSig) return;
+    lensSig = sig;
 
     const on = new Set(state.marks);
-    const visible = (place) => !place.marks || place.marks.every((key) => on.has(key));
+    const visible = state.recent
+      ? isRecent
+      : (place) => !place.marks || place.marks.every((key) => on.has(key));
     shown = { places: 0, cities: 0 };
 
     for (const city of TREE) {
       let total = 0;
       for (const cat of city.cats) {
-        cat.visible = cat.marked ? cat.places.filter(visible) : cat.places;
+        cat.visible = state.recent || cat.marked ? cat.places.filter(visible) : cat.places;
         cat.total = cat.visible.length;
         total += cat.total;
       }
@@ -492,6 +536,15 @@
       hint.classList.toggle('is-warn', !!warn);
     };
     if (!state.near) {
+      /* The change list says which week it means, because "this week" is the
+         one thing the button cannot say precisely -- the window is anchored to
+         the day the data was built, which may not be today. */
+      if (state.recent) {
+        // Kept short enough to survive a phone's footer, where this line is
+        // ellipsised: a date cut off halfway is worse than no date at all.
+        say(`${WEEK_EMOJI} saved since ${week.from}`);
+        return;
+      }
       /* A pressed mark buys the line off the keyboard legend, because the
          glyph it just scattered through the tree is the one thing on the page
          nothing else explains -- the button says what it turns on, not what it
@@ -581,8 +634,15 @@
     // Absent on a deploy with no collector -- see `renderChips`.
     const suggest = $('gl-suggest');
     if (suggest) suggest.setAttribute('aria-pressed', String(state.recommend));
+    // Absent in a week that saved nothing, for the same reason.
+    const recent = $('gl-recent');
+    if (recent) recent.setAttribute('aria-pressed', String(state.recent));
     for (const chip of $('gl-chips').querySelectorAll('[data-mark]')) {
       chip.setAttribute('aria-pressed', String(state.marks.includes(chip.dataset.mark)));
+      // A mark decides nothing while the change list is on -- see
+      // `applyLenses` -- and a button that is still lit and still clickable
+      // while it governs nothing is a control telling a small lie.
+      chip.disabled = state.recent;
     }
     $('gl-clear').hidden = !state.text;
   }
@@ -599,6 +659,25 @@
     // mark's button is only added when its list exists: a control with nothing
     // behind it is worse than no control.
     if (!COLLECTOR) $('gl-suggest').remove();
+
+    /* Same rule, third time: no week, no button. A blob written before places
+       were dated has nothing to put behind it, and a quiet week has nothing to
+       show -- and "new this week (0)" is a promise the page cannot keep. It
+       goes leftmost because it is the only chip that answers a question about
+       time rather than about the collection, and because the two that were
+       here first should stay where a thumb has learned to find them. */
+    if (week.count) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.id = 'gl-recent';
+      chip.className = 'gl-chip';
+      chip.setAttribute('aria-pressed', 'false');
+      chip.title = `Only the ${week.count} places saved since ${week.from}`;
+      chip.innerHTML =
+        `<span aria-hidden="true">${WEEK_EMOJI}</span> ${escapeHtml(WEEK_LABEL)}`;
+      near.parentNode.insertBefore(chip, near);
+    }
+
     for (const mark of DATA.marks) {
       const chip = document.createElement('button');
       chip.type = 'button';
@@ -665,9 +744,9 @@
      scroll stays exactly where the thumb left it. */
   function render(opts = {}) {
     // Before `search`, and the only place it is called: every path into a
-    // re-render passes through here, and the marks decide what there is to
+    // re-render passes through here, and the chips decide what there is to
     // search before the words decide what survives it.
-    applyMarks();
+    applyLenses();
     const result = search();
     const { cities, matches, words, onCity, onCat } = result;
     const host = $('gl-rows');
@@ -708,11 +787,20 @@
       host.innerHTML = '';
       host.hidden = true;
       empty.hidden = false;
+      /* The ways out of an empty view, in the order they undo what narrowed it.
+         The change list is one of them: a city with nothing new in it is the
+         one dead end here that a pressed chip alone does not obviously
+         explain, and the way out should be in the sentence saying so. */
+      const outs = [
+        state.text ? '<button type="button" data-nav="clear">clear the search</button>' : '',
+        state.recent ? '<button type="button" data-nav="all">show everything saved</button>' : '',
+        state.path.length ? '<button type="button" data-nav="up">go back up</button>' : '',
+      ].filter(Boolean);
       empty.innerHTML =
         'nothing saved here matches. ' +
-        (state.text ? '<button type="button" data-nav="clear">clear the search</button>' : '') +
-        (state.text && state.path.length ? ', or ' : '') +
-        (state.path.length ? '<button type="button" data-nav="up">go back up</button>' : '');
+        outs.slice(0, -1).join(', ') +
+        (outs.length > 1 ? ', or ' : '') +
+        (outs.length ? outs[outs.length - 1] : '');
       view = [];
       active = -1;
       syncActiveDescendant();
@@ -987,6 +1075,14 @@
     go({ marks: markOrder(wanted) }, false);
   }
 
+  /* A lens like the other two, so no history entry either -- and it keeps the
+     path, which is the point: pressing it inside London is "what is new in
+     London", and the trail above still says so. The form goes away because it
+     is a view rather than a lens, and the two cannot both be on screen. */
+  function toggleRecent() {
+    go({ recent: !state.recent, recommend: false }, false);
+  }
+
   /* A history entry, unlike the other two chips, because this one is a move
      rather than a lens: it puts the tree away, so the back button owes you the
      tree back. */
@@ -1131,6 +1227,7 @@
       text: parsed.text,
       near: parsed.near,
       marks: parsed.marks,
+      recent: parsed.recent,
       recommend: parsed.recommend,
     };
     expanded.clear();
@@ -1252,11 +1349,12 @@
       if (suggest) suggest.focus();
     });
 
-    // Delegated, because the mark buttons are built from the data and there may
-    // be none of them, one, or several.
+    // Delegated, because these buttons are built from the data: there may be no
+    // marks, one, or several, and no change list at all in a quiet week.
     $('gl-chips').addEventListener('click', (event) => {
       const chip = event.target.closest('[data-mark]');
       if (chip) toggleMark(chip.dataset.mark);
+      else if (event.target.closest('#gl-recent')) toggleRecent();
     });
 
     $('gl-crumbs').addEventListener('click', (event) => {
@@ -1270,6 +1368,7 @@
       const action = event.target.closest('[data-nav]');
       if (!action) return;
       if (action.dataset.nav === 'clear') clearSearch();
+      else if (action.dataset.nav === 'all') toggleRecent();
       else up();
     });
 
@@ -1302,6 +1401,26 @@
   }
 
   // ------------------------------------------------------------------ boot
+
+  /* Where the change list starts, and how many places are in it. Both are
+     worked out once, on load: the window is anchored to the file rather than to
+     the clock, so nothing about it moves while the page is open, and the count
+     is what decides whether there is a button at all.
+
+     Dates are `YYYY-MM-DD` and are compared as strings, which is the whole
+     reason for that shape -- a lexical comparison is a chronological one, and
+     no timezone gets to reinterpret a day that was already agreed in UTC. */
+  function openWeek(generated, places) {
+    const day = (generated || '').slice(0, 10);
+    const at = Date.parse(`${day}T00:00:00Z`);
+    if (!Number.isFinite(at)) return { from: '', count: 0 };
+    const from = new Date(at - (WEEK_DAYS - 1) * 86400000).toISOString().slice(0, 10);
+    let count = 0;
+    for (const place of places) {
+      if (place.added && place.added >= from) count += 1;
+    }
+    return { from, count };
+  }
 
   function prepare(data) {
     // Defaulted rather than assumed: a `lists.json` written before marks
@@ -1433,8 +1552,10 @@
       }
     }
 
+    week = openWeek(data.generated, data.places);
+
     // The counts themselves are `renderCounts`'s, because they move with the
-    // marks; here there is only the date, which does not.
+    // chips; here there is only the date, which does not.
     if (data.generated) {
       $('gl-stamp').textContent = `updated ${data.generated.slice(0, 10)}`;
     }
@@ -1455,6 +1576,7 @@
         text: parsed.text,
         near: parsed.near,
         marks: parsed.marks,
+        recent: parsed.recent,
         recommend: parsed.recommend,
       };
       $('gl-search').value = state.text;

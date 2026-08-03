@@ -260,13 +260,18 @@ body {
 
 /* The right-hand edge belongs to the group rather than to whichever button was
    written first, which is what lets a second one be added without moving the
-   first. */
+   first. It wraps within itself for the same reason: four chips do not fit
+   across a phone, and a group that could only overflow would push whichever
+   one was added last off the side of the screen. */
 .gl-chips {
-  flex: none;
+  flex: 0 1 auto;
   margin-left: auto;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 6px;
+  min-width: 0;
 }
 
 .gl-chip {
@@ -283,7 +288,12 @@ body {
   white-space: nowrap;
 }
 
-.gl-chip:hover { border-color: var(--accent); color: var(--accent); }
+.gl-chip:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+
+/* A mark governs nothing while the change list is on -- see `applyLenses` --
+   and this is that sentence in the only vocabulary a chip has. Same treatment
+   as the trail's `‹` at the top of the tree, for the same reason. */
+.gl-chip:disabled { opacity: 0.35; cursor: default; }
 
 .gl-chip[aria-pressed='true'] {
   background: var(--accent-soft);

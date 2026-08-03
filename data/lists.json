@@ -864,6 +864,7 @@
  "owner": "Angelos",
  "places": [
   {
+   "added": "2026-08-03",
    "address": "",
    "cid": "-7303243223050038102",
    "city": "Athens",
@@ -879,6 +880,7 @@
    "type": "food"
   },
   {
+   "added": "2026-08-01",
    "address": "Leof. Galatsiou 98, Galatsi 111 46",
    "cid": "2085130802141201551",
    "city": "Athens",
@@ -894,6 +896,7 @@
    "type": "food"
   },
   {
+   "added": "2026-08-01",
    "address": "Leof. Galatsiou 100, Galatsi 111 46",
    "cid": "5545317980000674977",
    "city": "Athens",
@@ -1902,6 +1905,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-30",
    "address": "Valtetsiou 21, Athina 106 80",
    "cid": "9022899639138628987",
    "city": "Athens",
@@ -2490,6 +2494,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-08-01",
    "address": "Grammou 46, Vrilissia 152 35",
    "cid": "-2812942636350745379",
    "city": "Athens",
@@ -2504,6 +2509,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "Κατάστημα Βριλησσίων Θέτιδος 1 &, Omirou 2, Vrilissia 152 38",
    "cid": "6519970339608248123",
    "city": "Athens",
@@ -2518,6 +2524,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Πλ. Σιαδήμα, Filothei 152 37",
    "cid": "4181474695113602103",
    "city": "Athens",
@@ -2533,6 +2540,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-30",
    "address": "Asklipiou 41, Athina 106 80",
    "cid": "3090502306565876927",
    "city": "Athens",
@@ -24357,6 +24365,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-03",
    "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
    "cid": "-1882438293486784131",
    "city": "London",
@@ -24374,6 +24383,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-08-01",
    "address": "",
    "cid": "-6961619835943950020",
    "city": "London",
@@ -24391,6 +24401,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-03",
    "address": "160a Pavilion Rd, London SW1X 0AW, United Kingdom",
    "cid": "-6224909553946816946",
    "city": "London",
@@ -24408,6 +24419,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-02",
    "address": "Mikonos 10, Athina 105 54",
    "cid": "-2817139321196776602",
    "city": "Athens",
@@ -24425,6 +24437,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-02",
    "address": "23 Rose St, London WC2E 9EA, United Kingdom",
    "cid": "-3405041170130220220",
    "city": "London",
@@ -24442,6 +24455,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-08-01",
    "address": "25is Martiou 3, Nea Penteli 152 36",
    "cid": "1938291659808392174",
    "city": "Athens",
@@ -24460,6 +24474,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "P. Tsaldari 32-34, Melissia 151 27",
    "cid": "-2816334392749661487",
    "city": "Athens",
@@ -24478,6 +24493,7 @@
    "type": "food"
   },
   {
+   "added": "2026-08-01",
    "address": "Kiprou 25, Vrilissia 152 35",
    "cid": "1534586074271319933",
    "city": "Athens",
@@ -24495,6 +24511,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "Grammou 34, Vrilissia 152 38",
    "cid": "5453892743097001789",
    "city": "Athens",
@@ -24512,6 +24529,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "Agiou Spiridonos 18, Galatsi 111 46",
    "cid": "-3373348023651341332",
    "city": "Athens",
@@ -24529,6 +24547,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "45 Ledbury Rd, London W11 2AA, United Kingdom",
    "cid": "2057005326159617802",
    "city": "London",
@@ -24546,6 +24565,7 @@
    "type": "food"
   },
   {
+   "added": "2026-08-01",
    "address": "Skoufou 2, Athina 105 57",
    "cid": "3244348133116373947",
    "city": "Athens",
@@ -24563,6 +24583,7 @@
    "type": "other"
   },
   {
+   "added": "2026-08-01",
    "address": "26 Rivington St, London EC2A 3DU, United Kingdom",
    "cid": "-4075107508058734554",
    "city": "London",
@@ -24580,6 +24601,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "11 Harrow Pl, London E1 7DB, United Kingdom",
    "cid": "-1218052704224889782",
    "city": "London",
@@ -24597,6 +24619,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "13 Bonnington Square, London SW8 1TE, United Kingdom",
    "cid": "5303184160104565833",
    "city": "London",
@@ -24614,6 +24637,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "62 Bridge St, Manchester M3 3BW, United Kingdom",
    "cid": "-7082614800166637006",
    "city": "Oxford",
@@ -24632,6 +24656,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Keramikou 99, Athina 104 35",
    "cid": "-4245642858522286190",
    "city": "Athens",
@@ -24649,6 +24674,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "42 Newington Causeway, London SE1 6DR, United Kingdom",
    "cid": "-7626656721414609837",
    "city": "London",
@@ -24666,6 +24692,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "10 Rue de la Tremoille, 75008 Paris, France",
    "cid": "5133966221395679624",
    "city": "Paris",
@@ -24683,6 +24710,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "68 Kingsland Rd, London E2 8DP, United Kingdom",
    "cid": "5579120501428860544",
    "city": "London",
@@ -24700,6 +24728,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "24 Floral St, London WC2E 9DS, United Kingdom",
    "cid": "-875734506109667244",
    "city": "London",
@@ -24717,6 +24746,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Arch 72 Dunbridge St, Bethnal Green, London E2 6JG, United Kingdom",
    "cid": "154137752982075881",
    "city": "London",
@@ -24734,6 +24764,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 3, 201 Richmond Rd, London E8 3NJ, United Kingdom",
    "cid": "-5387931092310877969",
    "city": "London",
@@ -24751,6 +24782,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "367 Mentmore Terrace, London E8 3RT, United Kingdom",
    "cid": "-8586216211175433978",
    "city": "London",
@@ -24768,6 +24800,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 8, Monohaus, 143 Mare St, London E8 3FW, United Kingdom",
    "cid": "7561092779996454391",
    "city": "London",
@@ -24785,6 +24818,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "392-393 Mentmore Terrace, London E8 3PH, United Kingdom",
    "cid": "-6016739678970393281",
    "city": "London",
@@ -24802,6 +24836,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "392-393 Mentmore Terrace, London E8 3PH, United Kingdom",
    "cid": "7007366821502801721",
    "city": "London",
@@ -24819,6 +24854,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "15 Sherwood St, London W1B 5AP, United Kingdom",
    "cid": "8288138781932269509",
    "city": "London",
@@ -24836,6 +24872,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "104 North End Rd, London W14 9EX, United Kingdom",
    "cid": "-4953663492185272480",
    "city": "London",
@@ -24853,6 +24890,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Asklipiou 41, Athina 106 80",
    "cid": "-8802978719709585704",
    "city": "Athens",
@@ -24870,6 +24908,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Themistokleous 42, Athina 106 78",
    "cid": "5630278983732018632",
    "city": "Athens",
@@ -24887,6 +24926,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "119 Bethnal Grn Rd, London E2 7DG, United Kingdom",
    "cid": "8900308108913705989",
    "city": "London",
@@ -24904,6 +24944,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "88-89 Cowcross St, London EC1M 6BP, United Kingdom",
    "cid": "-8703344682961420052",
    "city": "London",
@@ -24921,6 +24962,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "8 Ganton St, Carnaby, London W1F 7QP, United Kingdom",
    "cid": "-3604987159744269160",
    "city": "London",
@@ -24938,6 +24980,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "7 Hanover Square, London W1S 1HQ, United Kingdom",
    "cid": "-2217113776854500203",
    "city": "London",
@@ -24955,6 +24998,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "31 Kensington Park Rd, London W11 2EU, United Kingdom",
    "cid": "1320411615308038948",
    "city": "London",
@@ -24972,6 +25016,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "126 Hamilton Pl, New York, NY 10031, United States",
    "cid": "8007463342773964501",
    "city": "New York",
@@ -24989,6 +25034,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "4541 Irving St, San Francisco, CA 94122, United States",
    "cid": "-3927093354794387051",
    "city": "San Francisco",
@@ -25006,6 +25052,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "36 Redchurch St, London E2 7DP, United Kingdom",
    "cid": "-7476404097355380946",
    "city": "London",
@@ -25023,6 +25070,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Japan, 〒155-0031 Tokyo, Setagaya City, Kitazawa, 3 Chome−20−2 大成ビル ２階",
    "cid": "8142454491056932777",
    "city": "Singapore",
@@ -25041,6 +25089,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Av. Diagonal, 335, Eixample, 08037 Barcelona, Spain",
    "cid": "5997723860026955486",
    "city": "Barcelona",
@@ -25058,6 +25107,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Pasteur, Beirut, Lebanon",
    "cid": "6165876040879576551",
    "city": "Ikaria",
@@ -25076,6 +25126,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Level 1/270 Lonsdale St, Melbourne VIC 3000, Australia",
    "cid": "5824915869836580731",
    "city": "Bali",
@@ -25094,6 +25145,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "226569568275461609",
    "city": "Athens",
@@ -25111,6 +25163,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Via Bernina, 1C, 20158 Milano MI, Italy",
    "cid": "9177710971514196733",
    "city": "Rome",
@@ -25129,6 +25182,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Rue Emile Lepeu, 75011 Paris, France",
    "cid": "-1626538573829869051",
    "city": "Paris",
@@ -25146,6 +25200,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "R. das Gaivotas 11A, 1200-163 Lisboa, Portugal",
    "cid": "7453373408562286179",
    "city": "Barcelona",
@@ -25164,6 +25219,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "18-20 St John St, Barbican, London EC1M 4AY, United Kingdom",
    "cid": "1055028265019221577",
    "city": "London",
@@ -25181,6 +25237,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Große Rainstraße 18, 22765 Altona, Germany",
    "cid": "3811262367717535991",
    "city": "Berlin",
@@ -25199,6 +25256,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "45 Curtain Rd, London EC2A 3PT, United Kingdom",
    "cid": "8307385148383038884",
    "city": "London",
@@ -25216,6 +25274,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "-5514249116328454969",
    "city": "Sifnos",
@@ -25233,6 +25292,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "8664687691681748243",
    "city": "Sifnos",
@@ -25250,6 +25310,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "-7220411797471975141",
    "city": "Sifnos",
@@ -25267,6 +25328,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "212 Dolphin Square East Side, Pimlico, London SW1V 3NQ, UK",
    "cid": "-4532416431297426944",
    "city": "London",
@@ -25284,6 +25346,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Πλατύς Γιαλός 840 03",
    "cid": "42412097124840812",
    "city": "Sifnos",
@@ -25301,6 +25364,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Αρτεμώνας 840 03",
    "cid": "4073333015866242486",
    "city": "Sifnos",
@@ -25318,6 +25382,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Άνω Πετάλι 228 40",
    "cid": "-4834288411250277400",
    "city": "Sifnos",
@@ -25335,6 +25400,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "757916658808093562",
    "city": "Sifnos",
@@ -25352,6 +25418,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "Kythnos 840 06",
    "cid": "4478926729173234030",
    "city": "Kythnos",
@@ -25369,6 +25436,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "Κύθνος 840 06",
    "cid": "3610818424154152032",
    "city": "Kythnos",
@@ -25386,6 +25454,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "Perdikari, Driopida, Kithnos 840 06",
    "cid": "-7651329642376651410",
    "city": "Kythnos",
@@ -25403,6 +25472,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Kithnos 840 06",
    "cid": "7745986555426232084",
    "city": "Kythnos",
@@ -25420,6 +25490,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "195 00, Leof. Souniou 114, Kato Sounio 195 00",
    "cid": "6206774721190264771",
    "city": "Kea",
@@ -25438,6 +25509,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "40.5, Leof. Athinon Souniou, Kalivia Thorikou 190 10",
    "cid": "6386852004260434395",
    "city": "Athens",
@@ -25456,6 +25528,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Leof. Poseidonos 17, Vouliagmeni 166 71",
    "cid": "-2645958854799405701",
    "city": "Athens",
@@ -25474,6 +25547,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "ΑΡΧΑΙΟΛΟΓΙΚΟΣ ΧΩΡΟΣ ΡΑΜΝΟΥΣ, ΛΕΟΦΩΡΟΣ ΡΑΜΝΟΥΝΤΟΣ ΤΕΡΜΑ, Marathonas 190 07",
    "cid": "1969066115911241358",
    "city": "Athens",
@@ -25492,6 +25566,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Ανεμομυλος, Kithnos 840 06",
    "cid": "7409983698083885973",
    "city": "Kythnos",
@@ -25509,6 +25584,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Queen Elizabeth Olympic Park, East Bank, 107 Carpenters Rd, Stratford Cross, London E20 2AR, United Kingdom",
    "cid": "5984073617793338259",
    "city": "London",
@@ -25526,6 +25602,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "Ioulis 840 02",
    "cid": "-3434920002076866773",
    "city": "Kea",
@@ -25543,6 +25620,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "Vourkari 840 02",
    "cid": "-4464676820949385309",
    "city": "Kea",
@@ -25560,6 +25638,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Κέα, Kea 840 02",
    "cid": "-6021526763199936134",
    "city": "Kea",
@@ -25577,6 +25656,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Κέα, Kea 840 02",
    "cid": "-5374696270254543810",
    "city": "Kea",
@@ -25594,6 +25674,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Beach, Koundouros 840 02",
    "cid": "3259161883617656376",
    "city": "Kea",
@@ -25611,6 +25692,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ioulis 840 02",
    "cid": "8344583123635687945",
    "city": "Kea",
@@ -25628,6 +25710,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ioulis 840 02",
    "cid": "-55395439514153648",
    "city": "Kea",
@@ -25645,6 +25728,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "ΙΟΥΛΙΔΑ, ΚΕΑ ΚΥΚΛΑΔΕΣ 840 02",
    "cid": "4357759479820431862",
    "city": "Kea",
@@ -25662,6 +25746,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Unnamed Road, Ioulida 840 02",
    "cid": "-3961671616574092660",
    "city": "Kea",
@@ -25679,6 +25764,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Kea 840 02",
    "cid": "3264692608127853145",
    "city": "Kea",
@@ -25696,6 +25782,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "beach, Faros 840 03",
    "cid": "2936103977101183630",
    "city": "Sifnos",
@@ -25713,6 +25800,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ιουλίδα, Κέα 840 02",
    "cid": "-8283966575724699080",
    "city": "Kea",
@@ -25730,6 +25818,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Coressia 840 02",
    "cid": "-7163101104403683950",
    "city": "Kea",
@@ -25747,6 +25836,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Dinocharous, Athina 118 52",
    "cid": "2314042568331038305",
    "city": "Athens",
@@ -25764,6 +25854,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "55 Dalston Ln, London E8 2NG, United Kingdom",
    "cid": "-4960842828606361984",
    "city": "London",
@@ -25781,6 +25872,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "224 Rye Ln, London SE15 4NL, United Kingdom",
    "cid": "6512480619407901078",
    "city": "London",
@@ -25798,6 +25890,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "52 Old Compton St, London W1D 4QE, United Kingdom",
    "cid": "-3429016890323679562",
    "city": "London",
@@ -25815,6 +25908,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Westbourne House, 14-16 Westbourne Grove, London W2 5RH, United Kingdom",
    "cid": "4247406531673842727",
    "city": "London",
@@ -25832,6 +25926,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Veikou 39, Athina 117 42",
    "cid": "-4075011823980806325",
    "city": "Athens",
@@ -25849,6 +25944,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "5032401387275041705",
    "city": "Athens",
@@ -25866,6 +25962,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "2-4 Clarence Rd, Lower Clapton, London E5 8HB, United Kingdom",
    "cid": "1956729853699357714",
    "city": "London",
@@ -25883,6 +25980,7 @@
    "type": "shops"
   },
   {
+   "added": "2026-07-31",
    "address": "20-22 Broadway Market, London E8 4QJ, United Kingdom",
    "cid": "-4514949528798519858",
    "city": "London",
@@ -25900,6 +25998,7 @@
    "type": "shops"
   },
   {
+   "added": "2026-07-31",
    "address": "23 Goodge St, London W1T 2PL, United Kingdom",
    "cid": "8409564350585859969",
    "city": "London",
@@ -25917,6 +26016,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "60 Wigmore St, London W1U 2RZ, United Kingdom",
    "cid": "-8306325277187188282",
    "city": "London",
@@ -25934,6 +26034,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "180 Shoreditch High St, London E1 6HY, United Kingdom",
    "cid": "-2298724140993703059",
    "city": "London",
@@ -25951,6 +26052,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Brewer St, London W1F 0SG, United Kingdom",
    "cid": "-7304506177799548374",
    "city": "London",
@@ -25968,6 +26070,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "140 Wardour St, London W1F 8ZT, United Kingdom",
    "cid": "-3204175520215288568",
    "city": "London",
@@ -25985,6 +26088,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "58 Poland St, London W1F 7NR, United Kingdom",
    "cid": "2777771962739908511",
    "city": "London",
@@ -26002,6 +26106,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "4 Broadway Market Mews, London E8 4TS, United Kingdom",
    "cid": "-115131449573992365",
    "city": "London",
@@ -26019,6 +26124,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "372 Kingsland Rd, London E8 4DA, United Kingdom",
    "cid": "6019901848513751249",
    "city": "London",
@@ -26036,6 +26142,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 8, Unit 8 Filmworks Walk, London W5 5FA, United Kingdom",
    "cid": "4829531279766985293",
    "city": "London",
@@ -26054,6 +26161,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "120a Anerley Rd, London SE19 2AN, United Kingdom",
    "cid": "-6916835631611136636",
    "city": "London",
@@ -26071,6 +26179,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "126-128 Lauriston Rd, London E9 7LH, United Kingdom",
    "cid": "5067495704235773607",
    "city": "London",
@@ -26088,6 +26197,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "The Spurstowe Arms, 68 Greenwood Rd, London E8 1AB, United Kingdom",
    "cid": "5773255744801250627",
    "city": "London",
@@ -26105,6 +26215,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "144-146 Commercial St, London E1 6NU, United Kingdom",
    "cid": "-8688161926992690382",
    "city": "London",
@@ -26122,6 +26233,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "53 Cambridge Rd, Kingston upon Thames KT1 3NS, United Kingdom",
    "cid": "3759329787043997093",
    "city": "London",
@@ -26140,6 +26252,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "122 Bethnal Grn Rd, London E2 6DG, United Kingdom",
    "cid": "3138223061755566022",
    "city": "London",
@@ -26157,6 +26270,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Hand of Glory Pub, 240 Amhurst Rd, Lower Clapton, London E8 2BS, United Kingdom",
    "cid": "-4515868619324297192",
    "city": "London",
@@ -26174,6 +26288,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "5a Rosebery Ave, London EC1R 4SP, United Kingdom",
    "cid": "-3087040738180828191",
    "city": "London",
@@ -26191,6 +26306,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "24 Opal Cres, Singapore 328418",
    "cid": "-8532129866445327746",
    "city": "Singapore",
@@ -26208,6 +26324,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "465 N Bridge Rd, #02-5063, Singapore 191465",
    "cid": "-1926699864488689608",
    "city": "Singapore",
@@ -26225,6 +26342,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "64 Club St, Back Entrance, Singapore 069438",
    "cid": "3131947651205888023",
    "city": "Singapore",
@@ -26242,6 +26360,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "261 Waterloo St, #01-24, Singapore 180261",
    "cid": "4005587498597274753",
    "city": "Singapore",
@@ -26259,6 +26378,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "115 25, Adrianiou 31, Athina 115 25",
    "cid": "-5235936607036251506",
    "city": "Athens",
@@ -26276,6 +26396,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Πλ, Ελευθερωτών 8, Chalandri 152 32",
    "cid": "-7032583030691660771",
    "city": "Athens",
@@ -26293,6 +26414,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Aalsmeerweg 14H, 1059 AJ Amsterdam, Netherlands",
    "cid": "7178763489585404619",
    "city": "Cambridge",
@@ -26311,6 +26433,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "252 Paradise Row, London E2 9LE, United Kingdom",
    "cid": "7877934963653687062",
    "city": "London",
@@ -26328,6 +26451,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "50 Notting Hill Gate, London W11 3JD, United Kingdom",
    "cid": "-1695379221534508760",
    "city": "London",
@@ -26345,6 +26469,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "St Dunstan's Hill, London EC3R 5DD, United Kingdom",
    "cid": "-4810568775306840787",
    "city": "London",
@@ -26362,6 +26487,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "Αριστοτέλους 42 &, Chaimanta 34, Athina 152 34",
    "cid": "6035421826020901379",
    "city": "Athens",
@@ -26379,6 +26505,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Odissea Androutsou 32, Athina 117 41",
    "cid": "-8684523956695270140",
    "city": "Athens",
@@ -26396,6 +26523,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "14, 15 Eccleston Yards, London SW1W 9AZ, United Kingdom",
    "cid": "-6023950607713843389",
    "city": "London",
@@ -26413,6 +26541,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "22 Brook's Mews, London W1K 4DY, United Kingdom",
    "cid": "837066549281222024",
    "city": "London",
@@ -26430,6 +26559,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Leof. Al. Papanastasiou 4, Ag. Dimitrios 173 43",
    "cid": "8143521943361617236",
    "city": "Athens",
@@ -26447,6 +26577,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Leof. Agiou Dimitriou 33, Ag. Dimitrios 173 43",
    "cid": "-7149175392539792271",
    "city": "Athens",
@@ -26464,6 +26595,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Archelaou 14, Athina 116 35",
    "cid": "6342104502660642444",
    "city": "Athens",
@@ -26481,6 +26613,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "252 High Holborn, London WC1V 7EN, United Kingdom",
    "cid": "7928340162549216150",
    "city": "London",
@@ -26498,6 +26631,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "28 Scrutton St, London EC2A 4RP, United Kingdom",
    "cid": "-5931790851480106513",
    "city": "London",
@@ -26515,6 +26649,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "237 Wooster St, New Haven, CT 06511, United States",
    "cid": "-1324000422501908361",
    "city": "New Haven",
@@ -26532,6 +26667,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Chelsea Barracks, London SW1W 8DS, United Kingdom",
    "cid": "8064580674075532706",
    "city": "London",
@@ -26549,6 +26685,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Kapodistria 1, Ano Siros 841 00",
    "cid": "3590840822110554996",
    "city": "Syros",
@@ -26566,6 +26703,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Bloom Ln, Northside, Dublin 1, D01 V127, Ireland",
    "cid": "-4023904056397025897",
    "city": "Dublin",
@@ -26583,6 +26721,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "29-30 Dame St, Dublin 2, D02 A025, Ireland",
    "cid": "-2743755367285744262",
    "city": "Dublin",
@@ -26600,6 +26739,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Bow St, Smithfield, Dublin 7, D07 V57C, Ireland",
    "cid": "316533759331883540",
    "city": "Dublin",
@@ -26617,6 +26757,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "22 Tileyard Rd, London N7 9AH, United Kingdom",
    "cid": "-3508643136941754226",
    "city": "London",
@@ -26634,6 +26775,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "66 Union St, London SE1 1TD, United Kingdom",
    "cid": "-1113305077735716795",
    "city": "London",
@@ -26651,6 +26793,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Lamb St, London E1 6ED, United Kingdom",
    "cid": "7213733830880694913",
    "city": "London",
@@ -26668,6 +26811,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "310 Portobello Rd, London W10 5TA, United Kingdom",
    "cid": "805014342329076223",
    "city": "London",
@@ -26685,6 +26829,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "37 Sloane Square, London SW1W 8AN, United Kingdom",
    "cid": "1837987290832543954",
    "city": "London",
@@ -26702,6 +26847,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Yards, Unit 1C Montacute, London E1 6HU, United Kingdom",
    "cid": "-3263453464918373440",
    "city": "London",
@@ -26719,6 +26865,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "61, 63 Brushfield St, London E1 6AA, United Kingdom",
    "cid": "3948246244840605234",
    "city": "London",
@@ -26736,6 +26883,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "109 Columbia Rd, London E2 7RL, United Kingdom",
    "cid": "-110146010980265119",
    "city": "London",
@@ -26753,6 +26901,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Dragatsaniou 08, Athina 105 59",
    "cid": "-5627314883358900650",
    "city": "Athens",
@@ -26770,6 +26919,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "133 Upper St, London N1 1QP, United Kingdom",
    "cid": "-2259971552089119585",
    "city": "London",
@@ -26787,6 +26937,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "One Burger, Agathonos 7, Greece 105 51",
    "cid": "7187598671440373694",
    "city": "Athens",
@@ -26804,6 +26955,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Regueirão dos Anjos 43, 1150-028 Lisboa, Portugal",
    "cid": "5480967866211997455",
    "city": "Barcelona",
@@ -26822,6 +26974,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "41 Paddington St, London W1U 4HN, United Kingdom",
    "cid": "-3307419609532163694",
    "city": "London",
@@ -26839,6 +26992,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "3725 Balboa St, San Francisco, CA 94121, United States",
    "cid": "-7789497135890823478",
    "city": "San Francisco",
@@ -26856,6 +27010,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
    "cid": "1213862716908497279",
    "city": "London",
@@ -26873,6 +27028,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "8 Charlotte St., London W1T 2LS, United Kingdom",
    "cid": "-8688734103294953073",
    "city": "London",
@@ -26890,6 +27046,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "10.201, THE LEATHER MARKET, Weston St, London SE1 3ER, United Kingdom",
    "cid": "4995873513055729938",
    "city": "London",
@@ -26907,6 +27064,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "7 Charlotte St., London W1T 1RF, United Kingdom",
    "cid": "7076022182200111606",
    "city": "London",
@@ -26924,6 +27082,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "12A Little Portland St, London W1W 8BJ, United Kingdom",
    "cid": "8969442312707338578",
    "city": "London",
@@ -26941,6 +27100,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Ktena 3, Athina 105 63",
    "cid": "-903424416244359314",
    "city": "Athens",
@@ -26958,6 +27118,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Milioni 12, Athina 106 73",
    "cid": "2224518967900465375",
    "city": "Athens",
@@ -26975,6 +27136,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "7357 NW Miami Ct, Miami, FL 33150, United States",
    "cid": "3835461307548709024",
    "city": "Miami",
@@ -26992,6 +27154,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Sloane Gardens, London SW1W 8EA, United Kingdom",
    "cid": "1328465166792094223",
    "city": "London",
@@ -27009,6 +27172,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "100 Portobello Rd, London W11 2QD, United Kingdom",
    "cid": "3187872027469798623",
    "city": "London",
@@ -27026,6 +27190,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "7 Langton St, London SW10 0JL, United Kingdom",
    "cid": "7135715538663603019",
    "city": "London",
@@ -27043,6 +27208,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Leventi 5, Athina 106 73",
    "cid": "1172612214821697647",
    "city": "Athens",
@@ -27060,6 +27226,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
    "cid": "-7190428460876992923",
    "city": "London",
@@ -27077,6 +27244,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "135 Keefer St, Vancouver, BC V6A 1X3, Canada",
    "cid": "4140688760003366567",
    "city": "Vancouver",
@@ -27094,6 +27262,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "157 Westbourne Grove, London W11 2RS, United Kingdom",
    "cid": "-6697120301114696863",
    "city": "London",
@@ -27111,6 +27280,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "River Terrace, Somerset House, Strand, London WC2R 1LA, United Kingdom",
    "cid": "7273725366576031679",
    "city": "London",
@@ -27128,6 +27298,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
    "cid": "-2273323504778211984",
    "city": "London",
@@ -27145,6 +27316,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "15 Henrietta St, London WC2E 8QG, United Kingdom",
    "cid": "-6367240057554719469",
    "city": "London",
@@ -27162,6 +27334,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "75 Dean St, London W1D 3PU, United Kingdom",
    "cid": "5606698313876022866",
    "city": "London",
@@ -27179,6 +27352,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Three Colts Tavern, 199 Cambridge Heath Rd, London E2 0EL, United Kingdom",
    "cid": "-8406215773226923061",
    "city": "London",
@@ -27196,6 +27370,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "36 Buckingham Palace Rd, London SW1W 0RE, United Kingdom",
    "cid": "6861224293189494184",
    "city": "London",
@@ -27213,6 +27388,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "65 Shepherd's Bush Grn, London W12 8QE, United Kingdom",
    "cid": "-4535820177424798900",
    "city": "London",
@@ -27230,6 +27406,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "58 Brewer St, London W1F 9TL, United Kingdom",
    "cid": "3638117081155949496",
    "city": "London",
@@ -27247,6 +27424,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "31 Foubert's Pl, Carnaby, London W1F 7QG, United Kingdom",
    "cid": "-3886895390055057679",
    "city": "London",
@@ -27264,6 +27442,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Flat Iron Square, London SE1 0AB, United Kingdom",
    "cid": "-4424808052679226172",
    "city": "London",
@@ -27281,6 +27460,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "87-89 George St, London W1U 8AQ, United Kingdom",
    "cid": "3298289798188848014",
    "city": "London",
@@ -27298,6 +27478,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Kendal St, St George's Fields, London W2 2AW, United Kingdom",
    "cid": "6004752173248186037",
    "city": "London",
@@ -27315,6 +27496,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Thayer St, London W1U 3JY, United Kingdom",
    "cid": "3514113171774969310",
    "city": "London",
@@ -27332,6 +27514,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "247 Liverpool Rd, London N1 1LX, United Kingdom",
    "cid": "-19406959983539882",
    "city": "London",
@@ -27349,6 +27532,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "52 St Thomas's Rd, Finsbury Park, London N4 2QQ, United Kingdom",
    "cid": "-3516155317469889902",
    "city": "London",
@@ -27366,6 +27550,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "15 Hanbury St, London E1 6QR, United Kingdom",
    "cid": "-1592790739407510444",
    "city": "London",
@@ -27383,6 +27568,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "138 St John's Wood High St, London NW8 7SE, United Kingdom",
    "cid": "-1848404421031579307",
    "city": "London",
@@ -27400,6 +27586,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "207 Belsize Rd, London NW6 4AA, United Kingdom",
    "cid": "-7457681840662864675",
    "city": "London",
@@ -27417,6 +27604,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "104 Goldhawk Rd, London W12 8HD, United Kingdom",
    "cid": "4706782461481735300",
    "city": "London",
@@ -27434,6 +27622,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "191 Portobello Rd, London W11 2ED, United Kingdom",
    "cid": "5698337051212182872",
    "city": "London",
@@ -27451,6 +27640,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "30 Rupert St, London W1D 6DL, United Kingdom",
    "cid": "1457660498308052845",
    "city": "London",
@@ -27468,6 +27658,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "3 Hopkins St, London W1F 0HS, United Kingdom",
    "cid": "5169710329517601011",
    "city": "London",
@@ -27485,6 +27676,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Seven Dials Market, 35 Earlham St, London WC2H 9LX, United Kingdom",
    "cid": "3930981885276149391",
    "city": "London",
@@ -27502,6 +27694,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 1 Discovery Business Park, St James's Rd, London SE16 4RA, United Kingdom",
    "cid": "7326719028025411032",
    "city": "London",
@@ -27519,6 +27712,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "14 Bute St, South Kensington, London SW7 3EX, United Kingdom",
    "cid": "765226192248987076",
    "city": "London",
@@ -27536,6 +27730,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "4 Brushfield St, London E1 6AN, United Kingdom",
    "cid": "5091187382129407449",
    "city": "London",
@@ -27553,6 +27748,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "25 Bury Pl, London WC1A 2JH, United Kingdom",
    "cid": "7150722758633921821",
    "city": "London",
@@ -27570,6 +27766,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Kingly St, Carnaby, London W1B 5PA, United Kingdom",
    "cid": "-3408621036029153467",
    "city": "London",
@@ -27587,6 +27784,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "Arch 151 Tilbury Rd, London E10 6RE, United Kingdom",
    "cid": "-7147580270950109940",
    "city": "London",
@@ -27604,6 +27802,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "4b Holywell Ln, London EC2A 3ET, United Kingdom",
    "cid": "8796824778034495348",
    "city": "London",
@@ -27621,6 +27820,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Studio 1, 31 New Inn Yard, London EC2A 3EY, United Kingdom",
    "cid": "-6163199721448338835",
    "city": "London",
@@ -27638,6 +27838,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "138-139 Shoreditch High St, London E1 6JE, United Kingdom",
    "cid": "2725727299906988570",
    "city": "London",
@@ -27655,6 +27856,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "73 Rivington St, London EC2A 3AY, United Kingdom",
    "cid": "9140343525357269465",
    "city": "London",
@@ -27672,6 +27874,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "44 Rivington St, London EC2A 3QP, United Kingdom",
    "cid": "-8899779796404924831",
    "city": "London",
@@ -27689,6 +27892,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Bath Pl, Rivington St, London EC2A 3DA, United Kingdom",
    "cid": "-7395527003679625400",
    "city": "London",
@@ -27706,6 +27910,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "11 Hackney Rd, London E2 7NX, United Kingdom",
    "cid": "1967003980439303656",
    "city": "London",
@@ -27723,6 +27928,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Monmouth St, London WC2H 9DA, United Kingdom",
    "cid": "-3787090636793211191",
    "city": "London",
@@ -27740,6 +27946,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "60 Dean St, London W1D 6AW, United Kingdom",
    "cid": "8244632950538864189",
    "city": "London",
@@ -27757,6 +27964,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 5, The Kitchens, Spitalfields Market, 16 Horner Square, London E1 6EW, United Kingdom",
    "cid": "-9149357838400496286",
    "city": "London",
@@ -27774,6 +27982,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Kiprou 13, Glifada 166 75",
    "cid": "1218303065325132750",
    "city": "Athens",
@@ -27792,6 +28001,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Χριστοκοπίδου 14 &, Ναυάρχου Αποστόλη, Athina 105 54",
    "cid": "-5213002378588620852",
    "city": "Athens",
@@ -27809,6 +28019,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "163 Gloucester Rd, South Kensington, London SW7 4TH, United Kingdom",
    "cid": "2129692290890266603",
    "city": "London",
@@ -27826,6 +28037,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "441 9th Ave Suite 101, New York, NY 10001, United States",
    "cid": "-3094897822868177768",
    "city": "New York",
@@ -27843,6 +28055,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "44 E 21st St, New York, NY 10010",
    "cid": "-5140134576660950390",
    "city": "New York",
@@ -27860,6 +28073,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "36 W 40th St, New York, NY 10018, United States",
    "cid": "8774649321791112423",
    "city": "New York",
@@ -27877,6 +28091,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "81 Goldsmiths Row, London E2 8QR, United Kingdom",
    "cid": "-8073065279674498424",
    "city": "London",
@@ -27894,6 +28109,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "552 Higashiaburanokojicho, Shimogyo Ward, Kyoto, 600-8235, Japan",
    "cid": "6876186519374092049",
    "city": "Singapore",
@@ -27912,6 +28128,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ground Floor, 2 Newburgh St, Carnaby, London W1F 7RD, United Kingdom",
    "cid": "4122601921965876891",
    "city": "London",
@@ -27929,6 +28146,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Ground Floor, 40 Brushfield St, London E1 6AG, United Kingdom",
    "cid": "-3703835343123689967",
    "city": "London",
@@ -27946,6 +28164,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "141 10th Ave, New York, NY 10011, United States",
    "cid": "-4631684317743766354",
    "city": "New York",
@@ -27963,6 +28182,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "144 10th Ave, New York, NY 10011, United States",
    "cid": "8090165769920238070",
    "city": "New York",
@@ -27980,6 +28200,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "176 2nd Ave, New York, NY 10003, United States",
    "cid": "2198912262055854115",
    "city": "New York",
@@ -27997,6 +28218,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "115 Montague St, Brooklyn, NY 11201, United States",
    "cid": "4177251435847614736",
    "city": "New York",
@@ -28014,6 +28236,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "47 Java St, Brooklyn, NY 11222, United States",
    "cid": "8746778114406004288",
    "city": "New York",
@@ -28031,6 +28254,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "80 Franklin St, Brooklyn, NY 11222, United States",
    "cid": "4400316439366038996",
    "city": "New York",
@@ -28048,6 +28272,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "90 Calyer St, Brooklyn, NY 11222, United States",
    "cid": "-3308701091304268468",
    "city": "New York",
@@ -28065,6 +28290,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "331 Bedford Ave, Brooklyn, NY 11211, United States",
    "cid": "1572888878981016213",
    "city": "New York",
@@ -28082,6 +28308,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "340 Bedford Ave, Brooklyn, NY 11249, United States",
    "cid": "-4584152202799084503",
    "city": "New York",
@@ -28099,6 +28326,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1748 1st Ave, New York, NY 10128, United States",
    "cid": "333400375942641781",
    "city": "New York",
@@ -28116,6 +28344,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "315 Smith St, Brooklyn, NY 11231, United States",
    "cid": "159596224141307658",
    "city": "New York",
@@ -28133,6 +28362,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "192 Amity St, Brooklyn, NY 11201, United States",
    "cid": "6845478151727268730",
    "city": "New York",
@@ -28150,6 +28380,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Columbia Pl, Brooklyn, NY 11201, United States",
    "cid": "-4873322075484594072",
    "city": "New York",
@@ -28167,6 +28398,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "64 Downing St, New York, NY 10014, United States",
    "cid": "-7370452745522266670",
    "city": "New York",
@@ -28184,6 +28416,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "73 Greenwich Ave, New York, NY 10014, United States",
    "cid": "-5539789009414455958",
    "city": "New York",
@@ -28201,6 +28434,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "34 Carmine St, New York, NY 10014, United States",
    "cid": "4330840820772263236",
    "city": "New York",
@@ -28218,6 +28452,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "211 W Broadway, New York, NY 10013, United States",
    "cid": "8727553616843101003",
    "city": "New York",
@@ -28235,6 +28470,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "177 Orchard St, New York, NY 10002, United States",
    "cid": "6874209058699743227",
    "city": "New York",
@@ -28252,6 +28488,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1123 Broadway, New York, NY 10010, United States",
    "cid": "6977616736185410523",
    "city": "New York",
@@ -28269,6 +28506,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "209 W 57th St, New York, NY 10019, United States",
    "cid": "6559005598410250542",
    "city": "New York",
@@ -28286,6 +28524,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "45 E 42nd St, New York, NY 10017, United States",
    "cid": "6811134064814784110",
    "city": "New York",
@@ -28303,6 +28542,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "Kelsou 10, Athina 116 36",
    "cid": "-403259631734089743",
    "city": "Athens",
@@ -28320,6 +28560,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "113 St Marks Pl, New York, NY 10009, United States",
    "cid": "-7127327452575559609",
    "city": "New York",
@@ -28337,6 +28578,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "146 Essex St, New York, NY 10002, United States",
    "cid": "5916795963296968237",
    "city": "New York",
@@ -28354,6 +28596,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "242 W 10th St Storefront 2, New York, NY 10014, United States",
    "cid": "5697715061645247856",
    "city": "New York",
@@ -28371,6 +28614,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "194 Elizabeth St, New York, NY 10012, United States",
    "cid": "5240146326513001438",
    "city": "New York",
@@ -28388,6 +28632,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "136 Broadway, Brooklyn, NY 11249, United States",
    "cid": "7969399199012325838",
    "city": "New York",
@@ -28405,6 +28650,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "191 Grand St, Brooklyn, NY 11211, United States",
    "cid": "4270517806310989374",
    "city": "New York",
@@ -28422,6 +28668,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "13 W 36th St., New York, NY 10018, United States",
    "cid": "5095634395467051887",
    "city": "New York",
@@ -28439,6 +28686,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1185 Broadway Ground Floor, New York, NY 10001, United States",
    "cid": "1148433431242659261",
    "city": "New York",
@@ -28456,6 +28704,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "329 Kent Ave, Brooklyn, NY 11249, United States",
    "cid": "8495836090338517267",
    "city": "New York",
@@ -28473,6 +28722,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "79 Rivington St, New York, NY 10002, United States",
    "cid": "1328532255896244276",
    "city": "New York",
@@ -28490,6 +28740,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "183 Bowery, New York, NY 10002, United States",
    "cid": "6792902209581019190",
    "city": "New York",
@@ -28507,6 +28758,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "249 Park Ave S, New York, NY 10003, United States",
    "cid": "-6732340247572550627",
    "city": "New York",
@@ -28524,6 +28776,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "77 Irving Pl, New York, NY 10003, United States",
    "cid": "-3629856834523670778",
    "city": "New York",
@@ -28541,6 +28794,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "259 W 4th St, New York, NY 10014, United States",
    "cid": "4210105208644209139",
    "city": "New York",
@@ -28558,6 +28812,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "92 2nd Ave, New York, NY 10003, United States",
    "cid": "2372372215556756909",
    "city": "New York",
@@ -28575,6 +28830,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "Archelaou 1, Athina 116 35",
    "cid": "-1231162120357651105",
    "city": "Athens",
@@ -28592,6 +28848,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "475 W Broadway, New York, NY 10012",
    "cid": "3215417553495563710",
    "city": "New York",
@@ -28609,6 +28866,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "181 Thompson St, New York, NY 10012, United States",
    "cid": "6958892335243387212",
    "city": "New York",
@@ -28626,6 +28884,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "61 Commerce St, Brooklyn, NY 11231, United States",
    "cid": "-4311194593358563287",
    "city": "New York",
@@ -28643,6 +28902,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "139 E 12th St, New York, NY 10003, United States",
    "cid": "-8607170501601655926",
    "city": "New York",
@@ -28660,6 +28920,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "85 10th Ave, New York, NY 10011, United States",
    "cid": "-6399362879039055629",
    "city": "New York",
@@ -28677,6 +28938,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "384 Broome St, New York, NY 10012, United States",
    "cid": "-2545350793650862721",
    "city": "New York",
@@ -28694,6 +28956,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "261 7th Ave, New York, NY 10001, United States",
    "cid": "4021870718225789442",
    "city": "New York",
@@ -28711,6 +28974,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Brooklyn, NY, United States",
    "cid": "1696722114425354904",
    "city": "New York",
@@ -28728,6 +28992,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "19 Kenmare St, New York, NY 10012, United States",
    "cid": "-4422994216344481853",
    "city": "New York",
@@ -28745,6 +29010,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "510 Madison Ave, New York, NY 10022, United States",
    "cid": "5128653813641669800",
    "city": "New York",
@@ -28762,6 +29028,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "35 E 21st St, New York, NY 10010, United States",
    "cid": "3833293956369346540",
    "city": "New York",
@@ -28779,6 +29046,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "3 Allen St, New York, NY 10002, United States",
    "cid": "-1751019291187786953",
    "city": "New York",
@@ -28796,6 +29064,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "51a Orchard St, New York, NY 10002, United States",
    "cid": "-2711352811763134438",
    "city": "New York",
@@ -28813,6 +29082,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "375 Canal St, New York, NY 10013, United States",
    "cid": "-7374659144129493752",
    "city": "New York",
@@ -28830,6 +29100,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "70 Diamond St, Brooklyn, NY 11222, United States",
    "cid": "-3442452323150643641",
    "city": "New York",
@@ -28847,6 +29118,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "305 Bedford Ave, Brooklyn, NY 11211, United States",
    "cid": "4309396921978654900",
    "city": "New York",
@@ -28864,6 +29136,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "36 St Marks Pl, New York, NY 10003, United States",
    "cid": "-5633763663808009863",
    "city": "New York",
@@ -28881,6 +29154,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "164 Mott St, New York, NY 10013, United States",
    "cid": "-2267805717231399037",
    "city": "New York",
@@ -28898,6 +29172,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "325 Bleecker St, New York, NY 10014, United States",
    "cid": "5234602151780165430",
    "city": "New York",
@@ -28915,6 +29190,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "55 W 35th St, New York, NY 10001, United States",
    "cid": "-3515333150159119318",
    "city": "New York",
@@ -28932,6 +29208,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "90 E 10th St 1st Floor, New York, NY 10003, United States",
    "cid": "-3726232093140164200",
    "city": "New York",
@@ -28949,6 +29226,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "70 Forsyth St, New York, NY 10002, United States",
    "cid": "1195473898074130668",
    "city": "New York",
@@ -28966,6 +29244,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "241 W Broadway, New York, NY 10013, United States",
    "cid": "-8826123397216367684",
    "city": "New York",
@@ -28983,6 +29262,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit Ab004, 73-75 Shacklewell Ln, London E8 2EB, United Kingdom",
    "cid": "6738074355862184891",
    "city": "London",
@@ -29000,6 +29280,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "42 Mortimer St, London W1W 7RH, United Kingdom",
    "cid": "-8835359009921189334",
    "city": "London",
@@ -29017,6 +29298,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "25 Rue Saint-Sébastien, 75011 Paris, France",
    "cid": "-4909582471973661357",
    "city": "Paris",
@@ -29034,6 +29316,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "80 Duke St, London W1K 6JG, United Kingdom",
    "cid": "-4566814076954731388",
    "city": "London",
@@ -29051,6 +29334,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Theberton St, London N1 0QX, United Kingdom",
    "cid": "-1199724662057309435",
    "city": "London",
@@ -29068,6 +29352,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "21-23 Bruton Pl, London W1J 6NB, United Kingdom",
    "cid": "-3488930655273877344",
    "city": "London",
@@ -29085,6 +29370,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ermou 98, Athina 105 55",
    "cid": "1069051144049418058",
    "city": "Athens",
@@ -29102,6 +29388,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "16 St Anne's Ct, London W1F 0BF, United Kingdom",
    "cid": "9073484323239241200",
    "city": "London",
@@ -29119,6 +29406,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "159 Brick Ln, London E1 6SB, United Kingdom",
    "cid": "-3899588846849444596",
    "city": "London",
@@ -29136,6 +29424,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Sackville St, London W1S 3DD, United Kingdom",
    "cid": "-8352173601826367591",
    "city": "London",
@@ -29153,6 +29442,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "133 Kensington Church St, London W8 7LP, United Kingdom",
    "cid": "-5313325671085664766",
    "city": "London",
@@ -29170,6 +29460,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "105 Queensway, London W2 4SJ, United Kingdom",
    "cid": "4417792874210087520",
    "city": "London",
@@ -29187,6 +29478,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "260-262 Brompton Rd, South Kensington, London SW3 2AS, United Kingdom",
    "cid": "-4985879408298353425",
    "city": "London",
@@ -29204,6 +29496,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Tatoiou 133, Kifisia 145 64",
    "cid": "1714856526713373058",
    "city": "Athens",
@@ -29222,6 +29515,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "22 Charlotte St., London W1T 2NB, United Kingdom",
    "cid": "7285162156480373156",
    "city": "London",
@@ -29239,6 +29533,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "100 Portobello Rd, London W11 2QD, United Kingdom",
    "cid": "-993147056892920725",
    "city": "London",
@@ -29256,6 +29551,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "16-22 Great Russell St, London WC1B 3NN, United Kingdom",
    "cid": "-6575755671179315033",
    "city": "London",
@@ -29273,6 +29569,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Pl. Navarinou 5, Thessaloniki 546 22",
    "cid": "-3772480449920311293",
    "city": "Athens",
@@ -29291,6 +29588,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "117 Mount St, London W1K 3LA, United Kingdom",
    "cid": "3365512379420712427",
    "city": "London",
@@ -29308,6 +29606,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Bayfield Rd, Portree IV51 9EL, United Kingdom",
    "cid": "262033339464590325",
    "city": "Dublin",
@@ -29326,6 +29625,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "73 Berkeley St., Glasgow G3 7DX, United Kingdom",
    "cid": "-6526740961066107987",
    "city": "Dublin",
@@ -29344,6 +29644,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "-6405989656251432262",
    "city": "Dublin",
@@ -29361,6 +29662,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Stillorgan Rd, Booterstown, Dublin, A94 V6W3, Ireland",
    "cid": "2271307996296029538",
    "city": "Dublin",
@@ -29378,6 +29680,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit G2, 116 Upper St, London N1 1QP, United Kingdom",
    "cid": "7718439740056428905",
    "city": "London",
@@ -29395,6 +29698,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "57 Main St, Newtown Blackrock, Blackrock, Co. Dublin, A94 A2Y0, Ireland",
    "cid": "2413479948879216670",
    "city": "Dublin",
@@ -29412,6 +29716,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Carrickbrennan Rd, Monkstown, Dublin, A94 YXW3, Ireland",
    "cid": "8176534375694927206",
    "city": "Dublin",
@@ -29429,6 +29734,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "201 King's Cross Rd, London WC1X 9DB, United Kingdom",
    "cid": "3046861559609316093",
    "city": "London",
@@ -29446,6 +29752,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "194 Southgate Rd, London N1 3HT, United Kingdom",
    "cid": "-2867108202278311548",
    "city": "London",
@@ -29463,6 +29770,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "London, UK",
    "cid": "-9043379976449881427",
    "city": "London",
@@ -29480,6 +29788,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "855 El Camino Real #130, Palo Alto, CA 94301, United States",
    "cid": "3717042603262137464",
    "city": "San Francisco",
@@ -29498,6 +29807,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "5700 Geary Blvd, San Francisco, CA 94121, United States",
    "cid": "6924344292273102319",
    "city": "San Francisco",
@@ -29515,6 +29825,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "753 Alabama St, San Francisco, CA 94110, United States",
    "cid": "7300198297212145296",
    "city": "San Francisco",
@@ -29532,6 +29843,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "550 Montgomery St, San Francisco, CA 94111, United States",
    "cid": "4298937888919864801",
    "city": "San Francisco",
@@ -29549,6 +29861,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1018 Alma St, Menlo Park, CA 94025, United States",
    "cid": "-8040118236293683458",
    "city": "San Francisco",
@@ -29567,6 +29880,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "1165 Merrill St, Menlo Park, CA 94025, United States",
    "cid": "4110511169258071761",
    "city": "San Francisco",
@@ -29585,6 +29899,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "2020 W El Camino Real, Mountain View, CA 94040, United States",
    "cid": "-6428456281880096969",
    "city": "San Francisco",
@@ -29603,6 +29918,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "162 University Ave, Palo Alto, CA 94301, United States",
    "cid": "-8390677449183565776",
    "city": "San Francisco",
@@ -29621,6 +29937,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "306 Broderick St, San Francisco, CA 94117, United States",
    "cid": "-1809454551964577166",
    "city": "San Francisco",
@@ -29638,6 +29955,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "In the alley across from Tender Greens Restaurant, 50 Fremont St #125, San Francisco, CA 94105, United States",
    "cid": "-2049096778617555118",
    "city": "San Francisco",
@@ -29655,6 +29973,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "86 2nd St, San Francisco, CA 94105, United States",
    "cid": "-2268882872531787695",
    "city": "San Francisco",
@@ -29672,6 +29991,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ferry Building, 1, #5, San Francisco, CA 94111, United States",
    "cid": "725268654691222244",
    "city": "San Francisco",
@@ -29689,6 +30009,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "28 Waverly Pl, San Francisco, CA 94108, United States",
    "cid": "-7216468322587662661",
    "city": "San Francisco",
@@ -29706,6 +30027,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "40 N Santa Cruz Ave, Los Gatos, CA 95030, United States",
    "cid": "-1972188873745333534",
    "city": "San Francisco",
@@ -29724,6 +30046,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "345 Taylor St, San Francisco, CA 94102, United States",
    "cid": "-5327471131067195835",
    "city": "San Francisco",
@@ -29741,6 +30064,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "633 Battery St Ste 130, San Francisco, CA 94111, United States",
    "cid": "-5945859457020125971",
    "city": "San Francisco",
@@ -29758,6 +30082,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1998 Polk St, San Francisco, CA 94109, United States",
    "cid": "-2397858072414101455",
    "city": "San Francisco",
@@ -29775,6 +30100,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "2535 3rd St, San Francisco, CA 94107, United States",
    "cid": "-6414088005984357068",
    "city": "San Francisco",
@@ -29792,6 +30118,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "599 3rd St #100, San Francisco, CA 94107, United States",
    "cid": "-3472662959391194670",
    "city": "San Francisco",
@@ -29809,6 +30136,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "1448 Pacific Ave, San Francisco, CA 94109, United States",
    "cid": "-7250338596722910344",
    "city": "San Francisco",
@@ -29826,6 +30154,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "443 Clement St, San Francisco, CA 94118, United States",
    "cid": "-2041592642956189294",
    "city": "San Francisco",
@@ -29843,6 +30172,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Brook's Mews, London W1K 4HR, United Kingdom",
    "cid": "3477577003090623020",
    "city": "London",
@@ -29860,6 +30190,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Brook St, London W1K 4HR, United Kingdom",
    "cid": "3794048101439825545",
    "city": "London",
@@ -29877,6 +30208,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "171 Union St, London SE1 0LN, United Kingdom",
    "cid": "7975589469022448614",
    "city": "London",
@@ -29894,6 +30226,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "67 Southwark St, London SE1 0HX, United Kingdom",
    "cid": "1291659693763953479",
    "city": "London",
@@ -29911,6 +30244,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "6 Orchard Pl, London SW1H 0BF, United Kingdom",
    "cid": "5441862989564152208",
    "city": "London",
@@ -29928,6 +30262,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "389 Hackney Rd, London E2 8PP, United Kingdom",
    "cid": "-3615606077197967614",
    "city": "London",
@@ -29945,6 +30280,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "19 Widegate St, London E1 7HP, United Kingdom",
    "cid": "-1037477011730395743",
    "city": "London",
@@ -29962,6 +30298,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Hazlebury Rd, London SW6 2NA, United Kingdom",
    "cid": "3541075585418505636",
    "city": "London",
@@ -29979,6 +30316,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "48 Grays Inn Rd, Chancery Ln, London WC1X 8LT, United Kingdom",
    "cid": "-4616760603252587865",
    "city": "London",
@@ -29996,6 +30334,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "153 S Lambeth Rd, London SW8 1XN, United Kingdom",
    "cid": "6971067853939867251",
    "city": "London",
@@ -30013,6 +30352,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit C, 101 Lower Marsh, London SE1 7AB, United Kingdom",
    "cid": "-7131193018756463317",
    "city": "London",
@@ -30030,6 +30370,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "9A Cullum St, London EC3M 7JJ, United Kingdom",
    "cid": "4678677164363957019",
    "city": "London",
@@ -30047,6 +30388,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "104 Heath St, London NW3 1DR, United Kingdom",
    "cid": "-6570793517164937228",
    "city": "London",
@@ -30064,6 +30406,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "22 Sherwood St, London W1F 7ED, United Kingdom",
    "cid": "5908825441411410619",
    "city": "London",
@@ -30081,6 +30424,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "Diadochou Pavlou 46, Glifada 166 75",
    "cid": "-4688807403542960211",
    "city": "Athens",
@@ -30099,6 +30443,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Seegrube, 6020 Innsbruck, Austria",
    "cid": "-2829505901011254754",
    "city": "Vienna",
@@ -30117,6 +30462,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "10 Rue des Archives, 75004 Paris, France",
    "cid": "1095318649036982905",
    "city": "Paris",
@@ -30134,6 +30480,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Pl. Agion Theodoron 3, Athina 105 61",
    "cid": "1366830091904729648",
    "city": "Athens",
@@ -30151,6 +30498,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Kerkini 620 55",
    "cid": "552388772235002284",
    "city": "Athens",
@@ -30169,6 +30517,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "Leof. Kifisias 98, Marousi 151 25",
    "cid": "-8684798035301007814",
    "city": "Athens",
@@ -30186,6 +30535,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Skouleniou 1, Athina 105 61",
    "cid": "-3517542605079053549",
    "city": "Athens",
@@ -30203,6 +30553,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Themistokleous 47, Athina 106 83",
    "cid": "-7368283481386303751",
    "city": "Athens",
@@ -30220,6 +30571,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Leof. Irinis 4, Polidendri 190 14",
    "cid": "4392299129783372704",
    "city": "Athens",
@@ -30238,6 +30590,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "10-14 Lonsdale Rd, London NW6 6RD, United Kingdom",
    "cid": "-2493460515723816458",
    "city": "London",
@@ -30255,6 +30608,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "28-30 Cale St, London SW3 3QU, United Kingdom",
    "cid": "3270470209278207956",
    "city": "London",
@@ -30272,6 +30626,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "16 All Saints Rd, London W11 1HH, United Kingdom",
    "cid": "-1722585977860175425",
    "city": "London",
@@ -30289,6 +30644,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "460 Hackney Rd, London E2 9EG, United Kingdom",
    "cid": "8463318751132519882",
    "city": "London",
@@ -30306,6 +30662,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "19 Willow St, London EC2A 3HU, United Kingdom",
    "cid": "2475987911548006616",
    "city": "London",
@@ -30323,6 +30680,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 4.1, Copeland Park, 133 Copeland Rd, London SE15 3SN, United Kingdom",
    "cid": "6284794180496597390",
    "city": "London",
@@ -30340,6 +30698,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "MUST Wine Bar, 63 S End Rd, London NW3 2QB, United Kingdom",
    "cid": "-8536079145376925475",
    "city": "London",
@@ -30357,6 +30716,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "157 26th of July Corridor, Mohammed Mazhar, Zamalek, Cairo Governorate 4271050, Egypt",
    "cid": "2714039524833916229",
    "city": "Crete",
@@ -30375,6 +30735,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "27R7+3XQ, Salah Salem St, El-Darb El-Ahmar, Al-Darb Al-Ahmar, Cairo Governorate 4294010, Egypt",
    "cid": "-3912893164624332712",
    "city": "Crete",
@@ -30393,6 +30754,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "27J4+VJH, El-Refaey, El-Darb El-Ahmar, El Khalifa, Cairo Governorate 4292008, Egypt",
    "cid": "8414616983190867172",
    "city": "Crete",
@@ -30411,6 +30773,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Al Saraya, Al Manyal Ash Sharqi, Old Cairo, Cairo Governorate 4240291, Egypt",
    "cid": "3149803841298071709",
    "city": "Crete",
@@ -30429,6 +30792,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "X4HF+8P, Nazlet El-Semman, Al Haram, Giza Governorate 12512, Egypt",
    "cid": "4037717018046666194",
    "city": "Crete",
@@ -30447,6 +30811,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "19 Saray El Gezira St, 11511, Egypt",
    "cid": "1655341128557573970",
    "city": "Crete",
@@ -30465,6 +30830,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Taha Hussein, Abu Al Feda, Zamalek, Cairo Governorate 4271150, Egypt",
    "cid": "-2056209602030360213",
    "city": "Crete",
@@ -30483,6 +30849,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "St President Hotel، 22 Taha Hussein, Abu Al Feda, Zamalek, Cairo Governorate 4271150, Egypt",
    "cid": "-345952324017722741",
    "city": "Crete",
@@ -30501,6 +30868,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "17 Ahmed Heshmat, Mohammed Mazhar, Zamalek, Cairo Governorate 4271160, Egypt",
    "cid": "-5528182548116538562",
    "city": "Crete",
@@ -30519,6 +30887,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "157, 26th July street, AZ Zamalek, Egypt",
    "cid": "1026930494609219460",
    "city": "Crete",
@@ -30537,6 +30906,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "14 Abo Alhoul El Siyahii St, Nazlet El-Semman, Al Haram, Giza Governorate 12557, Egypt",
    "cid": "4068311724060174228",
    "city": "Crete",
@@ -30555,6 +30925,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "455 Hackney Rd, London E2 9DY, United Kingdom",
    "cid": "6542216991786341626",
    "city": "London",
@@ -30572,6 +30943,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "32-34 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland",
    "cid": "936883518929716524",
    "city": "Dublin",
@@ -30589,6 +30961,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "3 Wynnefield Rd, Rathmines, Dublin, D06 F2Y2, Ireland",
    "cid": "5129457864738766646",
    "city": "Dublin",
@@ -30606,6 +30979,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "23 Dunville Ave, Ranelagh, Dublin 6, D06 C902, Ireland",
    "cid": "-7856363618917847692",
    "city": "Dublin",
@@ -30623,6 +30997,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "52 Stratton St, London W1J 8LN, United Kingdom",
    "cid": "4615347177640180280",
    "city": "London",
@@ -30640,6 +31015,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "180 Rathmines Rd Lower, Rathmines, Dublin 6, D06 XK73, Ireland",
    "cid": "59611841888494084",
    "city": "Dublin",
@@ -30657,6 +31033,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Howth, Dublin, Ireland",
    "cid": "7544516947576472805",
    "city": "Dublin",
@@ -30675,6 +31052,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "Co. Dublin, Ireland",
    "cid": "720795471579321792",
    "city": "Dublin",
@@ -30693,6 +31071,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Bank House, Bird Ave, Clonskeagh, Dublin, D14 RX74, Ireland",
    "cid": "-681575079357087427",
    "city": "Dublin",
@@ -30710,6 +31089,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "47 Dunville Ave, Rathmines, Dublin 6, D06 H7T8, Ireland",
    "cid": "-3777844710918735748",
    "city": "Dublin",
@@ -30727,6 +31107,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit 6, Norseman Court, Manor St, Stoneybatter, Dublin 7, D07 NP83, Ireland",
    "cid": "-6343103447974961339",
    "city": "Dublin",
@@ -30744,6 +31125,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "9 St Stephen's Green, Dublin, D02 C891, Ireland",
    "cid": "5040350546414660536",
    "city": "Dublin",
@@ -30761,6 +31143,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1-5 Green St, Rotunda, Dublin, D07 YT6H, Ireland",
    "cid": "-8641643442136450463",
    "city": "Dublin",
@@ -30778,6 +31161,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "27 Wicklow St, Dublin 2, D02 WN51, Ireland",
    "cid": "-6217032534383714339",
    "city": "Dublin",
@@ -30795,6 +31179,7 @@
    "type": "gelato"
   },
   {
+   "added": "2026-07-31",
    "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
    "cid": "-6752398179009724708",
    "city": "Dublin",
@@ -30812,6 +31197,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "17 D'Olier Street, Dublin 2, Ireland",
    "cid": "8380988868984377840",
    "city": "Dublin",
@@ -30829,6 +31215,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "9 Essex St E, Temple Bar, Dublin 8, D02 RW53, Ireland",
    "cid": "-3957917340599183409",
    "city": "Dublin",
@@ -30846,6 +31233,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "34 Lennox St, Portobello, Dublin 8, D08 N265, Ireland",
    "cid": "5275536074496608606",
    "city": "Dublin",
@@ -30863,6 +31251,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Fumbally Ln, The Liberties, Dublin 8, D08 HFF2, Ireland",
    "cid": "-8433417497616550526",
    "city": "Dublin",
@@ -30880,6 +31269,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "St. James's Gate, Dublin 8, D08 VF8H, Ireland",
    "cid": "-5541341162381121630",
    "city": "Dublin",
@@ -30897,6 +31287,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Trinity Long Room, The University of Dublin Trinity College, College Green, South-East Inner City, Dublin, Ireland",
    "cid": "5819525132518903716",
    "city": "Dublin",
@@ -30914,6 +31305,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "13-17 Newmarket, The Liberties, Dublin 8, D08 KD91, Ireland",
    "cid": "-2495393073876738586",
    "city": "Dublin",
@@ -30931,6 +31323,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "2 Montague St, Dublin 2, D02 TX48, Ireland",
    "cid": "7229459063253559798",
    "city": "Dublin",
@@ -30948,6 +31341,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "23 Essex St E, Temple Bar, Dublin, D02 WP71, Ireland",
    "cid": "6839830126462210896",
    "city": "Dublin",
@@ -30965,6 +31359,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "57 Deerpark Rd, Mount Merrion, Dublin, A94 F761, Ireland",
    "cid": "2029215372278451086",
    "city": "Dublin",
@@ -30982,6 +31377,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "13A Bachelors Walk, North City, Dublin, D01 VN82, Ireland",
    "cid": "2219567177270172286",
    "city": "Dublin",
@@ -30999,6 +31395,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "3-4 Bedford Row, Temple Bar, Dublin 2, D02 HD77, Ireland",
    "cid": "1414265476398143361",
    "city": "Dublin",
@@ -31016,6 +31413,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Merrion Row, Dublin, D02 A316",
    "cid": "-8214833595161622225",
    "city": "Dublin",
@@ -31033,6 +31431,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "DARUMA, 13 Parliament St, Temple Bar, Dublin 2, D02 P658, Ireland",
    "cid": "1127080472096264173",
    "city": "Dublin",
@@ -31050,6 +31449,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "18-19 Parnell Square N, Rotunda, Dublin 1, D01 T3V8, Ireland",
    "cid": "708522748158991526",
    "city": "Dublin",
@@ -31067,6 +31467,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "26 Fenian St, Dublin, D02 FX09, Ireland",
    "cid": "-7540781941177209134",
    "city": "Dublin",
@@ -31084,6 +31485,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Portobello Rd, Portobello, Dublin 8, D08 E0C0, Ireland",
    "cid": "-7727996441916898098",
    "city": "Dublin",
@@ -31101,6 +31503,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1 Windsor Terrace, Portobello, Dublin 8, D08 HT20, Ireland",
    "cid": "4607768878771828691",
    "city": "Dublin",
@@ -31118,6 +31521,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "43 Richmond St S, Portobello, Dublin 2, D02 X499, Ireland",
    "cid": "-6319904521920666509",
    "city": "Dublin",
@@ -31135,6 +31539,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "39 Camden Street Lower, Saint Kevin's, Dublin, D02 K277, Ireland",
    "cid": "-6661889790255835990",
    "city": "Dublin",
@@ -31152,6 +31557,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Camden Street Lower, Saint Kevin's, Dublin, Ireland",
    "cid": "5158851547050921180",
    "city": "Dublin",
@@ -31169,6 +31575,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "82 Aungier St, Dublin 2, D02 NP30, Ireland",
    "cid": "-6446138801214350995",
    "city": "Dublin",
@@ -31186,6 +31593,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "42 Drury St, Dublin, D02 T210, Ireland",
    "cid": "5639952712070957855",
    "city": "Dublin",
@@ -31203,6 +31611,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Lansdowne Rd, Dublin 4, Ireland",
    "cid": "-2054035542957152664",
    "city": "Dublin",
@@ -31220,6 +31629,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "18 Merrion St Upper, Dublin 2, D02 X064, Ireland",
    "cid": "-3782478753133474873",
    "city": "Dublin",
@@ -31237,6 +31647,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "45 Richmond St S, Portobello, Dublin, D02 XD93, Ireland",
    "cid": "-6750177401482685237",
    "city": "Dublin",
@@ -31254,6 +31665,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "16 New St, Townparks, Skerries, Co. Dublin, K34 AW80, Ireland",
    "cid": "2577901364897312747",
    "city": "Dublin",
@@ -31272,6 +31684,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "10b Main St, Raheny, Dublin, D05 P6H0, Ireland",
    "cid": "-5798713053676606901",
    "city": "Dublin",
@@ -31289,6 +31702,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Behan Square, Unit 2, Russell St, Dublin, D01 HX78, Ireland",
    "cid": "4828487701911061401",
    "city": "Dublin",
@@ -31306,6 +31720,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "Unit E, The Bracken, Marina village, Greystones, Co. Wicklow, A63 K7W7, Ireland",
    "cid": "944586764357301751",
    "city": "Dublin",
@@ -31324,6 +31739,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "50 James St, London W1U 1HB, United Kingdom",
    "cid": "-9056590610093135560",
    "city": "London",
@@ -31341,6 +31757,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Solomou 9, Athina 154 51",
    "cid": "-711878877687036231",
    "city": "Athens",
@@ -31358,6 +31775,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "4 Butler Pl, London SW1H 0QD, United Kingdom",
    "cid": "-8097912248833872353",
    "city": "London",
@@ -31375,6 +31793,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "10 Lower Belgrave St, London SW1W 0LJ, United Kingdom",
    "cid": "9213877542763297347",
    "city": "London",
@@ -31392,6 +31811,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Navarino Dunes, Costa Navarino, Messinia, Costa Navarino 240 01",
    "cid": "-2169503342620750084",
    "city": "Spetses",
@@ -31410,6 +31830,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "1570 Stockton St, San Francisco, CA 94133, United States",
    "cid": "-4633081560339842240",
    "city": "San Francisco",
@@ -31427,6 +31848,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "175 Orchard St, New York, NY 10002, United States",
    "cid": "-6314439162183615711",
    "city": "New York",
@@ -31444,6 +31866,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "5456394056942978756",
    "city": "London",
@@ -31461,6 +31884,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Aminta 12, Athina 116 35",
    "cid": "-6725405341643449555",
    "city": "Athens",
@@ -31478,6 +31902,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "179 E Houston St, New York, NY 10002, United States",
    "cid": "2935000539321943627",
    "city": "New York",
@@ -31495,6 +31920,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "4 Charles St, New York, NY 10014, United States",
    "cid": "1547793992896720178",
    "city": "New York",
@@ -31512,6 +31938,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Temporarily Closed Relocation Info Coming Soon, 12 Belvidere St, Brooklyn, NY 11206, United States",
    "cid": "1035091721094626229",
    "city": "New York",
@@ -31529,6 +31956,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "86 Central Ave, Brooklyn, NY 11206, United States",
    "cid": "6092798844515364804",
    "city": "New York",
@@ -31546,6 +31974,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "8 Wilson Ave, Brooklyn, NY 11237, United States",
    "cid": "6659405694926998446",
    "city": "New York",
@@ -31563,6 +31992,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "",
    "cid": "-2159535651400130007",
    "city": "New York",
@@ -31580,6 +32010,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "100 Forsyth St, New York, NY 10002, United States",
    "cid": "7947763207542904144",
    "city": "New York",
@@ -31597,6 +32028,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "284 3rd Ave, Brooklyn, NY 11215, United States",
    "cid": "1383272621093411990",
    "city": "New York",
@@ -31614,6 +32046,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "97 Wythe Ave, Brooklyn, NY 11249, United States",
    "cid": "4291546541433569430",
    "city": "New York",
@@ -31631,6 +32064,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "288 N 8th St, Brooklyn, NY 11211, United States",
    "cid": "6709283481243788233",
    "city": "New York",
@@ -31648,6 +32082,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "111 N 12th St, Brooklyn, NY 11249, United States",
    "cid": "5305007946342074985",
    "city": "New York",
@@ -31665,6 +32100,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "One Penn Plaza, Plaza 33 East, New York, NY 10119, United States",
    "cid": "5908520870111761510",
    "city": "New York",
@@ -31682,6 +32118,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "358 Marcus Garvey Blvd, Brooklyn, NY 11221, United States",
    "cid": "-8606339728675777515",
    "city": "New York",
@@ -31699,6 +32136,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "298 Bedford Ave, Brooklyn, NY 11249",
    "cid": "-3794874988308620490",
    "city": "New York",
@@ -31716,6 +32154,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "52 Harrison Pl, Brooklyn, NY 11237, United States",
    "cid": "1592220495623483239",
    "city": "New York",
@@ -31733,6 +32172,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "23 2nd Ave, New York, NY 10003, United States",
    "cid": "4276305386632085711",
    "city": "New York",
@@ -31750,6 +32190,7 @@
    "type": "bakery"
   },
   {
+   "added": "2026-07-31",
    "address": "25 Bogart St, Brooklyn, NY 11206, United States",
    "cid": "-4983575839248151307",
    "city": "New York",
@@ -31767,6 +32208,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "243 DeKalb Ave, Brooklyn, NY 11205, United States",
    "cid": "2076421618519717799",
    "city": "New York",
@@ -31784,6 +32226,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "372 Fulton St, Brooklyn, NY 11201, United States",
    "cid": "5525597799487446014",
    "city": "New York",
@@ -31801,6 +32244,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "365 5th Ave, Brooklyn, NY 11215, United States",
    "cid": "3758858882430911029",
    "city": "New York",
@@ -31818,6 +32262,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "240 9th Ave, New York, NY 10001, United States",
    "cid": "5016526719371026502",
    "city": "New York",
@@ -31835,6 +32280,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "254 S 2nd St, Brooklyn, NY 11211, United States",
    "cid": "-7655001095635581115",
    "city": "New York",
@@ -31852,6 +32298,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "15 Avenue A, New York, NY 10009, United States",
    "cid": "-3977821698775707178",
    "city": "New York",
@@ -31869,6 +32316,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "186 Mott St, New York, NY 10012, United States",
    "cid": "-509114908453278289",
    "city": "New York",
@@ -31886,6 +32334,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "640 Manhattan Ave, Brooklyn, NY 11222, United States",
    "cid": "-7642280320396025332",
    "city": "New York",
@@ -31903,6 +32352,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "320 E 6th St, New York, NY 10003, United States",
    "cid": "-4003316224160838577",
    "city": "New York",
@@ -31920,6 +32370,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "667 Franklin Ave, Brooklyn, NY 11238, United States",
    "cid": "4320781961886772911",
    "city": "New York",
@@ -31937,6 +32388,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "674 Manhattan Ave, Brooklyn, NY 11222, United States",
    "cid": "5010801983877852407",
    "city": "New York",
@@ -31954,6 +32406,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "212 E 52nd St 2nd fl, New York, NY 10022, United States",
    "cid": "-8724677762162940981",
    "city": "New York",
@@ -31971,6 +32424,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "15, 16 Sherwood St, London W1F 7BJ, United Kingdom",
    "cid": "-8359876473080682091",
    "city": "London",
@@ -31988,6 +32442,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "97 Ranelagh, Dublin 6, D06 A0K7, Ireland",
    "cid": "4098845188201598350",
    "city": "Dublin",
@@ -32005,6 +32460,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "37 Stephen Street Lower, Dublin, D02 T862, Ireland",
    "cid": "-4524270489989565589",
    "city": "Dublin",
@@ -32022,6 +32478,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "110 William St Lower Level, New York, NY 10038, United States",
    "cid": "-435713695393288026",
    "city": "New York",
@@ -32039,6 +32496,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "228 W 10th St, New York, NY 10014, United States",
    "cid": "-5403124669958267722",
    "city": "New York",
@@ -32056,6 +32514,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "42 Peckham Rye, London SE15 4JR, United Kingdom",
    "cid": "-5932203791763462062",
    "city": "London",
@@ -32073,6 +32532,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "171 Mare St, London E8 3RH, United Kingdom",
    "cid": "-2966946624536123637",
    "city": "London",
@@ -32090,6 +32550,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "245 Hackney Rd, London E2 8NA, United Kingdom",
    "cid": "-3635198454037102686",
    "city": "London",
@@ -32107,6 +32568,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "100 Shoreditch High St, London E1 6JQ, United Kingdom",
    "cid": "-1841528365797964735",
    "city": "London",
@@ -32124,6 +32586,7 @@
    "type": "sights"
   },
   {
+   "added": "2026-07-31",
    "address": "298 King's Rd, London SW3 5UG, United Kingdom",
    "cid": "-7561081127257216351",
    "city": "London",
@@ -32141,6 +32604,7 @@
    "type": "drinks"
   },
   {
+   "added": "2026-07-31",
    "address": "177 Portobello Rd, London W11 2DY, United Kingdom",
    "cid": "6754628165849291570",
    "city": "London",
@@ -32158,6 +32622,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "Platonos 14, Chalandri 152 34",
    "cid": "8110668952902080577",
    "city": "Athens",
@@ -32175,6 +32640,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Νας, Kato Raches 833 01",
    "cid": "-9003890367593057061",
    "city": "Ikaria",
@@ -32192,6 +32658,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "ικαρια, Armenistis 833 01",
    "cid": "-4918106439753343452",
    "city": "Ikaria",
@@ -32209,6 +32676,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ράχες 833 01",
    "cid": "8072978806575503111",
    "city": "Ikaria",
@@ -32226,6 +32694,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ag. Kirikos 833 00",
    "cid": "-62557305648272569",
    "city": "Ikaria",
@@ -32244,6 +32713,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Kirikos 833 00, Anonymous, Ag. Panteleimon 190 05",
    "cid": "8949945237263344598",
    "city": "Ikaria",
@@ -32262,6 +32732,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "70 Brompton Rd, London SW3 1ER, United Kingdom",
    "cid": "-5225352306175524288",
    "city": "London",
@@ -32279,6 +32750,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Θέση Μαυρομάτη 0, Antiparos 840 07",
    "cid": "2660945031917734107",
    "city": "Antiparos",
@@ -32296,6 +32768,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Αμπελάς 844 01",
    "cid": "3100934438398309823",
    "city": "Paros",
@@ -32313,6 +32786,7 @@
    "type": "stay"
   },
   {
+   "added": "2026-07-31",
    "address": "Agioi Anargyroi, Naousa 844 01",
    "cid": "-5127988855200407109",
    "city": "Paros",
@@ -32330,6 +32804,7 @@
    "type": "outdoors"
   },
   {
+   "added": "2026-07-31",
    "address": "Unnamed Road, Drios 844 00",
    "cid": "-347222412048395556",
    "city": "Paros",
@@ -32348,6 +32823,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Κώστος 844 00",
    "cid": "-3549336033580590727",
    "city": "Paros",
@@ -32365,6 +32841,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Μάρμαρα 1, Marmara 844 00",
    "cid": "1580773928599449931",
    "city": "Paros",
@@ -32382,6 +32859,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Naousa 844 01",
    "cid": "1784113459751971079",
    "city": "Paros",
@@ -32399,6 +32877,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Πάρου, Αγ. Δημήτριος Αττικής 173 42",
    "cid": "8213679003480914278",
    "city": "Paros",
@@ -32416,6 +32895,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Naousa 844 01",
    "cid": "-1056161227255813016",
    "city": "Paros",
@@ -32433,6 +32913,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Ξιφαρά 844 01",
    "cid": "-4980036968680299207",
    "city": "Paros",
@@ -32450,6 +32931,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Aliki 844 00",
    "cid": "5760907925232701812",
    "city": "Antiparos",
@@ -32467,6 +32949,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Agios Dimitrios Beach, Naousa 844 01",
    "cid": "1202864020576410809",
    "city": "Paros",
@@ -32484,6 +32967,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Αντίπαρος 840 07",
    "cid": "3503672204140053357",
    "city": "Antiparos",
@@ -32501,6 +32985,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Avant Mar Hotel, Paros 844 01",
    "cid": "-1597357653891300774",
    "city": "Paros",
@@ -32518,6 +33003,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Chora, Schinoussa, Χώρα, Σχοινούσα, Chora, Schinoussa 843 00",
    "cid": "-4223496782491037029",
    "city": "Naxos",
@@ -32536,6 +33022,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Schoinousa 843 00",
    "cid": "1591597797958248224",
    "city": "Naxos",
@@ -32554,6 +33041,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "ΧΩΡΑ ΣΧΟΙΝΟΥΣΑ, Schinoussa 843 00",
    "cid": "4501021536561497619",
    "city": "Naxos",
@@ -32572,6 +33060,7 @@
    "type": "coffee"
   },
   {
+   "added": "2026-07-31",
    "address": "Overlooking the Marina, Aliki 844 00",
    "cid": "2950796868167400303",
    "city": "Antiparos",
@@ -32589,6 +33078,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Epar.Od. Parikias-Marpissas, Lefkes 844 00",
    "cid": "-3137702178928829929",
    "city": "Paros",
@@ -32606,6 +33096,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "ΠΑΡΟΙΚΙΑ-ΠΑΡΟΣ ΜΠΟΥΝΤΑΡΑΚΙ ΠΑΡΟΣ, Paros 844 00",
    "cid": "-5883073248716099257",
    "city": "Antiparos",
@@ -32623,6 +33114,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Naousa 844 01",
    "cid": "779672405538803367",
    "city": "Paros",
@@ -32640,6 +33132,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Unnamed Road, Naousa 844 01",
    "cid": "-6741073900016688470",
    "city": "Paros",
@@ -32657,6 +33150,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Naousa 844 01",
    "cid": "-7071855502544547047",
    "city": "Paros",
@@ -32674,6 +33168,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "46GX+68, Naousa 844 01",
    "cid": "8455666884007084608",
    "city": "Paros",
@@ -32691,6 +33186,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Αγ. Γεώργιος 843 00",
    "cid": "-8575877506191222911",
    "city": "Naxos",
@@ -32709,6 +33205,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Apantima 840 07",
    "cid": "4718374868148447756",
    "city": "Antiparos",
@@ -32726,6 +33223,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Kolympithres, Naousa 844 01",
    "cid": "-1416330337915242074",
    "city": "Paros",
@@ -32743,6 +33241,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Punda Beach, Marpissa 844 00",
    "cid": "3374908936786866323",
    "city": "Paros",
@@ -32760,6 +33259,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Agioi Anargyroi, Naousa 844 01",
    "cid": "-5470873456799808173",
    "city": "Paros",
@@ -32777,6 +33277,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "46FQ+8F, Naousa 844 01",
    "cid": "2901787936432955429",
    "city": "Paros",
@@ -32794,6 +33295,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Λιβάδια, Paros 844 00",
    "cid": "718620292100670640",
    "city": "Paros",
@@ -32811,6 +33313,7 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
    "address": "Unnamed Road, Ampelas 844 01",
    "cid": "5624230713376864577",
    "city": "Paros",
@@ -32828,6 +33331,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Αγία Τριάδα, Paros 844 00",
    "cid": "-3155163664885874615",
    "city": "Antiparos",
@@ -32845,6 +33349,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Rema Floga, Paros 844 00",
    "cid": "3345396188398133954",
    "city": "Antiparos",
@@ -32862,6 +33367,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Ιερά Οδός 25-27-29, Iera Odos 29, Athina 118 54",
    "cid": "2296849372281063651",
    "city": "Athens",
@@ -32879,6 +33385,7 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
    "address": "Agia Ipakoi, Kostos 844 00",
    "cid": "-3981244145032607902",
    "city": "Paros",

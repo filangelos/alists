@@ -104,6 +104,51 @@ A marked place is still a place: it is filed by whichever city list it is on,
 and by its nearest city centre when it is on none, marked `~` if that lands
 more than 12 km out.
 
+## What arrived this week
+
+`◷ new this week` is the change list: press it and the tree holds only the
+places saved in the last seven days, still filed by city and category, with
+every count moving to match. It is a view like any other — `…/#%2Fnew` is a link
+to it, `/london /new` is a link to the week in one city, and `/recent` spells
+the same thing for whoever types the word rather than presses the button.
+
+Google's payload does not say when a place was saved. The endpoint hands back a
+list, not a history, so the only date available is the day a place first turned
+up in a refresh — which is what `added` is, and why it is *carried* out of the
+committed JSON rather than recomputed:
+
+```json
+{ "name": "Prufrock Coffee", "city": "London", "added": "2026-08-01" }
+```
+
+`data/lists.json` is the record. Yesterday's file is what says a place is not
+new, so a run that ignored it would re-date all 2156 places to whenever the job
+last happened to run. A place the previous file has never seen is stamped with
+today; a place it has seen but never dated stays undated, because it predates
+the record and a guess would put the entire collection into a list meant to hold
+a week. That is why the 1649 places of the first commit carry no date at all:
+the dates here were seeded from the git history of `data/lists.json`, which
+knows when each place appeared and nothing about the years before it.
+
+Seven days measured from `generated` rather than from your clock. The file
+cannot know about anything that happened after the refresh that wrote it, so a
+page sitting on a fortnight-old blob shows that blob's last week instead of
+quietly emptying the list to prove the clock has moved. The footer says which
+week it means. In a week that saved nothing there is no button — the same rule
+the marks and the recommend form follow, and for the same reason.
+
+The marks stop applying while it is on, and `○ not been yet` dims to say so.
+Nearly everything saved in a given week is somewhere I have not been yet — that
+is what saving it means — so a change list that also held those places back
+would answer "what arrived this week" with a tenth of what arrived. They keep
+their hollow bullet, which is the honest way to show them: the row still says I
+have not been, the week still says it is new.
+
+A list added to `lists.txt` lands all of its places in the change list on the
+day it is added, because that is the day this file first saw them. It is the
+truthful answer and a lopsided one — 485 places arrived on 2026-07-31 that way,
+and they age out of the window like anything else.
+
 ## Adding a list
 
 Append the share link to [`lists.txt`](lists.txt) and push. Short
@@ -172,6 +217,7 @@ heading named after a to-do list, and the button would never appear at all.
 | the triangle | peek inside a folder without leaving where you are standing |
 | `‹`, any step of the trail, or the browser's own back button | come back out |
 | type anything | filters on name, address, note and list name, wherever you are |
+| `◷ new this week` | only the places saved in the last seven days |
 | `near me` | sort by distance from you — asks for your location |
 | `○ not been yet` | fold in the places I have not been to yet, hollow-bulleted |
 | `+ recommend` | send me somewhere you think should be here — a Maps link, and why |
@@ -368,3 +414,11 @@ does not belong in a pattern.
 
 Only public lists work. A list has to be shared with "anyone with the link" —
 the fetcher sends no credentials and cannot see a private one.
+
+`added` is the day this repository first saw a place, not the day it was saved
+in Maps. Nothing knows the second date, and the first is only as good as the
+refresh history: a place saved and unsaved between two runs is never seen at
+all, and one that disappears from a list and comes back is dated by its return.
+A place that predates the record is undated and therefore never new, which is
+the failure mode worth having — the change list can miss something, but it
+cannot claim a five-year-old restaurant arrived on Tuesday.

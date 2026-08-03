@@ -256,6 +256,47 @@ def absorb(kept: dict, other: dict, lid: str) -> None:
         kept["mid"] = other["mid"]
 
 
+def stamp_added(places: list[dict], previous: dict | None, today: str) -> int:
+    """Date every place by the day this file first saw it.
+
+    Google's payload says nothing about when a place was saved -- the endpoint
+    hands back a list, not a history -- so the only date available here is the
+    day a place first turned up in a refresh. That is what `added` is, and it is
+    why it has to be *carried* out of the committed JSON rather than recomputed:
+    yesterday's file is the entire record, and a run that ignored it would
+    re-date the whole collection to whenever the job last happened to run.
+
+    A place the previous file has never seen is stamped with today. A place it
+    has seen but never dated stays undated on purpose: it predates the record,
+    and inventing a date for it would drop 1649 places into a change list meant
+    to hold a week.
+
+    A first run anywhere -- a fork with no `data/lists.json` yet -- is that
+    same case wholesale, and dates nothing for the same reason: a collection
+    saved over years did not arrive on the afternoon somebody cloned this.
+    """
+    if previous is None:
+        return 0
+
+    seen: set[str] = set()
+    dates: dict[str, str] = {}
+    for place in previous.get("places", []):
+        key = place_key(place)
+        seen.add(key)
+        if place.get("added"):
+            dates[key] = place["added"]
+
+    fresh = 0
+    for place in places:
+        key = place_key(place)
+        if key in dates:
+            place["added"] = dates[key]
+        elif key not in seen:
+            place["added"] = today
+            fresh += 1
+    return fresh
+
+
 def build(links: list[str]) -> dict:
     lists: list[dict] = []
     merged: dict[str, dict] = {}
@@ -315,7 +356,22 @@ def read_links() -> list[str]:
     return links
 
 
+def read_previous() -> dict | None:
+    """The last committed file, or None if there is not one to read."""
+    if not OUT.exists():
+        return None
+    try:
+        return json.loads(OUT.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
+
+
 def main() -> int:
+    # Read before fetching, because it is the record of what was already here:
+    # `stamp_added` dates the places against it, and the comparison below
+    # decides whether this run changed anything at all.
+    previous = read_previous()
+
     try:
         links = read_links()
         print(f"fetching {len(links)} lists")
@@ -324,22 +380,23 @@ def main() -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 1
 
+    # Dated from `generated` rather than from the clock, so a place can never
+    # carry a date the file it is in has not reached yet.
+    fresh = stamp_added(data["places"], previous, data["generated"][:10])
+    if fresh:
+        print(f"  + {fresh} new since the last refresh")
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
 
     # Carry the old timestamp forward when nothing else moved. `generated`
     # changes on every run by definition, so without this the daily refresh
     # would produce a commit every day whose entire content is a new date --
     # and the deploy that commit triggers would ship byte-identical places.
-    if OUT.exists():
-        try:
-            previous = json.loads(OUT.read_text(encoding="utf-8"))
-        except ValueError:
-            previous = None
-        if previous and {k: v for k, v in previous.items() if k != "generated"} == {
-            k: v for k, v in data.items() if k != "generated"
-        }:
-            data["generated"] = previous.get("generated", data["generated"])
-            print("  (unchanged)")
+    if previous and {k: v for k, v in previous.items() if k != "generated"} == {
+        k: v for k, v in data.items() if k != "generated"
+    }:
+        data["generated"] = previous.get("generated", data["generated"])
+        print("  (unchanged)")
 
     # Sorted keys and a trailing newline keep the diff to what actually changed.
     OUT.write_text(
