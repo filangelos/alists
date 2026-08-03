@@ -348,11 +348,11 @@
    "name": "Niagara Falls"
   },
   {
-   "count": 8,
+   "count": 9,
    "flag": "🇬🇧",
    "key": "bristol",
-   "lat": 51.452467,
-   "lng": -2.61444,
+   "lat": 51.451652,
+   "lng": -2.603535,
    "name": "Bristol"
   },
   {
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-03T08:45:21Z",
+ "generated": "2026-08-03T10:43:31Z",
  "lists": [
   {
    "count": 70,
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 503,
+   "count": 504,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -24363,6 +24363,25 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-03",
+   "address": "Wareham, UK",
+   "cid": "8879252388501762251",
+   "city": "Bristol",
+   "far": true,
+   "lat": 50.638505699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -2.0570406,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0150tq",
+   "name": "Corfe Castle",
+   "note": "",
+   "type": "sights"
   },
   {
    "added": "2026-08-03",
