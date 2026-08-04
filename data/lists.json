@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 496,
+   "count": 501,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517534,
-   "lng": -0.124172,
+   "lat": 51.517217,
+   "lng": -0.124371,
    "name": "London"
   },
   {
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-03T10:43:31Z",
+ "generated": "2026-08-04T07:50:40Z",
  "lists": [
   {
    "count": 70,
@@ -833,7 +833,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 45,
+   "count": 46,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 504,
+   "count": 508,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -23735,6 +23735,21 @@
    "type": "sights"
   },
   {
+   "added": "2026-08-04",
+   "address": "Medici Courtyard, London W1, United Kingdom",
+   "cid": "7621925875878561358",
+   "city": "London",
+   "lat": 51.5136091,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.145011,
+   "mid": "/g/11pkjdl6zx",
+   "name": "Medici Courtyard",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "London, UK",
    "cid": "6189991424179290781",
    "city": "London",
@@ -24361,6 +24376,78 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-04",
+   "address": "270 Merton Rd, Longfield St, London SW18 5JN, United Kingdom",
+   "cid": "7052152795101090208",
+   "city": "London",
+   "lat": 51.447826199999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1992456,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mdy368kd",
+   "name": "La Finestra",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-04",
+   "address": "Lower Ground, 6, Medici Courtyard, London W1S 1JY, United Kingdom",
+   "cid": "1594755690320938902",
+   "city": "London",
+   "lat": 51.5137168,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1445149,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rg2c1296",
+   "name": "The MAINE",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-04",
+   "address": "Unit 5, Medici Courtyard, Hanover Square, London W1S 1BR, United Kingdom",
+   "cid": "363060177541060065",
+   "city": "London",
+   "lat": 51.513797,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1446063,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z82r7_7y",
+   "name": "Mardy's",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-04",
+   "address": "55A Dean St, London W1D 6AG, United Kingdom",
+   "cid": "127414811132665394",
+   "city": "London",
+   "lat": 51.512516999999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1319059,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11yv16jwv3",
+   "name": "Onsu",
    "note": "",
    "type": "other"
   },
