@@ -76,7 +76,7 @@
  ],
  "cities": [
   {
-   "count": 501,
+   "count": 503,
    "flag": "🇬🇧",
    "key": "london",
    "lat": 51.517217,
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 159,
+   "count": 160,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979762,
-   "lng": 23.743118,
+   "lat": 37.979727,
+   "lng": 23.744076,
    "name": "Athens"
   },
   {
@@ -380,7 +380,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-04T07:50:40Z",
+ "generated": "2026-08-05T07:58:50Z",
  "lists": [
   {
    "count": 70,
@@ -842,7 +842,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 508,
+   "count": 511,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -10903,12 +10903,12 @@
    "address": "1 Folly Brg, Oxford OX1 4JU, United Kingdom",
    "cid": "-5699494731466960585",
    "city": "Oxford",
-   "lat": 51.746184799999995,
+   "lat": 51.7461852,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2564408999999999,
+   "lng": -1.2565145,
    "mid": "/g/12lksq34x",
    "name": "The Folly Restaurant",
    "note": "",
@@ -24380,6 +24380,60 @@
    "type": "other"
   },
   {
+   "added": "2026-08-05",
+   "address": "152-154, Bethnal Grn Rd, London E2 6DG, United Kingdom",
+   "cid": "-2212716265260078545",
+   "city": "London",
+   "lat": 51.5252536,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.070507,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nr2jsg0r",
+   "name": "Bakery HOKO",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "298A Fulham Rd., London SW10 9EP, United Kingdom",
+   "cid": "-8546802469477208690",
+   "city": "London",
+   "lat": 51.4833352,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1856748,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z9rkhh4b",
+   "name": "BRÜE",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Ipsilantou 63, Athina 115 21",
+   "cid": "1636485491715546359",
+   "city": "Athens",
+   "lat": 37.9779176,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7504271,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bxjblvd3",
+   "name": "Simul",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-04",
    "address": "270 Merton Rd, Longfield St, London SW18 5JN, United Kingdom",
    "cid": "7052152795101090208",
@@ -27570,11 +27624,11 @@
    "address": "87-89 George St, London W1U 8AQ, United Kingdom",
    "cid": "3298289798188848014",
    "city": "London",
-   "lat": 51.5170525,
+   "lat": 51.5170488,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.157253,
+   "lng": -0.15725139999999999,
    "marks": [
     "unverified"
    ],
