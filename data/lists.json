@@ -92,19 +92,19 @@
    "name": "New York"
   },
   {
-   "count": 160,
+   "count": 163,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979727,
-   "lng": 23.744076,
+   "lat": 37.979813,
+   "lng": 23.745916,
    "name": "Athens"
   },
   {
-   "count": 132,
+   "count": 130,
    "flag": "🇮🇪",
    "key": "dublin",
-   "lat": 53.339898,
-   "lng": -6.261723,
+   "lat": 53.339845,
+   "lng": -6.261954,
    "name": "Dublin"
   },
   {
@@ -268,6 +268,14 @@
    "name": "Milos"
   },
   {
+   "count": 28,
+   "flag": "🇬🇧",
+   "key": "edinburgh",
+   "lat": 55.950792,
+   "lng": -3.190906,
+   "name": "Edinburgh"
+  },
+  {
    "count": 26,
    "flag": "🇬🇷",
    "key": "kea",
@@ -380,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-05T07:58:50Z",
+ "generated": "2026-08-05T21:53:06Z",
  "lists": [
   {
    "count": 70,
@@ -842,13 +850,22 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 511,
+   "count": 514,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
    "name": "next",
    "owner": "Angelos",
    "url": "https://www.google.com/maps/placelists/list/ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+  },
+  {
+   "count": 26,
+   "description": "",
+   "emoji": "🏛️",
+   "id": "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA",
+   "name": "Edinburgh",
+   "owner": "Angelos",
+   "url": "https://www.google.com/maps/placelists/list/o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
   }
  ],
  "marks": [
@@ -9666,7 +9683,7 @@
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2054851,
+   "lng": -6.2054849999999995,
    "mid": "/g/11smc53z4p",
    "name": "The Orangerie Bar & Ballroom Lounge",
    "note": "",
@@ -22590,11 +22607,11 @@
    "address": "Milopotamos 801 00",
    "cid": "-3830921323018195684",
    "city": "Kythira",
-   "lat": 36.2425125,
+   "lat": 36.2422895,
    "lists": [
     "Ur9CWjLx8a-CXzdDP-vI_BORsHk8dw"
    ],
-   "lng": 22.9448109,
+   "lng": 22.9452455,
    "mid": "/g/11c50q1k31",
    "name": "ΠΛΑΤΑΝΟΣ",
    "note": "",
@@ -24376,6 +24393,63 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Χαριλάου Τρικούπη, Strofiliou 146, Nea Erithrea 146 71",
+   "cid": "-5693442574074900853",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.0888251,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8169045,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11kq2_6l9n",
+   "name": "Guilty Adam",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "El. Venizelou 59, Nea Erithrea 146 71",
+   "cid": "7660399067138597270",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.088559,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8171616,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xs8f0w7t",
+   "name": "Cafe Bronco",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Panagitsas 3, Kifisia 145 62",
+   "cid": "321012495227615609",
+   "city": "Athens",
+   "far": true,
+   "lat": 38.0734111,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.812796799999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gv0tww99",
+   "name": "Il Salumaio d' Atene",
    "note": "",
    "type": "other"
   },
@@ -29769,7 +29843,7 @@
    "added": "2026-07-31",
    "address": "Bayfield Rd, Portree IV51 9EL, United Kingdom",
    "cid": "262033339464590325",
-   "city": "Dublin",
+   "city": "Edinburgh",
    "far": true,
    "lat": 57.4126779,
    "lists": [
@@ -29788,7 +29862,7 @@
    "added": "2026-07-31",
    "address": "73 Berkeley St., Glasgow G3 7DX, United Kingdom",
    "cid": "-6526740961066107987",
-   "city": "Dublin",
+   "city": "Edinburgh",
    "far": true,
    "lat": 55.865142,
    "lists": [
@@ -29826,11 +29900,11 @@
    "address": "Stillorgan Rd, Booterstown, Dublin, A94 V6W3, Ireland",
    "cid": "2271307996296029538",
    "city": "Dublin",
-   "lat": 53.304817899999996,
+   "lat": 53.304816499999994,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2056814,
+   "lng": -6.205682599999999,
    "marks": [
     "unverified"
    ],
@@ -33561,6 +33635,396 @@
    "name": "Santa Pacou Restaurant",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "127 George St, Edinburgh EH2 4JN, United Kingdom",
+   "cid": "6601832604484252435",
+   "city": "Edinburgh",
+   "lat": 55.952362199999996,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.2054031999999997,
+   "mid": "/g/11h5w3ppq8",
+   "name": "Mayvn Cafe",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Edinburgh, UK",
+   "cid": "-829968056973297650",
+   "city": "Edinburgh",
+   "lat": 55.9754642,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1665302,
+   "mid": "/m/012c2c",
+   "name": "Leith",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "1 Melville Pl, Edinburgh EH3 7PR, United Kingdom",
+   "cid": "-9057023727376180654",
+   "city": "Edinburgh",
+   "lat": 55.951201499999996,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.2110444,
+   "mid": "/g/11cmbnpgl4",
+   "name": "Cairngorm Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "145 Princes St., Edinburgh EH2 4BL, United Kingdom",
+   "cid": "5020525616868554254",
+   "city": "Edinburgh",
+   "lat": 55.9503025,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.2076008999999996,
+   "mid": "/g/11j7k27g5f",
+   "name": "The Johnnie Walker Experience",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "197 High St, Edinburgh EH1 1RE, United Kingdom",
+   "cid": "5469709067215961319",
+   "city": "Edinburgh",
+   "lat": 55.949579199999995,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1916067999999997,
+   "mid": "/m/09rjh3",
+   "name": "Heart of Midlothian Mosaic",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Castlehill, Edinburgh EH1 2NG, United Kingdom",
+   "cid": "5087412727581510232",
+   "city": "Edinburgh",
+   "lat": 55.9485947,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1999134999999996,
+   "mid": "/m/0jpn_",
+   "name": "Edinburgh Castle",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "9 Advocate's Cl, Edinburgh EH1 1ND, United Kingdom",
+   "cid": "1344812372800804997",
+   "city": "Edinburgh",
+   "lat": 55.950293599999995,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1916712,
+   "mid": "/g/1pt_ym41s",
+   "name": "The Devil's Advocate",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Princes St., Edinburgh EH2 2HG, United Kingdom",
+   "cid": "5197112907779435696",
+   "city": "Edinburgh",
+   "lat": 55.9509847,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1985487,
+   "mid": "/m/05t8sz",
+   "name": "Princes Street Gardens",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "7 Cockburn St, Edinburgh EH1 1BP, United Kingdom",
+   "cid": "3331370254158188095",
+   "city": "Edinburgh",
+   "lat": 55.950687699999996,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1909208,
+   "mid": "/g/11bwnx_n8q",
+   "name": "The Milkman",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "High St, Edinburgh EH1 1RE, United Kingdom",
+   "cid": "-6186565904963325966",
+   "city": "Edinburgh",
+   "lat": 55.949483699999995,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1908917999999997,
+   "mid": "/m/02qjcr",
+   "name": "St Giles' Cathedral",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "25 W Register St, Edinburgh EH2 2AA, United Kingdom",
+   "cid": "-2009941707385163160",
+   "city": "Edinburgh",
+   "lat": 55.953776999999995,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1914648,
+   "mid": "/g/11h1yvn4zz",
+   "name": "Lady Libertine",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "1, India Buildings, Victoria St, Edinburgh EH1 2EX, United Kingdom",
+   "cid": "741258304766638864",
+   "city": "Edinburgh",
+   "lat": 55.9486207,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1929950999999996,
+   "mid": "/g/11spxqzvpg",
+   "name": "Virgin Hotels Edinburgh",
+   "note": "",
+   "type": "stay"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Edinburgh EH1 1QS, United Kingdom",
+   "cid": "3912169492197853982",
+   "city": "Edinburgh",
+   "lat": 55.950109299999994,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.188021,
+   "mid": "/m/014l24",
+   "name": "Royal Mile",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "9 Victoria St, Edinburgh EH1 2HE, United Kingdom",
+   "cid": "-8940051436379721899",
+   "city": "Edinburgh",
+   "lat": 55.9485878,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1936562,
+   "mid": null,
+   "name": "Bertie's Proper Fish & Chips",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Calton Hill, Edinburgh EH7 5AA, United Kingdom",
+   "cid": "-6264759117262413779",
+   "city": "Edinburgh",
+   "lat": 55.9547653,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1819062,
+   "mid": "/m/0568wq",
+   "name": "National Monument of Scotland",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Greyfriars Place, Edinburgh EH1 2QQ, United Kingdom",
+   "cid": "-2211123836864918393",
+   "city": "Edinburgh",
+   "lat": 55.946673999999994,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1921255,
+   "mid": "/m/0cv8wd",
+   "name": "Greyfriars Kirkyard Cemetery Edinburgh",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "University of, South Bridge, Edinburgh EH8 9YL, United Kingdom",
+   "cid": "3595043015906314883",
+   "city": "Edinburgh",
+   "lat": 55.9474302,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1872571,
+   "mid": "/m/094d98",
+   "name": "Old College, The University of Edinburgh",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "New Parliament House, 5-7 Regent Rd, Edinburgh EH7 5BL, United Kingdom",
+   "cid": "3801708472846333779",
+   "city": "Edinburgh",
+   "lat": 55.9536869,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1802687,
+   "mid": null,
+   "name": "Old Royal High School",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Edinburgh EH7 5AA, UK",
+   "cid": "-7961882121451641123",
+   "city": "Edinburgh",
+   "lat": 55.955046499999995,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1827408999999998,
+   "mid": null,
+   "name": "Calton Hill",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "153 Canongate, Edinburgh EH8 8BN, United Kingdom",
+   "cid": "-1274951914321419693",
+   "city": "Edinburgh",
+   "lat": 55.951904,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1796232,
+   "mid": "/m/081_mc",
+   "name": "Canongate Kirk",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "1759 Regent Rd, Edinburgh EH8 8DR, United Kingdom",
+   "cid": "146515153537661448",
+   "city": "Edinburgh",
+   "lat": 55.9534843,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.178296,
+   "mid": "/g/11bcdhq23x",
+   "name": "Burns Monument",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Canongate, Edinburgh EH8 8DX, United Kingdom",
+   "cid": "2858612425985882582",
+   "city": "Edinburgh",
+   "lat": 55.952691099999996,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1724029999999996,
+   "mid": null,
+   "name": "Palace of Holyroodhouse",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Queen's Dr, Edinburgh EH8 8HG, United Kingdom",
+   "cid": "1040961670926303587",
+   "city": "Edinburgh",
+   "lat": 55.9460153,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1596354,
+   "mid": "/m/02x4b_",
+   "name": "Holyrood Park",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Edinburgh EH15 3PY, United Kingdom",
+   "cid": "2416821580808277232",
+   "city": "Edinburgh",
+   "lat": 55.9440825,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1618323999999998,
+   "mid": "/m/02x4d4",
+   "name": "Arthur's Seat",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Edinburgh EH8 8AZ, United Kingdom",
+   "cid": "2948657472552331844",
+   "city": "Edinburgh",
+   "lat": 55.9508959,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1684227999999997,
+   "mid": "/g/11f9wvvc2z",
+   "name": "St. Margaret's Well",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-05",
+   "address": "Holyrood Park, Queen's Dr, Edinburgh EH8 8JA, United Kingdom",
+   "cid": "-5543695838507862856",
+   "city": "Edinburgh",
+   "lat": 55.9509547,
+   "lists": [
+    "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+   ],
+   "lng": -3.1614071,
+   "mid": "/g/119tpxmwy",
+   "name": "St Anthony's Chapel Ruins",
+   "note": "",
+   "type": "sights"
   }
  ]
 }
