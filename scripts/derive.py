@@ -206,7 +206,6 @@ CITIES: dict[str, str] = {
     "D.C.": "Washington",
     "Ox": "Oxford",
     "The dark side": "Cambridge",
-    "Edinburgh · Angelos": "Edinburgh",
     "Schnitzeland": "Vienna",
     "Yale": "New Haven",
     "Niagara": "Niagara Falls",
