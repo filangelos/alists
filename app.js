@@ -972,7 +972,7 @@
   const counts = () => `${shown.places} places · ${shown.cities} cities`;
 
   function renderCounts() {
-    $('gl-subtitle').textContent = DATA.owner ? `${DATA.owner} · ${counts()}` : counts();
+    $('gl-subtitle').textContent = counts();
   }
 
   function setActive(next) {
