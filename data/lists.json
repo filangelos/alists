@@ -84,11 +84,11 @@
    "name": "London"
   },
   {
-   "count": 265,
+   "count": 266,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.729927,
-   "lng": -73.990467,
+   "lat": 40.72972,
+   "lng": -73.990385,
    "name": "New York"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-05T21:53:06Z",
+ "generated": "2026-08-06T07:58:23Z",
  "lists": [
   {
    "count": 70,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 514,
+   "count": 515,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -24397,6 +24397,24 @@
    "type": "other"
   },
   {
+   "added": "2026-08-06",
+   "address": "904 Grand St, Brooklyn, NY 11206, United States",
+   "cid": "-3807620549050164005",
+   "city": "New York",
+   "lat": 40.7124558,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9379107,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z477tbkg",
+   "name": "field study coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-08-05",
    "address": "Χαριλάου Τρικούπη, Strofiliou 146, Nea Erithrea 146 71",
    "cid": "-5693442574074900853",
@@ -27248,11 +27266,11 @@
    "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
    "cid": "1213862716908497279",
    "city": "London",
-   "lat": 51.5163449,
+   "lat": 51.516050899999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.10258099999999999,
+   "lng": -0.1026115,
    "marks": [
     "unverified"
    ],
