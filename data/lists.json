@@ -84,19 +84,19 @@
    "name": "London"
   },
   {
-   "count": 266,
+   "count": 268,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.72972,
-   "lng": -73.990385,
+   "lat": 40.729485,
+   "lng": -73.990216,
    "name": "New York"
   },
   {
-   "count": 163,
+   "count": 164,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979813,
-   "lng": 23.745916,
+   "lat": 37.979787,
+   "lng": 23.745475,
    "name": "Athens"
   },
   {
@@ -132,11 +132,11 @@
    "name": "Singapore"
   },
   {
-   "count": 56,
+   "count": 57,
    "flag": "🇫🇷",
    "key": "paris",
-   "lat": 48.864526,
-   "lng": 2.340923,
+   "lat": 48.864621,
+   "lng": 2.340327,
    "name": "Paris"
   },
   {
@@ -156,6 +156,14 @@
    "name": "Berlin"
   },
   {
+   "count": 44,
+   "flag": "🇬🇷",
+   "key": "mykonos",
+   "lat": 37.445644,
+   "lng": 25.329462,
+   "name": "Mykonos"
+  },
+  {
    "count": 41,
    "flag": "🇩🇰",
    "key": "copenhagen",
@@ -170,14 +178,6 @@
    "lat": 35.339433,
    "lng": 25.121737,
    "name": "Crete"
-  },
-  {
-   "count": 41,
-   "flag": "🇬🇷",
-   "key": "mykonos",
-   "lat": 37.445385,
-   "lng": 25.332399,
-   "name": "Mykonos"
   },
   {
    "count": 41,
@@ -204,12 +204,20 @@
    "name": "Miami"
   },
   {
-   "count": 38,
+   "count": 39,
    "flag": "🇬🇷",
    "key": "naxos",
-   "lat": 37.0755,
-   "lng": 25.377282,
+   "lat": 37.074884,
+   "lng": 25.37738,
    "name": "Naxos"
+  },
+  {
+   "count": 35,
+   "flag": "🇬🇷",
+   "key": "syros",
+   "lat": 37.444434,
+   "lng": 24.942606,
+   "name": "Syros"
   },
   {
    "count": 35,
@@ -226,14 +234,6 @@
    "lat": 41.384049,
    "lng": 2.16876,
    "name": "Barcelona"
-  },
-  {
-   "count": 33,
-   "flag": "🇬🇷",
-   "key": "syros",
-   "lat": 37.444412,
-   "lng": 24.942606,
-   "name": "Syros"
   },
   {
    "count": 30,
@@ -300,11 +300,11 @@
    "name": "Kythira"
   },
   {
-   "count": 19,
+   "count": 20,
    "flag": "🇬🇷",
    "key": "kythnos",
-   "lat": 37.412436,
-   "lng": 24.425196,
+   "lat": 37.41242,
+   "lng": 24.425249,
    "name": "Kythnos"
   },
   {
@@ -316,11 +316,11 @@
    "name": "Cambridge"
   },
   {
-   "count": 16,
+   "count": 17,
    "flag": "🇬🇷",
    "key": "antiparos",
-   "lat": 37.039937,
-   "lng": 25.08078,
+   "lat": 37.039836,
+   "lng": 25.081457,
    "name": "Antiparos"
   },
   {
@@ -388,10 +388,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-06T07:58:23Z",
+ "generated": "2026-08-07T06:35:54Z",
  "lists": [
   {
-   "count": 70,
+   "count": 71,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 515,
+   "count": 526,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -880,6 +880,22 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-08-07",
+   "address": "Μυρσινη 842 00",
+   "cid": "5104313336453238047",
+   "city": "Mykonos",
+   "far": true,
+   "lat": 37.583324499999996,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": 25.2021938,
+   "mid": "/g/11cs1x8pxb",
+   "name": "Teréza",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-08-03",
    "address": "",
@@ -5857,11 +5873,11 @@
    "address": "825 7th Ave, New York, NY 10019, United States",
    "cid": "-5752242370159446629",
    "city": "New York",
-   "lat": 40.7631671,
+   "lat": 40.7630777,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.98150009999999,
+   "lng": -73.9814035,
    "mid": "/g/11y618y2_4",
    "name": "Venchi Chocolate & Gelato 7th Avenue",
    "note": "",
@@ -24393,6 +24409,209 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "718 Lorimer St, Brooklyn, NY 11211, United States",
+   "cid": "8624282043435192767",
+   "city": "New York",
+   "lat": 40.7184442,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9498802,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n99q2nq9",
+   "name": "Ants Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "102 Broadway, Brooklyn, NY 11249, United States",
+   "cid": "7473758969207743445",
+   "city": "New York",
+   "lat": 40.7103058,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9651617,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vylh26jf",
+   "name": "Ants Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "15 Rue Tronchet, 75008 Paris, France",
+   "cid": "4383969206310937669",
+   "city": "Paris",
+   "lat": 48.8719253,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3256443,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zd83tmtt",
+   "name": "heaf",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Mark. Mpotsari 49, Athina 117 42",
+   "cid": "7228643807742184287",
+   "city": "Athens",
+   "lat": 37.9645072,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7261216,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vbtnxm45",
+   "name": "Gallina Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Agia Eirini 847 02",
+   "cid": "-1982781575163370932",
+   "city": "Antiparos",
+   "far": true,
+   "lat": 36.4545641,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.3436324,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c0p_b9l0",
+   "name": "Agistri Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Βλυχάδα 847 03",
+   "cid": "6453172477927205111",
+   "city": "Naxos",
+   "far": true,
+   "lat": 36.3371953,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.4355884,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gr2zxvf5",
+   "name": "Το Στέκι του Ψαρά",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Κτικαδος 38, Tinos 842 00",
+   "cid": "-6508597970667924749",
+   "city": "Mykonos",
+   "far": true,
+   "lat": 37.5660127,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.1561004,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c0qgkl6x",
+   "name": "Αγνάντι-Μεζεδοπωλείο-καφενείο-παντοπωλείο",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Ir. Politechniou, Tinos 842 00",
+   "cid": "2917356475900173861",
+   "city": "Mykonos",
+   "far": true,
+   "lat": 37.532761,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.172138,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1q5gnwyjb",
+   "name": "Like salt",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Αετοφωλιά 0, Aetofolia 842 00",
+   "cid": "-4802474064469687773",
+   "city": "Syros",
+   "far": true,
+   "lat": 37.6177233,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.117789,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bycjn4yt",
+   "name": "Kounaria",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Unnamed Road, Kithnos 840 06",
+   "cid": "4734811649137540062",
+   "city": "Kythnos",
+   "lat": 37.3968549,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.4593709,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fy4dzgtd",
+   "name": "Arodou Seafood Tavern",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-07",
+   "address": "Λυγερο, Κυκλαδες 841 00",
+   "cid": "-1452952858688198598",
+   "city": "Syros",
+   "lat": 37.4801575,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.9333454,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sstwfjyg",
+   "name": "Lygerós",
    "note": "",
    "type": "other"
   },
