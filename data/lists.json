@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 503,
+   "count": 506,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517217,
-   "lng": -0.124371,
+   "lat": 51.51719,
+   "lng": -0.124625,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 164,
+   "count": 170,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979787,
-   "lng": 23.745475,
+   "lat": 37.979283,
+   "lng": 23.746345,
    "name": "Athens"
   },
   {
@@ -388,10 +388,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-07T06:35:54Z",
+ "generated": "2026-08-08T06:00:51Z",
  "lists": [
   {
-   "count": 71,
+   "count": 74,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -409,7 +409,7 @@
    "url": "https://www.google.com/maps/placelists/list/TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
   },
   {
-   "count": 76,
+   "count": 81,
    "description": "",
    "emoji": "🏛️",
    "id": "ZkzMjrM6SXWD7BtpwoxAgg",
@@ -427,7 +427,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 50,
+   "count": 51,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 526,
+   "count": 530,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -881,6 +881,53 @@
  "owner": "Angelos",
  "places": [
   {
+   "address": "Leof. Legrenon, Lavreotiki 195 00",
+   "cid": "-6031971778530712695",
+   "city": "Athens",
+   "lat": 37.6682949,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.9954879,
+   "mid": "/g/12627rx9d",
+   "name": "Theodoros & Eleni",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "Vasileos Konstantinou 43, Vari 166 72",
+   "cid": "-3179548448561003968",
+   "city": "Athens",
+   "lat": 37.8271478,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.8040883,
+   "mid": "/g/11h1g6m3lh",
+   "name": "Napul'è Italian Comfort Food & Wine",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "Leof. Poseidonos 4, Vouliagmeni 166 71",
+   "cid": "-5929449861455674658",
+   "city": "Athens",
+   "lat": 37.8126795,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.7814893,
+   "mid": "/g/1tfhwlf0",
+   "name": "En Plo",
+   "note": "",
+   "type": "food"
+  },
+  {
    "added": "2026-08-07",
    "address": "Μυρσινη 842 00",
    "cid": "5104313336453238047",
@@ -902,11 +949,11 @@
    "cid": "-7303243223050038102",
    "city": "Athens",
    "far": true,
-   "lat": 38.4559962,
+   "lat": 38.456013399999996,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
    ],
-   "lng": 23.594523,
+   "lng": 23.5945496,
    "mid": null,
    "name": "Αλάτι - Ψαροταβέρνα Χαλκίδα",
    "note": "",
@@ -2527,6 +2574,51 @@
    "type": "drinks"
   },
   {
+   "added": "2026-08-08",
+   "address": "Leof. Poseidonos 6, Vouliagmeni 166 71",
+   "cid": "9010956083153075456",
+   "city": "Athens",
+   "lat": 37.8098919,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.7817346,
+   "mid": "/g/11cssnfdb0",
+   "name": "Akti Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "ΦΟΥΡΝΟΣ, Vari 166 72",
+   "cid": "3289582108494660816",
+   "city": "Athens",
+   "lat": 37.819669399999995,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.8045527,
+   "mid": "/g/11jdqffcf1",
+   "name": "COYOACAN BEACH BAR",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "Sounio Avenue, 27th km, Athens, Vari 166 72",
+   "cid": "-3556069558495911204",
+   "city": "Athens",
+   "lat": 37.8069766,
+   "lists": [
+    "ZkzMjrM6SXWD7BtpwoxAgg"
+   ],
+   "lng": 23.7996798,
+   "mid": "/g/1tcy1m39",
+   "name": "Island Club & Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
    "added": "2026-08-01",
    "address": "Grammou 46, Vrilissia 152 35",
    "cid": "-2812942636350745379",
@@ -3185,20 +3277,6 @@
    "type": "sights"
   },
   {
-   "address": "Leof. Legrenon, Lavreotiki 195 00",
-   "cid": "-6031971778530712695",
-   "city": "Athens",
-   "lat": 37.6682949,
-   "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
-   ],
-   "lng": 23.9954879,
-   "mid": "/g/12627rx9d",
-   "name": "Theodore & Helen",
-   "note": "",
-   "type": "other"
-  },
-  {
    "address": "40, Apollonos street, Vouliagmeni 166 71",
    "cid": "-2127298894432945894",
    "city": "Athens",
@@ -3232,13 +3310,14 @@
    "city": "Athens",
    "lat": 37.814159,
    "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
+    "ZkzMjrM6SXWD7BtpwoxAgg",
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
    ],
    "lng": 23.7665771,
    "mid": "/g/11ghp2m1fx",
    "name": "Krabo",
    "note": "",
-   "type": "other"
+   "type": "drinks"
   },
   {
    "address": "Grigoriou Lampraki 2, Glifada 166 74",
@@ -24413,6 +24492,78 @@
    "type": "other"
   },
   {
+   "added": "2026-08-08",
+   "address": "43 Store St, London WC1E 7DB, United Kingdom",
+   "cid": "-5625925112469563471",
+   "city": "London",
+   "lat": 51.5201948,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1305279,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1v_nb_kk",
+   "name": "Café Deco",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "Pl. Amvrosiou Plita 1, Athina 116 31",
+   "cid": "7309583441248662466",
+   "city": "Athens",
+   "lat": 37.9592789,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7402959,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zk0jx96c",
+   "name": "Plyta",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "46 Churchfield Rd, London W3 6EB, United Kingdom",
+   "cid": "-5787859959219627785",
+   "city": "London",
+   "lat": 51.5088388,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2653799,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nqbl6t20",
+   "name": "Sure Thing",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-08",
+   "address": "The Carlton Tower, 1 Cadogan Pl, London SW1X 9PY, United Kingdom",
+   "cid": "515437638060362933",
+   "city": "London",
+   "lat": 51.4984519,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.158989,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vz22fd6l",
+   "name": "La Maison Ani London",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-07",
    "address": "718 Lorimer St, Brooklyn, NY 11211, United States",
    "cid": "8624282043435192767",
@@ -27376,11 +27527,11 @@
    "address": "Dragatsaniou 08, Athina 105 59",
    "cid": "-5627314883358900650",
    "city": "Athens",
-   "lat": 37.9797618,
+   "lat": 37.9796897,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.730815,
+   "lng": 23.730624799999998,
    "marks": [
     "unverified"
    ],
