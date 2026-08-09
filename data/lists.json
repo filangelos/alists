@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 506,
+   "count": 507,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.51719,
-   "lng": -0.124625,
+   "lat": 51.517217,
+   "lng": -0.124624,
    "name": "London"
   },
   {
@@ -276,11 +276,11 @@
    "name": "Edinburgh"
   },
   {
-   "count": 26,
+   "count": 27,
    "flag": "🇬🇷",
    "key": "kea",
-   "lat": 37.653266,
-   "lng": 24.326625,
+   "lat": 37.659536,
+   "lng": 24.325406,
    "name": "Kea"
   },
   {
@@ -388,10 +388,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-08T06:00:51Z",
+ "generated": "2026-08-09T06:02:03Z",
  "lists": [
   {
-   "count": 74,
+   "count": 75,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 530,
+   "count": 531,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -880,6 +880,22 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-08-09",
+   "address": "MX8V+F8, Legrena 195 00",
+   "cid": "5664312702338318014",
+   "city": "Kea",
+   "far": true,
+   "lat": 37.6662615,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": 23.9951109,
+   "mid": "/g/11vzdsc7gm",
+   "name": "Theodore and Helen",
+   "note": "",
+   "type": "food"
+  },
   {
    "address": "Leof. Legrenon, Lavreotiki 195 00",
    "cid": "-6031971778530712695",
@@ -24490,6 +24506,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-09",
+   "address": "74 Great Eastern St, London EC2A 3JL, United Kingdom",
+   "cid": "-6636797321197805864",
+   "city": "London",
+   "lat": 51.525692199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0824866,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nthnf4xd",
+   "name": "Corgi Cafe",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-08-08",
