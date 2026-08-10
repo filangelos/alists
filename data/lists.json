@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 507,
+   "count": 511,
    "flag": "🇬🇧",
    "key": "london",
    "lat": 51.517217,
-   "lng": -0.124624,
+   "lng": -0.124669,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 170,
+   "count": 171,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979283,
-   "lng": 23.746345,
+   "lat": 37.979249,
+   "lng": 23.746153,
    "name": "Athens"
   },
   {
@@ -236,20 +236,20 @@
    "name": "Barcelona"
   },
   {
+   "count": 31,
+   "flag": "🇮🇹",
+   "key": "rome",
+   "lat": 41.898611,
+   "lng": 12.473074,
+   "name": "Rome"
+  },
+  {
    "count": 30,
    "flag": "🇬🇷",
    "key": "ikaria",
    "lat": 37.622277,
    "lng": 26.09436,
    "name": "Ikaria"
-  },
-  {
-   "count": 30,
-   "flag": "🇮🇹",
-   "key": "rome",
-   "lat": 41.898544,
-   "lng": 12.473357,
-   "name": "Rome"
   },
   {
    "count": 29,
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-09T06:02:03Z",
+ "generated": "2026-08-10T06:45:40Z",
  "lists": [
   {
    "count": 75,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 531,
+   "count": 537,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -13996,11 +13996,11 @@
    "address": "All. des Cygnes, 75015 Paris, France",
    "cid": "1831365660499827051",
    "city": "Paris",
-   "lat": 48.850024499999996,
+   "lat": 48.8500539,
    "lists": [
     "CFoJzsllJTA564TFXO7aP6dfM2PADg"
    ],
-   "lng": 2.2796829,
+   "lng": 2.2797264999999998,
    "mid": "/g/125n0yycl",
    "name": "Statue of Liberty",
    "note": "",
@@ -18826,11 +18826,11 @@
    "address": "30 Victoria St, Singapore 187996",
    "cid": "-9204232981855031023",
    "city": "Singapore",
-   "lat": 1.2952922999999998,
+   "lat": 1.2951545,
    "lists": [
     "5SGeG0GW1xRD2YY-Nn3cjRFnIqFIfQ"
    ],
-   "lng": 103.8517863,
+   "lng": 103.85194519999999,
    "mid": "/m/0b273h",
    "name": "CHIJMES",
    "note": "",
@@ -20240,11 +20240,11 @@
    "address": "Revaler Str. 99, 10245 Berlin, Germany",
    "cid": "5002856006054467230",
    "city": "Berlin",
-   "lat": 52.507686199999995,
+   "lat": 52.5076567,
    "lists": [
     "Od7R75aG_kuID9YqBvumIW2Lkkhx7Q"
    ],
-   "lng": 13.451869499999999,
+   "lng": 13.452027999999999,
    "mid": "/g/11c0pzjl41",
    "name": "RAW-Gelände",
    "note": "",
@@ -24504,6 +24504,115 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "82-92 Great N Rd, London N2 0NL, United Kingdom",
+   "cid": "-6284164375037187323",
+   "city": "London",
+   "lat": 51.5852801,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1621886,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vwggmzzs",
+   "name": "67 Sourdough",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "22 Eccleston St, London SW1W 9LT, United Kingdom",
+   "cid": "-9126601872780818590",
+   "city": "London",
+   "lat": 51.4947532,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14828439999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xn565_h4",
+   "name": "Workshop Cafe & Academy",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "1 Marshall St, Carnaby, London W1F 9BA, United Kingdom",
+   "cid": "7049319502530603358",
+   "city": "London",
+   "lat": 51.5126995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1373116,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11rwhhvz7x",
+   "name": "Third Man Records London",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "Via Andrea Solari, 6, 20144 Milano MI, Italy",
+   "cid": "-1264276925273826674",
+   "city": "Rome",
+   "far": true,
+   "lat": 45.456236399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 9.165331499999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z2xxy5sp",
+   "name": "Fatum Café",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "Kalamiotou 8, Athina 105 60",
+   "cid": "-6239697294777455855",
+   "city": "Athens",
+   "lat": 37.976938,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7289449,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11gjh92qcg",
+   "name": "Avit Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-10",
+   "address": "324a Regent St., London W1B 3BL, United Kingdom",
+   "cid": "-6627725457779974284",
+   "city": "London",
+   "lat": 51.517261299999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1425113,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11mrz5fftn",
+   "name": "Ronnie's",
    "note": "",
    "type": "other"
   },
@@ -34045,11 +34154,11 @@
    "address": "Agia Ipakoi, Kostos 844 00",
    "cid": "-3981244145032607902",
    "city": "Paros",
-   "lat": 37.0809485,
+   "lat": 37.081772799999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.211784899999998,
+   "lng": 25.2117649,
    "marks": [
     "unverified"
    ],
