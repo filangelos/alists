@@ -24,6 +24,12 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    # Read here rather than inline in the step, because a step's `if` cannot
+    # see `secrets` -- and the whole point of that condition is that a fork
+    # without a Cloudflare account still refreshes its data.
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -49,6 +55,31 @@ jobs:
           git commit -m "data: refresh lists"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Publish the file that was just committed to R2, which is where the page
+      # and the MCP server both read it from. The commit above is still the
+      # record -- it is what tomorrow's run diffs against to work out what is
+      # new, and what carries the derived city and category into a reviewable
+      # diff. This is the serving copy.
+      #
+      # Unconditional rather than gated on `changed`, because the two things it
+      # would save are not worth what it costs to be wrong: a PUT of 750 KB is
+      # one class A operation a day, and gating it means a bucket that was
+      # emptied, mis-keyed or created after the last data change stays broken
+      # until the places happen to move. Overwriting yesterday's identical
+      # bytes is the cheaper mistake.
+      #
+      # Skipped entirely without a token, so a clone of this repository
+      # refreshes its own data and publishes nothing, rather than failing a job
+      # over an account it does not have.
+      - name: Publish to R2
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          set -euo pipefail
+          npx --yes wrangler@4 r2 object put alists-data/lists.json \
+            --file=data/lists.json \
+            --content-type=application/json \
+            --remote
 
   # Called rather than triggered -- see the comment in pages.yml.
   deploy:

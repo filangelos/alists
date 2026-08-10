@@ -14,6 +14,12 @@
      changed it counts nothing and offers no recommend button -- a form that
      posted into somebody else's database would be worse than no form. -->
 <meta name="alists-collector" content="https://alists-count.filangelos.workers.dev">
+<!-- Where the places are served from. The same bytes are committed at
+     ./data/lists.json and app.js falls back to them when this cannot be
+     reached, so the file in the tree is still the record and the page still
+     opens from disk -- this is the origin, not the source. Emptying this tag
+     is a supported thing to do: it makes the committed copy the only copy. -->
+<meta name="alists-data" content="https://alists-mcp.filangelos.workers.dev/lists.json">
 <link rel="icon" href="./assets/pin.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

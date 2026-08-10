@@ -1,0 +1,17 @@
+{
+  "name": "alists-mcp",
+  "private": true,
+  "type": "module",
+  "description": "An MCP server over the places in data/lists.json. Not part of the site -- the site is static.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail",
+    "bucket": "wrangler r2 bucket create alists-data",
+    "publish-data": "wrangler r2 object put alists-data/lists.json --file=../data/lists.json --content-type=application/json --remote",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

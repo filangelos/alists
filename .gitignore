@@ -3,8 +3,11 @@ __pycache__/
 .DS_Store
 collector/node_modules/
 collector/.wrangler/
+mcp/node_modules/
+mcp/.wrangler/
 
 # Where `wrangler dev` reads local secrets from. Nothing here needs one today,
 # and this is ignored anyway: it is the file that gets committed by accident
 # once, into a public repo, and is then a secret forever.
 collector/.dev.vars
+mcp/.dev.vars

@@ -1,0 +1,50 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "alists-mcp",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-07-30",
+
+  // Free plan on purpose, same as the collector. It is the only thing here
+  // that turns a crawler that has found a public endpoint into a Worker that
+  // stops answering rather than into an invoice, and this endpoint is more
+  // findable than that one: it is the sort of URL that ends up in a client
+  // config, a blog post and somebody's list of public MCP servers.
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+
+  "r2_buckets": [
+    {
+      // Written by the `refresh` workflow, read here and nowhere else. The
+      // Worker has no write binding at all -- there is no code path in this
+      // deploy that could change the data, which is worth more than any check
+      // that it does not.
+      "binding": "LISTS",
+      "bucket_name": "alists-data"
+    }
+  ],
+
+  "vars": {
+    // The object's name in the bucket, so a second collection is a second
+    // deploy of this file rather than an edit to the code.
+    "LISTS_KEY": "lists.json"
+  },
+
+  // Per-location and deliberately approximate, like the collector's. An agent
+  // answering one question calls two or three tools, so this is roughly eighty
+  // questions a minute from one place: past that it is a crawl rather than a
+  // conversation. If your plan rejects this binding, delete the block -- the
+  // Worker checks for it and carries on without it.
+  "ratelimits": [
+    {
+      "name": "RATE_LIMITER",
+      "namespace_id": "2001",
+      "simple": { "limit": 240, "period": 60 }
+    }
+  ]
+
+  // There is no secret here and nothing to set. See the note at the top of
+  // src/worker.js for why this server is unauthenticated rather than
+  // unfinished.
+}

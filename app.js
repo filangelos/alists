@@ -35,6 +35,19 @@
     return url && url.indexOf('YOUR-SUBDOMAIN') === -1 ? url.replace(/\/+$/, '') : '';
   })();
 
+  /* Where the places are served from, named in index.html for the same reason
+     the collector is. The bytes are identical to the ones committed at
+     ./data/lists.json -- the daily refresh commits the file and then publishes
+     that same file -- so this is a choice of origin and not a choice of truth,
+     and `loadPlaces` falls back to the copy in the tree when it cannot be
+     reached. Empty here is a fork that has not deployed one, or anybody who
+     would rather serve the file themselves. */
+  const DATA_ORIGIN = (() => {
+    const meta = document.querySelector('meta[name="alists-data"]');
+    const url = meta ? (meta.getAttribute('content') || '').trim() : '';
+    return url && url.indexOf('YOUR-SUBDOMAIN') === -1 ? url : '';
+  })();
+
   /* A backstop, not a paging scheme. The tree can only ever render the 1649
      places plus their headers, so this is unreachable in practice -- it exists
      so a bug in the expansion rule degrades to a slow page rather than a hung
@@ -1561,11 +1574,43 @@
     }
   }
 
-  fetch('./data/lists.json', { cache: 'no-cache' })
-    .then((response) => {
+  const readJson = (url) =>
+    fetch(url, { cache: 'no-cache' }).then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
-    })
+    });
+
+  /* The origin first, the committed copy if it does not answer.
+
+     The fallback is the reason it was safe to move the data at all. Everything
+     else here is served off Pages straight out of the tree, and "what is
+     deployed is exactly what is in this repository" is a property worth
+     keeping rather than a slogan -- without this line, a bucket that was
+     emptied or a Worker that was left undeployed would be a blank page instead
+     of a slightly older one. It is also why ./data/lists.json is still
+     committed and still shipped: it is the record, and now it is the spare.
+
+     Only reached on a real failure -- a network error, a 5xx, a 404 -- and it
+     says so in the console rather than silently, because a page quietly
+     serving yesterday's file from a fallback nobody knows fired is how a stale
+     deploy survives for a week. */
+  const loadPlaces = () => {
+    const local = './data/lists.json';
+    /* Opened from disk, the copy on the disk is the whole point. Reaching for
+       the network first would mean `file:///…/index.html` quietly rendering
+       whatever the bucket currently holds, and "a broken deploy can be
+       reproduced by opening index.html from disk" would stop being true on the
+       day it was most needed. */
+    if (!DATA_ORIGIN || location.protocol === 'file:') return readJson(local);
+    return readJson(DATA_ORIGIN).catch((err) => {
+      console.warn(
+        `alists: the data origin did not answer (${err.message}); using the copy in the tree`
+      );
+      return readJson(local);
+    });
+  };
+
+  loadPlaces()
     .then((data) => {
       prepare(data);
       renderChips();
@@ -1594,6 +1639,10 @@
       $('gl-rows').hidden = true;
       const empty = $('gl-empty');
       empty.hidden = false;
+      // Both of them, by the time this runs: the origin is tried first and
+      // the committed copy is what threw. Naming the file rather than the
+      // Worker is right for the same reason -- the file is the one you can do
+      // something about from here.
       empty.innerHTML =
         `data/lists.json did not load (${escapeHtml(String(err.message))}).\n` +
         'Run <code>python3 scripts/fetch.py</code> and reload.';

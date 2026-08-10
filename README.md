@@ -22,19 +22,30 @@ which needs no API key, no cookie and no consent click. So there is no server
 here and no build step:
 
 ```
-lists.txt  ──scripts/fetch.py──▶  data/lists.json  ──▶  index.html + app.js
-(52 links)   + scripts/derive.py    (1649 places)         (static, on Pages)
+lists.txt  ──scripts/fetch.py──▶  data/lists.json ──┬─▶  index.html + app.js
+(52 links)   + scripts/derive.py    (1649 places)   │      (static, on Pages)
                 (once a day)      (38 cities, 10 types)
+                                                    └─▶  R2 ─▶  GET  /lists.json
+                                                        (mcp/)   POST /mcp
 ```
 
 `data/lists.json` is committed, so the page is four static files plus a blob of
-JSON. What is deployed is exactly what is in the tree — a broken deploy can be
-reproduced by opening `index.html` from disk.
+JSON, and the committed file is still the record: it is what tomorrow's refresh
+diffs against to know what is new, it is where a wrong guess about a city shows
+up in a diff, and it is why a broken deploy can be reproduced by opening
+`index.html` from disk.
 
-Two things here talk to a server, and they talk to the same one:
-[`count.js`](count.js), which is the fourth file, and the recommend form in
-`app.js`. Neither is part of the page in any load-bearing sense — see
-[Counting](#counting) and [Somewhere I should go](#somewhere-i-should-go).
+What lives on Cloudflare is where those bytes are *served* from. The refresh
+commits the file and then publishes the same file to an R2 bucket; the page
+loads it from there and falls back to the copy in the tree when it does not
+answer. That is a change of origin and not a change of truth, which is the only
+version of this change worth making — see [For agents](#for-agents).
+
+Three things here talk to a server. [`count.js`](count.js), which is the fourth
+file; the recommend form in `app.js`; and the data load, which is the only one
+the page would miss, and only until the fallback fires. See
+[Counting](#counting), [Somewhere I should go](#somewhere-i-should-go) and
+[For agents](#for-agents).
 
 ## The two derived levels
 
@@ -301,6 +312,14 @@ Once, in **Settings → Pages**, set **Source** to **GitHub Actions**. After tha
   `GITHUB_TOKEN` does not start another workflow, so a triggered deploy would
   never fire and both jobs would report success over stale data.
 
+`refresh` also publishes `data/lists.json` to R2, which needs two repository
+secrets — `CLOUDFLARE_ACCOUNT_ID`, and a `CLOUDFLARE_API_TOKEN` holding **Workers
+R2 Storage: Edit** and nothing else. Without them the step is skipped rather than
+failed, so a clone refreshes its own data and publishes nowhere. Unlike the
+commit, the publish is unconditional: a PUT a day costs one operation, and
+gating it on "did the places change" leaves a bucket that was emptied or
+re-created broken until they do. [`mcp/README.md`](mcp/README.md) has the setup.
+
 GitHub disables scheduled workflows after ~60 days without repository activity.
 It emails first, and the `workflow_dispatch` button covers the gap.
 
@@ -397,6 +416,58 @@ to. Instead every field is checked against a closed set read from this repo's ow
 search buckets — so a forged event can only say something the site could have
 said itself, and a daily cap turns filling the database into losing one day of
 counts. `collector/README.md` has the reasoning and the queries.
+
+## For agents
+
+The same places, where something that is not a browser can ask about them. A
+second Cloudflare Worker — [`mcp/`](mcp/) — holds the R2 bucket the page now
+loads its data from, and answers the [Model Context
+Protocol](https://modelcontextprotocol.io) over it:
+
+```
+GET  /lists.json    the whole collection, one object, as app.js loads it
+POST /mcp           five tools, for whatever is asking
+```
+
+| | |
+|---|---|
+| `search_places` | free text, plus city, category, visited state and a date |
+| `places_near` | everything within a radius of a point, nearest first |
+| `get_place` | one place, by name or by CID |
+| `list_cities` | what the collection covers, with counts and centres |
+| `list_categories` | what the categories are, with counts |
+
+`places_near` is the one the rest exists around: *coffee within two kilometres
+of here* is the question a saved-places list is actually for, and it is the one
+the page can only answer by sorting. Its origin is a latitude and longitude, or
+the name of a city or of a place already in the collection. It does not geocode
+an address — that would mean an API key, a network hop per call and a second
+opinion about where places are, and a caller holding an address can geocode it
+themselves. Distances are great-circle, like `near me`, so an answer is a floor
+on how far you will walk.
+
+**Nothing is folded in that the page holds back.** Every tool that can see the
+`next` mark defaults to leaving it out, for the reason
+[the list that files nothing](#the-list-that-files-nothing) exists at all: those
+places are the opposite of a recommendation, and an agent asked for somewhere to
+eat would present them as one. The same argument, one layer down — a count that
+includes rows the caller cannot see is the same lie here as it is in a folder
+header, so every count moves with the filter that produced it.
+
+There is no authentication, and that is the same decision `/review` makes.
+Everything here is already a public page and a public repository, the Worker
+writes nothing and has no write binding to the bucket at all, so a token would
+guard data anybody can download while adding a secret to paste into every
+client config.
+
+It speaks MCP **2026-07-28**, the revision that made the protocol stateless —
+no handshake, no session header, no held-open stream — which is why it fits in
+a Worker with nothing behind it: any isolate can answer any request, because
+there is nothing to remember between two of them. The `initialize`-era
+revisions are answered from the same endpoint until clients have moved off
+them. [`mcp/README.md`](mcp/README.md) has the deploy, the tools and the
+reasoning; `npm test` in that directory checks both the queries and the wire
+format against the real `data/lists.json`, with nothing stubbed but the bucket.
 
 ## Caveats
 
