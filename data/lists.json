@@ -245,19 +245,19 @@
   },
   {
    "count": 30,
+   "flag": "🇦🇪",
+   "key": "dubai",
+   "lat": 25.189852,
+   "lng": 55.275517,
+   "name": "Dubai"
+  },
+  {
+   "count": 30,
    "flag": "🇬🇷",
    "key": "ikaria",
    "lat": 37.622277,
    "lng": 26.09436,
    "name": "Ikaria"
-  },
-  {
-   "count": 29,
-   "flag": "🇦🇪",
-   "key": "dubai",
-   "lat": 25.194639,
-   "lng": 55.275877,
-   "name": "Dubai"
   },
   {
    "count": 29,
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-10T06:45:40Z",
+ "generated": "2026-08-11T06:07:52Z",
  "lists": [
   {
    "count": 75,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 537,
+   "count": 538,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -24506,6 +24506,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-11",
+   "address": "23 Street 14B - Al Qouz Ind.first - Al Quoz - Dubai - United Arab Emirates",
+   "cid": "1566261807057468250",
+   "city": "Dubai",
+   "lat": 25.134503199999997,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 55.226813099999994,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11sdkx7l9v",
+   "name": "La Nena Home & Coffee",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-08-10",
