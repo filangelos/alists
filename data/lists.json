@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-11T06:07:52Z",
+ "generated": "2026-08-12T06:45:59Z",
  "lists": [
   {
    "count": 75,
@@ -490,7 +490,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 81,
+   "count": 82,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -553,7 +553,7 @@
    "url": "https://www.google.com/maps/placelists/list/3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
   },
   {
-   "count": 25,
+   "count": 26,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 538,
+   "count": 537,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -5882,12 +5882,12 @@
    "address": "328 Bleecker St, New York, NY 10014, United States",
    "cid": "4996376445726847295",
    "city": "New York",
-   "lat": 40.733255899999996,
+   "lat": 40.7332691,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
-   "lng": -74.0042873,
+   "lng": -74.0044721,
    "mid": "/g/11vyhfps7h",
    "name": "RHYTHM ZERO | WEST VILLAGE",
    "note": "",
@@ -8268,6 +8268,22 @@
    "name": "Ria's",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-07-31",
+   "address": "88-89 Cowcross St, London EC1M 6BP, United Kingdom",
+   "cid": "-8703344682961420052",
+   "city": "London",
+   "lat": 51.520004199999995,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
+   ],
+   "lng": -0.1023182,
+   "mid": "/g/11z7lkcgpt",
+   "name": "Allpress Coffee Roasters Farringdon",
+   "note": "",
+   "type": "coffee"
   },
   {
    "address": "78 S Bridge Rd, Singapore 058708",
@@ -11840,11 +11856,11 @@
    "address": "14-16 Rupert St, London W1D 6DD, United Kingdom",
    "cid": "1419630074103272256",
    "city": "London",
-   "lat": 51.5108004,
+   "lat": 51.510832,
    "lists": [
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.132405,
+   "lng": -0.13233599999999998,
    "mid": "/g/1whdhtw4",
    "name": "Waxy O'Connor's London",
    "note": "",
@@ -25725,24 +25741,6 @@
    "name": "Dumbo Shoreditch",
    "note": "",
    "type": "other"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "88-89 Cowcross St, London EC1M 6BP, United Kingdom",
-   "cid": "-8703344682961420052",
-   "city": "London",
-   "lat": 51.520004199999995,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1023182,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z7lkcgpt",
-   "name": "Allpress Coffee Roasters Farringdon",
-   "note": "",
-   "type": "coffee"
   },
   {
    "added": "2026-07-31",
