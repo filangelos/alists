@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 511,
+   "count": 513,
    "flag": "🇬🇧",
    "key": "london",
    "lat": 51.517217,
-   "lng": -0.124669,
+   "lng": -0.1248,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 171,
+   "count": 173,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979249,
-   "lng": 23.746153,
+   "lat": 37.979158,
+   "lng": 23.745916,
    "name": "Athens"
   },
   {
@@ -132,11 +132,11 @@
    "name": "Singapore"
   },
   {
-   "count": 57,
+   "count": 58,
    "flag": "🇫🇷",
    "key": "paris",
-   "lat": 48.864621,
-   "lng": 2.340327,
+   "lat": 48.864526,
+   "lng": 2.340923,
    "name": "Paris"
   },
   {
@@ -312,7 +312,7 @@
    "flag": "🇬🇧",
    "key": "cambridge",
    "lat": 52.2055,
-   "lng": 0.117787,
+   "lng": 0.117746,
    "name": "Cambridge"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-12T06:45:59Z",
+ "generated": "2026-08-13T06:50:13Z",
  "lists": [
   {
    "count": 75,
@@ -535,7 +535,7 @@
    "url": "https://www.google.com/maps/placelists/list/-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
   },
   {
-   "count": 47,
+   "count": 48,
    "description": "",
    "emoji": "🍺",
    "id": "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
@@ -841,7 +841,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 46,
+   "count": 47,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 537,
+   "count": 540,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -7804,11 +7804,11 @@
    "address": "Οικισμός, Merichas 840 06",
    "cid": "5428930593099850680",
    "city": "Kythnos",
-   "lat": 37.3900171,
+   "lat": 37.390534699999996,
    "lists": [
     "4eLLhFow8Fk-sTk7zmdVtPNYsZRJNQ"
    ],
-   "lng": 24.3978811,
+   "lng": 24.397500899999997,
    "mid": "/g/11xn93xhz5",
    "name": "Στο νησί",
    "note": "",
@@ -10673,6 +10673,21 @@
    "name": "TRIBE D6",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-13",
+   "address": "94A Crawford St, London W1H 2HQ, United Kingdom",
+   "cid": "8510562771749530325",
+   "city": "London",
+   "lat": 51.519344,
+   "lists": [
+    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
+   ],
+   "lng": -0.16145759999999998,
+   "mid": "/g/11b909r422",
+   "name": "The Duke of Wellington",
+   "note": "",
+   "type": "drinks"
   },
   {
    "address": "119 Kensington Church St, London W8 7LN, United Kingdom",
@@ -19696,11 +19711,11 @@
    "address": "St John's College, St Johns St, Cambridge CB2 1TP, United Kingdom",
    "cid": "6719676646661510469",
    "city": "Cambridge",
-   "lat": 52.207778499999996,
+   "lat": 52.207804499999995,
    "lists": [
     "1bKFUJWbdDcpXVzJPhpK3ozrxDN9VA"
    ],
-   "lng": 0.1178955,
+   "lng": 0.117813,
    "mid": "/m/0d07s",
    "name": "St John's College",
    "note": "",
@@ -23879,6 +23894,21 @@
    "type": "sights"
   },
   {
+   "added": "2026-08-13",
+   "address": "Tyburnia, London, UK",
+   "cid": "-9088866808217857311",
+   "city": "London",
+   "lat": 51.5144519,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.176264,
+   "mid": "/g/1thlmk7b",
+   "name": "Conduit Mews",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-04",
    "address": "Medici Courtyard, London W1, United Kingdom",
    "cid": "7621925875878561358",
@@ -24520,6 +24550,60 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-13",
+   "address": "Loukianou 21b, Athina 106 75",
+   "cid": "7366002956986848140",
+   "city": "Athens",
+   "lat": 37.9777355,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7434641,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f3v557jd",
+   "name": "Brunello",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-13",
+   "address": "50 Rue de Turenne, 75003 Paris, France",
+   "cid": "8560915986672086413",
+   "city": "Paris",
+   "lat": 48.858326399999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 2.3647187,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11n3klz384",
+   "name": "DAARK³",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-13",
+   "address": "Miltiadou 22, Athina 105 60",
+   "cid": "3269446597048795328",
+   "city": "Athens",
+   "lat": 37.978429,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.728306,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nk0fyywd",
+   "name": "FETA ME MELI",
    "note": "",
    "type": "other"
   },
@@ -34477,7 +34561,7 @@
    "lists": [
     "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
    ],
-   "lng": -3.1796232,
+   "lng": -3.1796233,
    "mid": "/m/081_mc",
    "name": "Canongate Kirk",
    "note": "",
