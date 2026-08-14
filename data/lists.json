@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-13T06:50:13Z",
+ "generated": "2026-08-14T06:46:37Z",
  "lists": [
   {
    "count": 75,
@@ -26398,11 +26398,11 @@
    "cid": "-2645958854799405701",
    "city": "Athens",
    "far": true,
-   "lat": 37.8119382,
+   "lat": 37.8119078,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.782637599999997,
+   "lng": 23.782638499999997,
    "marks": [
     "unverified"
    ],
@@ -31349,11 +31349,11 @@
    "address": "Pl. Agion Theodoron 3, Athina 105 61",
    "cid": "1366830091904729648",
    "city": "Athens",
-   "lat": 37.9792492,
+   "lat": 37.9792659,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7296388,
+   "lng": 23.7296484,
    "marks": [
     "unverified"
    ],
