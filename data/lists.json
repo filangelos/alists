@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 513,
+   "count": 516,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517217,
-   "lng": -0.1248,
+   "lat": 51.517239,
+   "lng": -0.124943,
    "name": "London"
   },
   {
@@ -388,10 +388,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-14T06:46:37Z",
+ "generated": "2026-08-15T05:45:54Z",
  "lists": [
   {
-   "count": 75,
+   "count": 76,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -436,7 +436,7 @@
    "url": "https://www.google.com/maps/placelists/list/sPUdVz7_eocH35PXclW6pjLN5kzdMw"
   },
   {
-   "count": 55,
+   "count": 56,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
@@ -490,7 +490,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 82,
+   "count": 83,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -517,7 +517,7 @@
    "url": "https://www.google.com/maps/placelists/list/MMQ4UX1kbnY-bHHzT9VX6Y33fxHCxQ"
   },
   {
-   "count": 12,
+   "count": 13,
    "description": "",
    "emoji": "🍦",
    "id": "z68j_oiET_7aWDaDt7LpUvCnMEdN0g",
@@ -880,6 +880,22 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-08-15",
+   "address": "15-17 Blandford St, London W1U 3DG, United Kingdom",
+   "cid": "-1110465975179354907",
+   "city": "London",
+   "lat": 51.518343699999996,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
+   ],
+   "lng": -0.1530717,
+   "mid": "/g/1tgf789p",
+   "name": "Trishna",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-08-09",
    "address": "MX8V+F8, Legrena 195 00",
@@ -8270,6 +8286,21 @@
    "type": "food"
   },
   {
+   "added": "2026-08-01",
+   "address": "28 Blandford St, London W1U 4BZ",
+   "cid": "-6961619835943950020",
+   "city": "London",
+   "lat": 51.518510799999994,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.15304959999999998,
+   "mid": null,
+   "name": "Cup of Joy Marylebone",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-07-31",
    "address": "88-89 Cowcross St, London EC1M 6BP, United Kingdom",
    "cid": "-8703344682961420052",
@@ -9630,6 +9661,21 @@
    "name": "ZENELI Pizzeria e Cucina Napoletana",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-08-15",
+   "address": "Unit 15 Bagley Walk, London N1C 4DH, United Kingdom",
+   "cid": "-9104007868798059413",
+   "city": "London",
+   "lat": 51.5354244,
+   "lists": [
+    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
+   ],
+   "lng": -0.1269033,
+   "mid": "/g/11ffl118ym",
+   "name": "Le Chocolat Alain Ducasse , Le Comptoir Coal Drops Yard",
+   "note": "",
+   "type": "gelato"
   },
   {
    "address": "7 Archer St, London W1D 7AU, United Kingdom",
@@ -12389,11 +12435,11 @@
    "address": "151 3rd St, San Francisco, CA 94103, United States",
    "cid": "-4000145499096786435",
    "city": "San Francisco",
-   "lat": 37.7856634,
+   "lat": 37.7857324,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.4011185,
+   "lng": -122.4010332,
    "mid": "/m/012_1t",
    "name": "San Francisco Museum of Modern Art",
    "note": "",
@@ -24554,6 +24600,24 @@
    "type": "other"
   },
   {
+   "added": "2026-08-15",
+   "address": "2 Hollywood Rd, London SW10 9HR, United Kingdom",
+   "cid": "-813334072603459279",
+   "city": "London",
+   "lat": 51.4859204,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.184226,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11qnk46xpm",
+   "name": "La mia Mamma | Hollywood Road",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-13",
    "address": "Loukianou 21b, Athina 106 75",
    "cid": "7366002956986848140",
@@ -25264,24 +25328,6 @@
    "name": "Studio Coffee",
    "note": "",
    "type": "coffee"
-  },
-  {
-   "added": "2026-08-01",
-   "address": "",
-   "cid": "-6961619835943950020",
-   "city": "London",
-   "lat": 51.518510799999994,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.15304959999999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": null,
-   "name": "Cup of Joy Marylebone",
-   "note": "",
-   "type": "other"
   },
   {
    "added": "2026-08-03",
@@ -30023,11 +30069,11 @@
    "address": "164 Mott St, New York, NY 10013, United States",
    "cid": "-2267805717231399037",
    "city": "New York",
-   "lat": 40.719733399999996,
+   "lat": 40.719754099999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9961107,
+   "lng": -73.9961325,
    "marks": [
     "unverified"
    ],
@@ -34381,7 +34427,7 @@
    "lists": [
     "o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
    ],
-   "lng": -3.1985487,
+   "lng": -3.1985487999999997,
    "mid": "/m/05t8sz",
    "name": "Princes Street Gardens",
    "note": "",
