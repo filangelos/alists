@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-15T05:45:54Z",
+ "generated": "2026-08-16T05:47:09Z",
  "lists": [
   {
    "count": 76,
@@ -490,7 +490,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 83,
+   "count": 84,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -553,7 +553,7 @@
    "url": "https://www.google.com/maps/placelists/list/3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
   },
   {
-   "count": 26,
+   "count": 27,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 540,
+   "count": 539,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4224,11 +4224,11 @@
    "address": "428 Kingsland Rd, London E8 4AA, United Kingdom",
    "cid": "2224091055055860657",
    "city": "London",
-   "lat": 51.542080399999996,
+   "lat": 51.5420805,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
    ],
-   "lng": -0.0759659,
+   "lng": -0.0759673,
    "mid": "/g/11x8jslcps",
    "name": "Ellie's",
    "note": "",
@@ -8286,6 +8286,22 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
+   "address": "Ground Floor, 40 Brushfield St, London E1 6AG, United Kingdom",
+   "cid": "-3703835343123689967",
+   "city": "London",
+   "lat": 51.518943099999994,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
+   ],
+   "lng": -0.0769985,
+   "mid": "/g/11k4zw2bt7",
+   "name": "Nagare Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-08-01",
    "address": "28 Blandford St, London W1U 4BZ",
    "cid": "-6961619835943950020",
@@ -11108,12 +11124,12 @@
    "address": "1 Folly Brg, Oxford OX1 4JU, United Kingdom",
    "cid": "-5699494731466960585",
    "city": "Oxford",
-   "lat": 51.7461852,
+   "lat": 51.746184799999995,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2565145,
+   "lng": -1.2564408999999999,
    "mid": "/g/12lksq34x",
    "name": "The Folly Restaurant",
    "note": "",
@@ -29053,24 +29069,6 @@
    ],
    "mid": "/g/11y9yr_sn7",
    "name": "Nagare Coffee Carnaby",
-   "note": "",
-   "type": "coffee"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "Ground Floor, 40 Brushfield St, London E1 6AG, United Kingdom",
-   "cid": "-3703835343123689967",
-   "city": "London",
-   "lat": 51.518943099999994,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.0769985,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11k4zw2bt7",
-   "name": "Nagare Coffee",
    "note": "",
    "type": "coffee"
   },
