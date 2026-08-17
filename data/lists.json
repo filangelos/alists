@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 516,
+   "count": 517,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517239,
-   "lng": -0.124943,
+   "lat": 51.517217,
+   "lng": -0.124801,
    "name": "London"
   },
   {
@@ -260,11 +260,11 @@
    "name": "Ikaria"
   },
   {
-   "count": 29,
+   "count": 30,
    "flag": "🇬🇷",
    "key": "milos",
-   "lat": 36.737806,
-   "lng": 24.44668,
+   "lat": 36.737666,
+   "lng": 24.446698,
    "name": "Milos"
   },
   {
@@ -324,11 +324,11 @@
    "name": "Antiparos"
   },
   {
-   "count": 15,
+   "count": 16,
    "flag": "🇬🇷",
    "key": "spetses",
-   "lat": 37.267279,
-   "lng": 23.156113,
+   "lat": 37.265795,
+   "lng": 23.156118,
    "name": "Spetses"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-16T05:47:09Z",
+ "generated": "2026-08-17T05:54:16Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 539,
+   "count": 543,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -1398,12 +1398,12 @@
    "address": "Units 1 and 2, 127a Kensington High St, London W8 5SF, United Kingdom",
    "cid": "-7246719255379051305",
    "city": "London",
-   "lat": 51.500653299999996,
+   "lat": 51.5006504,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.19303879999999998,
+   "lng": -0.1930519,
    "mid": "/g/11x2j9b98p",
    "name": "Bancone Kensington",
    "note": "",
@@ -20085,7 +20085,7 @@
    "lists": [
     "VTUDJsQO-Yxuh2n_RoPHS4SWvYs-IA"
    ],
-   "lng": -123.1102818,
+   "lng": -123.11028169999999,
    "mid": "/g/11c1xdsr7z",
    "name": "Nemesis Coffee Gastown",
    "note": "",
@@ -24616,6 +24616,62 @@
    "type": "other"
   },
   {
+   "added": "2026-08-17",
+   "address": "Ampeli, Folegandros 840 11",
+   "cid": "-5937719467051382281",
+   "city": "Milos",
+   "far": true,
+   "lat": 36.6501932,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.8461689,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y7c29mph",
+   "name": "OSTERIA SPINA",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-17",
+   "address": "7576+6X, Spetses 180 50",
+   "cid": "4469075780733601404",
+   "city": "Spetses",
+   "lat": 37.2631364,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.1623293,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z17s_kz7",
+   "name": "Apanemo All Day Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-08-17",
+   "address": "Castle Hill Rd., Dover CT16 1HU, United Kingdom",
+   "cid": "-3210379435370640852",
+   "city": "London",
+   "far": true,
+   "lat": 51.128771,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 1.323391,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/01m4n9",
+   "name": "Dover Castle",
+   "note": "",
+   "type": "sights"
+  },
+  {
    "added": "2026-08-15",
    "address": "2 Hollywood Rd, London SW10 9HR, United Kingdom",
    "cid": "-813334072603459279",
@@ -27832,11 +27888,11 @@
    "address": "Dragatsaniou 08, Athina 105 59",
    "cid": "-5627314883358900650",
    "city": "Athens",
-   "lat": 37.9796897,
+   "lat": 37.9796891,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.730624799999998,
+   "lng": 23.730625399999997,
    "marks": [
     "unverified"
    ],
@@ -29329,11 +29385,11 @@
    "address": "73 Greenwich Ave, New York, NY 10014, United States",
    "cid": "-5539789009414455958",
    "city": "New York",
-   "lat": 40.7366105,
+   "lat": 40.736607899999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -74.0012856,
+   "lng": -74.0012886,
    "marks": [
     "unverified"
    ],
@@ -34298,11 +34354,11 @@
    "address": "Agia Ipakoi, Kostos 844 00",
    "cid": "-3981244145032607902",
    "city": "Paros",
-   "lat": 37.081772799999996,
+   "lat": 37.0810204,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.2117649,
+   "lng": 25.2118136,
    "marks": [
     "unverified"
    ],
