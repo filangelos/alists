@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 517,
+   "count": 518,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517217,
-   "lng": -0.124801,
+   "lat": 51.517239,
+   "lng": -0.124943,
    "name": "London"
   },
   {
@@ -104,7 +104,7 @@
    "flag": "🇮🇪",
    "key": "dublin",
    "lat": 53.339845,
-   "lng": -6.261954,
+   "lng": -6.261918,
    "name": "Dublin"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-17T05:54:16Z",
+ "generated": "2026-08-18T05:48:41Z",
  "lists": [
   {
    "count": 76,
@@ -490,7 +490,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 84,
+   "count": 85,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -553,7 +553,7 @@
    "url": "https://www.google.com/maps/placelists/list/3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
   },
   {
-   "count": 27,
+   "count": 28,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA",
@@ -8284,6 +8284,22 @@
    "name": "Ria's",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-08-18",
+   "address": "96 Euston Rd., London NW1 2DB, United Kingdom",
+   "cid": "7607624200711541403",
+   "city": "London",
+   "lat": 51.5291649,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
+   ],
+   "lng": -0.12670779999999998,
+   "mid": "/g/11c55jj4vk",
+   "name": "Origin Coffee at The British Library",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-07-31",
@@ -32184,11 +32200,11 @@
    "address": "9 Essex St E, Temple Bar, Dublin 8, D02 RW53, Ireland",
    "cid": "-3957917340599183409",
    "city": "Dublin",
-   "lat": 53.3452013,
+   "lat": 53.3415514,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2661415,
+   "lng": -6.2618962,
    "marks": [
     "unverified"
    ],
