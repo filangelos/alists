@@ -84,11 +84,11 @@
    "name": "London"
   },
   {
-   "count": 268,
+   "count": 269,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.729485,
-   "lng": -73.990216,
+   "lat": 40.729456,
+   "lng": -73.990128,
    "name": "New York"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-18T05:48:41Z",
+ "generated": "2026-08-19T05:50:04Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 543,
+   "count": 544,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -24630,6 +24630,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-19",
+   "address": "231 Norman Ave Ste 211, Brooklyn, NY 11222, United States",
+   "cid": "-3888918275258013247",
+   "city": "New York",
+   "lat": 40.7277275,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9443771,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "HYUNAH Coffee Club",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-08-17",
