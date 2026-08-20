@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 518,
+   "count": 519,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517239,
-   "lng": -0.124943,
+   "lat": 51.517261,
+   "lng": -0.125085,
    "name": "London"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-19T05:50:04Z",
+ "generated": "2026-08-20T05:50:04Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 544,
+   "count": 545,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -22827,11 +22827,11 @@
    "address": "Milopotamos 801 00",
    "cid": "-3830921323018195684",
    "city": "Kythira",
-   "lat": 36.2422895,
+   "lat": 36.2422468,
    "lists": [
     "Ur9CWjLx8a-CXzdDP-vI_BORsHk8dw"
    ],
-   "lng": 22.9452455,
+   "lng": 22.945199499999998,
    "mid": "/g/11c50q1k31",
    "name": "ΠΛΑΤΑΝΟΣ",
    "note": "",
@@ -24628,6 +24628,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-20",
+   "address": "47 Maida Vale, London W9 1SH, United Kingdom",
+   "cid": "4288034983338519918",
+   "city": "London",
+   "lat": 51.525993199999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.178708,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11h1jq6gkl",
+   "name": "Chelo",
    "note": "",
    "type": "other"
   },
