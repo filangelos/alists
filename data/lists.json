@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 519,
+   "count": 522,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517261,
-   "lng": -0.125085,
+   "lat": 51.517239,
+   "lng": -0.124943,
    "name": "London"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-20T05:50:04Z",
+ "generated": "2026-08-22T05:46:55Z",
  "lists": [
   {
    "count": 76,
@@ -481,7 +481,7 @@
    "url": "https://www.google.com/maps/placelists/list/v8TD7Dw3Jhw4hLeUewfXeoAPI9ZdMQ"
   },
   {
-   "count": 19,
+   "count": 20,
    "description": "",
    "emoji": "🍕",
    "id": "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q",
@@ -490,7 +490,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 85,
+   "count": 86,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -517,7 +517,7 @@
    "url": "https://www.google.com/maps/placelists/list/MMQ4UX1kbnY-bHHzT9VX6Y33fxHCxQ"
   },
   {
-   "count": 13,
+   "count": 14,
    "description": "",
    "emoji": "🍦",
    "id": "z68j_oiET_7aWDaDt7LpUvCnMEdN0g",
@@ -535,7 +535,7 @@
    "url": "https://www.google.com/maps/placelists/list/-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
   },
   {
-   "count": 48,
+   "count": 49,
    "description": "",
    "emoji": "🍺",
    "id": "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
@@ -841,7 +841,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 47,
+   "count": 48,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 545,
+   "count": 544,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -881,18 +881,19 @@
  "owner": "Angelos",
  "places": [
   {
-   "added": "2026-08-15",
-   "address": "15-17 Blandford St, London W1U 3DG, United Kingdom",
-   "cid": "-1110465975179354907",
+   "added": "2026-07-31",
+   "address": "140 Wardour St, London W1F 8ZT, United Kingdom",
+   "cid": "-3204175520215288568",
    "city": "London",
-   "lat": 51.518343699999996,
+   "lat": 51.5145602,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
-    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
+    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
+    "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
    ],
-   "lng": -0.1530717,
-   "mid": "/g/1tgf789p",
-   "name": "Trishna",
+   "lng": -0.1345361,
+   "mid": "/g/11yp46bjct",
+   "name": "Napoli on the Road • Soho",
    "note": "",
    "type": "food"
   },
@@ -4458,12 +4459,12 @@
    "address": "",
    "cid": "7225504754839341284",
    "city": "Oxford",
-   "lat": 51.7593809,
+   "lat": 51.759381,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2649339,
+   "lng": -1.2649337999999999,
    "mid": null,
    "name": "Freud Cafe Bar",
    "note": "",
@@ -8286,6 +8287,21 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
+   "address": "12A Little Portland St, London W1W 8BJ, United Kingdom",
+   "cid": "8969442312707338578",
+   "city": "London",
+   "lat": 51.5169583,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.1421741,
+   "mid": "/g/11nbh83ccq",
+   "name": "BLK CAB®️(Coffee & People) - Little Portland St.",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-08-18",
    "address": "96 Euston Rd., London NW1 2DB, United Kingdom",
    "cid": "7607624200711541403",
@@ -9695,6 +9711,21 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
+   "address": "8 Ganton St, Carnaby, London W1F 7QP, United Kingdom",
+   "cid": "-3604987159744269160",
+   "city": "London",
+   "lat": 51.5133746,
+   "lists": [
+    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
+   ],
+   "lng": -0.13834639999999998,
+   "mid": "/g/11z8139wj0",
+   "name": "Parlour by Ice Cream Union",
+   "note": "",
+   "type": "gelato"
+  },
+  {
    "added": "2026-08-15",
    "address": "Unit 15 Bagley Walk, London N1C 4DH, United Kingdom",
    "cid": "-9104007868798059413",
@@ -10751,6 +10782,21 @@
    "name": "TRIBE D6",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-22",
+   "address": "82 Duke St, London W1K 6JG, United Kingdom",
+   "cid": "8999979703109704637",
+   "city": "London",
+   "lat": 51.512896999999995,
+   "lists": [
+    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
+   ],
+   "lng": -0.15098399999999998,
+   "mid": "/g/1tdh3bbz",
+   "name": "The Barley Mow Pub Mayfair",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-08-13",
@@ -15183,11 +15229,11 @@
    "address": "Αμπελάς 844 01",
    "cid": "2499519546289604760",
    "city": "Paros",
-   "lat": 37.101082399999996,
+   "lat": 37.1010862,
    "lists": [
     "Zf5AT3kiBq-XKW9McLcNgym6tl4tWA"
    ],
-   "lng": 25.2643862,
+   "lng": 25.2643918,
    "mid": "/g/11st_g58y7",
    "name": "Kedros Restaurant Paros",
    "note": "",
@@ -23972,6 +24018,21 @@
    "type": "sights"
   },
   {
+   "added": "2026-08-22",
+   "address": "Garlick Hill, London EC4V 2AF, United Kingdom",
+   "cid": "6412240650688375281",
+   "city": "London",
+   "lat": 51.511199999999995,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.0936571,
+   "mid": "/m/0dhm2d",
+   "name": "St James Garlickhythe",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-13",
    "address": "Tyburnia, London, UK",
    "cid": "-9088866808217857311",
@@ -24630,6 +24691,42 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-08-22",
+   "address": "36 Charlotte St., London W1T 2NJ",
+   "cid": "7653084351295899612",
+   "city": "London",
+   "lat": 51.5191096,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13521919999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "THE BARN Café Charlotte Street",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-22",
+   "address": "81b Gray's Inn Rd, London WC1X 8TP, United Kingdom",
+   "cid": "2336609626103905966",
+   "city": "London",
+   "lat": 51.5228779,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1146956,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11cjkmhbh_",
+   "name": "Hopper Coffee",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-08-20",
@@ -25998,24 +26095,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "8 Ganton St, Carnaby, London W1F 7QP, United Kingdom",
-   "cid": "-3604987159744269160",
-   "city": "London",
-   "lat": 51.5133746,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.13834639999999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z8139wj0",
-   "name": "Parlour by Ice Cream Union",
-   "note": "",
-   "type": "gelato"
-  },
-  {
-   "added": "2026-07-31",
    "address": "7 Hanover Square, London W1S 1HQ, United Kingdom",
    "cid": "-2217113776854500203",
    "city": "London",
@@ -27106,24 +27185,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "140 Wardour St, London W1F 8ZT, United Kingdom",
-   "cid": "-3204175520215288568",
-   "city": "London",
-   "lat": 51.5145602,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1345361,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11yp46bjct",
-   "name": "Napoli on the Road • Soho",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-07-31",
    "address": "58 Poland St, London W1F 7NR, United Kingdom",
    "cid": "2777771962739908511",
    "city": "London",
@@ -28118,24 +28179,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "12A Little Portland St, London W1W 8BJ, United Kingdom",
-   "cid": "8969442312707338578",
-   "city": "London",
-   "lat": 51.5169583,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1421741,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11nbh83ccq",
-   "name": "BLK CAB®️(Coffee & People) - Little Portland St.",
-   "note": "",
-   "type": "coffee"
-  },
-  {
-   "added": "2026-07-31",
    "address": "Ktena 3, Athina 105 63",
    "cid": "-903424416244359314",
    "city": "Athens",
@@ -28823,11 +28866,11 @@
    "address": "Arch 151 Tilbury Rd, London E10 6RE, United Kingdom",
    "cid": "-7147580270950109940",
    "city": "London",
-   "lat": 51.5701265,
+   "lat": 51.570113899999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.008649,
+   "lng": -0.0086474,
    "marks": [
     "unverified"
    ],
