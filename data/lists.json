@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 173,
+   "count": 174,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979158,
-   "lng": 23.745916,
+   "lat": 37.979212,
+   "lng": 23.745475,
    "name": "Athens"
   },
   {
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-22T05:46:55Z",
+ "generated": "2026-08-23T05:49:23Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 544,
+   "count": 545,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4971,12 +4971,12 @@
    "address": "4-6, 4-6 Islington Grn, London N1 2XA, United Kingdom",
    "cid": "6443791496370736612",
    "city": "London",
-   "lat": 51.5366262,
+   "lat": 51.536669599999996,
    "lists": [
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
     "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
    ],
-   "lng": -0.1030083,
+   "lng": -0.1029423,
    "mid": "/g/11pcf2y_jm",
    "name": "Noci Islington",
    "note": "",
@@ -18981,11 +18981,11 @@
    "address": "30 Victoria St, Singapore 187996",
    "cid": "-9204232981855031023",
    "city": "Singapore",
-   "lat": 1.2951545,
+   "lat": 1.2951469,
    "lists": [
     "5SGeG0GW1xRD2YY-Nn3cjRFnIqFIfQ"
    ],
-   "lng": 103.85194519999999,
+   "lng": 103.85193319999999,
    "mid": "/m/0b273h",
    "name": "CHIJMES",
    "note": "",
@@ -23279,11 +23279,11 @@
    "address": "Travessera de Gràcia, 441, 08025 Barcelona, Spain",
    "cid": "5333055491066369825",
    "city": "Barcelona",
-   "lat": 41.4116135,
+   "lat": 41.411311,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.173002,
+   "lng": 2.1733051,
    "mid": "/g/1tcxltml",
    "name": "Restaurant BelleBuòn",
    "note": "",
@@ -24689,6 +24689,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-23",
+   "address": "Evripidou 11, Athina 105 61",
+   "cid": "-141373634041746133",
+   "city": "Athens",
+   "lat": 37.97951,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7289499,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zcnx4fzc",
+   "name": "IKYL ATHENS",
    "note": "",
    "type": "other"
   },
@@ -29462,11 +29480,11 @@
    "address": "64 Downing St, New York, NY 10014, United States",
    "cid": "-7370452745522266670",
    "city": "New York",
-   "lat": 40.7288427,
+   "lat": 40.728890199999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -74.0048793,
+   "lng": -74.0049073,
    "marks": [
     "unverified"
    ],
@@ -31489,11 +31507,11 @@
    "cid": "-4688807403542960211",
    "city": "Athens",
    "far": true,
-   "lat": 37.8616745,
+   "lat": 37.861672999999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.746807099999998,
+   "lng": 23.7468059,
    "marks": [
     "unverified"
    ],
@@ -31508,11 +31526,11 @@
    "cid": "-2829505901011254754",
    "city": "Vienna",
    "far": true,
-   "lat": 47.306213899999996,
+   "lat": 47.3062687,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 11.3792966,
+   "lng": 11.3793265,
    "marks": [
     "unverified"
    ],
