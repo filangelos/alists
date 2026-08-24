@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-23T05:49:23Z",
+ "generated": "2026-08-24T05:57:07Z",
  "lists": [
   {
    "count": 76,
@@ -2853,11 +2853,11 @@
    "address": "5Q6R+GF, Acharnes 136 72",
    "cid": "3856097643427189924",
    "city": "Athens",
-   "lat": 38.1628462,
+   "lat": 38.1628876,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.7940765,
+   "lng": 23.7940874,
    "mid": "/g/11b8tc1cgc",
    "name": "Ex-Royal Palace of Tatoi",
    "note": "",
@@ -18505,11 +18505,11 @@
    "address": "414 K St NW, Washington, DC 20001, United States",
    "cid": "-5701419352660232177",
    "city": "Washington",
-   "lat": 38.9024888,
+   "lat": 38.9023464,
    "lists": [
     "BetPSmKJ1ri15ctvsig9cMcTJPTo5A"
    ],
-   "lng": -77.0168497,
+   "lng": -77.016853,
    "mid": "/g/11y2fksq1_",
    "name": "2fifty Texas BBQ, K St.",
    "note": "",
