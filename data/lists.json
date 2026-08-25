@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-24T05:57:07Z",
+ "generated": "2026-08-25T05:50:50Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 545,
+   "count": 544,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -5743,11 +5743,11 @@
    "address": "63 W 38th St, New York, NY 10018, United States",
    "cid": "-1612968125682095775",
    "city": "New York",
-   "lat": 40.7521717,
+   "lat": 40.752172,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.98533189999999,
+   "lng": -73.98533139999999,
    "mid": "/g/12m95yxfb",
    "name": "Winnie's Jazz Club",
    "note": "",
@@ -20395,11 +20395,11 @@
    "address": "Revaler Str. 99, 10245 Berlin, Germany",
    "cid": "5002856006054467230",
    "city": "Berlin",
-   "lat": 52.5076567,
+   "lat": 52.507686199999995,
    "lists": [
     "Od7R75aG_kuID9YqBvumIW2Lkkhx7Q"
    ],
-   "lng": 13.452027999999999,
+   "lng": 13.451869499999999,
    "mid": "/g/11c0pzjl41",
    "name": "RAW-Gelände",
    "note": "",
