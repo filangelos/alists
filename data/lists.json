@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-25T05:50:50Z",
+ "generated": "2026-08-26T05:53:39Z",
  "lists": [
   {
    "count": 76,
@@ -12527,7 +12527,7 @@
    "address": "271 Francisco St, San Francisco, CA 94133, United States",
    "cid": "8678031088071956450",
    "city": "San Francisco",
-   "lat": 37.8050746,
+   "lat": 37.805075099999996,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
