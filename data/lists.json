@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 174,
+   "count": 173,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979212,
-   "lng": 23.745475,
+   "lat": 37.979266,
+   "lng": 23.745916,
    "name": "Athens"
   },
   {
@@ -308,6 +308,14 @@
    "name": "Kythnos"
   },
   {
+   "count": 19,
+   "flag": "🇬🇷",
+   "key": "smallcyclades",
+   "lat": 36.866901,
+   "lng": 25.864058,
+   "name": "Small Cyclades"
+  },
+  {
    "count": 18,
    "flag": "🇬🇧",
    "key": "cambridge",
@@ -372,14 +380,6 @@
    "name": "New Haven"
   },
   {
-   "count": 8,
-   "flag": "🇬🇷",
-   "key": "smallcyclades",
-   "lat": 37.097942,
-   "lng": 25.795317,
-   "name": "Small Cyclades"
-  },
-  {
    "count": 3,
    "flag": "🇺🇸",
    "key": "hawaii",
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-26T05:53:39Z",
+ "generated": "2026-08-27T16:34:35Z",
  "lists": [
   {
    "count": 76,
@@ -409,7 +409,7 @@
    "url": "https://www.google.com/maps/placelists/list/TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
   },
   {
-   "count": 81,
+   "count": 80,
    "description": "",
    "emoji": "🏛️",
    "id": "ZkzMjrM6SXWD7BtpwoxAgg",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 544,
+   "count": 555,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -3380,20 +3380,6 @@
    "name": "Stavros Niarchos Foundation Cultural Center",
    "note": "",
    "type": "other"
-  },
-  {
-   "address": "Akti Koumoundourou 54, Pireas 185 33",
-   "cid": "-5688337380756998975",
-   "city": "Athens",
-   "lat": 37.937287999999995,
-   "lists": [
-    "ZkzMjrM6SXWD7BtpwoxAgg"
-   ],
-   "lng": 23.6585057,
-   "mid": "/g/11b7y77n54",
-   "name": "Varoulko Seaside Restaurant",
-   "note": "",
-   "type": "food"
   },
   {
    "address": "55 Neil Rd, Singapore 088892",
@@ -24693,6 +24679,215 @@
    "type": "other"
   },
   {
+   "added": "2026-08-27",
+   "address": "Αιγιάλη 840 08",
+   "cid": "-8145022145530880660",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.9011589,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.976288699999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bw5v0wd3",
+   "name": "Limani Restaurant",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Χώρα 840 08",
+   "cid": "1325632693661274592",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8319158,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.896568199999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bx8knvfq",
+   "name": "Parvas Tavern",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Κατάπολα 840 08",
+   "cid": "-324874461873675211",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8271326,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.8630076,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11crzg1mdt",
+   "name": "Mouragio Taverna",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Χώρα 840 08",
+   "cid": "-8507963876644201037",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8318383,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.8994993,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f62wj4s2",
+   "name": "Apospero",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Ξυλοκερατίδι 840 08",
+   "cid": "2164867894550498958",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8308222,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.865611299999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ghtfhlny",
+   "name": "Youkali Amorgos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Katapola, Xilokeratidi 840 08",
+   "cid": "-8876121152250730479",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8311851,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.8646018,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bv6ps7_z",
+   "name": "Almyriki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Amorgos 840 08",
+   "cid": "91401125042061462",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.9042366,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.9777487,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/119wnx72h",
+   "name": "Paralia Egiali",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "xilokeratidi, Katapola 840 08",
+   "cid": "-8114233864998356137",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8312088,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.864562799999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xg7dz9ng",
+   "name": "αλιφώνι - alifoni amorgos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Amorgos(Aegiali) - Donousa, Ormos Egialis 840 08",
+   "cid": "1782380545078192967",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.900987,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.9761764,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11fx88bxck",
+   "name": "Amorgis",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Κατάπολα 840 08",
+   "cid": "4677995402497701511",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8263823,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.864057799999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v0p8ppwd",
+   "name": "Arleta",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Ξυλοκερατίδι 840 08",
+   "cid": "-6694091614564304478",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8313998,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.864217,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11q585xs8k",
+   "name": "Fata Morgana - Amorgos (est. 2022)",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-23",
    "address": "Evripidou 11, Athina 105 61",
    "cid": "-141373634041746133",
@@ -28686,11 +28881,11 @@
    "address": "207 Belsize Rd, London NW6 4AA, United Kingdom",
    "cid": "-7457681840662864675",
    "city": "London",
-   "lat": 51.538398699999995,
+   "lat": 51.538430299999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.19054179999999998,
+   "lng": -0.1905752,
    "marks": [
     "unverified"
    ],
