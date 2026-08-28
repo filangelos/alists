@@ -308,20 +308,20 @@
    "name": "Kythnos"
   },
   {
-   "count": 19,
-   "flag": "🇬🇷",
-   "key": "smallcyclades",
-   "lat": 36.866901,
-   "lng": 25.864058,
-   "name": "Small Cyclades"
-  },
-  {
    "count": 18,
    "flag": "🇬🇧",
    "key": "cambridge",
    "lat": 52.2055,
    "lng": 0.117746,
    "name": "Cambridge"
+  },
+  {
+   "count": 18,
+   "flag": "🇬🇷",
+   "key": "smallcyclades",
+   "lat": 36.86818,
+   "lng": 25.863533,
+   "name": "Small Cyclades"
   },
   {
    "count": 17,
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-27T16:34:35Z",
+ "generated": "2026-08-28T17:29:30Z",
  "lists": [
   {
    "count": 76,
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 555,
+   "count": 554,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -1103,11 +1103,11 @@
    "address": "",
    "cid": "-6971146171221080216",
    "city": "Athens",
-   "lat": 38.035547799999996,
+   "lat": 38.0355339,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
    ],
-   "lng": 23.8269178,
+   "lng": 23.8268462,
    "mid": null,
    "name": "The Handmade souvlaki Ascension",
    "note": "",
@@ -9588,11 +9588,11 @@
    "address": "Ladopoulou 10, Ermoupoli 841 00",
    "cid": "-4789049076295713888",
    "city": "Syros",
-   "lat": 37.446306199999995,
+   "lat": 37.4463083,
    "lists": [
     "Q9fheotXUgRPzq0UfLAjDjbkCLiAdA"
    ],
-   "lng": 24.9450057,
+   "lng": 24.9450036,
    "mid": null,
    "name": "Church of Saint Nicholas",
    "note": "",
@@ -17287,11 +17287,11 @@
    "address": "38C5+F57 - Dubai - United Arab Emirates",
    "cid": "5177344048825869351",
    "city": "Dubai",
-   "lat": 25.0716887,
+   "lat": 25.0717297,
    "lists": [
     "1q3Z1bwo3w29-4SUi_KzTsrz1RY0FA"
    ],
-   "lng": 55.3084347,
+   "lng": 55.3084159,
    "mid": "/m/022p8g",
    "name": "Global Village",
    "note": "",
@@ -24751,25 +24751,6 @@
    ],
    "mid": "/g/11f62wj4s2",
    "name": "Apospero",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-08-27",
-   "address": "Ξυλοκερατίδι 840 08",
-   "cid": "2164867894550498958",
-   "city": "Small Cyclades",
-   "far": true,
-   "lat": 36.8308222,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 25.865611299999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11ghtfhlny",
-   "name": "Youkali Amorgos",
    "note": "",
    "type": "other"
   },
