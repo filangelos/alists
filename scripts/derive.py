@@ -244,6 +244,7 @@ COUNTRIES: dict[str, str] = {
     "Milos": "GR",
     "Paros": "GR",
     "Antiparos": "GR",
+    "Amorgos": "GR",
     "Ikaria": "GR",
     "Kythira": "GR",
     "Kythnos": "GR",
