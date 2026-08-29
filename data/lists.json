@@ -245,14 +245,6 @@
   },
   {
    "count": 30,
-   "flag": "🇬🇷",
-   "key": "amorgos",
-   "lat": 36.831535,
-   "lng": 25.897514,
-   "name": "Amorgos"
-  },
-  {
-   "count": 30,
    "flag": "🇦🇪",
    "key": "dubai",
    "lat": 25.189852,
@@ -266,6 +258,14 @@
    "lat": 36.737666,
    "lng": 24.446698,
    "name": "Milos"
+  },
+  {
+   "count": 29,
+   "flag": "🇬🇷",
+   "key": "amorgos",
+   "lat": 36.831443,
+   "lng": 25.897183,
+   "name": "Amorgos"
   },
   {
    "count": 29,
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-29T17:29:27Z",
+ "generated": "2026-08-29T18:28:20Z",
  "lists": [
   {
    "count": 76,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 556,
+   "count": 554,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -876,7 +876,7 @@
    "url": "https://www.google.com/maps/placelists/list/o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
   },
   {
-   "count": 15,
+   "count": 16,
    "description": "",
    "emoji": "⛺",
    "id": "wd9inajf-HK28ABzdvrGNVBHCqlCGQ",
@@ -24749,24 +24749,6 @@
   },
   {
    "added": "2026-08-27",
-   "address": "Αιγιάλη 840 08",
-   "cid": "-8145022145530880660",
-   "city": "Amorgos",
-   "lat": 36.9011589,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 25.976288699999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11bw5v0wd3",
-   "name": "Limani Restaurant",
-   "note": "",
-   "type": "food"
-  },
-  {
-   "added": "2026-08-27",
    "address": "Χώρα 840 08",
    "cid": "1325632693661274592",
    "city": "Amorgos",
@@ -24834,24 +24816,6 @@
    ],
    "mid": "/g/11bv6ps7_z",
    "name": "Almyriki",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-08-27",
-   "address": "Amorgos 840 08",
-   "cid": "91401125042061462",
-   "city": "Amorgos",
-   "lat": 36.9042366,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 25.9777487,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/119wnx72h",
-   "name": "Paralia Egiali",
    "note": "",
    "type": "other"
   },
@@ -35104,6 +35068,21 @@
    "name": "St Anthony's Chapel Ruins",
    "note": "",
    "type": "sights"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Αιγιάλη 840 08",
+   "cid": "-8145022145530880660",
+   "city": "Amorgos",
+   "lat": 36.9011589,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.976288699999998,
+   "mid": "/g/11bw5v0wd3",
+   "name": "Limani Restaurant",
+   "note": "",
+   "type": "food"
   },
   {
    "added": "2026-08-29",
