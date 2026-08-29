@@ -292,6 +292,14 @@
    "name": "Vancouver"
   },
   {
+   "count": 21,
+   "flag": "🇬🇷",
+   "key": "smallcyclades",
+   "lat": 36.862005,
+   "lng": 25.864217,
+   "name": "Small Cyclades"
+  },
+  {
    "count": 20,
    "flag": "🇬🇷",
    "key": "kythira",
@@ -314,14 +322,6 @@
    "lat": 52.2055,
    "lng": 0.117746,
    "name": "Cambridge"
-  },
-  {
-   "count": 18,
-   "flag": "🇬🇷",
-   "key": "smallcyclades",
-   "lat": 36.86818,
-   "lng": 25.863533,
-   "name": "Small Cyclades"
   },
   {
    "count": 17,
@@ -388,7 +388,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-28T17:29:30Z",
+ "generated": "2026-08-29T11:42:24Z",
  "lists": [
   {
    "count": 76,
@@ -517,7 +517,7 @@
    "url": "https://www.google.com/maps/placelists/list/MMQ4UX1kbnY-bHHzT9VX6Y33fxHCxQ"
   },
   {
-   "count": 14,
+   "count": 15,
    "description": "",
    "emoji": "🍦",
    "id": "z68j_oiET_7aWDaDt7LpUvCnMEdN0g",
@@ -850,7 +850,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 554,
+   "count": 556,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -3415,12 +3415,12 @@
    "address": "43 Arran St E, Smithfield, Dublin 7, D07 W226, Ireland",
    "cid": "7036450738436867923",
    "city": "Dublin",
-   "lat": 53.3475877,
+   "lat": 53.347587399999995,
    "lists": [
     "Erx85_Y4gKkhT_4MERn11iWshw_Ynw",
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2703641,
+   "lng": -6.2703731,
    "mid": "/g/11w9fk6p0n",
    "name": "Elliot’s",
    "note": "",
@@ -7345,11 +7345,11 @@
    "address": "Two Times Square, 714 Seventh Avenue at, W 48th St, New York, NY 10036, United States",
    "cid": "3447344663224698927",
    "city": "New York",
-   "lat": 40.759839899999996,
+   "lat": 40.759714699999996,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.98438759999999,
+   "lng": -73.984611,
    "mid": "/g/11b6t1lz9g",
    "name": "Renaissance New York Times Square Hotel",
    "note": "",
@@ -9695,6 +9695,22 @@
    "name": "ZENELI Pizzeria e Cucina Napoletana",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "4418591932486613270",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8314429,
+   "lists": [
+    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
+   ],
+   "lng": 25.898486899999998,
+   "mid": "/g/11x85wgk3n",
+   "name": "Μικράκι gelato",
+   "note": "",
+   "type": "gelato"
   },
   {
    "added": "2026-07-31",
@@ -15537,11 +15553,11 @@
    "address": "Αγ. Πολύκαρπος 833 01",
    "cid": "4196872688803307474",
    "city": "Ikaria",
-   "lat": 37.6110411,
+   "lat": 37.6110413,
    "lists": [
     "VNlghQP-OLFacAZHFUD7ixN0kYL5sQ"
    ],
-   "lng": 26.090477699999997,
+   "lng": 26.0904775,
    "mid": "/g/11c0r0m8r4",
    "name": "Mitsaras",
    "note": "",
@@ -24679,6 +24695,44 @@
    "type": "other"
   },
   {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "-3287244127282266611",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8322436,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.897844799999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11c1r6zv30",
+   "name": "Castle of Amorgos",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Amorgos 840 08",
+   "cid": "-208793713064900305",
+   "city": "Small Cyclades",
+   "far": true,
+   "lat": 36.8306203,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.900879099999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11f792fc37",
+   "name": "Mills of Chora Amorgos",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-27",
    "address": "Αιγιάλη 840 08",
    "cid": "-8145022145530880660",
@@ -27220,11 +27274,11 @@
    "address": "Westbourne House, 14-16 Westbourne Grove, London W2 5RH, United Kingdom",
    "cid": "4247406531673842727",
    "city": "London",
-   "lat": 51.51576,
+   "lat": 51.5158038,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1895935,
+   "lng": -0.1895474,
    "marks": [
     "unverified"
    ],
@@ -32437,11 +32491,11 @@
    "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
    "cid": "-6752398179009724708",
    "city": "Dublin",
-   "lat": 53.340754399999994,
+   "lat": 53.3407543,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.265438199999999,
+   "lng": -6.2654371,
    "marks": [
     "unverified"
    ],
