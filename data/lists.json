@@ -204,11 +204,11 @@
    "name": "Miami"
   },
   {
-   "count": 39,
+   "count": 38,
    "flag": "🇬🇷",
    "key": "naxos",
-   "lat": 37.074884,
-   "lng": 25.37738,
+   "lat": 37.0755,
+   "lng": 25.377282,
    "name": "Naxos"
   },
   {
@@ -245,6 +245,14 @@
   },
   {
    "count": 30,
+   "flag": "🇬🇷",
+   "key": "amorgos",
+   "lat": 36.831535,
+   "lng": 25.897514,
+   "name": "Amorgos"
+  },
+  {
+   "count": 30,
    "flag": "🇦🇪",
    "key": "dubai",
    "lat": 25.189852,
@@ -254,18 +262,18 @@
   {
    "count": 30,
    "flag": "🇬🇷",
-   "key": "ikaria",
-   "lat": 37.622277,
-   "lng": 26.09436,
-   "name": "Ikaria"
-  },
-  {
-   "count": 30,
-   "flag": "🇬🇷",
    "key": "milos",
    "lat": 36.737666,
    "lng": 24.446698,
    "name": "Milos"
+  },
+  {
+   "count": 29,
+   "flag": "🇬🇷",
+   "key": "ikaria",
+   "lat": 37.622293,
+   "lng": 26.091317,
+   "name": "Ikaria"
   },
   {
    "count": 28,
@@ -292,14 +300,6 @@
    "name": "Vancouver"
   },
   {
-   "count": 21,
-   "flag": "🇬🇷",
-   "key": "smallcyclades",
-   "lat": 36.862005,
-   "lng": 25.864217,
-   "name": "Small Cyclades"
-  },
-  {
    "count": 20,
    "flag": "🇬🇷",
    "key": "kythira",
@@ -324,11 +324,11 @@
    "name": "Cambridge"
   },
   {
-   "count": 17,
+   "count": 16,
    "flag": "🇬🇷",
    "key": "antiparos",
-   "lat": 37.039836,
-   "lng": 25.081457,
+   "lat": 37.039937,
+   "lng": 25.08078,
    "name": "Antiparos"
   },
   {
@@ -380,6 +380,14 @@
    "name": "New Haven"
   },
   {
+   "count": 8,
+   "flag": "🇬🇷",
+   "key": "smallcyclades",
+   "lat": 37.097942,
+   "lng": 25.795317,
+   "name": "Small Cyclades"
+  },
+  {
    "count": 3,
    "flag": "🇺🇸",
    "key": "hawaii",
@@ -388,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-29T11:42:24Z",
+ "generated": "2026-08-29T17:29:27Z",
  "lists": [
   {
    "count": 76,
@@ -866,6 +874,15 @@
    "name": "Edinburgh",
    "owner": "Angelos",
    "url": "https://www.google.com/maps/placelists/list/o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
+  },
+  {
+   "count": 15,
+   "description": "",
+   "emoji": "⛺",
+   "id": "wd9inajf-HK28ABzdvrGNVBHCqlCGQ",
+   "name": "Amorgos",
+   "owner": "Angelos",
+   "url": "https://www.google.com/maps/placelists/list/wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
   }
  ],
  "marks": [
@@ -9700,11 +9717,11 @@
    "added": "2026-08-29",
    "address": "Χώρα 840 08",
    "cid": "4418591932486613270",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8314429,
    "lists": [
-    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
+    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g",
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
    ],
    "lng": 25.898486899999998,
    "mid": "/g/11x85wgk3n",
@@ -24698,8 +24715,7 @@
    "added": "2026-08-29",
    "address": "Χώρα 840 08",
    "cid": "-3287244127282266611",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8322436,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24717,8 +24733,7 @@
    "added": "2026-08-29",
    "address": "Amorgos 840 08",
    "cid": "-208793713064900305",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8306203,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24736,8 +24751,7 @@
    "added": "2026-08-27",
    "address": "Αιγιάλη 840 08",
    "cid": "-8145022145530880660",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.9011589,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24755,8 +24769,7 @@
    "added": "2026-08-27",
    "address": "Χώρα 840 08",
    "cid": "1325632693661274592",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8319158,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24774,8 +24787,7 @@
    "added": "2026-08-27",
    "address": "Κατάπολα 840 08",
    "cid": "-324874461873675211",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8271326,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24793,8 +24805,7 @@
    "added": "2026-08-27",
    "address": "Χώρα 840 08",
    "cid": "-8507963876644201037",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8318383,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24812,8 +24823,7 @@
    "added": "2026-08-27",
    "address": "Katapola, Xilokeratidi 840 08",
    "cid": "-8876121152250730479",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8311851,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24831,8 +24841,7 @@
    "added": "2026-08-27",
    "address": "Amorgos 840 08",
    "cid": "91401125042061462",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.9042366,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24850,8 +24859,7 @@
    "added": "2026-08-27",
    "address": "xilokeratidi, Katapola 840 08",
    "cid": "-8114233864998356137",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8312088,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24869,8 +24877,7 @@
    "added": "2026-08-27",
    "address": "Amorgos(Aegiali) - Donousa, Ormos Egialis 840 08",
    "cid": "1782380545078192967",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.900987,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24888,8 +24895,7 @@
    "added": "2026-08-27",
    "address": "Κατάπολα 840 08",
    "cid": "4677995402497701511",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8263823,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -24907,8 +24913,7 @@
    "added": "2026-08-27",
    "address": "Ξυλοκερατίδι 840 08",
    "cid": "-6694091614564304478",
-   "city": "Small Cyclades",
-   "far": true,
+   "city": "Amorgos",
    "lat": 36.8313998,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
@@ -25433,7 +25438,7 @@
    "added": "2026-08-07",
    "address": "Agia Eirini 847 02",
    "cid": "-1982781575163370932",
-   "city": "Antiparos",
+   "city": "Amorgos",
    "far": true,
    "lat": 36.4545641,
    "lists": [
@@ -25452,7 +25457,7 @@
    "added": "2026-08-07",
    "address": "Βλυχάδα 847 03",
    "cid": "6453172477927205111",
-   "city": "Naxos",
+   "city": "Amorgos",
    "far": true,
    "lat": 36.3371953,
    "lists": [
@@ -26472,7 +26477,7 @@
    "added": "2026-07-31",
    "address": "Pasteur, Beirut, Lebanon",
    "cid": "6165876040879576551",
-   "city": "Ikaria",
+   "city": "Amorgos",
    "far": true,
    "lat": 33.8963629,
    "lists": [
@@ -31718,11 +31723,11 @@
    "address": "22 Sherwood St, London W1F 7ED, United Kingdom",
    "cid": "5908825441411410619",
    "city": "London",
-   "lat": 51.5106368,
+   "lat": 51.5107497,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.13557529999999998,
+   "lng": -0.1355912,
    "marks": [
     "unverified"
    ],
@@ -35099,6 +35104,216 @@
    "name": "St Anthony's Chapel Ruins",
    "note": "",
    "type": "sights"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Amorgos 840 08",
+   "cid": "6323790676436258537",
+   "city": "Amorgos",
+   "lat": 36.8345438,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.909517599999997,
+   "mid": "/g/11bc6_2nmy",
+   "name": "Holy Monastery of the Virgin Mary Chozoviotissa",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "",
+   "cid": "96207456886362997",
+   "city": "Amorgos",
+   "lat": 36.8235984,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.9060782,
+   "mid": null,
+   "name": "Paralia Agia Anna",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Epar.Od. Katapola-Thalarias, Chora 840 08",
+   "cid": "35975538419176182",
+   "city": "Amorgos",
+   "lat": 36.8319957,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.896418099999998,
+   "mid": "/g/11b6p5f7y5",
+   "name": "Tzitzíki",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "8214885958221807724",
+   "city": "Amorgos",
+   "lat": 36.831378199999996,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.898307199999998,
+   "mid": "/g/11b88r3xpr",
+   "name": "Jazzmin",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "-1375496000294034610",
+   "city": "Amorgos",
+   "lat": 36.8319342,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.8971827,
+   "mid": "/g/11bztgv17d",
+   "name": "Kallisto",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Amorgos 840 08",
+   "cid": "1071904856867795015",
+   "city": "Amorgos",
+   "lat": 36.786333299999995,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.827206999999998,
+   "mid": "/g/119w1s9rl",
+   "name": "Mouros Beach",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "",
+   "cid": "-8687279165836878820",
+   "city": "Amorgos",
+   "lat": 36.791943499999995,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.8010603,
+   "mid": null,
+   "name": "Στον Πύργο Recently navigated",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "4734365079514693402",
+   "city": "Amorgos",
+   "lat": 36.8316958,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.8987612,
+   "mid": "/g/11w58p6tsg",
+   "name": "Lagaro Home Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "8296564237230307430",
+   "city": "Amorgos",
+   "lat": 36.8319672,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.8981978,
+   "mid": "/g/11v0y_f0qn",
+   "name": "Το Κατώφλι",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "3418241505190164243",
+   "city": "Amorgos",
+   "lat": 36.8317021,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.899344199999998,
+   "mid": "/g/11ckqn8xw_",
+   "name": "Kath' odon",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Χώρα 840 08",
+   "cid": "-3258556105445170682",
+   "city": "Amorgos",
+   "lat": 36.831626899999996,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.898588699999998,
+   "mid": "/g/11c1mgt5y4",
+   "name": "Botilia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Ξυλοκερατίδι 840 08",
+   "cid": "2164867894550498958",
+   "city": "Amorgos",
+   "lat": 36.8308222,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.865611299999998,
+   "mid": "/g/11ghtfhlny",
+   "name": "Youkali Amorgos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Amorgos 840 08",
+   "cid": "-3175644138229168620",
+   "city": "Amorgos",
+   "lat": 36.8361124,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.8537245,
+   "mid": "/g/11bvt3bbbs",
+   "name": "Maltezi",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-29",
+   "address": "Ag. Irine, 84008, Ag. Irini, Amorgos(Katapola) - Santorini(Thira), Katapola 840 08",
+   "cid": "7477332344229237374",
+   "city": "Amorgos",
+   "lat": 36.8326345,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.874489099999998,
+   "mid": "/g/11xtycwl7",
+   "name": "Amorgion Hotel",
+   "note": "",
+   "type": "stay"
   }
  ]
 }
