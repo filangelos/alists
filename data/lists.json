@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-29T18:28:20Z",
+ "generated": "2026-08-30T10:31:43Z",
  "lists": [
   {
    "count": 76,
@@ -29481,11 +29481,11 @@
    "address": "176 2nd Ave, New York, NY 10003, United States",
    "cid": "2198912262055854115",
    "city": "New York",
-   "lat": 40.7304562,
+   "lat": 40.7304564,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.986072,
+   "lng": -73.9860727,
    "marks": [
     "unverified"
    ],
