@@ -229,6 +229,14 @@
   },
   {
    "count": 34,
+   "flag": "🇬🇷",
+   "key": "amorgos",
+   "lat": 36.831699,
+   "lng": 25.898252,
+   "name": "Amorgos"
+  },
+  {
+   "count": 34,
    "flag": "🇪🇸",
    "key": "barcelona",
    "lat": 41.384049,
@@ -258,14 +266,6 @@
    "lat": 36.737666,
    "lng": 24.446698,
    "name": "Milos"
-  },
-  {
-   "count": 29,
-   "flag": "🇬🇷",
-   "key": "amorgos",
-   "lat": 36.831443,
-   "lng": 25.897183,
-   "name": "Amorgos"
   },
   {
    "count": 29,
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-30T10:31:43Z",
+ "generated": "2026-08-31T11:39:38Z",
  "lists": [
   {
    "count": 76,
@@ -876,7 +876,7 @@
    "url": "https://www.google.com/maps/placelists/list/o8n2tOrGLQ5fSHDOQ1sraQYY8jyaOA"
   },
   {
-   "count": 16,
+   "count": 21,
    "description": "",
    "emoji": "⛺",
    "id": "wd9inajf-HK28ABzdvrGNVBHCqlCGQ",
@@ -10680,11 +10680,11 @@
    "address": "Tower 2, Bolands Quay, Dublin, D04 P5T3, Ireland",
    "cid": "-7443466430325469932",
    "city": "Dublin",
-   "lat": 53.341293799999995,
+   "lat": 53.3412894,
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2363563,
+   "lng": -6.236331799999999,
    "mid": "/g/11lzs5l39p",
    "name": "Google Bolands Mills Tower 2",
    "note": "",
@@ -24712,6 +24712,44 @@
    "type": "other"
   },
   {
+   "added": "2026-08-31",
+   "address": "Tholaria 840 08",
+   "cid": "3865325171319400041",
+   "city": "Amorgos",
+   "far": true,
+   "lat": 36.9175822,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.9843792,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ntdnbp6k",
+   "name": "Ontas View Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-08-31",
+   "address": "Epar.Od. Katapola-Thalarias, Lagada 840 08",
+   "cid": "-274597143345614248",
+   "city": "Amorgos",
+   "far": true,
+   "lat": 36.91787,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 25.983691999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11bwd23dmz",
+   "name": "Χορευτής cafe-παντοπωλείο-restaurant",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-08-29",
    "address": "Χώρα 840 08",
    "cid": "-3287244127282266611",
@@ -24821,24 +24859,6 @@
   },
   {
    "added": "2026-08-27",
-   "address": "xilokeratidi, Katapola 840 08",
-   "cid": "-8114233864998356137",
-   "city": "Amorgos",
-   "lat": 36.8312088,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 25.864562799999998,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11xg7dz9ng",
-   "name": "αλιφώνι - alifoni amorgos",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-08-27",
    "address": "Amorgos(Aegiali) - Donousa, Ormos Egialis 840 08",
    "cid": "1782380545078192967",
    "city": "Amorgos",
@@ -24870,24 +24890,6 @@
    ],
    "mid": "/g/11v0p8ppwd",
    "name": "Arleta",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-08-27",
-   "address": "Ξυλοκερατίδι 840 08",
-   "cid": "-6694091614564304478",
-   "city": "Amorgos",
-   "lat": 36.8313998,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": 25.864217,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11q585xs8k",
-   "name": "Fata Morgana - Amorgos (est. 2022)",
    "note": "",
    "type": "other"
   },
@@ -31088,11 +31090,11 @@
    "address": "5700 Geary Blvd, San Francisco, CA 94121, United States",
    "cid": "6924344292273102319",
    "city": "San Francisco",
-   "lat": 37.78046,
+   "lat": 37.7804619,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -122.48061039999999,
+   "lng": -122.48062669999999,
    "marks": [
     "unverified"
    ],
@@ -31669,11 +31671,11 @@
    "address": "104 Heath St, London NW3 1DR, United Kingdom",
    "cid": "-6570793517164937228",
    "city": "London",
-   "lat": 51.558808299999995,
+   "lat": 51.558809,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1784303,
+   "lng": -0.1783943,
    "marks": [
     "unverified"
    ],
@@ -35068,6 +35070,81 @@
    "name": "St Anthony's Chapel Ruins",
    "note": "",
    "type": "sights"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "Ξυλοκερατίδι 840 08",
+   "cid": "-6694091614564304478",
+   "city": "Amorgos",
+   "lat": 36.8313998,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.864217,
+   "mid": "/g/11q585xs8k",
+   "name": "Fata Morgana - Amorgos (est. 2022)",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-27",
+   "address": "xilokeratidi, Katapola 840 08",
+   "cid": "-8114233864998356137",
+   "city": "Amorgos",
+   "lat": 36.8312088,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.864562799999998,
+   "mid": "/g/11xg7dz9ng",
+   "name": "αλιφώνι - alifoni amorgos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-08-31",
+   "address": "Πεζόδρομος, Tholaria 840 08",
+   "cid": "5350670420120797390",
+   "city": "Amorgos",
+   "lat": 36.9172897,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.9838657,
+   "mid": "/g/11fxf7776f",
+   "name": "Ζαχαροπλαστείο ΝΙΚΌΛΑΣ",
+   "note": "",
+   "type": "bakery"
+  },
+  {
+   "added": "2026-08-31",
+   "address": "Tholaria 840 08",
+   "cid": "-6370064055210041618",
+   "city": "Amorgos",
+   "lat": 36.9173076,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.983762499999997,
+   "mid": null,
+   "name": "Καλή Καρδιά - Καφεουζομεζεδοπωλείο",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-08-31",
+   "address": "Levrossos Beach, Amorgos 840 08",
+   "cid": "-5565318889446520170",
+   "city": "Amorgos",
+   "lat": 36.908341799999995,
+   "lists": [
+    "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
+   ],
+   "lng": 25.9721241,
+   "mid": "/g/11g142ngg8",
+   "name": "Petradi Beach Bar",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-08-27",
