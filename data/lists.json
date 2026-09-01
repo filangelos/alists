@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-08-31T11:39:38Z",
+ "generated": "2026-09-01T10:11:58Z",
  "lists": [
   {
    "count": 76,
@@ -8575,12 +8575,12 @@
    "address": "30-31 Kendal St, St George's Fields, London W2 2AW, United Kingdom",
    "cid": "-7821100460124060438",
    "city": "London",
-   "lat": 51.5144731,
+   "lat": 51.514556,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
     "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
    ],
-   "lng": -0.1668328,
+   "lng": -0.16692379999999998,
    "mid": "/g/11lv53b18p",
    "name": "Boxcar Hyde Park",
    "note": "",
