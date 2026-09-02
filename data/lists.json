@@ -95,7 +95,7 @@
    "count": 173,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979266,
+   "lat": 37.979158,
    "lng": 23.745916,
    "name": "Athens"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-01T10:11:58Z",
+ "generated": "2026-09-02T09:42:50Z",
  "lists": [
   {
    "count": 76,
@@ -1045,12 +1045,12 @@
    "address": "35 Sclater St, London E1 6LB, United Kingdom",
    "cid": "-970580478292469905",
    "city": "London",
-   "lat": 51.5237045,
+   "lat": 51.5237461,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.0729238,
+   "lng": -0.0729121,
    "mid": "/g/11c1szr8hp",
    "name": "SMOKESTAK",
    "note": "",
@@ -11747,11 +11747,11 @@
    "address": "38-40 Exmouth Market, London EC1R 4QE, United Kingdom",
    "cid": "-8168116728584667357",
    "city": "London",
-   "lat": 51.5258979,
+   "lat": 51.5259188,
    "lists": [
     "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
    ],
-   "lng": -0.1089132,
+   "lng": -0.1088531,
    "mid": "/g/11bv3mps2n",
    "name": "Macellaio RC Clerkenwell",
    "note": "",
@@ -23298,11 +23298,11 @@
    "address": "Travessera de Gràcia, 441, 08025 Barcelona, Spain",
    "cid": "5333055491066369825",
    "city": "Barcelona",
-   "lat": 41.411311,
+   "lat": 41.4116135,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1733051,
+   "lng": 2.173002,
    "mid": "/g/1tcxltml",
    "name": "Restaurant BelleBuòn",
    "note": "",
@@ -31763,11 +31763,11 @@
    "address": "Pl. Agion Theodoron 3, Athina 105 61",
    "cid": "1366830091904729648",
    "city": "Athens",
-   "lat": 37.9792659,
+   "lat": 37.9791418,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7296484,
+   "lng": 23.7296563,
    "marks": [
     "unverified"
    ],
