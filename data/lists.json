@@ -212,11 +212,11 @@
    "name": "Naxos"
   },
   {
-   "count": 35,
+   "count": 36,
    "flag": "🇬🇷",
    "key": "syros",
-   "lat": 37.444434,
-   "lng": 24.942606,
+   "lat": 37.444423,
+   "lng": 24.94243,
    "name": "Syros"
   },
   {
@@ -396,10 +396,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-02T09:42:50Z",
+ "generated": "2026-09-03T09:56:06Z",
  "lists": [
   {
-   "count": 76,
+   "count": 77,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -507,7 +507,7 @@
    "url": "https://www.google.com/maps/placelists/list/JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
   },
   {
-   "count": 32,
+   "count": 33,
    "description": "",
    "emoji": "⛪️",
    "id": "Q9fheotXUgRPzq0UfLAjDjbkCLiAdA",
@@ -897,6 +897,22 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-09-03",
+   "address": "Leotsakou 2, Ermoupoli 841 00",
+   "cid": "-4658124147922375321",
+   "city": "Syros",
+   "lat": 37.4443615,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "Q9fheotXUgRPzq0UfLAjDjbkCLiAdA"
+   ],
+   "lng": 24.9417443,
+   "mid": "/g/11b5pj5wgj",
+   "name": "Mazi",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-07-31",
    "address": "140 Wardour St, London W1F 8ZT, United Kingdom",
@@ -4272,12 +4288,12 @@
    "address": "Proper Hotel (Rooftop, 1100 Market St, San Francisco, CA 94102, United States",
    "cid": "-3756561030812518804",
    "city": "San Francisco",
-   "lat": 37.7807388,
+   "lat": 37.7809599,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.41249579999999,
+   "lng": -122.412416,
    "mid": "/g/11g9fpcty_",
    "name": "Charmaine’s",
    "note": "",
@@ -17670,11 +17686,11 @@
    "address": "",
    "cid": "6550426932042483738",
    "city": "Oxford",
-   "lat": 51.759884,
+   "lat": 51.7597923,
    "lists": [
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2684069,
+   "lng": -1.2682759,
    "mid": null,
    "name": "The Rickety Press",
    "note": "",
@@ -26353,11 +26369,11 @@
    "address": "126 Hamilton Pl, New York, NY 10031, United States",
    "cid": "8007463342773964501",
    "city": "New York",
-   "lat": 40.8240151,
+   "lat": 40.8239674,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9493944,
+   "lng": -73.9493391,
    "marks": [
     "unverified"
    ],
