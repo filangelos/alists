@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 522,
+   "count": 525,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517239,
-   "lng": -0.124943,
+   "lat": 51.517163,
+   "lng": -0.125147,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 173,
+   "count": 176,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979158,
-   "lng": 23.745916,
+   "lat": 37.97915,
+   "lng": 23.744249,
    "name": "Athens"
   },
   {
@@ -111,7 +111,7 @@
    "count": 102,
    "flag": "🇺🇸",
    "key": "sanfrancisco",
-   "lat": 37.788003,
+   "lat": 37.788053,
    "lng": -122.407864,
    "name": "San Francisco"
   },
@@ -164,11 +164,11 @@
    "name": "Mykonos"
   },
   {
-   "count": 41,
+   "count": 42,
    "flag": "🇩🇰",
    "key": "copenhagen",
-   "lat": 55.679313,
-   "lng": 12.580833,
+   "lat": 55.679487,
+   "lng": 12.58058,
    "name": "Copenhagen"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-03T09:56:06Z",
+ "generated": "2026-09-06T09:30:18Z",
  "lists": [
   {
    "count": 77,
@@ -849,7 +849,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 48,
+   "count": 49,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 554,
+   "count": 561,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -1773,11 +1773,11 @@
    "address": "Βασιλέως Γεωργίου 34, Chalandri 152 33",
    "cid": "-8122089833561921288",
    "city": "Athens",
-   "lat": 38.0238045,
+   "lat": 38.0238118,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
    ],
-   "lng": 23.792519199999997,
+   "lng": 23.7925319,
    "mid": "/g/11h4y2z6rr",
    "name": "ALIO",
    "note": "",
@@ -3453,7 +3453,7 @@
     "Erx85_Y4gKkhT_4MERn11iWshw_Ynw",
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2703731,
+   "lng": -6.2703729,
    "mid": "/g/11w9fk6p0n",
    "name": "Elliot’s",
    "note": "",
@@ -12004,7 +12004,8 @@
    "city": "London",
    "lat": 51.5101813,
    "lists": [
-    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
+    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw",
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
    ],
    "lng": -0.14968579999999998,
    "mid": "/g/11btvg99n3",
@@ -12128,11 +12129,11 @@
    "address": "2 New Montgomery St, San Francisco, CA 94105, United States",
    "cid": "6931369178489319514",
    "city": "San Francisco",
-   "lat": 37.7878824,
+   "lat": 37.7879828,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.40121479999999,
+   "lng": -122.4014988,
    "mid": "/g/11cm09pllv",
    "name": "Flatiron Wines & Spirits",
    "note": "",
@@ -24728,6 +24729,134 @@
    "type": "other"
   },
   {
+   "added": "2026-09-06",
+   "address": "Pl. Agias Irinis, Athina 105 60",
+   "cid": "2049196154323231705",
+   "city": "Athens",
+   "lat": 37.9773838,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7281741,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11w9xwz3cx",
+   "name": "Lazy Duck Athens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "Theod. Negri 1, Athina 117 43",
+   "cid": "4439115007124054438",
+   "city": "Athens",
+   "lat": 37.966617,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.729875399999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lybl4k38",
+   "name": "Kyoko Sushi Bar",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "49 S Audley St, London W1K 2QD, United Kingdom",
+   "cid": "-7769127605185975617",
+   "city": "London",
+   "lat": 51.510018699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1521438,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ltfy0f6w",
+   "name": "Nipotina",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "43 N Audley St, London W1K 6LF, United Kingdom",
+   "cid": "-9200528577354799250",
+   "city": "London",
+   "lat": 51.512252399999994,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1532507,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11tt889l0n",
+   "name": "Café 22",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "Ερμού 24 και, Vasileos Irakleiou 33, Thessaloniki 546 24",
+   "cid": "2025788645804099800",
+   "city": "Athens",
+   "far": true,
+   "lat": 40.6346798,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 22.9415566,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0_l422g",
+   "name": "Agora Modiano",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "Ground Floor, Kingly Ct, Carnaby, London W1B 5PW, United Kingdom",
+   "cid": "-6824884141709811798",
+   "city": "London",
+   "lat": 51.512721299999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1389203,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ydkxfxzc",
+   "name": "ALTA Kingly Court",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-06",
+   "address": "5747 Gudvangen, Norway",
+   "cid": "-5993994694584200721",
+   "city": "Copenhagen",
+   "far": true,
+   "lat": 60.8775197,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 6.8381438,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/0265d7j",
+   "name": "Gudvangen",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-31",
    "address": "Tholaria 840 08",
    "cid": "3865325171319400041",
@@ -27261,11 +27390,11 @@
    "address": "Westbourne House, 14-16 Westbourne Grove, London W2 5RH, United Kingdom",
    "cid": "4247406531673842727",
    "city": "London",
-   "lat": 51.5158038,
+   "lat": 51.51576,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1895474,
+   "lng": -0.1895935,
    "marks": [
     "unverified"
    ],
