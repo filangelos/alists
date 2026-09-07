@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-06T09:30:18Z",
+ "generated": "2026-09-07T10:26:11Z",
  "lists": [
   {
    "count": 77,
@@ -5918,12 +5918,12 @@
    "address": "328 Bleecker St, New York, NY 10014, United States",
    "cid": "4996376445726847295",
    "city": "New York",
-   "lat": 40.7332691,
+   "lat": 40.7332926,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
-   "lng": -74.0044721,
+   "lng": -74.0043956,
    "mid": "/g/11vyhfps7h",
    "name": "RHYTHM ZERO | WEST VILLAGE",
    "note": "",
@@ -15657,11 +15657,11 @@
    "address": "Unnamed Road,Christos 833 01, IKARIA 833 01",
    "cid": "-4766419246081667726",
    "city": "Ikaria",
-   "lat": 37.6002453,
+   "lat": 37.6002125,
    "lists": [
     "VNlghQP-OLFacAZHFUD7ixN0kYL5sQ"
    ],
-   "lng": 26.078655899999998,
+   "lng": 26.078721299999998,
    "mid": "/g/11c1n5zbxj",
    "name": "tabouras",
    "note": "",
