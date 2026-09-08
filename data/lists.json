@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-07T10:26:11Z",
+ "generated": "2026-09-08T09:47:15Z",
  "lists": [
   {
    "count": 77,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 561,
+   "count": 560,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4525,8 +4525,7 @@
    "city": "London",
    "lat": 51.5151342,
    "lists": [
-    "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
-    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
    ],
    "lng": -0.1516832,
    "mid": "/g/11c558dy2y",
@@ -11957,6 +11956,21 @@
    "type": "other"
   },
   {
+   "added": "2026-09-08",
+   "address": "31 Duke St, London W1U 1LG, United Kingdom",
+   "cid": "5994357774739072210",
+   "city": "London",
+   "lat": 51.5151342,
+   "lists": [
+    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
+   ],
+   "lng": -0.1516832,
+   "mid": "/g/11c558dy2y",
+   "name": "Burlock London - Bond Street",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "The Queen's Walk, London SE1 8XX, United Kingdom",
    "cid": "3652284677225401439",
    "city": "London",
@@ -17897,11 +17911,11 @@
    "address": "",
    "cid": "131967991430385005",
    "city": "Oxford",
-   "lat": 51.750721299999995,
+   "lat": 51.7499773,
    "lists": [
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.260927,
+   "lng": -1.2607876999999998,
    "mid": null,
    "name": "Sticks'n'Sushi Oxford",
    "note": "",
@@ -25838,24 +25852,6 @@
    ],
    "mid": "/g/11rg2c1296",
    "name": "The MAINE",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-08-04",
-   "address": "Unit 5, Medici Courtyard, Hanover Square, London W1S 1BR, United Kingdom",
-   "cid": "363060177541060065",
-   "city": "London",
-   "lat": 51.513797,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1446063,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z82r7_7y",
-   "name": "Mardy's",
    "note": "",
    "type": "other"
   },
