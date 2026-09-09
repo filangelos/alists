@@ -79,7 +79,7 @@
    "count": 525,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517163,
+   "lat": 51.517167,
    "lng": -0.125147,
    "name": "London"
   },
@@ -239,7 +239,7 @@
    "count": 34,
    "flag": "🇪🇸",
    "key": "barcelona",
-   "lat": 41.384049,
+   "lat": 41.38403,
    "lng": 2.16876,
    "name": "Barcelona"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-08T09:47:15Z",
+ "generated": "2026-09-09T09:51:28Z",
  "lists": [
   {
    "count": 77,
@@ -16105,11 +16105,11 @@
    "address": "ΑΔΑΜΑΝΤΑΣ ΜΗΛΟΣ, 848 01",
    "cid": "2779102497194245622",
    "city": "Milos",
-   "lat": 36.7264844,
+   "lat": 36.7264858,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.447779999999998,
+   "lng": 24.4477989,
    "mid": "/g/11c40nx1_9",
    "name": "Artemis Bakery",
    "note": "",
@@ -23049,11 +23049,11 @@
    "address": "Carrer de Santa Llúcia, 1, 08002 Barcelona, Spain",
    "cid": "3181810531984803389",
    "city": "Barcelona",
-   "lat": 41.384136399999996,
+   "lat": 41.3840971,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1756938,
+   "lng": 2.17575,
    "mid": "/g/120rrq50",
    "name": "La Casa de l'Ardiaca",
    "note": "",
@@ -28938,11 +28938,11 @@
    "address": "18 Thayer St, London W1U 3JY, United Kingdom",
    "cid": "3514113171774969310",
    "city": "London",
-   "lat": 51.517156299999996,
+   "lat": 51.517167199999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1514405,
+   "lng": -0.1514431,
    "marks": [
     "unverified"
    ],
@@ -32603,11 +32603,11 @@
    "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
    "cid": "-6752398179009724708",
    "city": "Dublin",
-   "lat": 53.3407543,
+   "lat": 53.340754399999994,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2654371,
+   "lng": -6.265438199999999,
    "marks": [
     "unverified"
    ],
