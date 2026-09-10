@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 525,
+   "count": 526,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517167,
-   "lng": -0.125147,
+   "lat": 51.517192,
+   "lng": -0.125116,
    "name": "London"
   },
   {
@@ -135,7 +135,7 @@
    "count": 58,
    "flag": "🇫🇷",
    "key": "paris",
-   "lat": 48.864526,
+   "lat": 48.864524,
    "lng": 2.340923,
    "name": "Paris"
   },
@@ -284,11 +284,11 @@
    "name": "Edinburgh"
   },
   {
-   "count": 27,
+   "count": 28,
    "flag": "🇬🇷",
    "key": "kea",
-   "lat": 37.659536,
-   "lng": 24.325406,
+   "lat": 37.653266,
+   "lng": 24.325025,
    "name": "Kea"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-09T09:51:28Z",
+ "generated": "2026-09-10T09:49:42Z",
  "lists": [
   {
    "count": 77,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 560,
+   "count": 562,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -1730,12 +1730,12 @@
    "address": "75 Rue des Gravilliers, 75003 Paris, France",
    "cid": "-167919680908879490",
    "city": "Paris",
-   "lat": 48.864621,
+   "lat": 48.864618,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "CFoJzsllJTA564TFXO7aP6dfM2PADg"
    ],
-   "lng": 2.3537988,
+   "lng": 2.3537969999999997,
    "mid": "/g/11s0vwv1g_",
    "name": "ORTO PARIS",
    "note": "",
@@ -2451,12 +2451,12 @@
    "address": "20a Halliford St, London N1 3HD, United Kingdom",
    "cid": "267343174906234840",
    "city": "London",
-   "lat": 51.5403503,
+   "lat": 51.5402875,
    "lists": [
     "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
     "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
    ],
-   "lng": -0.08999739999999999,
+   "lng": -0.09008519999999999,
    "mid": "/g/11w8y1b8xj",
    "name": "The Dreamery",
    "note": "",
@@ -8147,11 +8147,11 @@
    "address": "Vourkari 840 02",
    "cid": "-1699013954417279293",
    "city": "Kea",
-   "lat": 37.6656401,
+   "lat": 37.665650899999996,
    "lists": [
     "v8TD7Dw3Jhw4hLeUewfXeoAPI9ZdMQ"
    ],
-   "lng": 24.3246404,
+   "lng": 24.3246431,
    "mid": "/g/11b5wmt4_g",
    "name": "Arístos",
    "note": "",
@@ -11965,7 +11965,7 @@
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
    "lng": -0.1516832,
-   "mid": "/g/11c558dy2y",
+   "mid": "/g/11f5dgflk7",
    "name": "Burlock London - Bond Street",
    "note": "",
    "type": "other"
@@ -20197,7 +20197,7 @@
    "lists": [
     "VTUDJsQO-Yxuh2n_RoPHS4SWvYs-IA"
    ],
-   "lng": -123.11028169999999,
+   "lng": -123.1102818,
    "mid": "/g/11c1xdsr7z",
    "name": "Nemesis Coffee Gastown",
    "note": "",
@@ -22923,11 +22923,11 @@
    "address": "Milopotamos 801 00",
    "cid": "-3830921323018195684",
    "city": "Kythira",
-   "lat": 36.2422468,
+   "lat": 36.242247,
    "lists": [
     "Ur9CWjLx8a-CXzdDP-vI_BORsHk8dw"
    ],
-   "lng": 22.945199499999998,
+   "lng": 22.9451996,
    "mid": "/g/11c50q1k31",
    "name": "ΠΛΑΤΑΝΟΣ",
    "note": "",
@@ -24739,6 +24739,42 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-10",
+   "address": "One&Only Keá Island, Keá Island 840 02",
+   "cid": "-7708318499722368950",
+   "city": "Kea",
+   "lat": 37.612866499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 24.273674,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j0v0489h",
+   "name": "One&Only Kéa Island",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
+   "added": "2026-09-10",
+   "address": "149 Roman Way, London N7 8XH, United Kingdom",
+   "cid": "2407697677998988610",
+   "city": "London",
+   "lat": 51.543387599999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1146666,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nhzwy75t",
+   "name": "Sarnie Social",
    "note": "",
    "type": "other"
   },
@@ -30488,11 +30524,11 @@
    "address": "51a Orchard St, New York, NY 10002, United States",
    "cid": "-2711352811763134438",
    "city": "New York",
-   "lat": 40.716559499999995,
+   "lat": 40.7166122,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9912397,
+   "lng": -73.9914033,
    "marks": [
     "unverified"
    ],
