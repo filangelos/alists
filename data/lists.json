@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 526,
+   "count": 527,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517192,
-   "lng": -0.125116,
+   "lat": 51.517217,
+   "lng": -0.125085,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-10T09:49:42Z",
+ "generated": "2026-09-11T09:49:00Z",
  "lists": [
   {
    "count": 77,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 562,
+   "count": 563,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -10328,12 +10328,12 @@
    "address": "20-22 College Green, Dublin 2, D02 C868, Ireland",
    "cid": "-8627913552694694120",
    "city": "Dublin",
-   "lat": 53.344108299999995,
+   "lat": 53.3441171,
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q",
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
    ],
-   "lng": -6.261492,
+   "lng": -6.2614978,
    "mid": "/g/1hc4yj0l3",
    "name": "The Bank on College Green",
    "note": "",
@@ -12297,11 +12297,11 @@
    "address": "456 University Ave, Palo Alto, CA 94301, United States",
    "cid": "7137872428406735209",
    "city": "San Francisco",
-   "lat": 37.4476491,
+   "lat": 37.448929199999995,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.15962309999999,
+   "lng": -122.15917069999999,
    "mid": "/g/11b7fqqr3b",
    "name": "Blue Bottle Coffee",
    "note": "",
@@ -24743,6 +24743,24 @@
    "type": "other"
   },
   {
+   "added": "2026-09-11",
+   "address": "Unit 4, 1 Bouverie Rd, London N16 0AH, United Kingdom",
+   "cid": "-450909194077046564",
+   "city": "London",
+   "lat": 51.562563499999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07926509999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zf06_m24",
+   "name": "cloudstreet",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-09-10",
    "address": "One&Only Keá Island, Keá Island 840 02",
    "cid": "-7708318499722368950",
@@ -25003,11 +25021,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "-324874461873675211",
    "city": "Amorgos",
-   "lat": 36.8271326,
+   "lat": 36.8271048,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.8630076,
+   "lng": 25.862986199999998,
    "marks": [
     "unverified"
    ],
@@ -34010,11 +34028,11 @@
    "address": "245 Hackney Rd, London E2 8NA, United Kingdom",
    "cid": "-3635198454037102686",
    "city": "London",
-   "lat": 51.5311192,
+   "lat": 51.531148599999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.069483,
+   "lng": -0.0694854,
    "marks": [
     "unverified"
    ],
