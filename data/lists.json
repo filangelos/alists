@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-12T09:26:46Z",
+ "generated": "2026-09-13T10:21:57Z",
  "lists": [
   {
    "count": 77,
@@ -4390,12 +4390,12 @@
    "address": "10 Argyle St, London WC1H 8NP, United Kingdom",
    "cid": "-3947108689742277292",
    "city": "London",
-   "lat": 51.5295318,
+   "lat": 51.529484499999995,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1243707,
+   "lng": -0.1242469,
    "mid": "/g/11r7v25mmt",
    "name": "The Rooftop at The Standard, London",
    "note": "",
@@ -11250,12 +11250,12 @@
    "address": "68-69 Mill St, Oxford OX2 0AL, United Kingdom",
    "cid": "-6033402110968119711",
    "city": "Oxford",
-   "lat": 51.751737999999996,
+   "lat": 51.7517334,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2711443999999998,
+   "lng": -1.2711898,
    "mid": "/g/11dyxgvtf_",
    "name": "The Porterhouse Grill & Rooms",
    "note": "",
@@ -16091,11 +16091,11 @@
    "address": "Plaka 848 00",
    "cid": "6834370530338681162",
    "city": "Milos",
-   "lat": 36.7457627,
+   "lat": 36.745779,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.422967099999997,
+   "lng": 24.422536299999997,
    "mid": "/g/11crzlb385",
    "name": "Plaka Castle (Venetian Castle of Milos)",
    "note": "",
@@ -16427,11 +16427,11 @@
    "address": "Κινιδαρος 843 02",
    "cid": "-5630684532486532801",
    "city": "Naxos",
-   "lat": 37.1016737,
+   "lat": 37.1016829,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.479606399999998,
+   "lng": 25.479674,
    "mid": "/g/11xm9tqclk",
    "name": "Κυνιδαρος village",
    "note": "",
@@ -33974,11 +33974,11 @@
    "address": "228 W 10th St, New York, NY 10014, United States",
    "cid": "-5403124669958267722",
    "city": "New York",
-   "lat": 40.7338431,
+   "lat": 40.7338425,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -74.0051565,
+   "lng": -74.0051563,
    "marks": [
     "unverified"
    ],
