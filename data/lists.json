@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 527,
+   "count": 526,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517217,
-   "lng": -0.125085,
+   "lat": 51.517239,
+   "lng": -0.124943,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-13T10:21:57Z",
+ "generated": "2026-09-14T10:46:03Z",
  "lists": [
   {
    "count": 77,
@@ -4520,12 +4520,14 @@
    "type": "drinks"
   },
   {
+   "added": "2026-09-08",
    "address": "31 Duke St, London W1U 1LG, United Kingdom",
-   "cid": "1510913761669411924",
+   "cid": "5994357774739072210",
    "city": "London",
    "lat": 51.5151342,
    "lists": [
-    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
+    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
    "lng": -0.1516832,
    "mid": "/g/11c558dy2y",
@@ -11952,21 +11954,6 @@
    "lng": -0.1352256,
    "mid": "/g/11q8zkw65y",
    "name": "SOMA Soho",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-09-08",
-   "address": "31 Duke St, London W1U 1LG, United Kingdom",
-   "cid": "5994357774739072210",
-   "city": "London",
-   "lat": 51.5151342,
-   "lists": [
-    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
-   ],
-   "lng": -0.1516832,
-   "mid": "/g/11f5dgflk7",
-   "name": "Burlock London - Bond Street",
    "note": "",
    "type": "other"
   },
@@ -21075,11 +21062,11 @@
    "address": "Via del Monte della Farina, 38, 00186 Roma RM, Italy",
    "cid": "3299677369094428047",
    "city": "Rome",
-   "lat": 41.894597999999995,
+   "lat": 41.8945979,
    "lists": [
     "JJdzut_UQE-txu1G1Kig_Q"
    ],
-   "lng": 12.474907799999999,
+   "lng": 12.4749099,
    "mid": "/g/1pty4c8yl",
    "name": "Vinaietto - Old Winery",
    "note": "",
@@ -28433,11 +28420,11 @@
    "address": "133 Upper St, London N1 1QP, United Kingdom",
    "cid": "-2259971552089119585",
    "city": "London",
-   "lat": 51.5391173,
+   "lat": 51.539142399999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1027386,
+   "lng": -0.1025166,
    "marks": [
     "unverified"
    ],
@@ -35376,11 +35363,11 @@
    "address": "",
    "cid": "96207456886362997",
    "city": "Amorgos",
-   "lat": 36.8235984,
+   "lat": 36.8236004,
    "lists": [
     "wd9inajf-HK28ABzdvrGNVBHCqlCGQ"
    ],
-   "lng": 25.9060782,
+   "lng": 25.9060807,
    "mid": null,
    "name": "Paralia Agia Anna",
    "note": "",
