@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 176,
+   "count": 177,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.97915,
-   "lng": 23.744249,
+   "lat": 37.979142,
+   "lng": 23.745034,
    "name": "Athens"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-14T10:46:03Z",
+ "generated": "2026-09-15T10:09:40Z",
  "lists": [
   {
    "count": 77,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 563,
+   "count": 564,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4420,13 +4420,13 @@
    "address": "304 Rathmines Rd Lower, Rathmines, Dublin, D06 W3Y1, Ireland",
    "cid": "1170812047835587181",
    "city": "Dublin",
-   "lat": 53.321811999999994,
+   "lat": 53.3218159,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q",
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2655318,
+   "lng": -6.2655973,
    "mid": "/g/11s4rz84dk",
    "name": "Kodiak, Rathmines",
    "note": "",
@@ -4530,7 +4530,7 @@
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
    "lng": -0.1516832,
-   "mid": "/g/11c558dy2y",
+   "mid": "/g/11f5dgflk7",
    "name": "Burlock London - Bond Street",
    "note": "",
    "type": "drinks"
@@ -24726,6 +24726,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-15",
+   "address": "Liviis 22, Zografou 157 71",
+   "cid": "-6049043311758465517",
+   "city": "Athens",
+   "lat": 37.976884,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.761191,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zfjb1ys5",
+   "name": "KEYK Athens",
    "note": "",
    "type": "other"
   },
