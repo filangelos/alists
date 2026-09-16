@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-15T10:09:40Z",
+ "generated": "2026-09-16T10:01:27Z",
  "lists": [
   {
    "count": 77,
@@ -6037,7 +6037,7 @@
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9906324,
+   "lng": -73.9906326,
    "mid": "/g/11h0zg0x8h",
    "name": "St Kilda Coffee",
    "note": "",
@@ -14636,11 +14636,11 @@
    "address": "",
    "cid": "964081561386568498",
    "city": "Crete",
-   "lat": 35.3402248,
+   "lat": 35.3400971,
    "lists": [
     "nstZvvR0QfCwZlw8NALb_g"
    ],
-   "lng": 25.1327106,
+   "lng": 25.132433799999998,
    "mid": null,
    "name": "Peskesi",
    "note": "",
@@ -18542,7 +18542,7 @@
    "address": "414 K St NW, Washington, DC 20001, United States",
    "cid": "-5701419352660232177",
    "city": "Washington",
-   "lat": 38.9023464,
+   "lat": 38.9023481,
    "lists": [
     "BetPSmKJ1ri15ctvsig9cMcTJPTo5A"
    ],
@@ -19158,11 +19158,11 @@
    "address": "1 Raffles Pl, L63, Singapore 048616",
    "cid": "6934391598819100294",
    "city": "Singapore",
-   "lat": 1.2850070999999998,
+   "lat": 1.2844370999999999,
    "lists": [
     "5SGeG0GW1xRD2YY-Nn3cjRFnIqFIfQ"
    ],
-   "lng": 103.8509898,
+   "lng": 103.85095989999999,
    "mid": "/g/11w8gl4z60",
    "name": "NOVA",
    "note": "",
