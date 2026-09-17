@@ -396,10 +396,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-16T10:01:27Z",
+ "generated": "2026-09-17T10:04:15Z",
  "lists": [
   {
-   "count": 77,
+   "count": 78,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -435,7 +435,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 51,
+   "count": 52,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -570,7 +570,7 @@
    "url": "https://www.google.com/maps/placelists/list/v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
   },
   {
-   "count": 43,
+   "count": 44,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 564,
+   "count": 563,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -897,6 +897,21 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "address": "5 Throgmorton St, London EC2N 2AD, United Kingdom",
+   "cid": "-7857173424608171368",
+   "city": "London",
+   "lat": 51.5147457,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
+   ],
+   "lng": -0.0865498,
+   "mid": "/g/1th5z8py",
+   "name": "Le Relais de Venise l'Entrecôte",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-09-03",
    "address": "Leotsakou 2, Ermoupoli 841 00",
@@ -3155,11 +3170,11 @@
    "address": "23, Mitropoleos Street, Athina 105 57",
    "cid": "-6159217719352867624",
    "city": "Athens",
-   "lat": 37.9752801,
+   "lat": 37.975244499999995,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.7315221,
+   "lng": 23.731518899999998,
    "mid": "/g/11h3mw4z2p",
    "name": "ERGON House Athens",
    "note": "",
@@ -3935,12 +3950,12 @@
    "address": "35 Colonnade, London WC1N 1JD, United Kingdom",
    "cid": "4671419946386772792",
    "city": "London",
-   "lat": 51.5228281,
+   "lat": 51.5228283,
    "lists": [
     "Erx85_Y4gKkhT_4MERn11iWshw_Ynw",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.12421,
+   "lng": -0.12421019999999999,
    "mid": "/g/11ggb9k2ff",
    "name": "Fortitude Bakehouse",
    "note": "",
@@ -4074,6 +4089,22 @@
    "name": "Panadera",
    "note": "",
    "type": "bakery"
+  },
+  {
+   "added": "2026-07-31",
+   "address": "18-20 St John St, Barbican, London EC1M 4AY, United Kingdom",
+   "cid": "1055028265019221577",
+   "city": "London",
+   "lat": 51.520240099999995,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
+    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
+   ],
+   "lng": -0.10160849999999999,
+   "mid": "/g/11v_0n9j7c",
+   "name": "Space Talk",
+   "note": "",
+   "type": "drinks"
   },
   {
    "address": "115 Allen St, New York, NY 10002, United States",
@@ -5188,20 +5219,6 @@
    "lng": -0.12526669999999998,
    "mid": "/m/03hnmjc",
    "name": "German Gymnasium",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "address": "5 Throgmorton St, London EC2N 2AD, United Kingdom",
-   "cid": "-7857173424608171368",
-   "city": "London",
-   "lat": 51.5147457,
-   "lists": [
-    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
-   ],
-   "lng": -0.0865498,
-   "mid": "/g/1th5z8py",
-   "name": "Le Relais de Venise l'Entrecôte",
    "note": "",
    "type": "other"
   },
@@ -26748,24 +26765,6 @@
    ],
    "mid": "/g/11pdqty97c",
    "name": "Vago",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "18-20 St John St, Barbican, London EC1M 4AY, United Kingdom",
-   "cid": "1055028265019221577",
-   "city": "London",
-   "lat": 51.520240099999995,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.10160849999999999,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11v_0n9j7c",
-   "name": "Space Talk",
    "note": "",
    "type": "other"
   },
