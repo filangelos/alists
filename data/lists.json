@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-17T10:04:15Z",
+ "generated": "2026-09-18T09:51:22Z",
  "lists": [
   {
    "count": 78,
@@ -5184,11 +5184,11 @@
    "address": "17-18 Henrietta St, London WC2E 8QH, United Kingdom",
    "cid": "-1678932981054758538",
    "city": "London",
-   "lat": 51.5108313,
+   "lat": 51.510794999999995,
    "lists": [
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.12408269999999999,
+   "lng": -0.1240732,
    "mid": "/g/11bx6z9581",
    "name": "Flat Iron Covent Garden",
    "note": "",
@@ -8082,11 +8082,11 @@
    "address": "",
    "cid": "2387917575556812388",
    "city": "Kea",
-   "lat": 37.6787505,
+   "lat": 37.678680799999995,
    "lists": [
     "v8TD7Dw3Jhw4hLeUewfXeoAPI9ZdMQ"
    ],
-   "lng": 24.3369087,
+   "lng": 24.336973099999998,
    "mid": null,
    "name": "Villa Litharia",
    "note": "",
