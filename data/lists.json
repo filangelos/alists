@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 526,
+   "count": 533,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517239,
-   "lng": -0.124943,
+   "lat": 51.517167,
+   "lng": -0.125085,
    "name": "London"
   },
   {
@@ -112,7 +112,7 @@
    "flag": "🇺🇸",
    "key": "sanfrancisco",
    "lat": 37.788053,
-   "lng": -122.407864,
+   "lng": -122.407834,
    "name": "San Francisco"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-18T09:51:22Z",
+ "generated": "2026-09-19T09:36:18Z",
  "lists": [
   {
    "count": 78,
@@ -435,7 +435,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 52,
+   "count": 53,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -498,7 +498,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 86,
+   "count": 87,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -543,7 +543,7 @@
    "url": "https://www.google.com/maps/placelists/list/-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
   },
   {
-   "count": 49,
+   "count": 50,
    "description": "",
    "emoji": "🍺",
    "id": "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
@@ -570,7 +570,7 @@
    "url": "https://www.google.com/maps/placelists/list/v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
   },
   {
-   "count": 44,
+   "count": 43,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw",
@@ -849,7 +849,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 49,
+   "count": 54,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -4091,6 +4091,21 @@
    "type": "bakery"
   },
   {
+   "added": "2026-09-19",
+   "address": "Rooftop Terrace One, New Change, London EC4M 9AF, United Kingdom",
+   "cid": "2206096317269062700",
+   "city": "London",
+   "lat": 51.5138713,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
+   ],
+   "lng": -0.0954593,
+   "mid": "/g/1tmz6dnz",
+   "name": "Madison",
+   "note": "",
+   "type": "drinks"
+  },
+  {
    "added": "2026-07-31",
    "address": "18-20 St John St, Barbican, London EC1M 4AY, United Kingdom",
    "cid": "1055028265019221577",
@@ -7226,11 +7241,11 @@
    "address": "1188 Broadway, New York, NY 10001, United States",
    "cid": "6844879950532884242",
    "city": "New York",
-   "lat": 40.7457859,
+   "lat": 40.745787899999996,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9884842,
+   "lng": -73.9884854,
    "mid": "/g/11gk9_vn3z",
    "name": "Black Seed Bagels",
    "note": "",
@@ -8322,6 +8337,21 @@
    "name": "Ria's",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "56 Ludgate Hill, London EC4M 7AW, United Kingdom",
+   "cid": "-8188926768852304295",
+   "city": "London",
+   "lat": 51.5142223,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.1030609,
+   "mid": "/g/11bwlngz16",
+   "name": "Ozone Coffee - St Paul's",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-07-31",
@@ -10837,6 +10867,21 @@
    "type": "other"
   },
   {
+   "added": "2026-09-19",
+   "address": "194 Fleet St, London EC4A 2LT, United Kingdom",
+   "cid": "-8117527751870088578",
+   "city": "London",
+   "lat": 51.5138974,
+   "lists": [
+    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
+   ],
+   "lng": -0.11147989999999999,
+   "mid": "/g/1w0p52rc",
+   "name": "Old Bank of England",
+   "note": "",
+   "type": "drinks"
+  },
+  {
    "added": "2026-08-22",
    "address": "82 Duke St, London W1K 6JG, United Kingdom",
    "cid": "8999979703109704637",
@@ -12046,20 +12091,6 @@
    "type": "other"
   },
   {
-   "address": "14-16 Rupert St, London W1D 6DD, United Kingdom",
-   "cid": "1419630074103272256",
-   "city": "London",
-   "lat": 51.510832,
-   "lists": [
-    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
-   ],
-   "lng": -0.13233599999999998,
-   "mid": "/g/1whdhtw4",
-   "name": "Waxy O'Connor's London",
-   "note": "",
-   "type": "other"
-  },
-  {
    "address": "3935 Freedom Cir, Santa Clara, CA 95054, United States",
    "cid": "-5644291047992778654",
    "city": "San Francisco",
@@ -12511,11 +12542,11 @@
    "address": "600 Stockton St, San Francisco, CA 94108, United States",
    "cid": "-1281501168712221544",
    "city": "San Francisco",
-   "lat": 37.791620099999996,
+   "lat": 37.791812,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.40727559999999,
+   "lng": -122.4069001,
    "mid": "/m/0zw919m",
    "name": "The Ritz-Carlton, San Francisco",
    "note": "",
@@ -13953,11 +13984,11 @@
    "address": "226 Rue de Rivoli, 75001 Paris, France",
    "cid": "1363937141080808774",
    "city": "Paris",
-   "lat": 48.8650898,
+   "lat": 48.8652024,
    "lists": [
     "CFoJzsllJTA564TFXO7aP6dfM2PADg"
    ],
-   "lng": 2.3284434,
+   "lng": 2.328434,
    "mid": "/g/1xn_mp_b",
    "name": "Angelina",
    "note": "",
@@ -14891,11 +14922,11 @@
    "address": "Jl. Sri Wedari No.5, Banjar Taman Kelod, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
    "cid": "8044070692477180642",
    "city": "Bali",
-   "lat": -8.506749899999999,
+   "lat": -8.5067341,
    "lists": [
     "H18AnNN10_UIr-GW6WLAVRx4GYoiSA"
    ],
-   "lng": 115.265208,
+   "lng": 115.26521149999999,
    "mid": null,
    "name": "Seniman Coffee",
    "note": "",
@@ -24072,6 +24103,81 @@
    "type": "sights"
   },
   {
+   "added": "2026-09-19",
+   "address": "4 St James's St, London SW1A 1EF, United Kingdom",
+   "cid": "6387890239893646349",
+   "city": "London",
+   "lat": 51.5055832,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.1381759,
+   "mid": "/g/11d_76r0fj",
+   "name": "Republic of Texas Plaque",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "King Edward St, London EC1A 7BA, United Kingdom",
+   "cid": "7326260763190744925",
+   "city": "London",
+   "lat": 51.515845299999995,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.0988242,
+   "mid": "/m/04mq08",
+   "name": "Christchurch Greyfriars Church Garden",
+   "note": "",
+   "type": "sights"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "London, UK",
+   "cid": "6058815177493703961",
+   "city": "London",
+   "lat": 51.4899677,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.16376,
+   "mid": "/g/1vs1rbnq",
+   "name": "Bywater St",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "6 Warwick Ave, London W2 1XB, United Kingdom",
+   "cid": "6972289126557210887",
+   "city": "London",
+   "lat": 51.5214456,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.1814477,
+   "mid": "/g/1tflxcnr",
+   "name": "Rembrandt Gardens",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "Hertford House, Manchester Square, London W1U 3BN, United Kingdom",
+   "cid": "-4531357387965151885",
+   "city": "London",
+   "lat": 51.517323,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.1530885,
+   "mid": "/m/02sfxg",
+   "name": "The Wallace Collection",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-08-22",
    "address": "Garlick Hill, London EC4V 2AF, United Kingdom",
    "cid": "6412240650688375281",
@@ -24743,6 +24849,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-19",
+   "address": "7 Denmark St, London WC2H 8LZ, United Kingdom",
+   "cid": "2642028420269845320",
+   "city": "London",
+   "lat": 51.5151568,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1293463,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nv12rlqr",
+   "name": "Moonrays",
    "note": "",
    "type": "other"
   },
@@ -25970,24 +26094,6 @@
   },
   {
    "added": "2026-08-03",
-   "address": "6 Bedford St, London WC2E 9HZ, United Kingdom",
-   "cid": "-1882438293486784131",
-   "city": "London",
-   "lat": 51.510254499999995,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1241374,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z0wf4rlh",
-   "name": "Studio Coffee",
-   "note": "",
-   "type": "coffee"
-  },
-  {
-   "added": "2026-08-03",
    "address": "160a Pavilion Rd, London SW1X 0AW, United Kingdom",
    "cid": "-6224909553946816946",
    "city": "London",
@@ -26699,11 +26805,11 @@
    "address": "",
    "cid": "226569568275461609",
    "city": "Athens",
-   "lat": 38.015317599999996,
+   "lat": 38.0153166,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7852696,
+   "lng": 23.7852712,
    "marks": [
     "unverified"
    ],
@@ -34032,11 +34138,11 @@
    "address": "245 Hackney Rd, London E2 8NA, United Kingdom",
    "cid": "-3635198454037102686",
    "city": "London",
-   "lat": 51.531148599999995,
+   "lat": 51.5311192,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0694854,
+   "lng": -0.069483,
    "marks": [
     "unverified"
    ],
