@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 533,
+   "count": 546,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517167,
-   "lng": -0.125085,
+   "lat": 51.517048,
+   "lng": -0.125335,
    "name": "London"
   },
   {
@@ -112,7 +112,7 @@
    "flag": "🇺🇸",
    "key": "sanfrancisco",
    "lat": 37.788053,
-   "lng": -122.407834,
+   "lng": -122.407828,
    "name": "San Francisco"
   },
   {
@@ -396,10 +396,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-19T09:36:18Z",
+ "generated": "2026-09-20T09:51:59Z",
  "lists": [
   {
-   "count": 78,
+   "count": 81,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -435,7 +435,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 53,
+   "count": 55,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -498,7 +498,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 87,
+   "count": 90,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -543,7 +543,7 @@
    "url": "https://www.google.com/maps/placelists/list/-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
   },
   {
-   "count": 50,
+   "count": 51,
    "description": "",
    "emoji": "🍺",
    "id": "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
@@ -849,7 +849,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 54,
+   "count": 55,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 563,
+   "count": 566,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -897,6 +897,51 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-09-20",
+   "address": "7 Boundary St, London E2 7JE, United Kingdom",
+   "cid": "-1766069965322490376",
+   "city": "London",
+   "lat": 51.5245002,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": -0.0765998,
+   "mid": "/g/1hf08nz33",
+   "name": "Dishoom Shoreditch",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "147 Shoreditch High St, London E1 6JE, United Kingdom",
+   "cid": "-2513610822181377575",
+   "city": "London",
+   "lat": 51.5257502,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": -0.077973,
+   "mid": "/g/11gbwyq_m6",
+   "name": "Burger & Beyond - Shoreditch",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "54-56 Great Eastern St, London EC2A 3QR, United Kingdom",
+   "cid": "6243780584135422006",
+   "city": "London",
+   "lat": 51.525120699999995,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": -0.0813769,
+   "mid": "/g/11fjsbcn22",
+   "name": "Gloria",
+   "note": "",
+   "type": "food"
+  },
   {
    "address": "5 Throgmorton St, London EC2N 2AD, United Kingdom",
    "cid": "-7857173424608171368",
@@ -4089,6 +4134,36 @@
    "name": "Panadera",
    "note": "",
    "type": "bakery"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "13 Kingly Ct, Carnaby, London W1B 5PW, United Kingdom",
+   "cid": "-4901109979074680712",
+   "city": "London",
+   "lat": 51.512482399999996,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
+   ],
+   "lng": -0.1385496,
+   "mid": "/g/11b77qh39v",
+   "name": "Cahoots Underground",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "20 Kingly St, Carnaby, London W1B 5PZ, United Kingdom",
+   "cid": "3280088686369163685",
+   "city": "London",
+   "lat": 51.512974199999995,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
+   ],
+   "lng": -0.13961469999999998,
+   "mid": "/m/0k2sk3l",
+   "name": "Ain't Nothin' But",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-09-19",
@@ -8339,6 +8414,51 @@
    "type": "food"
   },
   {
+   "added": "2026-09-20",
+   "address": "11 Power Rd, Chiswick, London W4 5PY, United Kingdom",
+   "cid": "-3615283652240867986",
+   "city": "London",
+   "lat": 51.493632999999996,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.27920239999999996,
+   "mid": "/g/11b6gqct3k",
+   "name": "Artisan Coffee School",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "The Aircraft Factory, 100 Cambridge Grove, London W6 0LE, United Kingdom",
+   "cid": "5453187196510370723",
+   "city": "London",
+   "lat": 51.4959132,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.23068809999999998,
+   "mid": "/g/11bz0rg4v3",
+   "name": "Origin Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "65 Charlotte Rd, London EC2A 3PE, United Kingdom",
+   "cid": "-5379296805247234169",
+   "city": "London",
+   "lat": 51.526387899999996,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.0811253,
+   "mid": "/g/11bv1b6qvl",
+   "name": "Origin Coffee (Charlotte Road)",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-09-19",
    "address": "56 Ludgate Hill, London EC4M 7AW, United Kingdom",
    "cid": "-8188926768852304295",
@@ -10867,6 +10987,21 @@
    "type": "other"
   },
   {
+   "added": "2026-09-20",
+   "address": "14-16 Rupert St, London W1D 6DD, United Kingdom",
+   "cid": "1419630074103272256",
+   "city": "London",
+   "lat": 51.510832,
+   "lists": [
+    "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
+   ],
+   "lng": -0.13233599999999998,
+   "mid": "/g/1whdhtw4",
+   "name": "Waxy O'Connor's",
+   "note": "",
+   "type": "drinks"
+  },
+  {
    "added": "2026-09-19",
    "address": "194 Fleet St, London EC4A 2LT, United Kingdom",
    "cid": "-8117527751870088578",
@@ -12357,8 +12492,9 @@
    "type": "other"
   },
   {
+   "added": "2026-09-20",
    "address": "4th Street &, Brannan St, San Francisco, CA, United States",
-   "cid": "-7718809012381501722",
+   "cid": "7906308542706579528",
    "city": "San Francisco",
    "lat": 37.778675,
    "lists": [
@@ -12640,11 +12776,11 @@
    "address": "270 7th St, San Francisco, CA 94103, United States",
    "cid": "-4520283186847955269",
    "city": "San Francisco",
-   "lat": 37.7770361,
+   "lat": 37.777039599999995,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.4084527,
+   "lng": -122.4084396,
    "mid": "/m/09vwwy6",
    "name": "Sightglass Coffee",
    "note": "",
@@ -14656,11 +14792,11 @@
    "address": "",
    "cid": "-8502230976068743431",
    "city": "Crete",
-   "lat": 35.3395472,
+   "lat": 35.339596199999995,
    "lists": [
     "nstZvvR0QfCwZlw8NALb_g"
    ],
-   "lng": 25.1358064,
+   "lng": 25.1358067,
    "mid": null,
    "name": "Crop",
    "note": "",
@@ -24103,6 +24239,21 @@
    "type": "sights"
   },
   {
+   "added": "2026-09-20",
+   "address": "Holland Park, Holland Park Ave, London W11 4UA, United Kingdom",
+   "cid": "-7201382820296716579",
+   "city": "London",
+   "lat": 51.502992199999994,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.2046902,
+   "mid": "/g/12j2bjtkg",
+   "name": "Kyoto Garden",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
    "added": "2026-09-19",
    "address": "4 St James's St, London SW1A 1EF, United Kingdom",
    "cid": "6387890239893646349",
@@ -24851,6 +25002,62 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "9 Conduit St, London W1S 2XG, United Kingdom",
+   "cid": "-5731674010134183132",
+   "city": "London",
+   "lat": 51.512693,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.141529,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/098mtc",
+   "name": "sketch",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "20 St Mary's Rd, London W5 5ES, United Kingdom",
+   "cid": "825881853203763466",
+   "city": "London",
+   "far": true,
+   "lat": 51.5072755,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.30529,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b_1nbxr1",
+   "name": "pulp.",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-20",
+   "address": "Pitzhanger Manor & Gallery, Ealing Grn, London W5 5EQ, United Kingdom",
+   "cid": "2025347802272079614",
+   "city": "London",
+   "far": true,
+   "lat": 51.5108634,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.30707629999999997,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/05kx2j",
+   "name": "Pitzhanger Manor & Gallery",
+   "note": "",
+   "type": "sights"
   },
   {
    "added": "2026-09-19",
