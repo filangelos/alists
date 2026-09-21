@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 546,
+   "count": 547,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517048,
-   "lng": -0.125335,
+   "lat": 51.517049,
+   "lng": -0.125267,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-20T09:51:59Z",
+ "generated": "2026-09-21T10:48:53Z",
  "lists": [
   {
    "count": 81,
@@ -489,7 +489,7 @@
    "url": "https://www.google.com/maps/placelists/list/v8TD7Dw3Jhw4hLeUewfXeoAPI9ZdMQ"
   },
   {
-   "count": 20,
+   "count": 21,
    "description": "",
    "emoji": "🍕",
    "id": "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q",
@@ -8281,6 +8281,21 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
+   "address": "122 Bethnal Grn Rd, London E2 6DG, United Kingdom",
+   "cid": "3138223061755566022",
+   "city": "London",
+   "lat": 51.5248524,
+   "lists": [
+    "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
+   ],
+   "lng": -0.0713985,
+   "mid": "/g/11yn38425f",
+   "name": "Vincenzo's Pizza",
+   "note": "",
+   "type": "food"
+  },
+  {
    "address": "7 Craig Rd, Singapore 089667",
    "cid": "8505710208907552600",
    "city": "Singapore",
@@ -12501,7 +12516,7 @@
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
    "lng": -122.3969992,
-   "mid": "/g/11tkbgdv5_",
+   "mid": "/g/11tmfz8g0b",
    "name": "4th St & Brannan St Station",
    "note": "",
    "type": "other"
@@ -25004,6 +25019,24 @@
    "type": "other"
   },
   {
+   "added": "2026-09-21",
+   "address": "392 Kingsland Rd, London E8 4AA, United Kingdom",
+   "cid": "-1544992211401223960",
+   "city": "London",
+   "lat": 51.541292999999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.07609339999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11k4swm2fr",
+   "name": "392 Kingsland Road, Hackney",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-09-20",
    "address": "9 Conduit St, London W1S 2XG, United Kingdom",
    "cid": "-5731674010134183132",
@@ -28075,24 +28108,6 @@
    ],
    "mid": "/g/11jvqpqpqt",
    "name": "Patio Pizza",
-   "note": "",
-   "type": "food"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "122 Bethnal Grn Rd, London E2 6DG, United Kingdom",
-   "cid": "3138223061755566022",
-   "city": "London",
-   "lat": 51.5248524,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.0713985,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11yn38425f",
-   "name": "Vincenzo's Pizza",
    "note": "",
    "type": "food"
   },
