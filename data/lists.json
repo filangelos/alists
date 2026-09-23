@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-21T10:48:53Z",
+ "generated": "2026-09-23T10:04:31Z",
  "lists": [
   {
    "count": 81,
@@ -5330,11 +5330,11 @@
    "address": "97 St Marks Pl, New York, NY 10009, United States",
    "cid": "6971984010392762983",
    "city": "New York",
-   "lat": 40.727360399999995,
+   "lat": 40.7271819,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9847952,
+   "lng": -73.9848422,
    "mid": "/g/11vr4kgdl1",
    "name": "Led Zeppelin Physical Graffiti Album Cover Location",
    "note": "",
@@ -7682,11 +7682,11 @@
    "address": "Απολλωνία 840 03",
    "cid": "7296092225983482696",
    "city": "Sifnos",
-   "lat": 36.9729378,
+   "lat": 36.9728932,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.723734999999998,
+   "lng": 24.7237322,
    "mid": "/g/11b5wnkgt6",
    "name": "KAFENEIO DRAKAKIS",
    "note": "",
