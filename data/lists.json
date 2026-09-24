@@ -181,6 +181,14 @@
   },
   {
    "count": 41,
+   "flag": "🇺🇸",
+   "key": "miami",
+   "lat": 25.799935,
+   "lng": -80.164032,
+   "name": "Miami"
+  },
+  {
+   "count": 41,
    "flag": "🇬🇷",
    "key": "sifnos",
    "lat": 36.973204,
@@ -194,14 +202,6 @@
    "lat": -8.515591,
    "lng": 115.260674,
    "name": "Bali"
-  },
-  {
-   "count": 40,
-   "flag": "🇺🇸",
-   "key": "miami",
-   "lat": 25.799974,
-   "lng": -80.175501,
-   "name": "Miami"
   },
   {
    "count": 38,
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-23T10:04:31Z",
+ "generated": "2026-09-24T10:07:56Z",
  "lists": [
   {
    "count": 81,
@@ -777,7 +777,7 @@
    "url": "https://www.google.com/maps/placelists/list/OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
   },
   {
-   "count": 39,
+   "count": 40,
    "description": "",
    "emoji": "🔥",
    "id": "ouqcgkKDoqXEMyE1DmnjIdyt5K082g",
@@ -21622,6 +21622,21 @@
    "type": "other"
   },
   {
+   "added": "2026-09-24",
+   "address": "1400 Ocean Dr, Miami Beach, FL 33139, United States",
+   "cid": "6058746222209812690",
+   "city": "Miami",
+   "lat": 25.7853153,
+   "lists": [
+    "ouqcgkKDoqXEMyE1DmnjIdyt5K082g"
+   ],
+   "lng": -80.1298456,
+   "mid": "/g/1tdlcj71",
+   "name": "Eurostars Winter Haven",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "1 Washington Ave, Miami Beach, FL 33139, United States",
    "cid": "-7638795705715495295",
    "city": "Miami",
@@ -32989,11 +33004,11 @@
    "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
    "cid": "-6752398179009724708",
    "city": "Dublin",
-   "lat": 53.340754399999994,
+   "lat": 53.3407543,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.265438199999999,
+   "lng": -6.2654371,
    "marks": [
     "unverified"
    ],
