@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-24T10:07:56Z",
+ "generated": "2026-09-25T10:15:59Z",
  "lists": [
   {
    "count": 81,
@@ -4645,12 +4645,12 @@
    "address": "31 Duke St, London W1U 1LG, United Kingdom",
    "cid": "5994357774739072210",
    "city": "London",
-   "lat": 51.5151342,
+   "lat": 51.51515,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1516832,
+   "lng": -0.15164239999999998,
    "mid": "/g/11f5dgflk7",
    "name": "Burlock London - Bond Street",
    "note": "",
@@ -19805,11 +19805,11 @@
    "address": "333 Orchard Rd, Singapore 238867",
    "cid": "6644192952157495777",
    "city": "Singapore",
-   "lat": 1.3019203,
+   "lat": 1.3019197,
    "lists": [
     "5SGeG0GW1xRD2YY-Nn3cjRFnIqFIfQ"
    ],
-   "lng": 103.83586729999999,
+   "lng": 103.83586749999999,
    "mid": "/g/11r_hx75z5",
    "name": "Hilton Singapore Orchard",
    "note": "",
@@ -25494,11 +25494,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "4677995402497701511",
    "city": "Amorgos",
-   "lat": 36.8263823,
+   "lat": 36.828107599999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.864057799999998,
+   "lng": 25.861907499999997,
    "marks": [
     "unverified"
    ],
