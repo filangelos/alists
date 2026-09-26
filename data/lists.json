@@ -92,10 +92,10 @@
    "name": "New York"
   },
   {
-   "count": 177,
+   "count": 179,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979142,
+   "lat": 37.979158,
    "lng": 23.745034,
    "name": "Athens"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-25T10:15:59Z",
+ "generated": "2026-09-26T09:57:31Z",
  "lists": [
   {
    "count": 81,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 566,
+   "count": 568,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -25034,6 +25034,42 @@
    "type": "other"
   },
   {
+   "added": "2026-09-26",
+   "address": "Str. Lekka 19, Marousi 151 22",
+   "cid": "5809128586730742861",
+   "city": "Athens",
+   "lat": 38.0558421,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7987723,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11j7k5741_",
+   "name": "Karpos",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-26",
+   "address": "Evelpidon 83, Athina 113 62",
+   "cid": "-9048247116303562090",
+   "city": "Athens",
+   "lat": 37.9966012,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7426176,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11z3yqwfch",
+   "name": "Luna Rossa",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-09-21",
    "address": "392 Kingsland Rd, London E8 4AA, United Kingdom",
    "cid": "-1544992211401223960",
@@ -26877,11 +26913,11 @@
    "address": "119 Bethnal Grn Rd, London E2 7DG, United Kingdom",
    "cid": "8900308108913705989",
    "city": "London",
-   "lat": 51.524896999999996,
+   "lat": 51.5248962,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.07195119999999999,
+   "lng": -0.0719509,
    "marks": [
     "unverified"
    ],
@@ -28708,11 +28744,11 @@
    "address": "Yards, Unit 1C Montacute, London E1 6HU, United Kingdom",
    "cid": "-3263453464918373440",
    "city": "London",
-   "lat": 51.5244244,
+   "lat": 51.524511999999994,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0783523,
+   "lng": -0.0783634,
    "marks": [
     "unverified"
    ],
