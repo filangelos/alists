@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 547,
+   "count": 548,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517049,
-   "lng": -0.125267,
+   "lat": 51.517048,
+   "lng": -0.125335,
    "name": "London"
   },
   {
@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 179,
+   "count": 180,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979158,
-   "lng": 23.745034,
+   "lat": 37.97915,
+   "lng": 23.744249,
    "name": "Athens"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-26T09:57:31Z",
+ "generated": "2026-09-27T10:36:54Z",
  "lists": [
   {
    "count": 81,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 568,
+   "count": 570,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -25032,6 +25032,42 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-09-27",
+   "address": "Ethras 1, Athina 118 51",
+   "cid": "-1025005845076474777",
+   "city": "Athens",
+   "lat": 37.9758414,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.714074699999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y3qb25f0",
+   "name": "aphaia",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-27",
+   "address": "Ground Floor Retail, 24 Battersea Park Rd, London SW11 4HY, United Kingdom",
+   "cid": "2460306280967071704",
+   "city": "London",
+   "lat": 51.476376599999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1487172,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11y8v37bgn",
+   "name": "Mahali Bakery by Mahali and Co",
+   "note": "",
+   "type": "bakery"
   },
   {
    "added": "2026-09-26",
