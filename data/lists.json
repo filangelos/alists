@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 180,
+   "count": 182,
    "flag": "🇬🇷",
    "key": "athens",
    "lat": 37.97915,
-   "lng": 23.744249,
+   "lng": 23.745475,
    "name": "Athens"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-27T10:36:54Z",
+ "generated": "2026-09-28T11:46:27Z",
  "lists": [
   {
    "count": 81,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 570,
+   "count": 572,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -25034,6 +25034,42 @@
    "type": "other"
   },
   {
+   "added": "2026-09-28",
+   "address": "Αμασείας 6 &, Pratinou 53, Athina 116 34",
+   "cid": "6117504898001416746",
+   "city": "Athens",
+   "lat": 37.9711986,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7482537,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vjxfzz75",
+   "name": "Moden",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-09-28",
+   "address": "28is Oktovriou 5, Marousi 151 24",
+   "cid": "-59433551949195587",
+   "city": "Athens",
+   "lat": 38.0563935,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.8061725,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11p5qj489c",
+   "name": "Janet Craig",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-09-27",
    "address": "Ethras 1, Athina 118 51",
    "cid": "-1025005845076474777",
@@ -30637,11 +30673,11 @@
    "address": "183 Bowery, New York, NY 10002, United States",
    "cid": "6792902209581019190",
    "city": "New York",
-   "lat": 40.7204136,
+   "lat": 40.7204169,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9935814,
+   "lng": -73.9935818,
    "marks": [
     "unverified"
    ],
