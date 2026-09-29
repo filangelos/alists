@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-28T11:46:27Z",
+ "generated": "2026-09-29T11:25:25Z",
  "lists": [
   {
    "count": 81,
@@ -1343,12 +1343,12 @@
    "address": "39 William IV St, London WC2N 4DD, United Kingdom",
    "cid": "196478056344732283",
    "city": "London",
-   "lat": 51.509557,
+   "lat": 51.5095795,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.1264025,
+   "lng": -0.1264051,
    "mid": "/g/11hcz0nxp9",
    "name": "Bancone Covent Garden",
    "note": "",
@@ -17397,11 +17397,11 @@
    "address": "Σχολές 180 50",
    "cid": "8948402997682962229",
    "city": "Spetses",
-   "lat": 37.274620999999996,
+   "lat": 37.2746249,
    "lists": [
     "wOQ35wnnKMOnglRMtuDTvF1HBrqfLQ"
    ],
-   "lng": 23.1431832,
+   "lng": 23.1431818,
    "mid": "/g/11bbwl0k1c",
    "name": "Καΐκι Beach Club",
    "note": "",
