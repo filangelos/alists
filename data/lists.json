@@ -95,7 +95,7 @@
    "count": 182,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.97915,
+   "lat": 37.979235,
    "lng": 23.745475,
    "name": "Athens"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-09-30T11:13:35Z",
+ "generated": "2026-10-02T11:10:19Z",
  "lists": [
   {
    "count": 81,
@@ -16291,11 +16291,11 @@
    "address": "ΑΔΑΜΑΝΤΑΣ ΜΗΛΟΣ, 848 01",
    "cid": "2779102497194245622",
    "city": "Milos",
-   "lat": 36.7264858,
+   "lat": 36.7264844,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.4477989,
+   "lng": 24.447779999999998,
    "mid": "/g/11c40nx1_9",
    "name": "Artemis Bakery",
    "note": "",
@@ -32431,11 +32431,11 @@
    "address": "Pl. Agion Theodoron 3, Athina 105 61",
    "cid": "1366830091904729648",
    "city": "Athens",
-   "lat": 37.9791418,
+   "lat": 37.9793125,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7296563,
+   "lng": 23.7296597,
    "marks": [
     "unverified"
    ],
