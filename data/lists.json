@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 549,
+   "count": 552,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517046,
-   "lng": -0.125404,
+   "lat": 51.517048,
+   "lng": -0.125452,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-02T11:10:19Z",
+ "generated": "2026-10-03T10:28:20Z",
  "lists": [
   {
    "count": 81,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 573,
+   "count": 576,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4365,11 +4365,11 @@
    "address": "428 Kingsland Rd, London E8 4AA, United Kingdom",
    "cid": "2224091055055860657",
    "city": "London",
-   "lat": 51.5420805,
+   "lat": 51.542077299999995,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
    ],
-   "lng": -0.0759673,
+   "lng": -0.07585059999999999,
    "mid": "/g/11x8jslcps",
    "name": "Ellie's",
    "note": "",
@@ -16613,11 +16613,11 @@
    "address": "Κινιδαρος 843 02",
    "cid": "-5630684532486532801",
    "city": "Naxos",
-   "lat": 37.1016829,
+   "lat": 37.101677699999996,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.479674,
+   "lng": 25.4796753,
    "mid": "/g/11xm9tqclk",
    "name": "Κυνιδαρος village",
    "note": "",
@@ -20127,11 +20127,11 @@
    "address": "30 Station Rd, Cambridge CB1 2JD, United Kingdom",
    "cid": "-6139123256021907675",
    "city": "Cambridge",
-   "lat": 52.1944647,
+   "lat": 52.194462599999994,
    "lists": [
     "1bKFUJWbdDcpXVzJPhpK3ozrxDN9VA"
    ],
-   "lng": 0.1346508,
+   "lng": 0.1346501,
    "mid": "/g/11f34qdfwc",
    "name": "Apple Research",
    "note": "",
@@ -25032,6 +25032,60 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-10-03",
+   "address": "32 Paddington St, London W1U 4HE, United Kingdom",
+   "cid": "6800999190263118478",
+   "city": "London",
+   "lat": 51.5205232,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1560899,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wfjmhtqh",
+   "name": "Berut Bistro",
+   "note": "",
+   "type": "food"
+  },
+  {
+   "added": "2026-10-03",
+   "address": "679 High Rd. Leyton, London E10 6RA, United Kingdom",
+   "cid": "6864144452573005046",
+   "city": "London",
+   "lat": 51.5715006,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.0085851,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11ty6c5hmz",
+   "name": "Coccole Tiramisu Leyton",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-10-03",
+   "address": "35 Eastcastle St, London W1W 8DW, United Kingdom",
+   "cid": "7019299396722535802",
+   "city": "London",
+   "lat": 51.516549,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1390101,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zjqk23cm",
+   "name": "oma Coffee Roaster",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-09-30",
