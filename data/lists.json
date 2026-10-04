@@ -76,10 +76,10 @@
  ],
  "cities": [
   {
-   "count": 552,
+   "count": 556,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.517048,
+   "lat": 51.516771,
    "lng": -0.125452,
    "name": "London"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-03T10:28:20Z",
+ "generated": "2026-10-04T11:09:48Z",
  "lists": [
   {
    "count": 81,
@@ -435,7 +435,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 55,
+   "count": 56,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -525,7 +525,7 @@
    "url": "https://www.google.com/maps/placelists/list/MMQ4UX1kbnY-bHHzT9VX6Y33fxHCxQ"
   },
   {
-   "count": 15,
+   "count": 16,
    "description": "",
    "emoji": "🍦",
    "id": "z68j_oiET_7aWDaDt7LpUvCnMEdN0g",
@@ -849,7 +849,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 55,
+   "count": 56,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 576,
+   "count": 577,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4134,6 +4134,21 @@
    "name": "Panadera",
    "note": "",
    "type": "bakery"
+  },
+  {
+   "added": "2026-10-04",
+   "address": "1, Sky Garden Walk, London EC3M 8AF, United Kingdom",
+   "cid": "3853469739785869815",
+   "city": "London",
+   "lat": 51.5112422,
+   "lists": [
+    "sPUdVz7_eocH35PXclW6pjLN5kzdMw"
+   ],
+   "lng": -0.08354929999999999,
+   "mid": "/g/11b7hfxjsb",
+   "name": "Sky Pod Bar",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-09-20",
@@ -9913,6 +9928,21 @@
    "type": "food"
   },
   {
+   "added": "2026-07-31",
+   "address": "41 Paddington St, London W1U 4HN, United Kingdom",
+   "cid": "-3307419609532163694",
+   "city": "London",
+   "lat": 51.520334399999996,
+   "lists": [
+    "z68j_oiET_7aWDaDt7LpUvCnMEdN0g"
+   ],
+   "lng": -0.1557962,
+   "mid": "/g/11z68gqnwz",
+   "name": "Sticks & Cones",
+   "note": "",
+   "type": "gelato"
+  },
+  {
    "added": "2026-08-29",
    "address": "Χώρα 840 08",
    "cid": "4418591932486613270",
@@ -14835,11 +14865,11 @@
    "address": "",
    "cid": "964081561386568498",
    "city": "Crete",
-   "lat": 35.3400971,
+   "lat": 35.3401679,
    "lists": [
     "nstZvvR0QfCwZlw8NALb_g"
    ],
-   "lng": 25.132433799999998,
+   "lng": 25.1325905,
    "mid": null,
    "name": "Peskesi",
    "note": "",
@@ -23628,11 +23658,11 @@
    "address": "Carrer de la Mare de Déu dels Desemparats, 8, 08012 Barcelona, Spain",
    "cid": "7658197769037870294",
    "city": "Barcelona",
-   "lat": 41.401489999999995,
+   "lat": 41.4015051,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1595337,
+   "lng": 2.1595591,
    "mid": "/g/11f1lmx_f5",
    "name": "Syra Coffee - Gràcia",
    "note": "",
@@ -24267,6 +24297,21 @@
    "name": "The British Museum",
    "note": "",
    "type": "sights"
+  },
+  {
+   "added": "2026-10-04",
+   "address": "Gracechurch St, London EC3V 1LT",
+   "cid": "3077402919340937651",
+   "city": "London",
+   "lat": 51.512766,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.0835289,
+   "mid": null,
+   "name": "Leadenhall Market",
+   "note": "",
+   "type": "shops"
   },
   {
    "added": "2026-09-20",
@@ -25034,22 +25079,58 @@
    "type": "other"
   },
   {
-   "added": "2026-10-03",
-   "address": "32 Paddington St, London W1U 4HE, United Kingdom",
-   "cid": "6800999190263118478",
+   "added": "2026-10-04",
+   "address": "30 Grosvenor Sq, London W1K 6AN, United Kingdom",
+   "cid": "5158545873500474005",
    "city": "London",
-   "lat": 51.5205232,
+   "lat": 51.511193999999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1560899,
+   "lng": -0.152944,
    "marks": [
     "unverified"
    ],
-   "mid": "/g/11wfjmhtqh",
-   "name": "Berut Bistro",
+   "mid": "/g/11xsqc8d7d",
+   "name": "Eagle Bar",
+   "note": "",
+   "type": "drinks"
+  },
+  {
+   "added": "2026-10-04",
+   "address": "30 Grosvenor Sq, London W1K 6AN, United Kingdom",
+   "cid": "-4258900540786999376",
+   "city": "London",
+   "lat": 51.511404,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.15305269999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11xv9zw45h",
+   "name": "Serra Restaurant & Bar",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-10-04",
+   "address": "Hamilton Pl, London W1J 7DR, United Kingdom",
+   "cid": "983156742037161662",
+   "city": "London",
+   "lat": 51.504170699999996,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.14994749999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11t__l9xp4",
+   "name": "Pavyllon London",
+   "note": "",
+   "type": "other"
   },
   {
    "added": "2026-10-03",
@@ -29012,24 +29093,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "41 Paddington St, London W1U 4HN, United Kingdom",
-   "cid": "-3307419609532163694",
-   "city": "London",
-   "lat": 51.520334399999996,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1557962,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z68gqnwz",
-   "name": "Sticks & Cones",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-07-31",
    "address": "3725 Balboa St, San Francisco, CA 94121, United States",
    "cid": "-7789497135890823478",
    "city": "San Francisco",
@@ -29933,11 +29996,11 @@
    "address": "11 Hackney Rd, London E2 7NX, United Kingdom",
    "cid": "1967003980439303656",
    "city": "London",
-   "lat": 51.5274474,
+   "lat": 51.527445199999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0772407,
+   "lng": -0.0772378,
    "marks": [
     "unverified"
    ],
