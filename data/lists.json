@@ -76,10 +76,10 @@
  ],
  "cities": [
   {
-   "count": 556,
+   "count": 558,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516771,
+   "lat": 51.516566,
    "lng": -0.125452,
    "name": "London"
   },
@@ -167,7 +167,7 @@
    "count": 42,
    "flag": "🇩🇰",
    "key": "copenhagen",
-   "lat": 55.679487,
+   "lat": 55.679369,
    "lng": 12.58058,
    "name": "Copenhagen"
   },
@@ -396,10 +396,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-04T11:09:48Z",
+ "generated": "2026-10-05T12:21:22Z",
  "lists": [
   {
-   "count": 81,
+   "count": 82,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -498,7 +498,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 90,
+   "count": 91,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -897,6 +897,21 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "added": "2026-10-05",
+   "address": "Brook's Mews, London W1K 4HR",
+   "cid": "4791028309212313749",
+   "city": "London",
+   "lat": 51.512396499999994,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
+   ],
+   "lng": -0.14714,
+   "mid": null,
+   "name": "Art Café By Thibault Hauchard",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-09-20",
    "address": "7 Boundary St, London E2 7JE, United Kingdom",
@@ -1937,12 +1952,12 @@
    "address": "27 Romilly St, London W1D 5AL, United Kingdom",
    "cid": "-4875694628384493466",
    "city": "London",
-   "lat": 51.513014899999995,
+   "lat": 51.513019799999995,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.1307413,
+   "lng": -0.1307461,
    "mid": "/g/11g1cqdlvf",
    "name": "Berenjak Soho",
    "note": "",
@@ -4409,12 +4424,12 @@
    "address": "16-22 Great Russell St, London WC1B 3NN, United Kingdom",
    "cid": "-6100903576843609598",
    "city": "London",
-   "lat": 51.517317399999996,
+   "lat": 51.5172743,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1290613,
+   "lng": -0.1290364,
    "mid": "/g/11c2nmnnh_",
    "name": "The Bloomsbury Club",
    "note": "",
@@ -6141,11 +6156,11 @@
    "address": "401 W 53rd St, New York, NY 10019, United States",
    "cid": "-5477584146781034008",
    "city": "New York",
-   "lat": 40.7664117,
+   "lat": 40.766433299999996,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9865327,
+   "lng": -73.9865839,
    "mid": "/g/11trggwk0v",
    "name": "Coffee Project New York | Hell's Kitchen",
    "note": "",
@@ -6230,7 +6245,7 @@
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
    "lng": -73.9931036,
-   "mid": "/m/0wxr_5t",
+   "mid": "/g/11zgmdx3n1",
    "name": "Penn Station",
    "note": "",
    "type": "other"
@@ -8442,6 +8457,21 @@
    "name": "Ria's",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-10-03",
+   "address": "35 Eastcastle St, London W1W 8DW",
+   "cid": "7019299396722535802",
+   "city": "London",
+   "lat": 51.516549,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
+   ],
+   "lng": -0.1390101,
+   "mid": null,
+   "name": "oma Coffee Roaster",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-09-20",
@@ -13311,11 +13341,11 @@
    "address": "August Bournonvilles Passage 8, 1055 København K, Denmark",
    "cid": "-5928475675052993690",
    "city": "Copenhagen",
-   "lat": 55.6796608,
+   "lat": 55.679424399999995,
    "lists": [
     "PoN5ekWNL_fAx8qNVIEkj3Zs8bB28A"
    ],
-   "lng": 12.5864158,
+   "lng": 12.586329,
    "mid": "/m/080m7_",
    "name": "The Royal Playhouse and The Old Stage",
    "note": "",
@@ -16419,11 +16449,11 @@
    "address": "Milos 848 00",
    "cid": "-1904088752245070493",
    "city": "Milos",
-   "lat": 36.7511313,
+   "lat": 36.7511072,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.4465407,
+   "lng": 24.446528999999998,
    "mid": "/g/11g9m9v2f2",
    "name": "Medusa",
    "note": "",
@@ -21613,11 +21643,11 @@
    "address": "Paniglgasse 18, 1040 Wien, Austria",
    "cid": "-6268915898472126561",
    "city": "Vienna",
-   "lat": 48.1981742,
+   "lat": 48.198174599999994,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.368523,
+   "lng": 16.3685203,
    "mid": "/g/11s3clscws",
    "name": "No Panic Coffee",
    "note": "",
@@ -25079,6 +25109,24 @@
    "type": "other"
   },
   {
+   "added": "2026-10-05",
+   "address": "6 Langley St, London WC2H 9JA, United Kingdom",
+   "cid": "5230011328842446903",
+   "city": "London",
+   "lat": 51.5132325,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1250524,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11zbcq7h2j",
+   "name": "Birchwood | Covent Garden",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
    "added": "2026-10-04",
    "address": "30 Grosvenor Sq, London W1K 6AN, United Kingdom",
    "cid": "5158545873500474005",
@@ -25149,24 +25197,6 @@
    "name": "Coccole Tiramisu Leyton",
    "note": "",
    "type": "other"
-  },
-  {
-   "added": "2026-10-03",
-   "address": "35 Eastcastle St, London W1W 8DW, United Kingdom",
-   "cid": "7019299396722535802",
-   "city": "London",
-   "lat": 51.516549,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1390101,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11zjqk23cm",
-   "name": "oma Coffee Roaster",
-   "note": "",
-   "type": "coffee"
   },
   {
    "added": "2026-09-30",
