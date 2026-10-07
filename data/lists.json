@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-06T12:05:31Z",
+ "generated": "2026-10-07T11:50:56Z",
  "lists": [
   {
    "count": 82,
@@ -2377,12 +2377,12 @@
    "address": "Unit 17, 77 Buckingham Palace Rd, London SW1W 0AJ, United Kingdom",
    "cid": "-4050371884338030355",
    "city": "London",
-   "lat": 51.4976097,
+   "lat": 51.497611199999994,
    "lists": [
     "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.143998,
+   "lng": -0.1438672,
    "mid": "/g/11c6y88rgn",
    "name": "Vagabond Wines Victoria",
    "note": "",
@@ -6268,11 +6268,11 @@
    "address": "20 Hudson Yards, New York, NY 10001, United States",
    "cid": "-8003648987532782210",
    "city": "New York",
-   "lat": 40.753380299999996,
+   "lat": 40.7533926,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -74.00106459999999,
+   "lng": -74.0008981,
    "mid": "/g/11cjtx7g1n",
    "name": "Hudson Yards",
    "note": "",
@@ -17611,11 +17611,11 @@
    "address": "Street 3 - Al Barsha - Al Barsha South - Dubai - United Arab Emirates",
    "cid": "7865583079722909851",
    "city": "Dubai",
-   "lat": 25.060006899999998,
+   "lat": 25.0599183,
    "lists": [
     "1q3Z1bwo3w29-4SUi_KzTsrz1RY0FA"
    ],
-   "lng": 55.244464699999995,
+   "lng": 55.2445295,
    "mid": "/g/11b86dd06f",
    "name": "Dubai Miracle Garden",
    "note": "",
@@ -21966,11 +21966,11 @@
    "address": "315 Chapel Hill Rd, Palm Beach, FL 33480, United States",
    "cid": "8620255285210557163",
    "city": "Miami",
-   "lat": 26.712970199999997,
+   "lat": 26.7126961,
    "lists": [
     "ouqcgkKDoqXEMyE1DmnjIdyt5K082g"
    ],
-   "lng": -80.04192499999999,
+   "lng": -80.04312879999999,
    "mid": "/g/11trvwjcvh",
    "name": "Historic Kapok Tree",
    "note": "",
