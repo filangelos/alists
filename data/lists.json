@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-07T11:50:56Z",
+ "generated": "2026-10-08T12:06:16Z",
  "lists": [
   {
    "count": 82,
@@ -16715,11 +16715,11 @@
    "address": "Agiou Georgiou, Naxos 843 00",
    "cid": "5983798252870065230",
    "city": "Naxos",
-   "lat": 37.1003125,
+   "lat": 37.1004365,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.3736627,
+   "lng": 25.373764299999998,
    "mid": "/g/11flj16h9_",
    "name": "Nissaki Restaurant est. 1971",
    "note": "",
@@ -18115,11 +18115,11 @@
    "address": "",
    "cid": "7775298526915255370",
    "city": "Oxford",
-   "lat": 51.7519171,
+   "lat": 51.7516658,
    "lists": [
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2631143999999999,
+   "lng": -1.263197,
    "mid": null,
    "name": "Oxford Castle & Prison",
    "note": "",
