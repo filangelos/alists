@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-08T12:06:16Z",
+ "generated": "2026-10-09T11:57:43Z",
  "lists": [
   {
    "count": 82,
@@ -6464,11 +6464,11 @@
    "address": "Queens, NY 11430, United States",
    "cid": "-1418719561705909776",
    "city": "New York",
-   "lat": 40.6446161,
+   "lat": 40.6446124,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.7797222,
+   "lng": -73.7797278,
    "mid": "/m/0p1l2",
    "name": "John F. Kennedy International Airport",
    "note": "",
@@ -7712,11 +7712,11 @@
    "address": "Απολλωνία 840 03",
    "cid": "7296092225983482696",
    "city": "Sifnos",
-   "lat": 36.9728932,
+   "lat": 36.972778999999996,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.7237322,
+   "lng": 24.7237162,
    "mid": "/g/11b5wnkgt6",
    "name": "KAFENEIO DRAKAKIS",
    "note": "",
@@ -12571,11 +12571,11 @@
    "address": "4th Street &, Brannan St, San Francisco, CA, United States",
    "cid": "7906308542706579528",
    "city": "San Francisco",
-   "lat": 37.778675,
+   "lat": 37.7786829,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.3969992,
+   "lng": -122.396996,
    "mid": "/g/11tmfz8g0b",
    "name": "4th St & Brannan St Station",
    "note": "",
@@ -19907,11 +19907,11 @@
    "address": "50, #09-01 Collyer Quay, OUE Bayfront, Singapore 049321",
    "cid": "-6527512556530211810",
    "city": "Singapore",
-   "lat": 1.2830873999999999,
+   "lat": 1.2830930999999999,
    "lists": [
     "5SGeG0GW1xRD2YY-Nn3cjRFnIqFIfQ"
    ],
-   "lng": 103.8531009,
+   "lng": 103.85311159999999,
    "mid": "/g/11h_d6lf86",
    "name": "The Thinker by Rodin",
    "note": "",
@@ -25785,11 +25785,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "4677995402497701511",
    "city": "Amorgos",
-   "lat": 36.828107599999996,
+   "lat": 36.826394799999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.861907499999997,
+   "lng": 25.864073599999998,
    "marks": [
     "unverified"
    ],
