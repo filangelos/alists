@@ -84,11 +84,11 @@
    "name": "London"
   },
   {
-   "count": 269,
+   "count": 270,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.729456,
-   "lng": -73.990128,
+   "lat": 40.729451,
+   "lng": -73.990119,
    "name": "New York"
   },
   {
@@ -116,11 +116,11 @@
    "name": "San Francisco"
   },
   {
-   "count": 76,
+   "count": 80,
    "flag": "🇬🇧",
    "key": "oxford",
    "lat": 51.754495,
-   "lng": -1.259305,
+   "lng": -1.258554,
    "name": "Oxford"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-09T11:57:43Z",
+ "generated": "2026-10-10T11:14:29Z",
  "lists": [
   {
    "count": 82,
@@ -453,7 +453,7 @@
    "url": "https://www.google.com/maps/placelists/list/EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
   },
   {
-   "count": 170,
+   "count": 171,
    "description": "",
    "emoji": "🗽",
    "id": "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
@@ -498,7 +498,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 91,
+   "count": 93,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -696,7 +696,7 @@
    "url": "https://www.google.com/maps/placelists/list/1q3Z1bwo3w29-4SUi_KzTsrz1RY0FA"
   },
   {
-   "count": 73,
+   "count": 75,
    "description": "",
    "emoji": "🐂",
    "id": "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 577,
+   "count": 579,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -5357,6 +5357,21 @@
    "type": "shops"
   },
   {
+   "added": "2026-10-10",
+   "address": "Brooklyn, NY, USA",
+   "cid": "17455390875361764",
+   "city": "New York",
+   "lat": 40.671067199999996,
+   "lists": [
+    "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
+   ],
+   "lng": -73.98142279999999,
+   "mid": "/m/039lmn",
+   "name": "Park Slope",
+   "note": "",
+   "type": "outdoors"
+  },
+  {
    "address": "97 St Marks Pl, New York, NY 10009, United States",
    "cid": "6971984010392762983",
    "city": "New York",
@@ -8457,6 +8472,38 @@
    "name": "Ria's",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-10-10",
+   "address": "Simon House, Workshop R/O, 2 Windmill Rd, Oxford OX3 7BU, United Kingdom",
+   "cid": "4630676031415291567",
+   "city": "Oxford",
+   "lat": 51.7594584,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
+   ],
+   "lng": -1.2110779999999999,
+   "mid": "/g/11hdvvn2mq",
+   "name": "New Ground Coffee",
+   "note": "",
+   "type": "coffee"
+  },
+  {
+   "added": "2026-10-10",
+   "address": "6, St Michael's Mansion, Ship St, Oxford OX1 3DE, United Kingdom",
+   "cid": "1775622082030058544",
+   "city": "Oxford",
+   "lat": 51.7535932,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
+   ],
+   "lng": -1.2580019,
+   "mid": "/g/11v0z7mcc6",
+   "name": "New Ground Coffee Oxford",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-10-03",
@@ -25107,6 +25154,42 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-10-10",
+   "address": "15 Holywell St, Oxford OX1 3SA, United Kingdom",
+   "cid": "4546902446570167795",
+   "city": "Oxford",
+   "lat": 51.7549826,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -1.2510603999999999,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/1tfd6gmb",
+   "name": "Edamamé",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-10-10",
+   "address": "14-15 Golden Cross, Oxford OX1 3EU, United Kingdom",
+   "cid": "1837281479446210120",
+   "city": "Oxford",
+   "lat": 51.752536,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -1.2575056,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11lkhx6_ky",
+   "name": "Coffeesmith Oxford",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-10-05",
