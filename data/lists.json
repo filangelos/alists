@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 558,
+   "count": 559,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516566,
-   "lng": -0.125452,
+   "lat": 51.516584,
+   "lng": -0.125404,
    "name": "London"
   },
   {
@@ -167,7 +167,7 @@
    "count": 42,
    "flag": "🇩🇰",
    "key": "copenhagen",
-   "lat": 55.679369,
+   "lat": 55.679416,
    "lng": 12.58058,
    "name": "Copenhagen"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-10T11:14:29Z",
+ "generated": "2026-10-11T11:28:05Z",
  "lists": [
   {
    "count": 82,
@@ -552,7 +552,7 @@
    "url": "https://www.google.com/maps/placelists/list/jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
   },
   {
-   "count": 66,
+   "count": 67,
    "description": "",
    "emoji": "🪽",
    "id": "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg",
@@ -3230,11 +3230,11 @@
    "address": "23, Mitropoleos Street, Athina 105 57",
    "cid": "-6159217719352867624",
    "city": "Athens",
-   "lat": 37.975244499999995,
+   "lat": 37.9752801,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.731518899999998,
+   "lng": 23.7315221,
    "mid": "/g/11h3mw4z2p",
    "name": "ERGON House Athens",
    "note": "",
@@ -5502,12 +5502,12 @@
    "address": "18 Columbia Pl, Brooklyn, NY 11201, United States",
    "cid": "1375395189144193514",
    "city": "New York",
-   "lat": 40.6931813,
+   "lat": 40.6931825,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
-   "lng": -73.99870179999999,
+   "lng": -73.998706,
    "mid": "/g/11lz3n_0hq",
    "name": "Nako",
    "note": "",
@@ -7769,11 +7769,11 @@
    "address": "Κάστρο 840 03",
    "cid": "-3203351214016614749",
    "city": "Sifnos",
-   "lat": 36.9752739,
+   "lat": 36.984902399999996,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.7450498,
+   "lng": 24.7357288,
    "mid": "/g/11c7194d4v",
    "name": "Castle of Sifnos",
    "note": "",
@@ -11741,6 +11741,21 @@
    "type": "drinks"
   },
   {
+   "added": "2026-10-11",
+   "address": "18 Exmouth Market, London EC1R 4QE, United Kingdom",
+   "cid": "1852168223304102791",
+   "city": "London",
+   "lat": 51.5254511,
+   "lists": [
+    "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
+   ],
+   "lng": -0.1096484,
+   "mid": "/g/11z21zyfxl",
+   "name": "Anti-Social Exmouth",
+   "note": "",
+   "type": "other"
+  },
+  {
    "address": "4 Pentonville Rd, London N1 9HF, United Kingdom",
    "cid": "-1328369045310243811",
    "city": "London",
@@ -13388,11 +13403,11 @@
    "address": "August Bournonvilles Passage 8, 1055 København K, Denmark",
    "cid": "-5928475675052993690",
    "city": "Copenhagen",
-   "lat": 55.679424399999995,
+   "lat": 55.67952,
    "lists": [
     "PoN5ekWNL_fAx8qNVIEkj3Zs8bB28A"
    ],
-   "lng": 12.586329,
+   "lng": 12.586274,
    "mid": "/m/080m7_",
    "name": "The Royal Playhouse and The Old Stage",
    "note": "",
@@ -23609,11 +23624,11 @@
    "address": "Gran Via de les Corts Catalanes, 700, 08010 Barcelona, Spain",
    "cid": "1066698997923542092",
    "city": "Barcelona",
-   "lat": 41.393588699999995,
+   "lat": 41.393585099999996,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1742833,
+   "lng": 2.1742882,
    "mid": "/g/11clhprpgj",
    "name": "Satan's Casa Bonay",
    "note": "",
@@ -25154,6 +25169,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-10-11",
+   "address": "52 Lupus St, Pimlico, London SW1V 3EE, United Kingdom",
+   "cid": "5215580750293253201",
+   "city": "London",
+   "lat": 51.488265899999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.13869399999999998,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11wwqs670y",
+   "name": "Third coffee",
+   "note": "",
+   "type": "coffee"
   },
   {
    "added": "2026-10-10",
@@ -27251,11 +27284,11 @@
    "address": "119 Bethnal Grn Rd, London E2 7DG, United Kingdom",
    "cid": "8900308108913705989",
    "city": "London",
-   "lat": 51.5248962,
+   "lat": 51.524896999999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0719509,
+   "lng": -0.07195119999999999,
    "marks": [
     "unverified"
    ],
@@ -29014,7 +29047,7 @@
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.09498179999999999,
+   "lng": -0.0949817,
    "marks": [
     "unverified"
    ],
@@ -31525,24 +31558,6 @@
    ],
    "mid": "/g/1tfdybb0",
    "name": "Le Sacre Coeur",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "21-23 Bruton Pl, London W1J 6NB, United Kingdom",
-   "cid": "-3488930655273877344",
-   "city": "London",
-   "lat": 51.5110302,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1447857,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11z14j16gc",
-   "name": "MAZA Mayfair",
    "note": "",
    "type": "other"
   },
