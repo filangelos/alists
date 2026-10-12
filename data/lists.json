@@ -112,7 +112,7 @@
    "flag": "🇺🇸",
    "key": "sanfrancisco",
    "lat": 37.788053,
-   "lng": -122.407828,
+   "lng": -122.407834,
    "name": "San Francisco"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-11T11:28:05Z",
+ "generated": "2026-10-12T13:15:10Z",
  "lists": [
   {
    "count": 82,
@@ -2377,12 +2377,12 @@
    "address": "Unit 17, 77 Buckingham Palace Rd, London SW1W 0AJ, United Kingdom",
    "cid": "-4050371884338030355",
    "city": "London",
-   "lat": 51.497611199999994,
+   "lat": 51.4976097,
    "lists": [
     "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1438672,
+   "lng": -0.1439973,
    "mid": "/g/11c6y88rgn",
    "name": "Vagabond Wines Victoria",
    "note": "",
@@ -5304,11 +5304,11 @@
    "address": "17-18 Henrietta St, London WC2E 8QH, United Kingdom",
    "cid": "-1678932981054758538",
    "city": "London",
-   "lat": 51.510794999999995,
+   "lat": 51.5108325,
    "lists": [
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.1240732,
+   "lng": -0.124083,
    "mid": "/g/11bx6z9581",
    "name": "Flat Iron Covent Garden",
    "note": "",
@@ -5375,11 +5375,11 @@
    "address": "97 St Marks Pl, New York, NY 10009, United States",
    "cid": "6971984010392762983",
    "city": "New York",
-   "lat": 40.7271819,
+   "lat": 40.727255199999995,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9848422,
+   "lng": -73.9847882,
    "mid": "/g/11vr4kgdl1",
    "name": "Led Zeppelin Physical Graffiti Album Cover Location",
    "note": "",
@@ -12913,11 +12913,11 @@
    "address": "270 7th St, San Francisco, CA 94103, United States",
    "cid": "-4520283186847955269",
    "city": "San Francisco",
-   "lat": 37.777039599999995,
+   "lat": 37.7770364,
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.4084396,
+   "lng": -122.40845139999999,
    "mid": "/m/09vwwy6",
    "name": "Sightglass Coffee",
    "note": "",
@@ -15909,11 +15909,11 @@
    "address": "Αγ. Πολύκαρπος 833 01",
    "cid": "4196872688803307474",
    "city": "Ikaria",
-   "lat": 37.6110413,
+   "lat": 37.6110411,
    "lists": [
     "VNlghQP-OLFacAZHFUD7ixN0kYL5sQ"
    ],
-   "lng": 26.0904775,
+   "lng": 26.090477699999997,
    "mid": "/g/11c0r0m8r4",
    "name": "Mitsaras",
    "note": "",
@@ -23750,11 +23750,11 @@
    "address": "Carrer de la Mare de Déu dels Desemparats, 8, 08012 Barcelona, Spain",
    "cid": "7658197769037870294",
    "city": "Barcelona",
-   "lat": 41.4015051,
+   "lat": 41.401489999999995,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1595591,
+   "lng": 2.1595337,
    "mid": "/g/11f1lmx_f5",
    "name": "Syra Coffee - Gràcia",
    "note": "",
@@ -29187,11 +29187,11 @@
    "address": "133 Upper St, London N1 1QP, United Kingdom",
    "cid": "-2259971552089119585",
    "city": "London",
-   "lat": 51.539142399999996,
+   "lat": 51.539141799999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1025166,
+   "lng": -0.1025191,
    "marks": [
     "unverified"
    ],
