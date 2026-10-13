@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-12T13:15:10Z",
+ "generated": "2026-10-13T12:46:42Z",
  "lists": [
   {
    "count": 82,
@@ -7361,11 +7361,11 @@
    "address": "1188 Broadway, New York, NY 10001, United States",
    "cid": "6844879950532884242",
    "city": "New York",
-   "lat": 40.745787899999996,
+   "lat": 40.7457777,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9884854,
+   "lng": -73.9884836,
    "mid": "/g/11gk9_vn3z",
    "name": "Black Seed Bagels",
    "note": "",
@@ -11541,12 +11541,12 @@
    "address": "1 Folly Brg, Oxford OX1 4JU, United Kingdom",
    "cid": "-5699494731466960585",
    "city": "Oxford",
-   "lat": 51.746184799999995,
+   "lat": 51.746184899999996,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2564408999999999,
+   "lng": -1.2564472,
    "mid": "/g/12lksq34x",
    "name": "The Folly Restaurant",
    "note": "",
@@ -21705,11 +21705,11 @@
    "address": "Paniglgasse 18, 1040 Wien, Austria",
    "cid": "-6268915898472126561",
    "city": "Vienna",
-   "lat": 48.198174599999994,
+   "lat": 48.198159999999994,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.3685203,
+   "lng": 16.368517999999998,
    "mid": "/g/11s3clscws",
    "name": "No Panic Coffee",
    "note": "",
@@ -25682,11 +25682,11 @@
    "cid": "2025788645804099800",
    "city": "Athens",
    "far": true,
-   "lat": 40.6346798,
+   "lat": 40.635179,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 22.9415566,
+   "lng": 22.942023,
    "marks": [
     "unverified"
    ],
@@ -27320,7 +27320,7 @@
    "address": "31 Kensington Park Rd, London W11 2EU, United Kingdom",
    "cid": "1320411615308038948",
    "city": "London",
-   "lat": 51.515417,
+   "lat": 51.5154169,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
@@ -28410,11 +28410,11 @@
    "address": "372 Kingsland Rd, London E8 4DA, United Kingdom",
    "cid": "6019901848513751249",
    "city": "London",
-   "lat": 51.5406999,
+   "lat": 51.540709299999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0762354,
+   "lng": -0.0762847,
    "marks": [
     "unverified"
    ],
