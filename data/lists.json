@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-13T12:46:42Z",
+ "generated": "2026-10-14T10:18:33Z",
  "lists": [
   {
    "count": 82,
@@ -1358,12 +1358,12 @@
    "address": "39 William IV St, London WC2N 4DD, United Kingdom",
    "cid": "196478056344732283",
    "city": "London",
-   "lat": 51.5095795,
+   "lat": 51.5095562,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.1264051,
+   "lng": -0.1263964,
    "mid": "/g/11hcz0nxp9",
    "name": "Bancone Covent Garden",
    "note": "",
@@ -21383,11 +21383,11 @@
    "address": "Via del Monte della Farina, 38, 00186 Roma RM, Italy",
    "cid": "3299677369094428047",
    "city": "Rome",
-   "lat": 41.8945979,
+   "lat": 41.894597499999996,
    "lists": [
     "JJdzut_UQE-txu1G1Kig_Q"
    ],
-   "lng": 12.4749099,
+   "lng": 12.47492,
    "mid": "/g/1pty4c8yl",
    "name": "Vinaietto - Old Winery",
    "note": "",
@@ -25901,11 +25901,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "4677995402497701511",
    "city": "Amorgos",
-   "lat": 36.826394799999996,
+   "lat": 36.826460499999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.864073599999998,
+   "lng": 25.864134999999997,
    "marks": [
     "unverified"
    ],
@@ -26065,11 +26065,11 @@
    "address": "2 Hollywood Rd, London SW10 9HR, United Kingdom",
    "cid": "-813334072603459279",
    "city": "London",
-   "lat": 51.4859204,
+   "lat": 51.4859163,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.184226,
+   "lng": -0.1842324,
    "marks": [
     "unverified"
    ],
@@ -29314,11 +29314,11 @@
    "address": "7 Charlotte St., London W1T 1RF, United Kingdom",
    "cid": "7076022182200111606",
    "city": "London",
-   "lat": 51.5181864,
+   "lat": 51.5182006,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1346679,
+   "lng": -0.1346302,
    "marks": [
     "unverified"
    ],
@@ -29692,11 +29692,11 @@
    "address": "87-89 George St, London W1U 8AQ, United Kingdom",
    "cid": "3298289798188848014",
    "city": "London",
-   "lat": 51.5170488,
+   "lat": 51.5170472,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.15725139999999999,
+   "lng": -0.1572506,
    "marks": [
     "unverified"
    ],
@@ -30142,11 +30142,11 @@
    "address": "11 Hackney Rd, London E2 7NX, United Kingdom",
    "cid": "1967003980439303656",
    "city": "London",
-   "lat": 51.527445199999995,
+   "lat": 51.5274473,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0772378,
+   "lng": -0.0772407,
    "marks": [
     "unverified"
    ],
@@ -32548,11 +32548,11 @@
    "address": "Unit C, 101 Lower Marsh, London SE1 7AB, United Kingdom",
    "cid": "-7131193018756463317",
    "city": "London",
-   "lat": 51.5012536,
+   "lat": 51.5012555,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1120707,
+   "lng": -0.11207289999999999,
    "marks": [
     "unverified"
    ],
@@ -33375,11 +33375,11 @@
    "address": "10A Aungier St, Dublin 2, D02 XT98, Ireland",
    "cid": "-6752398179009724708",
    "city": "Dublin",
-   "lat": 53.3407543,
+   "lat": 53.340754399999994,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2654371,
+   "lng": -6.265438199999999,
    "marks": [
     "unverified"
    ],
