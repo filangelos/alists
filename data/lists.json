@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 559,
+   "count": 560,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516584,
-   "lng": -0.125404,
+   "lat": 51.516771,
+   "lng": -0.125335,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-15T10:01:48Z",
+ "generated": "2026-10-16T09:55:02Z",
  "lists": [
   {
    "count": 82,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 579,
+   "count": 580,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4230,12 +4230,12 @@
    "address": "115 Allen St, New York, NY 10002, United States",
    "cid": "-124537888051140194",
    "city": "New York",
-   "lat": 40.7196074,
+   "lat": 40.719592,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.99046729999999,
+   "lng": -73.9904612,
    "mid": "/g/11mvrcqd1b",
    "name": "Double Chicken Please",
    "note": "",
@@ -23008,11 +23008,11 @@
    "address": "ΠΛΑΤΕΙΑ ΑΓ.ΑΘΑΝΑΣΙΟΣ (ΠΑΝΩ, Serifos 840 05",
    "cid": "7301578847278763140",
    "city": "Serifos",
-   "lat": 37.1555031,
+   "lat": 37.1556199,
    "lists": [
     "iFvw3mQD5FRq2dUBnU8maRYkGGA0UA"
    ],
-   "lng": 24.505868099999997,
+   "lng": 24.5058226,
    "mid": "/g/11vz7vwllx",
    "name": "Flirt",
    "note": "",
@@ -25167,6 +25167,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-10-16",
+   "address": "1B Highbury Park, London N5 1QJ, United Kingdom",
+   "cid": "-1571138694737302087",
+   "city": "London",
+   "lat": 51.5535104,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.098475,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11twv3zknw",
+   "name": "Profile Highbury",
    "note": "",
    "type": "other"
   },
@@ -30305,11 +30323,11 @@
    "address": "36 W 40th St, New York, NY 10018, United States",
    "cid": "8774649321791112423",
    "city": "New York",
-   "lat": 40.752837299999996,
+   "lat": 40.7527864,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9835743,
+   "lng": -73.98361489999999,
    "marks": [
     "unverified"
    ],
