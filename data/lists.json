@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 560,
+   "count": 561,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516771,
-   "lng": -0.125335,
+   "lat": 51.516958,
+   "lng": -0.125267,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-16T09:55:02Z",
+ "generated": "2026-10-17T09:28:12Z",
  "lists": [
   {
    "count": 82,
@@ -498,7 +498,7 @@
    "url": "https://www.google.com/maps/placelists/list/Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
   },
   {
-   "count": 93,
+   "count": 94,
    "description": "",
    "emoji": "☕️",
    "id": "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
@@ -552,7 +552,7 @@
    "url": "https://www.google.com/maps/placelists/list/jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
   },
   {
-   "count": 67,
+   "count": 68,
    "description": "",
    "emoji": "🪽",
    "id": "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg",
@@ -8474,6 +8474,22 @@
    "type": "food"
   },
   {
+   "added": "2026-10-16",
+   "address": "1B Highbury Park, London N5 1QJ, United Kingdom",
+   "cid": "-1571138694737302087",
+   "city": "London",
+   "lat": 51.5535104,
+   "lists": [
+    "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
+    "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
+   ],
+   "lng": -0.098475,
+   "mid": "/g/11twv3zknw",
+   "name": "Profile Highbury",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-10-10",
    "address": "Simon House, Workshop R/O, 2 Windmill Rd, Oxford OX3 7BU, United Kingdom",
    "cid": "4630676031415291567",
@@ -8984,12 +9000,12 @@
    "address": "2197 Chestnut St Suite B, San Francisco, CA 94123, United States",
    "cid": "298473758501413492",
    "city": "San Francisco",
-   "lat": 37.8002745,
+   "lat": 37.8003348,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.4393145,
+   "lng": -122.4393267,
    "mid": "/g/11zjpf7pzg",
    "name": "Café Thuma",
    "note": "",
@@ -11541,12 +11557,12 @@
    "address": "1 Folly Brg, Oxford OX1 4JU, United Kingdom",
    "cid": "-5699494731466960585",
    "city": "Oxford",
-   "lat": 51.746184899999996,
+   "lat": 51.7461852,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2564472,
+   "lng": -1.2565145,
    "mid": "/g/12lksq34x",
    "name": "The Folly Restaurant",
    "note": "",
@@ -21705,11 +21721,11 @@
    "address": "Paniglgasse 18, 1040 Wien, Austria",
    "cid": "-6268915898472126561",
    "city": "Vienna",
-   "lat": 48.198159999999994,
+   "lat": 48.198174599999994,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.368517999999998,
+   "lng": 16.3685203,
    "mid": "/g/11s3clscws",
    "name": "No Panic Coffee",
    "note": "",
@@ -21733,11 +21749,11 @@
    "address": "Wollzeile 38, 1010 Wien, Austria",
    "cid": "-4971320834933974803",
    "city": "Vienna",
-   "lat": 48.2075587,
+   "lat": 48.207521,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.378710599999998,
+   "lng": 16.378671999999998,
    "mid": "/g/1hbpwqd1w",
    "name": "Plachutta Wollzeile",
    "note": "",
@@ -25171,20 +25187,20 @@
    "type": "other"
   },
   {
-   "added": "2026-10-16",
-   "address": "1B Highbury Park, London N5 1QJ, United Kingdom",
-   "cid": "-1571138694737302087",
+   "added": "2026-10-17",
+   "address": "242 Upper St, London N1 1RU, United Kingdom",
+   "cid": "-5123129191534522031",
    "city": "London",
-   "lat": 51.5535104,
+   "lat": 51.545082799999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.098475,
+   "lng": -0.10340289999999999,
    "marks": [
     "unverified"
    ],
-   "mid": "/g/11twv3zknw",
-   "name": "Profile Highbury",
+   "mid": "/g/11vdcxk0l5",
+   "name": "Morr",
    "note": "",
    "type": "other"
   },
@@ -30792,11 +30808,11 @@
    "address": "113 St Marks Pl, New York, NY 10009, United States",
    "cid": "-7127327452575559609",
    "city": "New York",
-   "lat": 40.7270797,
+   "lat": 40.7270761,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.98377719999999,
+   "lng": -73.98377959999999,
    "marks": [
     "unverified"
    ],
@@ -35292,11 +35308,11 @@
    "address": "Epar.Od. Parikias-Marpissas, Lefkes 844 00",
    "cid": "-3137702178928829929",
    "city": "Paros",
-   "lat": 37.057823,
+   "lat": 37.0596999,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.209381399999998,
+   "lng": 25.209298099999998,
    "marks": [
     "unverified"
    ],
