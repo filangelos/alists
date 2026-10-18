@@ -240,7 +240,7 @@
    "flag": "🇪🇸",
    "key": "barcelona",
    "lat": 41.38403,
-   "lng": 2.16876,
+   "lng": 2.168749,
    "name": "Barcelona"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-17T09:28:12Z",
+ "generated": "2026-10-18T09:42:01Z",
  "lists": [
   {
    "count": 82,
@@ -11318,12 +11318,12 @@
    "address": "93 Mortimer St, London W1W 7SS, United Kingdom",
    "cid": "263899478407819869",
    "city": "London",
-   "lat": 51.5174678,
+   "lat": 51.517468,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1419736,
+   "lng": -0.14197369999999998,
    "marks": [
     "unverified"
    ],
@@ -21399,11 +21399,11 @@
    "address": "Via del Monte della Farina, 38, 00186 Roma RM, Italy",
    "cid": "3299677369094428047",
    "city": "Rome",
-   "lat": 41.894597499999996,
+   "lat": 41.8945979,
    "lists": [
     "JJdzut_UQE-txu1G1Kig_Q"
    ],
-   "lng": 12.47492,
+   "lng": 12.4749099,
    "mid": "/g/1pty4c8yl",
    "name": "Vinaietto - Old Winery",
    "note": "",
@@ -23458,11 +23458,11 @@
    "address": "Carrer de les Ramelleres, 16, 08001 Barcelona, Spain",
    "cid": "-6883755153224119690",
    "city": "Barcelona",
-   "lat": 41.3845342,
+   "lat": 41.384524899999995,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1684742999999997,
+   "lng": 2.1684522999999998,
    "mid": "/g/11b69bm4mh",
    "name": "Dalston Coffee Barcelona",
    "note": "",
