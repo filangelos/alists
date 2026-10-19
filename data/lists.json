@@ -87,7 +87,7 @@
    "count": 270,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.729451,
+   "lat": 40.729399,
    "lng": -73.990119,
    "name": "New York"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-18T09:42:01Z",
+ "generated": "2026-10-19T10:51:55Z",
  "lists": [
   {
    "count": 82,
@@ -5247,12 +5247,12 @@
    "address": "8 Caledonian Rd, London N1 9DU, United Kingdom",
    "cid": "8077429233934270901",
    "city": "London",
-   "lat": 51.5312394,
+   "lat": 51.5312412,
    "lists": [
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
     "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
    ],
-   "lng": -0.12080189999999999,
+   "lng": -0.1208258,
    "mid": "/g/11wx_3qj5z",
    "name": "Tamila",
    "note": "",
@@ -7277,11 +7277,11 @@
    "address": "New York, NY 10012, United States",
    "cid": "-2724550018849180923",
    "city": "New York",
-   "lat": 40.729513399999995,
+   "lat": 40.729352299999995,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9964609,
+   "lng": -73.9965082,
    "mid": "/m/0bwfn",
    "name": "New York University",
    "note": "",
@@ -12325,11 +12325,11 @@
    "address": "3 Greek St, London W1D 4NX, United Kingdom",
    "cid": "-2202169908615249606",
    "city": "London",
-   "lat": 51.514804299999994,
+   "lat": 51.5148222,
    "lists": [
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1312441,
+   "lng": -0.13118059999999998,
    "mid": "/g/1td0mhkm",
    "name": "Milroy's of Soho",
    "note": "",
@@ -16793,11 +16793,11 @@
    "address": "Agiou Georgiou, Naxos 843 00",
    "cid": "5983798252870065230",
    "city": "Naxos",
-   "lat": 37.1004365,
+   "lat": 37.1004435,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.373764299999998,
+   "lng": 25.3737975,
    "mid": "/g/11flj16h9_",
    "name": "Nissaki Restaurant est. 1971",
    "note": "",
@@ -23486,11 +23486,11 @@
    "address": "C/ de Joaquín Costa, 26, 08001 Barcelona, Spain",
    "cid": "-4133024058140970612",
    "city": "Barcelona",
-   "lat": 41.3820842,
+   "lat": 41.382086799999996,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1663775,
+   "lng": 2.166382,
    "mid": "/g/11cn5kkzss",
    "name": "Nomad Coffee Every Day",
    "note": "",
@@ -29402,11 +29402,11 @@
    "address": "7357 NW Miami Ct, Miami, FL 33150, United States",
    "cid": "3835461307548709024",
    "city": "Miami",
-   "lat": 25.8428713,
+   "lat": 25.8428714,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -80.1970398,
+   "lng": -80.1970396,
    "marks": [
     "unverified"
    ],
@@ -32856,11 +32856,11 @@
    "address": "16 All Saints Rd, London W11 1HH, United Kingdom",
    "cid": "-1722585977860175425",
    "city": "London",
-   "lat": 51.5179586,
+   "lat": 51.5179579,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.2036112,
+   "lng": -0.2036142,
    "marks": [
     "unverified"
    ],
@@ -34998,11 +34998,11 @@
    "address": "Αμπελάς 844 01",
    "cid": "3100934438398309823",
    "city": "Paros",
-   "lat": 37.0947755,
+   "lat": 37.0950244,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.2640486,
+   "lng": 25.2641562,
    "marks": [
     "unverified"
    ],
