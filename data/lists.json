@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-19T10:51:55Z",
+ "generated": "2026-10-20T10:08:59Z",
  "lists": [
   {
    "count": 82,
@@ -6189,7 +6189,7 @@
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9906326,
+   "lng": -73.9906324,
    "mid": "/g/11h0zg0x8h",
    "name": "St Kilda Coffee",
    "note": "",
@@ -16527,11 +16527,11 @@
    "address": "Milos 848 00",
    "cid": "-1904088752245070493",
    "city": "Milos",
-   "lat": 36.7511072,
+   "lat": 36.751084,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.446528999999998,
+   "lng": 24.446517699999998,
    "mid": "/g/11g9m9v2f2",
    "name": "Medusa",
    "note": "",
@@ -20521,7 +20521,7 @@
    "lists": [
     "VTUDJsQO-Yxuh2n_RoPHS4SWvYs-IA"
    ],
-   "lng": -123.1102818,
+   "lng": -123.11028169999999,
    "mid": "/g/11c1xdsr7z",
    "name": "Nemesis Coffee Gastown",
    "note": "",
@@ -25935,11 +25935,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "4677995402497701511",
    "city": "Amorgos",
-   "lat": 36.826460499999996,
+   "lat": 36.82647,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.864134999999997,
+   "lng": 25.864138699999998,
    "marks": [
     "unverified"
    ],
@@ -29294,11 +29294,11 @@
    "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
    "cid": "1213862716908497279",
    "city": "London",
-   "lat": 51.516050899999996,
+   "lat": 51.5163569,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1026115,
+   "lng": -0.10261189999999999,
    "marks": [
     "unverified"
    ],
