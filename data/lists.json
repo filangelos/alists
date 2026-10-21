@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-20T10:08:59Z",
+ "generated": "2026-10-21T10:16:31Z",
  "lists": [
   {
    "count": 82,
@@ -14861,11 +14861,11 @@
    "address": "",
    "cid": "739489463991954681",
    "city": "Crete",
-   "lat": 35.310457899999996,
+   "lat": 35.3104578,
    "lists": [
     "nstZvvR0QfCwZlw8NALb_g"
    ],
-   "lng": 25.154138099999997,
+   "lng": 25.154138,
    "mid": null,
    "name": "Kleomeni 4",
    "note": "",
@@ -21399,11 +21399,11 @@
    "address": "Via del Monte della Farina, 38, 00186 Roma RM, Italy",
    "cid": "3299677369094428047",
    "city": "Rome",
-   "lat": 41.8945979,
+   "lat": 41.894597999999995,
    "lists": [
     "JJdzut_UQE-txu1G1Kig_Q"
    ],
-   "lng": 12.4749099,
+   "lng": 12.474907799999999,
    "mid": "/g/1pty4c8yl",
    "name": "Vinaietto - Old Winery",
    "note": "",
@@ -30790,11 +30790,11 @@
    "address": "Kelsou 10, Athina 116 36",
    "cid": "-403259631734089743",
    "city": "Athens",
-   "lat": 37.963269499999996,
+   "lat": 37.963226299999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.734443,
+   "lng": 23.734458,
    "marks": [
     "unverified"
    ],
