@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 561,
+   "count": 559,
    "flag": "🇬🇧",
    "key": "london",
    "lat": 51.516958,
-   "lng": -0.125267,
+   "lng": -0.125404,
    "name": "London"
   },
   {
@@ -396,10 +396,10 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-21T10:16:31Z",
+ "generated": "2026-10-22T10:17:18Z",
  "lists": [
   {
-   "count": 82,
+   "count": 83,
    "description": "",
    "emoji": "🥙",
    "id": "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
@@ -444,7 +444,7 @@
    "url": "https://www.google.com/maps/placelists/list/sPUdVz7_eocH35PXclW6pjLN5kzdMw"
   },
   {
-   "count": 56,
+   "count": 55,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
@@ -453,7 +453,7 @@
    "url": "https://www.google.com/maps/placelists/list/EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
   },
   {
-   "count": 171,
+   "count": 172,
    "description": "",
    "emoji": "🗽",
    "id": "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 580,
+   "count": 578,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -897,6 +897,21 @@
  ],
  "owner": "Angelos",
  "places": [
+  {
+   "address": "88 St John St, London EC1M 4EH, United Kingdom",
+   "cid": "-4073064762229020716",
+   "city": "London",
+   "lat": 51.5220361,
+   "lists": [
+    "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
+    "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
+   ],
+   "lng": -0.10167219999999999,
+   "mid": "/g/11cs4m6wxd",
+   "name": "Luca",
+   "note": "",
+   "type": "food"
+  },
   {
    "added": "2026-10-05",
    "address": "Brook's Mews, London W1K 4HR",
@@ -4895,21 +4910,6 @@
    "type": "food"
   },
   {
-   "address": "7-9 Burleigh St, London WC2E 7PW, United Kingdom",
-   "cid": "-3666972459615338859",
-   "city": "London",
-   "lat": 51.5114849,
-   "lists": [
-    "EPWPuGj7lSwxueWImPWiMFlwzflk_Q",
-    "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
-   ],
-   "lng": -0.12099639999999999,
-   "mid": "/g/11rqst9p1x",
-   "name": "Vasiniko🍕",
-   "note": "",
-   "type": "food"
-  },
-  {
    "address": "33H King's Rd, London SW3 4LX, United Kingdom",
    "cid": "-3480342096187371796",
    "city": "London",
@@ -5355,6 +5355,22 @@
    "name": "Mercato Mayfair",
    "note": "",
    "type": "shops"
+  },
+  {
+   "added": "2026-07-31",
+   "address": "164 Mott St, New York, NY 10013, United States",
+   "cid": "-2267805717231399037",
+   "city": "New York",
+   "lat": 40.719754099999996,
+   "lists": [
+    "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA",
+    "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
+   ],
+   "lng": -73.9961325,
+   "mid": "/g/11wv_tm32s",
+   "name": "Ceres",
+   "note": "",
+   "type": "food"
   },
   {
    "added": "2026-10-10",
@@ -11956,20 +11972,6 @@
    "type": "other"
   },
   {
-   "address": "88 St John St, London EC1M 4EH",
-   "cid": "-4073064762229020716",
-   "city": "London",
-   "lat": 51.5220361,
-   "lists": [
-    "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
-   ],
-   "lng": -0.10167219999999999,
-   "mid": "/g/11cs4m6wxd",
-   "name": "Luca",
-   "note": "",
-   "type": "other"
-  },
-  {
    "address": "12 Camden Psge, London N1 8ED, United Kingdom",
    "cid": "4063334308823846745",
    "city": "London",
@@ -16779,11 +16781,11 @@
    "address": "Ιωάννου Δελλαρόκα 650, Naxos 843 00",
    "cid": "8047184338798456379",
    "city": "Naxos",
-   "lat": 37.1049219,
+   "lat": 37.1049121,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.376395799999997,
+   "lng": 25.3763827,
    "mid": "/g/11t0q4kc0f",
    "name": "Belman",
    "note": "",
@@ -20153,11 +20155,11 @@
    "address": "Cambridge CB2 1TQ, United Kingdom",
    "cid": "-1711080295428217227",
    "city": "Cambridge",
-   "lat": 52.2069212,
+   "lat": 52.2069244,
    "lists": [
     "1bKFUJWbdDcpXVzJPhpK3ozrxDN9VA"
    ],
-   "lng": 0.11691299999999999,
+   "lng": 0.1174952,
    "mid": "/m/07tk7",
    "name": "Trinity College",
    "note": "",
@@ -25187,6 +25189,24 @@
    "type": "other"
   },
   {
+   "added": "2026-07-31",
+   "address": "237 Wooster St, New Haven, CT 06511, United States",
+   "cid": "-1324000422501908361",
+   "city": "New Haven",
+   "lat": 41.3030318,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -72.9200707,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/m/06wx8z",
+   "name": "Sally's Apizza",
+   "note": "",
+   "type": "food"
+  },
+  {
    "added": "2026-10-17",
    "address": "242 Upper St, London N1 1RU, United Kingdom",
    "cid": "-5123129191534522031",
@@ -25981,24 +26001,6 @@
    ],
    "mid": null,
    "name": "THE BARN Café Charlotte Street",
-   "note": "",
-   "type": "coffee"
-  },
-  {
-   "added": "2026-08-22",
-   "address": "81b Gray's Inn Rd, London WC1X 8TP, United Kingdom",
-   "cid": "2336609626103905966",
-   "city": "London",
-   "lat": 51.5228779,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1146956,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11cjkmhbh_",
-   "name": "Hopper Coffee",
    "note": "",
    "type": "coffee"
   },
@@ -28948,24 +28950,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "237 Wooster St, New Haven, CT 06511, United States",
-   "cid": "-1324000422501908361",
-   "city": "New Haven",
-   "lat": 41.3030318,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -72.9200707,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/m/06wx8z",
-   "name": "Sally's Apizza",
-   "note": "",
-   "type": "food"
-  },
-  {
-   "added": "2026-07-31",
    "address": "Chelsea Barracks, London SW1W 8DS, United Kingdom",
    "cid": "8064580674075532706",
    "city": "London",
@@ -31396,24 +31380,6 @@
    "name": "Cello's Pizzeria",
    "note": "",
    "type": "food"
-  },
-  {
-   "added": "2026-07-31",
-   "address": "164 Mott St, New York, NY 10013, United States",
-   "cid": "-2267805717231399037",
-   "city": "New York",
-   "lat": 40.719754099999996,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -73.9961325,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11wv_tm32s",
-   "name": "Ceres",
-   "note": "",
-   "type": "other"
   },
   {
    "added": "2026-07-31",
