@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 559,
+   "count": 560,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516958,
-   "lng": -0.125404,
+   "lat": 51.516771,
+   "lng": -0.125452,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-22T10:17:18Z",
+ "generated": "2026-10-24T09:37:05Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 578,
+   "count": 579,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -25187,6 +25187,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-10-24",
+   "address": "299 Westbourne Grove, London W11 2QA, United Kingdom",
+   "cid": "7568226794503859142",
+   "city": "London",
+   "lat": 51.5132589,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.2035844,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11l2x77r__",
+   "name": "Tappo Enoteca",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-07-31",
