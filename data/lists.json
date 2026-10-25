@@ -92,11 +92,11 @@
    "name": "New York"
   },
   {
-   "count": 182,
+   "count": 183,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979237,
-   "lng": 23.745475,
+   "lat": 37.979316,
+   "lng": 23.745916,
    "name": "Athens"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-24T09:37:05Z",
+ "generated": "2026-10-25T09:53:17Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 579,
+   "count": 580,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -25185,6 +25185,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-10-25",
+   "address": "Ir. Politechniou 13B, Chalandri 152 31",
+   "cid": "8736985847169669237",
+   "city": "Athens",
+   "lat": 38.005956399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": 23.7934569,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11vt89qm7m",
+   "name": "Smolic athens",
    "note": "",
    "type": "other"
   },
