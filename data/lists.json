@@ -84,11 +84,11 @@
    "name": "London"
   },
   {
-   "count": 270,
+   "count": 271,
    "flag": "🇺🇸",
    "key": "newyork",
-   "lat": 40.729399,
-   "lng": -73.990119,
+   "lat": 40.729352,
+   "lng": -73.990109,
    "name": "New York"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-26T11:12:56Z",
+ "generated": "2026-10-28T11:25:00Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 581,
+   "count": 582,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -3231,11 +3231,11 @@
    "address": "Eolou 21, & Aghias Irinis Str, Athina 105 51",
    "cid": "-1523459417405695673",
    "city": "Athens",
-   "lat": 37.9768928,
+   "lat": 37.9769457,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.7275934,
+   "lng": 23.7275907,
    "mid": "/g/11btn1g4mr",
    "name": "LUKUMAΔΕΣ",
    "note": "",
@@ -24730,11 +24730,11 @@
    "address": "Victoria St, London SW1P 1LT, United Kingdom",
    "cid": "200238682721878501",
    "city": "London",
-   "lat": 51.495808999999994,
+   "lat": 51.496192,
    "lists": [
     "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
    ],
-   "lng": -0.13943999999999998,
+   "lng": -0.13985599999999998,
    "mid": "/m/022sxl",
    "name": "Westminster Cathedral",
    "note": "",
@@ -25185,6 +25185,24 @@
    "lng": -0.0889145,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-10-28",
+   "address": "219 Dekalb Ave, Brooklyn, NY 11205, United States",
+   "cid": "659339034463072663",
+   "city": "New York",
+   "lat": 40.689699399999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -73.9707225,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11b7gr9m54",
+   "name": "Colonia Verde",
    "note": "",
    "type": "other"
   },
