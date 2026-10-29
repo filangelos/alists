@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-28T11:25:00Z",
+ "generated": "2026-10-29T11:35:17Z",
  "lists": [
   {
    "count": 83,
@@ -12837,7 +12837,7 @@
    "lists": [
     "AWSOYO6AgT2MrqdNU8ucmwh2eja2uw"
    ],
-   "lng": -122.4069001,
+   "lng": -122.40690099999999,
    "mid": "/m/0zw919m",
    "name": "The Ritz-Carlton, San Francisco",
    "note": "",
@@ -17411,11 +17411,11 @@
    "address": "Old Harbour, Spetses 180 50",
    "cid": "-2800751439175334730",
    "city": "Spetses",
-   "lat": 37.2635559,
+   "lat": 37.263557999999996,
    "lists": [
     "wOQ35wnnKMOnglRMtuDTvF1HBrqfLQ"
    ],
-   "lng": 23.162704899999998,
+   "lng": 23.1627148,
    "mid": "/g/11c1nzr3s_",
    "name": "Orloff Restaurant",
    "note": "",
@@ -30846,11 +30846,11 @@
    "address": "Kelsou 10, Athina 116 36",
    "cid": "-403259631734089743",
    "city": "Athens",
-   "lat": 37.963226299999995,
+   "lat": 37.963269499999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.734458,
+   "lng": 23.734443,
    "marks": [
     "unverified"
    ],
