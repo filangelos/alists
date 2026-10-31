@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-30T11:27:41Z",
+ "generated": "2026-10-31T10:58:58Z",
  "lists": [
   {
    "count": 83,
@@ -5988,11 +5988,11 @@
    "address": "28 Cornelia St, New York, NY 10014, United States",
    "cid": "-310645867570696283",
    "city": "New York",
-   "lat": 40.7312789,
+   "lat": 40.731275,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -74.0023717,
+   "lng": -74.0023702,
    "mid": "/g/1tflnbvh",
    "name": "Palma",
    "note": "",
@@ -9928,11 +9928,11 @@
    "address": "Ladopoulou 10, Ermoupoli 841 00",
    "cid": "-4789049076295713888",
    "city": "Syros",
-   "lat": 37.4463083,
+   "lat": 37.446306199999995,
    "lists": [
     "Q9fheotXUgRPzq0UfLAjDjbkCLiAdA"
    ],
-   "lng": 24.9450036,
+   "lng": 24.9450057,
    "mid": null,
    "name": "Church of Saint Nicholas",
    "note": "",
@@ -21723,11 +21723,11 @@
    "address": "Paniglgasse 18, 1040 Wien, Austria",
    "cid": "-6268915898472126561",
    "city": "Vienna",
-   "lat": 48.198174599999994,
+   "lat": 48.198159999999994,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.3685203,
+   "lng": 16.368517999999998,
    "mid": "/g/11s3clscws",
    "name": "No Panic Coffee",
    "note": "",
@@ -33229,11 +33229,11 @@
    "address": "3 Wynnefield Rd, Rathmines, Dublin, D06 F2Y2, Ireland",
    "cid": "5129457864738766646",
    "city": "Dublin",
-   "lat": 53.322153,
+   "lat": 53.322186699999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2664781,
+   "lng": -6.2665142,
    "marks": [
     "unverified"
    ],
