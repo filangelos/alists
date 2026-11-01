@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-10-31T10:58:58Z",
+ "generated": "2026-11-01T11:53:48Z",
  "lists": [
   {
    "count": 83,
@@ -11380,12 +11380,12 @@
    "address": "Euston Rd., London NW1 2AR, United Kingdom",
    "cid": "-2586759438416770946",
    "city": "London",
-   "lat": 51.5298327,
+   "lat": 51.5298282,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.1255402,
+   "lng": -0.1258856,
    "mid": "/g/11b6gq3z03",
    "name": "Booking Office 1869",
    "note": "",
@@ -17691,11 +17691,11 @@
    "address": "Street 3 - Al Barsha - Al Barsha South - Dubai - United Arab Emirates",
    "cid": "7865583079722909851",
    "city": "Dubai",
-   "lat": 25.0599183,
+   "lat": 25.0598326,
    "lists": [
     "1q3Z1bwo3w29-4SUi_KzTsrz1RY0FA"
    ],
-   "lng": 55.2445295,
+   "lng": 55.244566999999996,
    "mid": "/g/11b86dd06f",
    "name": "Dubai Miracle Garden",
    "note": "",
