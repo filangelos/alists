@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-02T13:36:02Z",
+ "generated": "2026-11-03T12:52:01Z",
  "lists": [
   {
    "count": 83,
@@ -28824,11 +28824,11 @@
    "address": "252 Paradise Row, London E2 9LE, United Kingdom",
    "cid": "7877934963653687062",
    "city": "London",
-   "lat": 51.528461099999994,
+   "lat": 51.5284744,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.0562415,
+   "lng": -0.056146299999999996,
    "marks": [
     "unverified"
    ],
