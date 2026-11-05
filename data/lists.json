@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-04T13:03:24Z",
+ "generated": "2026-11-05T13:17:20Z",
  "lists": [
   {
    "count": 83,
@@ -29797,11 +29797,11 @@
    "address": "87-89 George St, London W1U 8AQ, United Kingdom",
    "cid": "3298289798188848014",
    "city": "London",
-   "lat": 51.5170472,
+   "lat": 51.517036,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1572506,
+   "lng": -0.15724559999999999,
    "marks": [
     "unverified"
    ],
