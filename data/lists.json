@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 561,
+   "count": 560,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516584,
-   "lng": -0.125499,
+   "lat": 51.516771,
+   "lng": -0.125452,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-05T13:17:20Z",
+ "generated": "2026-11-07T11:47:41Z",
  "lists": [
   {
    "count": 83,
@@ -435,7 +435,7 @@
    "url": "https://www.google.com/maps/placelists/list/Erx85_Y4gKkhT_4MERn11iWshw_Ynw"
   },
   {
-   "count": 57,
+   "count": 56,
    "description": "",
    "emoji": "🍸",
    "id": "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
@@ -570,7 +570,7 @@
    "url": "https://www.google.com/maps/placelists/list/v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
   },
   {
-   "count": 43,
+   "count": 42,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw",
@@ -4697,22 +4697,6 @@
    "lng": -0.0758968,
    "mid": "/g/1ptyvlnrt",
    "name": "Brilliant Corners",
-   "note": "",
-   "type": "drinks"
-  },
-  {
-   "added": "2026-09-08",
-   "address": "31 Duke St, London W1U 1LG, United Kingdom",
-   "cid": "5994357774739072210",
-   "city": "London",
-   "lat": 51.51515,
-   "lists": [
-    "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
-    "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
-   ],
-   "lng": -0.15164239999999998,
-   "mid": "/g/11f5dgflk7",
-   "name": "Burlock London - Bond Street",
    "note": "",
    "type": "drinks"
   },
