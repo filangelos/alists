@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 560,
+   "count": 561,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516771,
-   "lng": -0.125452,
+   "lat": 51.516584,
+   "lng": -0.125499,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-08T11:59:30Z",
+ "generated": "2026-11-12T13:50:10Z",
  "lists": [
   {
    "count": 83,
@@ -408,7 +408,7 @@
    "url": "https://www.google.com/maps/placelists/list/JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
   },
   {
-   "count": 40,
+   "count": 41,
    "description": "",
    "emoji": "🍷",
    "id": "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ",
@@ -2139,6 +2139,21 @@
    "name": "Kuzina",
    "note": "",
    "type": "food"
+  },
+  {
+   "added": "2026-11-12",
+   "address": "13 Eccleston Yards, London SW1W 9AZ, United Kingdom",
+   "cid": "1398459119565297927",
+   "city": "London",
+   "lat": 51.4937403,
+   "lists": [
+    "TWy8hiSD7wRbfsOk8QNjo__Sv53QoQ"
+   ],
+   "lng": -0.1489303,
+   "mid": "/g/11s2k8yr15",
+   "name": "amie wine studio",
+   "note": "",
+   "type": "drinks"
   },
   {
    "added": "2026-07-30",
