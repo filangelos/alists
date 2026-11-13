@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 561,
+   "count": 562,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516584,
-   "lng": -0.125499,
+   "lat": 51.516566,
+   "lng": -0.125555,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-12T13:50:10Z",
+ "generated": "2026-11-13T13:11:47Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 581,
+   "count": 582,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -3409,11 +3409,11 @@
    "address": "145 76, Anonymous, Nea Makri 190 05",
    "cid": "-2188712860843413550",
    "city": "Athens",
-   "lat": 38.0929874,
+   "lat": 38.0944072,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.870898699999998,
+   "lng": 23.879842,
    "mid": "/g/11c6dc26xj",
    "name": "Open Museum of Quarry Art",
    "note": "",
@@ -25201,6 +25201,24 @@
    "name": "Bank Station",
    "note": "",
    "type": "other"
+  },
+  {
+   "added": "2026-11-13",
+   "address": "50 Westbourne Grove, London W2 5SH, United Kingdom",
+   "cid": "3981571323473217188",
+   "city": "London",
+   "lat": 51.515633699999995,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1916346,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11nw5vt9td",
+   "name": "Milk Burger",
+   "note": "",
+   "type": "food"
   },
   {
    "added": "2026-10-28",
