@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-13T13:11:47Z",
+ "generated": "2026-11-16T13:44:51Z",
  "lists": [
   {
    "count": 83,
@@ -3409,11 +3409,11 @@
    "address": "145 76, Anonymous, Nea Makri 190 05",
    "cid": "-2188712860843413550",
    "city": "Athens",
-   "lat": 38.0944072,
+   "lat": 38.0925623,
    "lists": [
     "ZkzMjrM6SXWD7BtpwoxAgg"
    ],
-   "lng": 23.879842,
+   "lng": 23.8704556,
    "mid": "/g/11c6dc26xj",
    "name": "Open Museum of Quarry Art",
    "note": "",
@@ -7799,11 +7799,11 @@
    "address": "Κάστρο 840 03",
    "cid": "-3203351214016614749",
    "city": "Sifnos",
-   "lat": 36.984902399999996,
+   "lat": 36.975888999999995,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.7357288,
+   "lng": 24.7450607,
    "mid": "/g/11c7194d4v",
    "name": "Castle of Sifnos",
    "note": "",
@@ -9591,11 +9591,11 @@
    "address": "Ir. Politechniou 16, Ermoupoli 841 00",
    "cid": "7191769291715073418",
    "city": "Syros",
-   "lat": 37.4366063,
+   "lat": 37.4366456,
    "lists": [
     "Q9fheotXUgRPzq0UfLAjDjbkCLiAdA"
    ],
-   "lng": 24.935758,
+   "lng": 24.9356677,
    "mid": "/g/11rww9lp1c",
    "name": "Hermoupolis Textile Museum",
    "note": "",
@@ -27496,11 +27496,11 @@
    "address": "4541 Irving St, San Francisco, CA 94122, United States",
    "cid": "-3927093354794387051",
    "city": "San Francisco",
-   "lat": 37.7621329,
+   "lat": 37.7620739,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -122.5067823,
+   "lng": -122.50677789999999,
    "marks": [
     "unverified"
    ],
