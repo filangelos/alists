@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-16T13:44:51Z",
+ "generated": "2026-11-17T14:33:05Z",
  "lists": [
   {
    "count": 83,
@@ -8971,11 +8971,11 @@
    "address": "Praxitelous 15-19, Athina 105 62",
    "cid": "-4187653403799018492",
    "city": "Athens",
-   "lat": 37.978363699999996,
+   "lat": 37.978397099999995,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
-   "lng": 23.7302586,
+   "lng": 23.7302693,
    "mid": "/g/11ysrdgznd",
    "name": "Misa",
    "note": "",
@@ -17145,11 +17145,11 @@
    "address": "Naxos 843 00",
    "cid": "1202949883238587413",
    "city": "Naxos",
-   "lat": 37.0878752,
+   "lat": 37.0879075,
    "lists": [
     "gq5QGE7NofzucBxs-EKqEpnmxgUnCg"
    ],
-   "lng": 25.3756795,
+   "lng": 25.375668299999997,
    "mid": "/g/11bzrdwttg",
    "name": "Iphimedeia Apartments & Suites",
    "note": "",
@@ -25192,11 +25192,11 @@
    "address": "Underground Ltd, Bank/Monument Complex, Princes St, London EC3V 3LA, United Kingdom",
    "cid": "6235453694286515552",
    "city": "London",
-   "lat": 51.513388,
+   "lat": 51.5133643,
    "lists": [
     "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
    ],
-   "lng": -0.0889145,
+   "lng": -0.0888847,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
    "note": "",
