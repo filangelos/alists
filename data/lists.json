@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-17T14:33:05Z",
+ "generated": "2026-11-18T14:08:56Z",
  "lists": [
   {
    "count": 83,
@@ -29382,11 +29382,11 @@
    "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
    "cid": "1213862716908497279",
    "city": "London",
-   "lat": 51.5163569,
+   "lat": 51.516050899999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.10261189999999999,
+   "lng": -0.1026115,
    "marks": [
     "unverified"
    ],
