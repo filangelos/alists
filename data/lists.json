@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-18T14:08:56Z",
+ "generated": "2026-11-21T13:32:30Z",
  "lists": [
   {
    "count": 83,
@@ -6002,11 +6002,11 @@
    "address": "28 Cornelia St, New York, NY 10014, United States",
    "cid": "-310645867570696283",
    "city": "New York",
-   "lat": 40.731275,
+   "lat": 40.7312011,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -74.0023702,
+   "lng": -74.0023412,
    "mid": "/g/1tflnbvh",
    "name": "Palma",
    "note": "",
@@ -23432,11 +23432,11 @@
    "address": "La Rambla, 83, 08001 Barcelona, Spain",
    "cid": "-3907683098764893929",
    "city": "Barcelona",
-   "lat": 41.381552,
+   "lat": 41.3815518,
    "lists": [
     "xlDpmgCQ5_lBbi8ssDx2jU2o9Ecd0A"
    ],
-   "lng": 2.1726259999999997,
+   "lng": 2.1699026,
    "mid": "/g/120x66ln",
    "name": "Pastisseria Escribà",
    "note": "",
@@ -26131,11 +26131,11 @@
    "address": "231 Norman Ave Ste 211, Brooklyn, NY 11222, United States",
    "cid": "-3888918275258013247",
    "city": "New York",
-   "lat": 40.7277275,
+   "lat": 40.7167854,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9443771,
+   "lng": -73.9652911,
    "marks": [
     "unverified"
    ],
@@ -27406,11 +27406,11 @@
    "address": "Themistokleous 42, Athina 106 78",
    "cid": "5630278983732018632",
    "city": "Athens",
-   "lat": 37.985071,
+   "lat": 37.9850557,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7324687,
+   "lng": 23.7325095,
    "marks": [
     "unverified"
    ],
