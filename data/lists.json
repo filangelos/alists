@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 562,
+   "count": 564,
    "flag": "🇬🇧",
    "key": "london",
    "lat": 51.516566,
-   "lng": -0.125555,
+   "lng": -0.125615,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-21T13:32:30Z",
+ "generated": "2026-11-22T13:25:35Z",
  "lists": [
   {
    "count": 83,
@@ -849,7 +849,7 @@
    "url": "https://www.google.com/maps/placelists/list/AOQCl0fcx_KMuOI2WnrNeTsD_Ehyew"
   },
   {
-   "count": 56,
+   "count": 57,
    "description": "",
    "emoji": "💂‍♂️",
    "id": "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw",
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 582,
+   "count": 583,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -20537,7 +20537,7 @@
    "lists": [
     "VTUDJsQO-Yxuh2n_RoPHS4SWvYs-IA"
    ],
-   "lng": -123.11028169999999,
+   "lng": -123.1102818,
    "mid": "/g/11c1xdsr7z",
    "name": "Nemesis Coffee Gastown",
    "note": "",
@@ -24423,6 +24423,21 @@
    "type": "sights"
   },
   {
+   "added": "2026-11-22",
+   "address": "21 Eccleston Pl, London SW1W 9NF, United Kingdom",
+   "cid": "-695258360547979582",
+   "city": "London",
+   "lat": 51.4937628,
+   "lists": [
+    "LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
+   ],
+   "lng": -0.1487459,
+   "mid": "/g/11f2w6vkyv",
+   "name": "Eccleston Yards",
+   "note": "",
+   "type": "other"
+  },
+  {
    "added": "2026-10-04",
    "address": "Gracechurch St, London EC3V 1LT",
    "cid": "3077402919340937651",
@@ -25199,6 +25214,24 @@
    "lng": -0.0888847,
    "mid": "/g/1wv_rpqm",
    "name": "Bank Station",
+   "note": "",
+   "type": "other"
+  },
+  {
+   "added": "2026-11-22",
+   "address": "43 Charlotte St., London W1T 1RS, United Kingdom",
+   "cid": "2769124788915901509",
+   "city": "London",
+   "lat": 51.5191902,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.1356577,
+   "marks": [
+    "unverified"
+   ],
+   "mid": "/g/11v3swflhk",
+   "name": "Kinkally",
    "note": "",
    "type": "other"
   },
@@ -32309,11 +32342,11 @@
    "address": "28 Waverly Pl, San Francisco, CA 94108, United States",
    "cid": "-7216468322587662661",
    "city": "San Francisco",
-   "lat": 37.793714099999995,
+   "lat": 37.7937209,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -122.40666019999999,
+   "lng": -122.4066555,
    "marks": [
     "unverified"
    ],
