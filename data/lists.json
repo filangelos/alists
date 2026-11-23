@@ -136,7 +136,7 @@
    "flag": "🇫🇷",
    "key": "paris",
    "lat": 48.864524,
-   "lng": 2.340923,
+   "lng": 2.341434,
    "name": "Paris"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-22T13:25:35Z",
+ "generated": "2026-11-23T16:05:16Z",
  "lists": [
   {
    "count": 83,
@@ -7181,11 +7181,11 @@
    "address": "40 Foley Square, New York, NY 10007, United States",
    "cid": "-2976106716573929147",
    "city": "New York",
-   "lat": 40.713775999999996,
+   "lat": 40.713774199999996,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -74.0026764,
+   "lng": -74.0026752,
    "mid": "/m/06zn43_",
    "name": "Thurgood Marshall United States Courthouse",
    "note": "",
@@ -8508,12 +8508,12 @@
    "address": "1B Highbury Park, London N5 1QJ, United Kingdom",
    "cid": "-1571138694737302087",
    "city": "London",
-   "lat": 51.5535104,
+   "lat": 51.5535145,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
     "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
    ],
-   "lng": -0.098475,
+   "lng": -0.09847629999999999,
    "mid": "/g/11twv3zknw",
    "name": "Profile Highbury",
    "note": "",
@@ -8956,12 +8956,12 @@
    "address": "3 Monmouth St, London WC2H 9DA, United Kingdom",
    "cid": "-6181706407543608293",
    "city": "London",
-   "lat": 51.514931,
+   "lat": 51.514934999999994,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
     "v1Gp6zPRV4mRyKQWoPOoZW_GK5encA"
    ],
-   "lng": -0.1266649,
+   "lng": -0.12669919999999998,
    "mid": "/g/11mky50d13",
    "name": "TOKKIA",
    "note": "",
@@ -10272,11 +10272,11 @@
    "address": "130 Pearse St, Grand Canal Dock, Dublin, D02 T322, Ireland",
    "cid": "1891472413885404392",
    "city": "Dublin",
-   "lat": 53.3429437,
+   "lat": 53.3429192,
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2437245,
+   "lng": -6.243796199999999,
    "mid": "/g/11ff0qkkj0",
    "name": "3fe Gertrude",
    "note": "",
@@ -10486,7 +10486,7 @@
    "lists": [
     "-WMHW614qSRjA_RMufx2qkSQhM1L9Q"
    ],
-   "lng": -6.2650045,
+   "lng": -6.2650082,
    "mid": "/g/11vq3tl3tq",
    "name": "Sprout & Co Camden St",
    "note": "",
@@ -11587,12 +11587,12 @@
    "address": "1 Folly Brg, Oxford OX1 4JU, United Kingdom",
    "cid": "-5699494731466960585",
    "city": "Oxford",
-   "lat": 51.7461852,
+   "lat": 51.746184899999996,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2565145,
+   "lng": -1.2564486,
    "mid": "/g/12lksq34x",
    "name": "The Folly Restaurant",
    "note": "",
@@ -14457,11 +14457,11 @@
    "address": "15-21 Rue de l'École de Médecine, 75006 Paris, France",
    "cid": "-86389898628918603",
    "city": "Paris",
-   "lat": 48.850551499999995,
+   "lat": 48.8508156,
    "lists": [
     "CFoJzsllJTA564TFXO7aP6dfM2PADg"
    ],
-   "lng": 2.3403275,
+   "lng": 2.3413499,
    "mid": "/g/11b6dg6cp6",
    "name": "Sorbonne Université",
    "note": "",
