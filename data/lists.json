@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 564,
+   "count": 565,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516566,
-   "lng": -0.125615,
+   "lat": 51.516584,
+   "lng": -0.12562,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-23T16:05:16Z",
+ "generated": "2026-11-24T15:58:29Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 583,
+   "count": 584,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -7981,11 +7981,11 @@
    "address": "Πλατύς Γυαλός, Sifnos 840 03",
    "cid": "-5061793081070187654",
    "city": "Sifnos",
-   "lat": 36.932101599999996,
+   "lat": 36.9321072,
    "lists": [
     "0N_fxKpgOOf4bs5LUcVgje6K-jsdJg"
    ],
-   "lng": 24.7321395,
+   "lng": 24.732139999999998,
    "mid": "/g/11b8_ttr65",
    "name": "To Steki",
    "note": "",
@@ -8360,11 +8360,11 @@
    "address": "122 Bethnal Grn Rd, London E2 6DG, United Kingdom",
    "cid": "3138223061755566022",
    "city": "London",
-   "lat": 51.5248524,
+   "lat": 51.524881799999996,
    "lists": [
     "Yt-dj0tXqiRkFg4wXamQ1maNGEM1-Q"
    ],
-   "lng": -0.0713985,
+   "lng": -0.0714422,
    "mid": "/g/11yn38425f",
    "name": "Vincenzo's Pizza",
    "note": "",
@@ -21737,11 +21737,11 @@
    "address": "Paniglgasse 18, 1040 Wien, Austria",
    "cid": "-6268915898472126561",
    "city": "Vienna",
-   "lat": 48.198159999999994,
+   "lat": 48.198174599999994,
    "lists": [
     "OYpq3wOSj3X9d3_-HuFsWoA4E7S8Lw"
    ],
-   "lng": 16.368517999999998,
+   "lng": 16.3685203,
    "mid": "/g/11s3clscws",
    "name": "No Panic Coffee",
    "note": "",
@@ -25218,6 +25218,24 @@
    "type": "other"
   },
   {
+   "added": "2026-11-24",
+   "address": "",
+   "cid": "-7158556762204771662",
+   "city": "London",
+   "lat": 51.5192293,
+   "lists": [
+    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
+   ],
+   "lng": -0.140675,
+   "marks": [
+    "unverified"
+   ],
+   "mid": null,
+   "name": "Attendant Coffee Roasters | Fitzrovia",
+   "note": "",
+   "type": "coffee"
+  },
+  {
    "added": "2026-11-22",
    "address": "43 Charlotte St., London W1T 1RS, United Kingdom",
    "cid": "2769124788915901509",
@@ -25836,11 +25854,11 @@
    "address": "49 S Audley St, London W1K 2QD, United Kingdom",
    "cid": "-7769127605185975617",
    "city": "London",
-   "lat": 51.510018699999996,
+   "lat": 51.510018599999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1521438,
+   "lng": -0.15214419999999998,
    "marks": [
     "unverified"
    ],
@@ -28837,11 +28855,11 @@
    "address": "Πλ, Ελευθερωτών 8, Chalandri 152 32",
    "cid": "-7032583030691660771",
    "city": "Athens",
-   "lat": 38.0213476,
+   "lat": 38.021323599999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.797519299999998,
+   "lng": 23.7975055,
    "marks": [
     "unverified"
    ],
