@@ -95,7 +95,7 @@
    "count": 183,
    "flag": "🇬🇷",
    "key": "athens",
-   "lat": 37.979316,
+   "lat": 37.979158,
    "lng": 23.745916,
    "name": "Athens"
   },
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-24T15:58:29Z",
+ "generated": "2026-11-25T15:43:12Z",
  "lists": [
   {
    "count": 83,
@@ -1167,11 +1167,11 @@
    "cid": "1980233128533099843",
    "city": "Athens",
    "far": true,
-   "lat": 38.1309879,
+   "lat": 38.1311651,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug"
    ],
-   "lng": 23.8605217,
+   "lng": 23.8604956,
    "mid": "/g/11cm_f_4df",
    "name": "Τσιπουράδικο \"Άνοιξη παρά Τέταρτο\"",
    "note": "",
@@ -11334,11 +11334,11 @@
    "address": "56 Blandford St, London W1U 7JA, United Kingdom",
    "cid": "4941354411316101672",
    "city": "London",
-   "lat": 51.5184177,
+   "lat": 51.5183818,
    "lists": [
     "jRZhjL5dOj_B0sBdawAmyGFTIBSLEw"
    ],
-   "lng": -0.15479189999999998,
+   "lng": -0.1547849,
    "mid": "/g/11xdgbj591",
    "name": "The Hart - Marylebone",
    "note": "",
@@ -26038,11 +26038,11 @@
    "address": "Κατάπολα 840 08",
    "cid": "-324874461873675211",
    "city": "Amorgos",
-   "lat": 36.8271048,
+   "lat": 36.8271326,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 25.862986199999998,
+   "lng": 25.8630076,
    "marks": [
     "unverified"
    ],
@@ -27547,11 +27547,11 @@
    "address": "4541 Irving St, San Francisco, CA 94122, United States",
    "cid": "-3927093354794387051",
    "city": "San Francisco",
-   "lat": 37.7620739,
+   "lat": 37.7621329,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -122.50677789999999,
+   "lng": -122.5067823,
    "marks": [
     "unverified"
    ],
@@ -30388,11 +30388,11 @@
    "cid": "1218303065325132750",
    "city": "Athens",
    "far": true,
-   "lat": 37.866842,
+   "lat": 37.8669833,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7476909,
+   "lng": 23.7478314,
    "marks": [
     "unverified"
    ],
@@ -31995,11 +31995,11 @@
    "address": "",
    "cid": "-6405989656251432262",
    "city": "Dublin",
-   "lat": 53.312793,
+   "lat": 53.3127036,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -6.2587101,
+   "lng": -6.2587009,
    "marks": [
     "unverified"
    ],
@@ -32831,11 +32831,11 @@
    "address": "Pl. Agion Theodoron 3, Athina 105 61",
    "cid": "1366830091904729648",
    "city": "Athens",
-   "lat": 37.9793218,
+   "lat": 37.9791418,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.729677799999997,
+   "lng": 23.7296563,
    "marks": [
     "unverified"
    ],
