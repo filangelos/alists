@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-25T15:43:12Z",
+ "generated": "2026-11-26T15:24:31Z",
  "lists": [
   {
    "count": 83,
@@ -1373,12 +1373,12 @@
    "address": "39 William IV St, London WC2N 4DD, United Kingdom",
    "cid": "196478056344732283",
    "city": "London",
-   "lat": 51.5095562,
+   "lat": 51.5095552,
    "lists": [
     "JjK_bbiNMWQ4VFtmykPwRKqmNv9Wug",
     "EPWPuGj7lSwxueWImPWiMFlwzflk_Q"
    ],
-   "lng": -0.1263964,
+   "lng": -0.12639599999999998,
    "mid": "/g/11hcz0nxp9",
    "name": "Bancone Covent Garden",
    "note": "",
@@ -4275,12 +4275,12 @@
    "address": "115 Allen St, New York, NY 10002, United States",
    "cid": "-124537888051140194",
    "city": "New York",
-   "lat": 40.719592,
+   "lat": 40.7196072,
    "lists": [
     "sPUdVz7_eocH35PXclW6pjLN5kzdMw",
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -73.9904612,
+   "lng": -73.9904669,
    "mid": "/g/11mvrcqd1b",
    "name": "Double Chicken Please",
    "note": "",
@@ -6943,11 +6943,11 @@
    "address": "89 South St, New York, NY 10038, United States",
    "cid": "5938628829933681355",
    "city": "New York",
-   "lat": 40.705842499999996,
+   "lat": 40.7058423,
    "lists": [
     "iZsdBJgdcmOnT-oQXUHW2mHmIlWYrA"
    ],
-   "lng": -74.00194739999999,
+   "lng": -74.001947,
    "mid": "/g/11c1rx66d2",
    "name": "Pier 17",
    "note": "",
@@ -8540,12 +8540,12 @@
    "address": "6, St Michael's Mansion, Ship St, Oxford OX1 3DE, United Kingdom",
    "cid": "1775622082030058544",
    "city": "Oxford",
-   "lat": 51.7535932,
+   "lat": 51.753590499999994,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw",
     "EsFbFcXfL16-43kJQ5k3UQ16y6qeVw"
    ],
-   "lng": -1.2580019,
+   "lng": -1.2580006,
    "mid": "/g/11v0z7mcc6",
    "name": "New Ground Coffee Oxford",
    "note": "",
@@ -8870,11 +8870,11 @@
    "address": "96a Leather Ln, London EC1N 7TX, United Kingdom",
    "cid": "3345593818195662572",
    "city": "London",
-   "lat": 51.521614899999996,
+   "lat": 51.5216156,
    "lists": [
     "JcZsXMLw70PCxC_GPu-QI5egq-oNiw"
    ],
-   "lng": -0.1100197,
+   "lng": -0.1100172,
    "mid": "/g/11l20l2p36",
    "name": "Colonna & Small's",
    "note": "",
@@ -26786,11 +26786,11 @@
    "cid": "7660399067138597270",
    "city": "Athens",
    "far": true,
-   "lat": 38.088559,
+   "lat": 38.0884363,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.8171616,
+   "lng": 23.8174039,
    "marks": [
     "unverified"
    ],
@@ -27349,11 +27349,11 @@
    "address": "Unit 8, Monohaus, 143 Mare St, London E8 3FW, United Kingdom",
    "cid": "7561092779996454391",
    "city": "London",
-   "lat": 51.5392018,
+   "lat": 51.539203099999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.056748299999999995,
+   "lng": -0.0567537,
    "marks": [
     "unverified"
    ],
@@ -27457,11 +27457,11 @@
    "address": "Themistokleous 42, Athina 106 78",
    "cid": "5630278983732018632",
    "city": "Athens",
-   "lat": 37.9850557,
+   "lat": 37.985071,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 23.7325095,
+   "lng": 23.7324687,
    "marks": [
     "unverified"
    ],
@@ -29360,11 +29360,11 @@
    "address": "133 Upper St, London N1 1QP, United Kingdom",
    "cid": "-2259971552089119585",
    "city": "London",
-   "lat": 51.539141799999996,
+   "lat": 51.539142399999996,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.1025191,
+   "lng": -0.1025166,
    "marks": [
     "unverified"
    ],
