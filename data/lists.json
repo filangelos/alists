@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 565,
+   "count": 564,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516584,
-   "lng": -0.12562,
+   "lat": 51.516771,
+   "lng": -0.125672,
    "name": "London"
   },
   {
@@ -335,8 +335,8 @@
    "count": 16,
    "flag": "🇬🇷",
    "key": "spetses",
-   "lat": 37.265795,
-   "lng": 23.156118,
+   "lat": 37.265783,
+   "lng": 23.156132,
    "name": "Spetses"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-26T15:24:31Z",
+ "generated": "2026-11-27T15:12:25Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 584,
+   "count": 583,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -12384,11 +12384,11 @@
    "address": "Level 52, Shangri-La The Shard, 31 St Thomas St, London SE1 9QU, United Kingdom",
    "cid": "9168843464486803643",
    "city": "London",
-   "lat": 51.504270299999995,
+   "lat": 51.5042103,
    "lists": [
     "Opw2_W3uDxVpIuv3E_Kd862P2A5dvw"
    ],
-   "lng": -0.0866257,
+   "lng": -0.0867087,
    "mid": "/g/11b806sbjd",
    "name": "GŎNG",
    "note": "",
@@ -14723,11 +14723,11 @@
    "address": "",
    "cid": "7823238716890124189",
    "city": "Crete",
-   "lat": 35.517823799999995,
+   "lat": 35.517818999999996,
    "lists": [
     "nstZvvR0QfCwZlw8NALb_g"
    ],
-   "lng": 24.0222098,
+   "lng": 24.022209699999998,
    "mid": null,
    "name": "Prassein Aloga",
    "note": "",
@@ -16543,11 +16543,11 @@
    "address": "Milos 848 00",
    "cid": "-1904088752245070493",
    "city": "Milos",
-   "lat": 36.751084,
+   "lat": 36.7511072,
    "lists": [
     "HD4SfnkgaRd8n3eZlBFUia3MDzK_xw"
    ],
-   "lng": 24.446517699999998,
+   "lng": 24.446528999999998,
    "mid": "/g/11g9m9v2f2",
    "name": "Medusa",
    "note": "",
@@ -17383,11 +17383,11 @@
    "address": "ΠΛΑΤΕΙΑ ΑΛΕΞΑΝΔΡΗ, Spetses 180 50",
    "cid": "-7825237836746346364",
    "city": "Spetses",
-   "lat": 37.267282699999996,
+   "lat": 37.267261,
    "lists": [
     "wOQ35wnnKMOnglRMtuDTvF1HBrqfLQ"
    ],
-   "lng": 23.156122699999997,
+   "lng": 23.1561363,
    "mid": "/g/11bbwlr8dd",
    "name": "COCKATOO",
    "note": "",
@@ -17411,11 +17411,11 @@
    "address": "Mpotasi 1, Spetses 180 50",
    "cid": "6778645559478620420",
    "city": "Spetses",
-   "lat": 37.267279099999996,
+   "lat": 37.267257,
    "lists": [
     "wOQ35wnnKMOnglRMtuDTvF1HBrqfLQ"
    ],
-   "lng": 23.1561134,
+   "lng": 23.156127299999998,
    "mid": "/g/11c5512lj9",
    "name": "Poletis",
    "note": "",
@@ -17565,11 +17565,11 @@
    "address": "Άγιος Ανδρέας, ΟΤ 248, Spetses 180 50",
    "cid": "-1778872564099635387",
    "city": "Spetses",
-   "lat": 37.2643115,
+   "lat": 37.2643099,
    "lists": [
     "wOQ35wnnKMOnglRMtuDTvF1HBrqfLQ"
    ],
-   "lng": 23.1554352,
+   "lng": 23.155438,
    "mid": "/g/11xlk5rhrh",
    "name": "Liberty Suites Spetses",
    "note": "",
@@ -28892,11 +28892,11 @@
    "address": "252 Paradise Row, London E2 9LE, United Kingdom",
    "cid": "7877934963653687062",
    "city": "London",
-   "lat": 51.5284744,
+   "lat": 51.5284816,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.056146299999999996,
+   "lng": -0.0560007,
    "marks": [
     "unverified"
    ],
@@ -29430,24 +29430,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "15 Old Bailey, London EC4M 7EF, United Kingdom",
-   "cid": "1213862716908497279",
-   "city": "London",
-   "lat": 51.516050899999996,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1026115,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11vsxyww39",
-   "name": "LEYDI",
-   "note": "",
-   "type": "other"
-  },
-  {
-   "added": "2026-07-31",
    "address": "8 Charlotte St., London W1T 2LS, United Kingdom",
    "cid": "-8688734103294953073",
    "city": "London",
@@ -29847,11 +29829,11 @@
    "address": "1 Flat Iron Square, London SE1 0AB, United Kingdom",
    "cid": "-4424808052679226172",
    "city": "London",
-   "lat": 51.5039953,
+   "lat": 51.5040486,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -0.09547789999999999,
+   "lng": -0.0954771,
    "marks": [
     "unverified"
    ],
@@ -30749,11 +30731,11 @@
    "address": "192 Amity St, Brooklyn, NY 11201, United States",
    "cid": "6845478151727268730",
    "city": "New York",
-   "lat": 40.6883279,
+   "lat": 40.6883638,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.99343259999999,
+   "lng": -73.9934188,
    "marks": [
     "unverified"
    ],
@@ -31505,11 +31487,11 @@
    "address": "305 Bedford Ave, Brooklyn, NY 11211, United States",
    "cid": "4309396921978654900",
    "city": "New York",
-   "lat": 40.713490199999995,
+   "lat": 40.71349,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -73.9618112,
+   "lng": -73.9618108,
    "marks": [
     "unverified"
    ],
