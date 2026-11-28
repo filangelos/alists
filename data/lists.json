@@ -76,11 +76,11 @@
  ],
  "cities": [
   {
-   "count": 564,
+   "count": 563,
    "flag": "🇬🇧",
    "key": "london",
-   "lat": 51.516771,
-   "lng": -0.125672,
+   "lat": 51.516958,
+   "lng": -0.12562,
    "name": "London"
   },
   {
@@ -396,7 +396,7 @@
    "name": "Hawaii"
   }
  ],
- "generated": "2026-11-27T15:12:25Z",
+ "generated": "2026-11-28T14:17:38Z",
  "lists": [
   {
    "count": 83,
@@ -858,7 +858,7 @@
    "url": "https://www.google.com/maps/placelists/list/LeBvuQtX1Ic-QLDMtSbLeP7YPii8Zw"
   },
   {
-   "count": 583,
+   "count": 582,
    "description": "",
    "emoji": "⏩️",
    "id": "ESLiHnfITrKgygvbuUgSaHHKwn8h5g",
@@ -4097,12 +4097,12 @@
    "address": "16 Essex Rd, London N1 8AA, United Kingdom",
    "cid": "515504801004057583",
    "city": "London",
-   "lat": 51.536526599999995,
+   "lat": 51.536529699999996,
    "lists": [
     "Erx85_Y4gKkhT_4MERn11iWshw_Ynw",
     "3L9k5wl7vfNJG5ixQcgMhH7ZD11Mlg"
    ],
-   "lng": -0.10137059999999999,
+   "lng": -0.10137499999999999,
    "mid": "/g/11qh96k_tt",
    "name": "Jolene Colebrooke Row",
    "note": "",
@@ -30789,7 +30789,7 @@
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -74.0012886,
+   "lng": -74.0012888,
    "marks": [
     "unverified"
    ],
@@ -31772,24 +31772,6 @@
   },
   {
    "added": "2026-07-31",
-   "address": "133 Kensington Church St, London W8 7LP, United Kingdom",
-   "cid": "-5313325671085664766",
-   "city": "London",
-   "lat": 51.5074745,
-   "lists": [
-    "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
-   ],
-   "lng": -0.1949041,
-   "marks": [
-    "unverified"
-   ],
-   "mid": "/g/11hzv0c7hz",
-   "name": "LIFT COFFEE",
-   "note": "",
-   "type": "coffee"
-  },
-  {
-   "added": "2026-07-31",
    "address": "105 Queensway, London W2 4SJ, United Kingdom",
    "cid": "4417792874210087520",
    "city": "London",
@@ -32342,11 +32324,11 @@
    "address": "28 Waverly Pl, San Francisco, CA 94108, United States",
    "cid": "-7216468322587662661",
    "city": "San Francisco",
-   "lat": 37.7937209,
+   "lat": 37.793714099999995,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": -122.4066555,
+   "lng": -122.40666019999999,
    "marks": [
     "unverified"
    ],
@@ -33145,11 +33127,11 @@
    "cid": "1655341128557573970",
    "city": "Crete",
    "far": true,
-   "lat": 30.052903399999998,
+   "lat": 30.052898199999998,
    "lists": [
     "ESLiHnfITrKgygvbuUgSaHHKwn8h5g"
    ],
-   "lng": 31.2274328,
+   "lng": 31.227387099999998,
    "marks": [
     "unverified"
    ],
